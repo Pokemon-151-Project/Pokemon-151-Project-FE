@@ -3,9 +3,14 @@ import React from 'react'
 const SinglePokemon = props =>{
     const {poke} = props;
 
-    console.log('SinglePOkemon props:', props)
+    // console.log('SinglePOkemon props:', props)
     
-    return (<div>{poke.name} <img src = {poke.img}/></div>)
+    return (
+        <section>
+            <div>{poke.name}</div>
+            <img src= {poke.img}/>
+        </section>
+    )
 }
 
 export default SinglePokemon;
