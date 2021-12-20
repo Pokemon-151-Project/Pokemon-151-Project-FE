@@ -1,13 +1,16 @@
 import React from 'react'
 import SinglePokemon from './SinglePokemon';
+import pokemon from '../data';
+
 
 const AllPokemon = (props) =>{
-    const {pokemon} = props;
-    console.log('AllPokemon props:', pokemon)
+    // const {pokemon} = props;
+    console.log('Pokemon:', pokemon)
     return(
-        <div>
-        </div>
-    
+       pokemon.map(poke =>{
+        //    return(<SinglePokemon pokemon = {poke}/>)
+        return(<SinglePokemon poke = {poke}/>)
+       })
         )
 };
 

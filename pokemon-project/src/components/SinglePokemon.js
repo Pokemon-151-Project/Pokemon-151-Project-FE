@@ -5,7 +5,7 @@ const SinglePokemon = props =>{
 
     console.log('SinglePOkemon props:', props)
     
-    return <div>{poke.name}</div>
+    return (<div>{poke.name} <img src = {poke.img}/></div>)
 }
 
 export default SinglePokemon;
