@@ -15,7 +15,7 @@ const SinglePokemon = props =>{
             {poke.type[1]? <div>Types: {poke.type[0]} / {poke.type[1]} </div> : <div>Type: {poke.type}</div>}
 
             {/* image of each pokemon */}
-            <img src= {poke.img}/>
+            <img  className= 'poke-img' src= {poke.img}/>
         </div>
     )
 }

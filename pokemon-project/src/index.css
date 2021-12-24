@@ -35,8 +35,13 @@ code {
   margin: 2%;
 }
 
+img{
+  width: 90%;
+}
+
+/* I want each card to enlargen when you hover or click on it, as well as display its pokedex entry. Need to fiddle around with it to find the exact effect I want. RIght now the images, text etc don't get bigger, but the images being bigger is what I really want. */
 .pokemon-card:hover{
   border: 5px solid blue;
-  width: 20rem;
+  width: 15rem;
 }
 
