@@ -3,13 +3,11 @@ import SinglePokemon from './SinglePokemon';
 import pokemon from '../data';
 
 
-const AllPokemon = (props) =>{
-    // const {pokemon} = props;
-    console.log('Pokemon:', pokemon)
+const AllPokemon = () =>{
+    console.log('Pokemon:', pokemon[0])
     return(
-       pokemon.map(poke =>{
-        //    return(<SinglePokemon pokemon = {poke}/>)
-        return(<SinglePokemon poke = {poke}/>)
+            pokemon.map(poke =>{
+            return(<SinglePokemon poke = {poke} key = {poke.name}/>)
        })
         )
 };
