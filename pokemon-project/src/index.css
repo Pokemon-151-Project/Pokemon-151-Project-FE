@@ -12,10 +12,10 @@ code {
     monospace;
 }
 
-*{
+/* *{
   max-width: 100%;
   box-sizing: border-box;
-}
+} */
 
 /* the section that contains all 151 pokemon */
 .all-pokemon{
@@ -30,9 +30,6 @@ code {
   margin: 0 3%; */
   border: 1px solid red;
   box-sizing: border-box;
-  width: 100%;
+  width: auto;
 }
 
-.poke-name{
-
-}
