@@ -6,9 +6,12 @@ import pokemon from '../data';
 const AllPokemon = () =>{
     console.log('Pokemon:', pokemon[0])
     return(
-            pokemon.map(poke =>{
+       <section>
+       { pokemon.map(poke =>{
             return(<SinglePokemon poke = {poke} key = {poke.name}/>)
-       })
+       })}
+    </section>
+
         )
 };
 
