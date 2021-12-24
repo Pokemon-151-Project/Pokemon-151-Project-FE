@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*{
+  /* max-width: 100%; */
+  box-sizing: border-box;
+}
+
+/* the section that contains all 151 pokemon */
+.all-pokemon{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+}
+
+.pokemon-card{
+  /* width: auto; */
+  /* margin-left: 7.5 rem;
+  margin-right: 7.5 rem; */
+  border: 1px solid red;
+}
