@@ -35,7 +35,8 @@ code {
   margin: 2%;
 }
 
-img{
+/* This ensures that the images's size increases with the container when you hover over it. */
+.poke-img{
   width: 90%;
 }
 
@@ -43,5 +44,6 @@ img{
 .pokemon-card:hover{
   border: 5px solid blue;
   width: 15rem;
+  height: auto
 }
 
