@@ -3,8 +3,12 @@ AllPokemon: DIsplays 151 instances of SinglePokemon
 Header: Possibly. Basic info, link to my github
 Footer: Same as Header
 Styling: Make cards look nice. Responsive design, shrinks with screen.
+Testing: Test for basic functionality
 
 Stretch
+-Have different options to display only pokemon of certain types, sizes, weights. "smol bean" option, "big boi" option
+-Add in pokedex entries.
+    -Maybe edit data.js (use a mapping function to copy the dex entries in)
 
 
 # Getting Started with Create React App
