@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+
+//importing components
+import Header from './components/Header';
 import AllPokemon from './components/AllPokemon';
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header/>
       <AllPokemon/>
     </div>
   );
