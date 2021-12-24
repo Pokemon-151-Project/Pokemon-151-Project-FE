@@ -5,9 +5,10 @@ const Header = () =>{
         <header>
             <h1>Pokemon Display</h1>
 
+            {/* section for info about me */}
             <div className="adam-info">
-            <h2>Author: Adam Hinton</h2>
-            <a href='http://www.github.com/adamhinton'>Github</a>
+                <h2>Author: Adam Hinton</h2>
+                <a href='http://www.github.com/adamhinton'>Github</a>
             </div>
 
         </header>

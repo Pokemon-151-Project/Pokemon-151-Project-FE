@@ -2,12 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import data from './data';
 
 //importing components
 import Header from './components/Header';
 import AllPokemon from './components/AllPokemon';
 
 function App() {
+data.forEach(item =>{
+  item = {
+    ...item,
+    'blah blah blah': 'heebiejeebie'
+  }
+  console.log(item)
+})
+
 // const [pokemon, setPokemon] = useState({});
 
 // useEffect( () =>{

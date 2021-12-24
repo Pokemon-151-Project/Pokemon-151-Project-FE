@@ -4,7 +4,7 @@ import pokemon from '../data';
 
 
 const AllPokemon = () =>{
-    console.log('Pokemon:', pokemon[0])
+    // console.log('Pokemon:', pokemon[0])
     return(
        <section className='all-pokemon'>
        { pokemon.map(poke =>{
