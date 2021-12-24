@@ -9,6 +9,8 @@ import Header from './components/Header';
 import AllPokemon from './components/AllPokemon';
 
 function App() {
+
+//proof of concept for adding pokedex entries. I need to find an API with pokedex entries, and use this method to add said entries to data, then replace the original data.js with the new object.
 data.forEach(item =>{
   item = {
     ...item,
