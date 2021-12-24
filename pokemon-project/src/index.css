@@ -35,3 +35,14 @@ code {
   margin: 2%;
 }
 
+/* This ensures that the images's size increases with the container when you hover over it. */
+.poke-img{
+  width: 90%;
+}
+
+/* The idea here is to make each card enlargen on hover. Problem is, right now, when you hover over one card, the rest of its row gets taller (but not wider). It's not really noticeable when I remove my temporary 1px solid red border, but problem is that eventually these cards will have borders and styling. */
+.pokemon-card:hover{
+  border: 5px solid blue; 
+  width: 15rem;
+}
+
