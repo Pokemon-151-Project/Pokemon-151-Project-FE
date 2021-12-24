@@ -9,6 +9,7 @@ const SinglePokemon = props =>{
         <section>
             <div>{poke.name}</div>
             <img src= {poke.img}/>
+            <div>{ {poke.type[1]?} `Types: {poke.type[0]}, {poke.type[1]}`</div>
         </section>
     )
 }
