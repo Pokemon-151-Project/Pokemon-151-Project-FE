@@ -1,3 +1,12 @@
+MVP:
+AllPokemon: DIsplays 151 instances of SinglePokemon
+Header: Possibly. Basic info, link to my github
+Footer: Same as Header
+Styling: Make cards look nice. Responsive design, shrinks with screen.
+
+Stretch
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
