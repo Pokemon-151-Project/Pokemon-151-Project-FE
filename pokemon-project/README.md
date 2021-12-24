@@ -10,7 +10,11 @@ Routing: Use React Router to navigate between display options.
 Styling: Make cards look nice. Responsive design, shrinks with screen.
     -Little card areas for each pokemon
     -Responsive design: shrinks and grows with screen
+    -Make card larger on hover or click
+    -Display pokedex entries. Probably only display full entry on hover/click
     -Stretch: Make it look like a pokemon card?
+
+Data: Go in to data.js and figure out a way to add pokedex entries to it. Something to do with a forEach function and an axios call from another API that has pokedex entries.
 
 Testing: Test for basic functionality
 
