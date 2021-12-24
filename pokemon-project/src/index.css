@@ -30,6 +30,8 @@ code {
   margin: 0 3%; */
   border: 1px solid red;
   box-sizing: border-box;
-  width: auto;
+  width: 10rem;
+
+  margin: 2%;
 }
 
