@@ -1,9 +1,31 @@
+<<<<<<< HEAD
+MVP:
+[X] AllPokemon: DIsplays 151 instances of SinglePokemon
+
+Header: Possibly. Basic info, link to my github
+
+Footer: Same as Header
+
+Routing: Use React Router to navigate between display options. 
+
+Styling: Make cards look nice. Responsive design, shrinks with screen.
+    -Little card areas for each pokemon
+    -Responsive design: shrinks and grows with screen
+    -Make card larger on hover or click
+    -Display pokedex entries. Probably only display full entry on hover/click
+    -Stretch: Make it look like a pokemon card?
+
+Data: Go in to data.js and figure out a way to add pokedex entries to it. Something to do with a forEach function and an axios call from another API that has pokedex entries.
+
+Testing: Test for basic functionality
+=======
 MVP: 
 [X] AllPokemon: DIsplays 151 instances of SinglePokemon
 
 -[] Display options:
     -Clickable options to display different pokemon based on type, weaknesses, size, whatever.
     -Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
+>>>>>>> 735483d108dfaf63a2cf50a1a838aeaedaf3e881
 
 -[]Add in pokedex entries. 
     -Maybe edit data.js (use a mapping function to copy the dex entries in)
