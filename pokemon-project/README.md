@@ -5,23 +5,30 @@ MVP:
     -Clickable options to display different pokemon based on type, weaknesses, size, whatever.
     -Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
 
-Header: Possibly. Basic info, link to my github
+-[]Add in pokedex entries. 
+    -Maybe edit data.js (use a mapping function to copy the dex entries in)
+    -Only show first few words of dex entry. Show full entry on hover.
+
+Header:
+    -Basic info
+    -link to my github
+    -Dropdown with display options
 
 Footer: Same as Header
 
 Routing: Use React Router to navigate between display options.
+    -Based in Header dropdown
 
 Styling: 
 -[X]Make cards look nice. Background colors and fonts.
 -[X]Responsive design, shrinks with screen. 
 [X]-Little card areas for each pokemon -Stretch: Make it look like a pokemon card?
+    -Eh probably not
 
 Testing: Test for basic functionality
 
-Stretch 
--[X]Have different options to display only pokemon of certain types, sizes, weights. "smol bean" option, "big boi" option 
--[X]Add in pokedex entries. 
-    -Maybe edit data.js (use a mapping function to copy the dex entries in)
+Stretch:
+    -None so far
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
