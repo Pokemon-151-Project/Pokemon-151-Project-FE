@@ -12,10 +12,9 @@ code {
     monospace;
 }
 
-/* *{
-  max-width: 100%;
-  box-sizing: border-box;
-} */
+body{
+  background-color: #009B77;  
+}
 
 /* the section that contains all 151 pokemon */
 .all-pokemon{
@@ -33,6 +32,7 @@ code {
   box-sizing: border-box;
   width: 10rem;
   margin: 2%;
+  background-color: #E15D44;
 }
 
 /* This ensures that the images's size increases with the container when you hover over it. */
