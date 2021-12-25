@@ -12,7 +12,7 @@ const SinglePokemon = props =>{
             <h2 className='poke-name'>{poke.name}</h2>
 
             {/* This returns basic type information. Singular if only one type, plural if two types. */}
-            {poke.type[1]? <div>Types: {poke.type[0]} / {poke.type[1]} </div> : <div>Type: {poke.type}</div>}
+            {poke.type[1]? <p>Types: {poke.type[0]} / {poke.type[1]} </p> : <p>Type: {poke.type}</p>}
 
             {/* image of each pokemon */}
             <img  className= 'poke-img' src= {poke.img}/>
