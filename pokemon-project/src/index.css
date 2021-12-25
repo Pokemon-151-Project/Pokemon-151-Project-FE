@@ -81,7 +81,7 @@ header h1{
   width: 10rem;
   margin: 2%;
   background-color: #a5ebeb;
-  
+
   /* Transitions to the bigger width on hover were kind of jerky so I added in some slight delays */
   transition: .1s .1s;
 }
