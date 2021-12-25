@@ -9,7 +9,7 @@ const Header = () =>{
             
             <h2>Author: Adam Hinton</h2>
             
-            <a href='https://github.com/adamhinton/pokemon-project'>Source</a>
+            <a href='https://github.com/adamhinton/pokemon-project' target="_blank">Source</a>
             </div>
 
             {/* dropdown menu for display options */}
