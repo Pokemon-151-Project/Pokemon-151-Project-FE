@@ -9,7 +9,11 @@ const Header = () => {
       <div className="adam-info">
         <h2>Author: Adam Hinton</h2>
 
-        <a href="https://github.com/adamhinton/pokemon-project" target="_blank">
+        <a
+          href="https://github.com/adamhinton/pokemon-project"
+          target="_blank"
+          rel="noreferrer"
+        >
           Source
         </a>
       </div>
