@@ -6,8 +6,10 @@ const Header = () =>{
             <h1>Pokemon Display</h1>
 
             <div className="adam-info">
+            
             <h2>Author: Adam Hinton</h2>
-            <a href='http://www.github.com/adamhinton'>Github</a>
+            
+            <a href='https://github.com/adamhinton/pokemon-project'>Source</a>
             </div>
 
             {/* dropdown menu for display options */}
