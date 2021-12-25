@@ -4,11 +4,13 @@ import React from "react";
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 
+import pokemon from "./data";
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <AllPokemon />
+      <AllPokemon pokemon={pokemon} />
       {/* <SmolBeans/> */}
     </div>
   );
