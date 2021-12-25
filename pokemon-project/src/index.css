@@ -69,7 +69,7 @@ header h1{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  margin: auto 2%;
+  /* margin: 0 2rem; */
 }
 
 /* Each individual pokemon is contained within a pokemon-card */
@@ -81,6 +81,7 @@ header h1{
   width: 10rem;
   margin: 2%;
   background-color: #a5ebeb;
+  transition-delay: 1s;
 }
 
 /* This ensures that the images's size increases with the container when you hover over it. */
@@ -92,4 +93,3 @@ header h1{
 .pokemon-card:hover{
   width: 15rem;
 }
-
