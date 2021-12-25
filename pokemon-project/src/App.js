@@ -7,6 +7,7 @@ import data from './data';
 //importing components
 import Header from './components/Header';
 import AllPokemon from './components/AllPokemon';
+import SmolBeans from './components/SmolBeans';
 
 function App() {
 
@@ -39,6 +40,7 @@ data.forEach(item =>{
     <div className="App">
       <Header/>
       <AllPokemon/>
+      {/* <SmolBeans/> */}
     </div>
   );
 }
