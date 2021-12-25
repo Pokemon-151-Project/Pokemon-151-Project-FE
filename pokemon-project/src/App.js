@@ -28,8 +28,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {/* <AllPokemon/> */}
-      <SmolBeans/>
+      <AllPokemon/>
+      {/* <SmolBeans/> */}
     </div>
   );
 }
