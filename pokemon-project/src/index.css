@@ -12,8 +12,18 @@ code {
     monospace;
 }
 
+header{
+  background-color: rgb(46, 37, 37);
+  color: rgb(221, 203, 203); 
+}
+
+header h1{
+  margin-top: 0;
+}
+
 body{
-  background-color: #009B77;  
+  background-color: #5ec5c0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* the section that contains all 151 pokemon */
@@ -28,11 +38,11 @@ body{
 .pokemon-card{
   /* width: auto;
   margin: 0 3%; */
-  border: 1px solid red;
+  border: 1px solid black;
   box-sizing: border-box;
   width: 10rem;
   margin: 2%;
-  background-color: #E15D44;
+  background-color: #a5ebeb;
 }
 
 /* This ensures that the images's size increases with the container when you hover over it. */
@@ -42,7 +52,6 @@ body{
 
 /* The idea here is to make each card enlargen on hover. Problem is, right now, when you hover over one card, the rest of its row gets taller (but not wider). It's not really noticeable when I remove my temporary 1px solid red border, but problem is that eventually these cards will have borders and styling. */
 .pokemon-card:hover{
-  border: 5px solid blue; 
   width: 15rem;
 }
 
