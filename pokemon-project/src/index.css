@@ -18,6 +18,9 @@ header h1{
   margin-top: 0;
 }
 
+
+
+/* BEGIN HEADER DROPDOWN SECTION */
 /* Dropdown Button */
 .dropbtn {
   background-color: #04AA6D;
@@ -51,9 +54,14 @@ header h1{
   display: block;
 }
 
+/* Making pokemon display options show when I hover */
 .dropdown:hover .dropdown-content{
   display: block;
 }
+
+/* END HEADER DROPDOWN SECTION */
+
+
 
 /* the section that contains all 151 pokemon */
 .all-pokemon{
