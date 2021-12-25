@@ -1,8 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import data from './data';
 
 //importing components
 import Header from './components/Header';
