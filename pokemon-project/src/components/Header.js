@@ -1,31 +1,32 @@
 import React from "react";
 
-const Header = () =>{
-    return(
-        <header>
-            <h1>Pokemon Display</h1>
+const Header = () => {
+  return (
+    <header>
+      <h1>Pokemon Display</h1>
 
-            {/* section for info about me */}
-            <div className="adam-info">
-            
-            <h2>Author: Adam Hinton</h2>
-            
-            <a href='https://github.com/adamhinton/pokemon-project' target="_blank">Source</a>
-            </div>
+      {/* section for info about me */}
+      <div className="adam-info">
+        <h2>Author: Adam Hinton</h2>
 
-            {/* dropdown menu for display options */}
-            <div className = 'dropdown'>
+        <a href="https://github.com/adamhinton/pokemon-project" target="_blank">
+          Source
+        </a>
+      </div>
 
-                <button className='dropbtn'>Display Options (check this out!</button>
+      {/* dropdown menu for display options */}
+      <div className="dropdown">
+        <button className="dropbtn">Display Options (check this out!</button>
 
-                <div className='dropdown-content'>
-                    <a href='#'>Tiny Pokemon</a>
+        <div className="dropdown-content">
+          {/* The empty link here was causing problems so I commented this out for now */}
+          {/* <a href='#'>Tiny Pokemon</a>
                     <a href='#'>Big Pokemon</a>
-                    <a href='#'>Sort by type</a>
-                </div>
-            </div>
-        </header>
-    )
-}
+                    <a href='#'>Sort by type</a> */}
+        </div>
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
