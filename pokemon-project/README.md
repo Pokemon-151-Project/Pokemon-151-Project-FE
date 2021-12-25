@@ -12,7 +12,7 @@ Dex Entries:
 
 Header:
     -Basic info
-    -link to my github
+    [X]link to my github
     -Dropdown with display options
 
 Footer: Same as Header
@@ -27,8 +27,12 @@ Styling:
 [X]-Little card areas for each pokemon -Stretch: Make it look like a pokemon card?
     -Eh probably not
 -[] Add in an emoji or something based on the Pokemon's type
+-[] breakpoints for different screen sizes
+    -Change header layout
+    -Not sure how much there is to do with the body
 
-Testing: Test for basic functionality
+[]Testing: Test for basic functionality
+
 
 Stretch:
     -None so far
