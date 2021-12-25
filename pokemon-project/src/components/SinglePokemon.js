@@ -3,8 +3,6 @@ import React from 'react'
 const SinglePokemon = props =>{
     //Each poke is a single pokemon's data, being passed in as props.
     const {poke} = props;
-
-    // console.log('SinglePOkemon props:', props)
     
     return (
         <div className='pokemon-card'>
@@ -16,6 +14,9 @@ const SinglePokemon = props =>{
 
             {/* image of each pokemon */}
             <img  className= 'poke-img' src= {poke.img}/>
+
+            {/* I now have added pokedex entries to each pokemon. Will uncomment this when I"ve added styling to this bit. Specifically, I only want a preview to show up, then the full entry when you hover over it.*/}
+            {/* <p>{poke.dexEntry}</p> */}
         </div>
     )
 }
