@@ -1,4 +1,9 @@
-MVP: [X] AllPokemon: DIsplays 151 instances of SinglePokemon
+MVP: 
+[X] AllPokemon: DIsplays 151 instances of SinglePokemon
+
+-[] Display options:
+    -Clickable options to display different pokemon based on type, weaknesses, size, whatever.
+    -Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
 
 Header: Possibly. Basic info, link to my github
 
