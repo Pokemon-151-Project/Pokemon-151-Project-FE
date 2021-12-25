@@ -22,7 +22,8 @@ header h1{
 }
 
 body{
-  background-color: #5ec5c0;  
+  background-color: #5ec5c0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* the section that contains all 151 pokemon */
