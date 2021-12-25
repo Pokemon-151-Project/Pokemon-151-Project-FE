@@ -15,6 +15,7 @@ Header:
     -Dropdown with display options
 
 Footer: Same as Header
+    -Maybe not same as header. Link to source code.
 
 Routing: Use React Router to navigate between display options.
     -Based in Header dropdown
@@ -24,6 +25,7 @@ Styling:
 -[X]Responsive design, shrinks with screen. 
 [X]-Little card areas for each pokemon -Stretch: Make it look like a pokemon card?
     -Eh probably not
+-[] Add in an emoji or something based on the Pokemon's type
 
 Testing: Test for basic functionality
 
