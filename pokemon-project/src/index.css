@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+header{
+  background-color: rgb(24, 22, 22);
+  color: rgb(221, 203, 203);
+}
+
 body{
   background-color: #009B77;  
 }
@@ -32,7 +37,7 @@ body{
   box-sizing: border-box;
   width: 10rem;
   margin: 2%;
-  background-color: #E15D44;
+  background-color: #7FCDCD;
 }
 
 /* This ensures that the images's size increases with the container when you hover over it. */
