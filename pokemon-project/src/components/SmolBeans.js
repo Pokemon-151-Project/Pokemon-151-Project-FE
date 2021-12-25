@@ -1,7 +1,5 @@
 import React from "react";
-import App from "../App";
 import pokemon from "../data";
-import AllPokemon from "./AllPokemon";
 import SinglePokemon from "./SinglePokemon";
 
 //This will be similar to AllPokemon but only display small ones, maybe less than 1kg? still figuring out how exactly to do this.
