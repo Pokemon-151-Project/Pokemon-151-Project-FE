@@ -30,6 +30,7 @@ Styling:
 -[] breakpoints for different screen sizes
     -Change header layout
     -Not sure how much there is to do with the body
+        -The cards seem to look fine on mobile. Maybe make them larger so each card takes up full screen?
 
 []Testing: Test for basic functionality
 
