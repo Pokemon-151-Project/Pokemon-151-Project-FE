@@ -28,6 +28,8 @@ function App() {
   //-Problem is, right now I can't call with parameters in onClick. Need to solve that
   //+Pass in multiple parameters:
   //  -One for type of change (type, size, etc) and one for, say, what type or size or whatever is desired. Maybe more.
+  //+Potential onClick parameter solution:
+  //-onClick = {() =>{setSmall(blah blah blah)}}
 
   return (
     <div className="App">
