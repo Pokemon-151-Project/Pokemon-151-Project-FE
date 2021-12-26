@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <AllPokemon pokemon={pokemon} /> */}
-      <SmolBeans pokemon={pokemon} />
+      <AllPokemon pokemon={pokemon} />
+      {/* <SmolBeans pokemon={pokemon} /> */}
     </div>
   );
 }
