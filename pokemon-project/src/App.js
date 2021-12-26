@@ -6,10 +6,28 @@ import AllPokemon from "./components/AllPokemon";
 import SmolBeans from "./components/SmolBeans";
 
 import data from "./data";
+import { useEffect } from "react/cjs/react.development";
 
 function App() {
   //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
   const [pokemon, setPokemon] = useState(data);
+
+  const setSmall = async () => {
+    const newData = pokemon
+      .filter((item) => {
+        const weightInt = item.weight.split(" ")[0];
+        // console.log(weightInt);
+        // console.log(item.weight);
+        return weightInt < 5;
+      })
+      // .then(setPokemon(newData));
+      .then(console.log(newData));
+  };
+
+  setSmall();
+  // useEffect(() => {
+  //   setSmall();
+  // }, []);
 
   return (
     <div className="App">
