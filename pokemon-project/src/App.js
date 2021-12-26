@@ -3,7 +3,6 @@ import React, { useState } from "react";
 //importing components
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
-// import SmolBeans from "./components/SmolBeans";
 
 import data from "./data";
 
@@ -15,10 +14,11 @@ function App() {
   const [pokemon, setPokemon] = useState(data);
 
   //This is a proof of concept that I can write a function to change state (in this case, the data passed in as props to AllPokemon), set it to onClick for a button and make the button update the displayed pokemon. Need to figure out how to scale this up to a number of different display options.
-  const setSmall = () => {
+  const setDisplay = (type) => {
     const newData = pokemon.filter((item) => {
-      const weightInt = item.weight.split(" ")[0];
-      return weightInt < 5;
+      // const weightInt = item.weight.split(" ")[0];
+      // return weightInt < 5;
+      return item.type[0] === type || item.type[1] === type;
     });
     setPokemon(newData);
   };
@@ -29,14 +29,13 @@ function App() {
   //+Pass in multiple parameters:
   //  -One for type of change (type, size, etc) and one for, say, what type or size or whatever is desired. Maybe more.
   //+Potential onClick parameter solution:
-  //-onClick = {() =>{setSmall(blah blah blah)}}
-  //-Update--- it worked! So now I can pass arguments in to my onClick functions. yay! Just make onClick a callback function that calls setSmall.
+  //-onClick = {() =>{setDisplay(blah blah blah)}}
+  //-Update--- it worked! So now I can pass arguments in to my onClick functions. yay! Just make onClick a callback function that calls setDisplay.
 
   return (
     <div className="App">
-      <Header setSmall={setSmall} />
+      <Header setDisplay={setDisplay} />
       <AllPokemon pokemon={pokemon} />
-      {/* <SmolBeans pokemon={pokemon} /> */}
     </div>
   );
 }

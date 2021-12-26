@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = (props) => {
-  const { setSmall } = props;
+  const { setDisplay } = props;
   return (
     <header>
       <h1>Pokemon Display</h1>
@@ -20,6 +20,7 @@ const Header = (props) => {
       </div>
 
       {/* dropdown menu for display options */}
+      {/* Maybe make dropdown its own component? */}
       <div className="dropdown">
         <button className="dropbtn">Display Options (check this out!</button>
 
@@ -31,10 +32,10 @@ const Header = (props) => {
 
           <button
             onClick={() => {
-              setSmall();
+              setDisplay("Fire");
             }}
           >
-            Smol Beans
+            Fire
           </button>
         </div>
       </div>
