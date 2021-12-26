@@ -14,11 +14,19 @@ function App() {
   const [pokemon, setPokemon] = useState(data);
 
   //This is a proof of concept that I can write a function to change state (in this case, the data passed in as props to AllPokemon), set it to onClick for a button and make the button update the displayed pokemon. Need to figure out how to scale this up to a number of different display options.
-  const setDisplay = (type = null) => {
-    const newData = pokemon.filter((item) => {
+  const setDisplay = (type = null, size = null) => {
+    const newData = data.filter((item) => {
       // const weightInt = item.weight.split(" ")[0];
       // return weightInt < 5;
-      return item.type[0] === type || item.type[1] === type;
+      if (type) {
+        return item.type[0] === type || item.type[1] === type;
+      } else if (size === "small") {
+        const weightInt = item.weight.split(" ")[0];
+        return weightInt < 5;
+      } else if (size === "big") {
+        const weightInt = item.weight.split(" ")[0];
+        return weightInt > 100;
+      }
     });
     setPokemon(newData);
   };

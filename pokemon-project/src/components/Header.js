@@ -37,6 +37,22 @@ const Header = (props) => {
           >
             Fire
           </button>
+
+          <button
+            onClick={() => {
+              setDisplay(null, "small");
+            }}
+          >
+            Small
+          </button>
+
+          <button
+            onClick={() => {
+              setDisplay(null, "big");
+            }}
+          >
+            Big
+          </button>
         </div>
       </div>
     </header>
