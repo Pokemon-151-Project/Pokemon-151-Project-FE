@@ -9,7 +9,7 @@ const SinglePokemon = (props) => {
 
   return (
     <div className="pokemon-card">
-      {/* Name of each pokemon */}
+      {/* Pokemon's name */}
       <h2 className="poke-name">{poke.name}</h2>
 
       {/* This returns basic type information. Singular if only one type, plural if two types. */}
