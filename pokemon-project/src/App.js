@@ -18,13 +18,9 @@ function App() {
   const setSmall = () => {
     const newData = pokemon.filter((item) => {
       const weightInt = item.weight.split(" ")[0];
-      // console.log(weightInt);
-      // console.log(item.weight);
       return weightInt < 5;
     });
-    console.log("NewData:", newData);
     setPokemon(newData);
-    console.log("Pokemon:", pokemon);
   };
 
   return (
