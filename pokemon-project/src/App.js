@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 //importing components
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 import SmolBeans from "./components/SmolBeans";
 
-import pokemon from "./data";
+import data from "./data";
 
 function App() {
+  //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
+  const [pokemon, setPokemon] = useState(data);
+
   return (
     <div className="App">
       <Header />
