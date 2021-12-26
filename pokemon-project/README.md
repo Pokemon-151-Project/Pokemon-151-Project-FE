@@ -1,42 +1,41 @@
-MVP: 
+MVP:
 [X] AllPokemon: DIsplays 151 instances of SinglePokemon
 
 -[] Display options:
-    -Clickable options to display different pokemon based on type, weaknesses, size, whatever.
-    -Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
+-Clickable options to display different pokemon based on type, weaknesses, size, whatever.
+-Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
+-UPDATE: I've got a proof-of-concept working in App.js (setSmall)()) which, when set to an onClick, will update state and change the pokemon displayed through AllPokemon props.
+-Now I need to figure out how to do this with multiple buttons and display options without writing a zillion only-slightly-different functions.
 
 Dex Entries:
-    [X] Find an API with dex entries
-    [X]-Edit data.js (use a mapping function to copy the dex entries in)
-    []-Only show first few words of dex entry. Show full entry on hover.
+[X] Find an API with dex entries
+[X]-Edit data.js (use a mapping function to copy the dex entries in)
+[]-Only show first few words of dex entry. Show full entry on hover.
 
 Header:
-    -Basic info
-    [X]link to my github
-    -Dropdown with display options
+-Basic info
+[X]link to my github
+-Dropdown with display options
 
 Footer: Same as Header
-    -Maybe not same as header. Link to source code.
+-Maybe not same as header. Link to source code.
 
 Routing: Use React Router to navigate between display options.
-    -Based in Header dropdown
+-Based in Header dropdown
 
-Styling: 
--[X]Make cards look nice. Background colors and fonts.
--[X]Responsive design, shrinks with screen. 
+Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive design, shrinks with screen.
 [X]-Little card areas for each pokemon -Stretch: Make it look like a pokemon card?
-    -Eh probably not
+-Eh probably not
 -[] Add in an emoji or something based on the Pokemon's type
 -[] breakpoints for different screen sizes
-    -Change header layout
-    -Not sure how much there is to do with the body
-        -The cards seem to look fine on mobile. Maybe make them larger so each card takes up full screen?
+-Change header layout
+-Not sure how much there is to do with the body
+-The cards seem to look fine on mobile. Maybe make them larger so each card takes up full screen?
 
 []Testing: Test for basic functionality
 
-
 Stretch:
-    -None so far
+-None so far
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
