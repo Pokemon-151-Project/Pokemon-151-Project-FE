@@ -1,6 +1,7 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
+  const { setSmall } = props;
   return (
     <header>
       <h1>Pokemon Display</h1>
@@ -28,6 +29,8 @@ const Header = () => {
                     <a href='#'>Big Pokemon</a>
                     <a href='#'>Sort by type</a> */}
         </div>
+
+        <button onClick={setSmall}>Smol Beans</button>
       </div>
     </header>
   );

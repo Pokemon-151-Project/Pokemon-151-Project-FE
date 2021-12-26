@@ -29,8 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={setSmall}>Smol Beans</button>
-      <Header />
+      <Header setSmall={setSmall} />
       <AllPokemon pokemon={pokemon} />
       {/* <SmolBeans pokemon={pokemon} /> */}
     </div>
