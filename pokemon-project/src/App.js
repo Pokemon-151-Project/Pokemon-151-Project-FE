@@ -6,6 +6,8 @@ import AllPokemon from "./components/AllPokemon";
 import SmolBeans from "./components/SmolBeans";
 
 import data from "./data";
+
+//This isn't necessary right now but may be later
 import { useEffect } from "react/cjs/react.development";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
 
 export default App;
 
+//Notes on saving filtered data to state:
 //So, my hope here for display options is to do something like this:
 //Make <AllPokemon/> a catch-all component
 //It'll display whatever pokes I want to sort by, passed in through props from App
