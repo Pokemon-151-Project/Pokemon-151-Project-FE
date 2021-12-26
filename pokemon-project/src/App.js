@@ -3,12 +3,12 @@ import React, { useState } from "react";
 //importing components
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
-import SmolBeans from "./components/SmolBeans";
+// import SmolBeans from "./components/SmolBeans";
 
 import data from "./data";
 
 //This isn't necessary right now but may be later
-import { useEffect } from "react/cjs/react.development";
+// import { useEffect } from "react/cjs/react.development";
 
 function App() {
   //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
