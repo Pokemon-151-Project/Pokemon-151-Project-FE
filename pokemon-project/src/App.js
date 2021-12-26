@@ -3,7 +3,6 @@ import React, { useState } from "react";
 //importing components
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
-// import SmolBeans from "./components/SmolBeans";
 
 import data from "./data";
 
@@ -15,19 +14,37 @@ function App() {
   const [pokemon, setPokemon] = useState(data);
 
   //This is a proof of concept that I can write a function to change state (in this case, the data passed in as props to AllPokemon), set it to onClick for a button and make the button update the displayed pokemon. Need to figure out how to scale this up to a number of different display options.
-  const setSmall = () => {
-    const newData = pokemon.filter((item) => {
-      const weightInt = item.weight.split(" ")[0];
-      return weightInt < 5;
+  const setDisplay = (type = null, size = null) => {
+    const newData = data.filter((item) => {
+      // const weightInt = item.weight.split(" ")[0];
+      // return weightInt < 5;
+      if (type) {
+        return item.type[0] === type || item.type[1] === type;
+      } else if (size === "small") {
+        const weightInt = item.weight.split(" ")[0];
+        return weightInt < 5;
+      } else if (size === "big") {
+        const weightInt = item.weight.split(" ")[0];
+        return weightInt > 100;
+      }
+      return null;
     });
     setPokemon(newData);
   };
+  //Ideas:
+  //+Make separate file for this, pass in pokemon as parameter.
+  //-This keeps everything compartmentalized
+  //-Problem is, right now I can't call with parameters in onClick. Need to solve that
+  //+Pass in multiple parameters:
+  //  -One for type of change (type, size, etc) and one for, say, what type or size or whatever is desired. Maybe more.
+  //+Potential onClick parameter solution:
+  //-onClick = {() =>{setDisplay(blah blah blah)}}
+  //-Update--- it worked! So now I can pass arguments in to my onClick functions. yay! Just make onClick a callback function that calls setDisplay.
 
   return (
     <div className="App">
-      <Header setSmall={setSmall} />
+      <Header setDisplay={setDisplay} />
       <AllPokemon pokemon={pokemon} />
-      {/* <SmolBeans pokemon={pokemon} /> */}
     </div>
   );
 }

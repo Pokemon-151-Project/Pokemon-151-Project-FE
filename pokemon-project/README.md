@@ -4,7 +4,7 @@ MVP:
 -[] Display options:
 -Clickable options to display different pokemon based on type, weaknesses, size, whatever.
 -Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
--UPDATE: I've got a proof-of-concept working in App.js (setSmall)()) which, when set to an onClick, will update state and change the pokemon displayed through AllPokemon props.
+-UPDATE: I've got a proof-of-concept working in App.js (setDisplay)()) which, when set to an onClick, will update state and change the pokemon displayed through AllPokemon props.
 -Now I need to figure out how to do this with multiple buttons and display options without writing a zillion only-slightly-different functions.
 
 Dex Entries:
