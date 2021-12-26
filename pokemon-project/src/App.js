@@ -30,6 +30,7 @@ function App() {
   //  -One for type of change (type, size, etc) and one for, say, what type or size or whatever is desired. Maybe more.
   //+Potential onClick parameter solution:
   //-onClick = {() =>{setSmall(blah blah blah)}}
+  //-Update--- it worked! So now I can pass arguments in to my onClick functions. yay! Just make onClick a callback function that calls setSmall.
 
   return (
     <div className="App">

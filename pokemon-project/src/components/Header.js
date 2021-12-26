@@ -28,7 +28,13 @@ const Header = (props) => {
           {/* <a href='#'>Tiny Pokemon</a>
                     <a href='#'>Big Pokemon</a>
                     <a href='#'>Sort by type</a> */}
-          <button onClick={setSmall}>Smol Beans</button>
+          <button
+            onClick={() => {
+              setSmall();
+            }}
+          >
+            Smol Beans
+          </button>
         </div>
       </div>
     </header>
