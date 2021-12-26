@@ -27,6 +27,7 @@ function App() {
         const weightInt = item.weight.split(" ")[0];
         return weightInt > 100;
       }
+      return null;
     });
     setPokemon(newData);
   };
