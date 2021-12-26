@@ -13,15 +13,14 @@ function App() {
   const [pokemon, setPokemon] = useState(data);
 
   const setSmall = async () => {
-    const newData = pokemon
-      .filter((item) => {
-        const weightInt = item.weight.split(" ")[0];
-        // console.log(weightInt);
-        // console.log(item.weight);
-        return weightInt < 5;
-      })
-      // .then(setPokemon(newData));
-      .then(console.log(newData));
+    const newData = await pokemon.filter(async (item) => {
+      const weightInt = item.weight.split(" ")[0];
+      // console.log(weightInt);
+      // console.log(item.weight);
+      return weightInt < 5;
+    });
+    console.log("afjdsalfsd");
+    setPokemon(newData);
   };
 
   setSmall();
