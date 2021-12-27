@@ -73,7 +73,7 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   /* margin: 0 2rem; */
-  /* padding: 3.5%; */
+  padding: 2%;
 }
 
 /* Each individual pokemon is contained within a pokemon-card */
