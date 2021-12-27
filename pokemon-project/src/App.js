@@ -26,9 +26,6 @@ function App() {
     });
     setPokemon(newData);
   };
-  //Ideas:
-  //+Pass in multiple parameters:
-  //  -One for type of change (type, size, etc) and one for, say, what type or size or whatever is desired. Maybe more.
 
   return (
     <div className="App">
