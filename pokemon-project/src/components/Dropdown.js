@@ -27,6 +27,7 @@ const Dropdown = (props) => {
         {typesArray.map((item) => {
           return (
             <button
+              key={item}
               onClick={() => {
                 changeDisplay(item);
               }}
