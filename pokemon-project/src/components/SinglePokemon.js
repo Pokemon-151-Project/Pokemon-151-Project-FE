@@ -21,7 +21,7 @@ const SinglePokemon = (props) => {
         <h3>Type: {type}</h3>
       )}
 
-      <h4>
+      <h4 className="height-weight">
         Height: {height} <br />
         Weight: {weight}
       </h4>
