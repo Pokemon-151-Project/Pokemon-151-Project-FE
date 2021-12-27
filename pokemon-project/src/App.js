@@ -14,7 +14,7 @@ function App() {
   //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
   const [pokemon, setPokemon] = useState(data);
 
-  const setDisplay = (type = null, size = null) => {
+  const changeDisplay = (type = null, size = null) => {
     const newData = data.filter((item) => {
       if (type) {
         return item.type[0] === type || item.type[1] === type;
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header setDisplay={setDisplay} />
+      <Header changeDisplay={changeDisplay} />
       <AllPokemon pokemon={pokemon} />
     </div>
   );
