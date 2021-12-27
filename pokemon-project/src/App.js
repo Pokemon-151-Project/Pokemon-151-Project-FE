@@ -14,13 +14,16 @@ function App() {
   //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
   const [pokemon, setPokemon] = useState(data);
 
-  const changeDisplay = (type = null, size = null) => {
+  const changeDisplay = (type = null, size = null, height = null) => {
     const newData = data.filter((item) => {
       if (type) {
         return item.type[0] === type || item.type[1] === type;
       } else if (size) {
         const weightInt = item.weight.split(" ")[0];
         return size === "small" ? weightInt < 5 : weightInt > 100;
+      } else if (height) {
+        const heightInt = item.height.split(" ")[0];
+        return height === "short" ? heightInt < 0.4 : heightInt > 2;
       }
       return null;
     });
