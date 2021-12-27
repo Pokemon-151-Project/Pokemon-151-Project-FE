@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = (props) => {
-  const { setDisplay } = props;
+  const { changeDisplay } = props;
   return (
     <header>
       <h1>Pokemon Display</h1>
@@ -32,7 +32,7 @@ const Header = (props) => {
 
           <button
             onClick={() => {
-              setDisplay("Fire");
+              changeDisplay("Fire");
             }}
           >
             Fire
@@ -40,7 +40,7 @@ const Header = (props) => {
 
           <button
             onClick={() => {
-              setDisplay(null, "small");
+              changeDisplay(null, "small");
             }}
           >
             Small
@@ -48,7 +48,7 @@ const Header = (props) => {
 
           <button
             onClick={() => {
-              setDisplay(null, "big");
+              changeDisplay(null, "big");
             }}
           >
             Big
