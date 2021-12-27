@@ -1,20 +1,40 @@
 const Dropdown = (props) => {
   const { changeDisplay } = props;
-  {
-    /* dropdown menu for display options */
-  }
+  // Dropdown menu for display options
+
+  const typesArray = [
+    "Normal",
+    "Fire",
+    "Water",
+    "Electric",
+    "Grass",
+    "Ice",
+    "Fighting",
+    "Poison",
+    "Ground",
+    "Flying",
+    "Psychic",
+    "Bug",
+    "Rock",
+    "Ghost",
+    "Dragon",
+  ];
   return (
     <div className="dropdown">
       <button className="dropbtn">Display Options (check this out!</button>
 
       <div className="dropdown-content">
-        <button
-          onClick={() => {
-            changeDisplay("Fire");
-          }}
-        >
-          Fire
-        </button>
+        {typesArray.map((item) => {
+          return (
+            <button
+              onClick={() => {
+                changeDisplay(item);
+              }}
+            >
+              {item}
+            </button>
+          );
+        })}
 
         <button
           onClick={() => {
