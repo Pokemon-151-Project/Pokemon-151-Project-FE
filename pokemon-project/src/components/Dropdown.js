@@ -24,6 +24,7 @@ const Dropdown = (props) => {
       <button className="dropbtn">Display Options (check this out!</button>
 
       <div className="dropdown-content">
+        {/* Begin mapping over types. There are 15 pokemon types so I didn't want to code a button for every one of them. */}
         {typesArray.map((item) => {
           return (
             <button
@@ -36,7 +37,9 @@ const Dropdown = (props) => {
             </button>
           );
         })}
+        {/* End mapping over types */}
 
+        {/* Show only small pokemon (<10kg) */}
         <button
           onClick={() => {
             changeDisplay(null, "small");
@@ -45,6 +48,7 @@ const Dropdown = (props) => {
           Small
         </button>
 
+        {/* Show only big pokemon (>100kg) */}
         <button
           onClick={() => {
             changeDisplay(null, "big");
