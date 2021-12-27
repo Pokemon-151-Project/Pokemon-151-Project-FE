@@ -1,5 +1,7 @@
 import React from "react";
 
+import Dropdown from "./Dropdown";
+
 const Header = (props) => {
   const { changeDisplay } = props;
   return (
@@ -18,6 +20,8 @@ const Header = (props) => {
           Source
         </a>
       </div>
+
+      <Dropdown changeDisplay={changeDisplay} />
     </header>
   );
 };
