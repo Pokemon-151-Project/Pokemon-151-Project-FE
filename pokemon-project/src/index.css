@@ -103,9 +103,10 @@ header h1 {
 
 /* The idea here is to make each card enlargen on hover. Problem is, right now, when you hover over one card, the rest of its row gets taller (but not wider). It's not really noticeable when I remove my temporary 1px solid red border, but problem is that eventually these cards will have borders and styling. */
 .pokemon-card:hover {
-  width: 13.5rem;
-  font-size: 1.35rem;
+  width: 12.5rem;
+  font-size: 1.25rem;
   /* transition-delay: 0.1s; */
   /* margin: 0;
   padding: 0; */
+  /* height: 100vh; */
 }
