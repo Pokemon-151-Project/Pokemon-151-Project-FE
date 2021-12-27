@@ -20,12 +20,9 @@ function App() {
       // return weightInt < 5;
       if (type) {
         return item.type[0] === type || item.type[1] === type;
-      } else if (size === "small") {
+      } else if (size) {
         const weightInt = item.weight.split(" ")[0];
-        return weightInt < 5;
-      } else if (size === "big") {
-        const weightInt = item.weight.split(" ")[0];
-        return weightInt > 100;
+        return size === "small" ? weightInt < 5 : weightInt > 100;
       }
       return null;
     });
