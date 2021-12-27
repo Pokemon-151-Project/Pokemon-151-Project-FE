@@ -16,8 +16,6 @@ function App() {
   //This is a proof of concept that I can write a function to change state (in this case, the data passed in as props to AllPokemon), set it to onClick for a button and make the button update the displayed pokemon. Need to figure out how to scale this up to a number of different display options.
   const setDisplay = (type = null, size = null) => {
     const newData = data.filter((item) => {
-      // const weightInt = item.weight.split(" ")[0];
-      // return weightInt < 5;
       if (type) {
         return item.type[0] === type || item.type[1] === type;
       } else if (size) {
