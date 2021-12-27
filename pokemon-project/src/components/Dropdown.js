@@ -56,6 +56,22 @@ const Dropdown = (props) => {
         >
           Big
         </button>
+
+        <button
+          onClick={() => {
+            changeDisplay(null, null, "short");
+          }}
+        >
+          Short
+        </button>
+
+        <button
+          onClick={() => {
+            changeDisplay(null, null, "tall");
+          }}
+        >
+          Tall
+        </button>
       </div>
     </div>
   );
