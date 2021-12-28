@@ -1,6 +1,6 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+// import userEvent from "@testing-library/user-event";
 import App from "./App";
 
 test("renders title", () => {
