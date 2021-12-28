@@ -2,6 +2,7 @@ import React from "react";
 
 import Dropdown from "./Dropdown";
 
+//I'd like to style this better. Maybe put h1 on the left, display options in middle, then my info and links on the right.
 const Header = (props) => {
   const { changeDisplay } = props;
   return (

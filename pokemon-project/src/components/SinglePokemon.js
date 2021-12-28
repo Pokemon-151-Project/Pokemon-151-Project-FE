@@ -21,6 +21,7 @@ const SinglePokemon = (props) => {
         <h3 className="card-item">Type: {type}</h3>
       )}
 
+      {/* Returns info about weight and height */}
       <h4 className="height-weight card-item">
         Height: {height} <br />
         Weight: {weight}
@@ -29,7 +30,7 @@ const SinglePokemon = (props) => {
       {/* image of each pokemon */}
       <img className="poke-img card-item" src={img} alt="Pokemon" />
 
-      {/* I now have added pokedex entries to each pokemon. Will uncomment this when I"ve added styling to this bit. Specifically, I only want a preview to show up, then the full entry when you hover over it.*/}
+      {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
       <p className="card-item">{dexEntry}</p>
     </div>
   );
