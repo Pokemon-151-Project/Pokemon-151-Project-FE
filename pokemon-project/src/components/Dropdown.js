@@ -25,53 +25,66 @@ const Dropdown = (props) => {
 
       <div className="dropdown-content">
         {/* Begin mapping over types. There are 15 pokemon types so I didn't want to code a button for every one of them. */}
-        {typesArray.map((item) => {
-          return (
-            <button
-              key={item}
-              onClick={() => {
-                changeDisplay(item);
-              }}
-            >
-              {item}
-            </button>
-          );
-        })}
+        <div>
+          <h5 className="dropdown-display-title">Pick a type:</h5>
+          {typesArray.map((item) => {
+            return (
+              <button
+                className="dropbtn-inner"
+                key={item}
+                onClick={() => {
+                  changeDisplay(item);
+                }}
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
         {/* End mapping over types */}
 
         {/* Show only small pokemon (<10kg) */}
-        <button
-          onClick={() => {
-            changeDisplay(null, "small");
-          }}
-        >
-          Small
-        </button>
+        <div>
+          <h5 className="dropdown-display-title">Pick a weight:</h5>
+          <button
+            className="dropbtn-inner"
+            onClick={() => {
+              changeDisplay(null, "small");
+            }}
+          >
+            Small
+          </button>
 
-        {/* Show only big pokemon (>100kg) */}
-        <button
-          onClick={() => {
-            changeDisplay(null, "big");
-          }}
-        >
-          Big
-        </button>
+          {/* Show only big pokemon (>100kg) */}
+          <button
+            className="dropbtn-inner"
+            onClick={() => {
+              changeDisplay(null, "big");
+            }}
+          >
+            Big
+          </button>
+        </div>
+        <div>
+          <h5 className="dropdown-display-title">Pick a height:</h5>
+          <button
+            className="dropbtn-inner"
+            onClick={() => {
+              changeDisplay(null, null, "short");
+            }}
+          >
+            Short
+          </button>
 
-        <button
-          onClick={() => {
-            changeDisplay(null, null, "short");
-          }}
-        >
-          Short
-        </button>
-
-        <button
-          onClick={() => {
-            changeDisplay(null, null, "tall");
-          }}
-        >
-          Tall
-        </button>
+          <button
+            className="dropbtn-inner"
+            onClick={() => {
+              changeDisplay(null, null, "tall");
+            }}
+          >
+            Tall
+          </button>
+        </div>
       </div>
     </div>
   );

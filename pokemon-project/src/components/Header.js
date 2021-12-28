@@ -21,6 +21,7 @@ const Header = (props) => {
         </a>
       </div>
 
+      {/* Begin display options dropdown. See Dropdown.js */}
       <Dropdown changeDisplay={changeDisplay} />
     </header>
   );
