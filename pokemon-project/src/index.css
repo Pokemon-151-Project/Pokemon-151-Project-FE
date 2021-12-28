@@ -69,12 +69,12 @@ header h1 {
   background-color: #90dcd8;
 }
 
-.dropdown:hover .dropbtn-inner {
+.dropbtn-inner {
   margin: 1%;
   border: none;
   background-color: rgb(153, 181, 197);
   color: rgb(35, 40, 15);
-  padding: 1.5%;
+  padding: 0.25rem;
 }
 
 .dropdown:hover .dropbtn-inner:hover {
