@@ -2,6 +2,7 @@ const Dropdown = (props) => {
   const { changeDisplay } = props;
   // Dropdown menu for display options
 
+  //Will map over this to return one button for each type. Cleaner and dryer than hard-coding 15 different buttons.
   const typesArray = [
     "Normal",
     "Fire",
@@ -21,6 +22,7 @@ const Dropdown = (props) => {
   ];
   return (
     <div className="dropdown">
+      {/* Hovering here shows the dropdown menu with display options */}
       <button className="dropbtn">Display Options (check this out!</button>
 
       <div className="dropdown-content">
@@ -43,6 +45,9 @@ const Dropdown = (props) => {
         </div>
         {/* End mapping over types */}
 
+        {/* Now there are four different buttons (sorting by tall, short, heavy and light) that were easier to just hard code. */}
+
+        {/* Begin sorting pokemon by weight */}
         {/* Show only small pokemon (<10kg) */}
         <div>
           <h5 className="dropdown-display-title">Pick a weight:</h5>
@@ -65,6 +70,9 @@ const Dropdown = (props) => {
             Big
           </button>
         </div>
+        {/* End sorting pokemon by weight */}
+
+        {/* Begin sorting pokemon by height */}
         <div>
           <h5 className="dropdown-display-title">Pick a height:</h5>
 
@@ -88,6 +96,7 @@ const Dropdown = (props) => {
             Tall
           </button>
         </div>
+        {/* End sorting pokemon by height */}
       </div>
     </div>
   );

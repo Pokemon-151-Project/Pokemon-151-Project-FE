@@ -1,7 +1,6 @@
 * {
   max-width: 100%;
   box-sizing: border-box;
-  /* font-size: 100%; */
 }
 
 body {
@@ -54,6 +53,7 @@ header h1 {
   background-color: #90dcd8;
 }
 
+/* This is every individual button within the dropdown */
 .dropbtn-inner {
   margin: 1%;
   border: none;
@@ -90,17 +90,15 @@ header h1 {
   width: 12rem;
   margin: 2%;
   background-color: #a5ebeb;
-
-  /* Transitions to the bigger width on hover were kind of jerky so I added in some slight delays */
-  transition: 0.1s 0.1s;
 }
 
+/* This is every individual item (name, height, weight, image, etc) in the pokemon card */
 .card-item {
   margin-left: 1.2%;
   margin-right: 1.2%;
 }
 
-/* This ensures that the images's size increases with the container when you hover over it. */
+/* making sure each image is wide enough within its card */
 .poke-img {
   width: 90%;
 }
