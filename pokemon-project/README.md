@@ -2,26 +2,27 @@ MVP:
 [X] AllPokemon: DIsplays 151 instances of SinglePokemon
 
 -[] Display options:
--Clickable options to display different pokemon based on type, weaknesses, size, whatever.
--Maybe make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
--UPDATE: I've got a proof-of-concept working in App.js (setDisplay)()) which, when set to an onClick, will update state and change the pokemon displayed through AllPokemon props.
--Now I need to figure out how to do this with multiple buttons and display options without writing a zillion only-slightly-different functions.
+[X}Clickable options to display different pokemon based on type, weaknesses, size, whatever.
+[X]Make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
 
 Dex Entries:
 [X] Find an API with dex entries
 [X]-Edit data.js (use a mapping function to copy the dex entries in)
 []-Only show first few words of dex entry. Show full entry on hover.
+-Maybe this actually doesn't work well
 
 Header:
 -Basic info
 [X]link to my github
--Dropdown with display options
+[X] separate component for Dropdown content, nested in Header
+[X] - sub-fields for type, size, height
 
 Footer: Same as Header
 -Maybe not same as header. Link to source code.
 
 Routing: Use React Router to navigate between display options.
 -Based in Header dropdown
+-Actually, seems like routing isn't even necessary
 
 Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive design, shrinks with screen.
 [X]-Little card areas for each pokemon -Stretch: Make it look like a pokemon card?
@@ -31,10 +32,20 @@ Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive d
 -Change header layout
 -Not sure how much there is to do with the body
 -The cards seem to look fine on mobile. Maybe make them larger so each card takes up full screen?
+[]Style buttons in dropdown
 
-[]Testing: Test for basic functionality
+Testing: Test for basic functionality
+[]All cards show up on screen
+[]All buttons appear in header
+[]Buttons do what they're supposed to
+[] Portions of card (type, name, dex etc) render
+[]DarkMode does what it's supposed to (if I implement DarkMode)
 
 Stretch:
+[]Dark Mode
+-slider button
+-Styling should be simple hopefully: Change bg-c of cards and body, make font sizes lighter. I don't think anything else?
+-Will the background color look good with the pokemon images? If not maybe the cards will still be a lighter color
 -None so far
 
 Getting Started with Create React App
