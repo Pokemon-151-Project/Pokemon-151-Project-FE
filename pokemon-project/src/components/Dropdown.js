@@ -67,6 +67,8 @@ const Dropdown = (props) => {
         </div>
         <div>
           <h5 className="dropdown-display-title">Pick a height:</h5>
+
+          {/* Show only short pokemon */}
           <button
             className="dropbtn-inner"
             onClick={() => {
@@ -76,6 +78,7 @@ const Dropdown = (props) => {
             Short
           </button>
 
+          {/* Show only tall pokemon */}
           <button
             className="dropbtn-inner"
             onClick={() => {
