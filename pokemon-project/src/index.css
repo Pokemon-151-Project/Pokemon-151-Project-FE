@@ -98,6 +98,7 @@ header h1 {
   margin-right: 1.2%;
 }
 
+/* making sure each image is wide enough within its card */
 .poke-img {
   width: 90%;
 }
