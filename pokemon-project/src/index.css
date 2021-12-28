@@ -74,13 +74,18 @@ header h1 {
   border: none;
   background-color: rgb(153, 181, 197);
   color: rgb(35, 40, 15);
-  padding: 1%;
+  padding: 1.5%;
 }
 
 .dropdown:hover .dropbtn-inner:hover {
   text-decoration: underline;
   color: white;
   transition: 0.3s;
+}
+
+.dropdown-display-title {
+  color: black;
+  margin: 1%;
 }
 /* END HEADER DROPDOWN SECTION */
 
