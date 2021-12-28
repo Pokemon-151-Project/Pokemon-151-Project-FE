@@ -63,9 +63,24 @@ header h1 {
 
 /* Making pokemon display options show when I hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #90dcd8;
 }
 
+.dropdown:hover .dropbtn-inner {
+  margin: 1%;
+  border: none;
+  background-color: rgb(153, 181, 197);
+  color: rgb(35, 40, 15);
+  padding: 2%;
+}
+
+.dropdown:hover .dropbtn-inner:hover {
+  text-decoration: underline;
+  color: white;
+  transition: 0.3s;
+}
 /* END HEADER DROPDOWN SECTION */
 
 /* the section that contains all 151 pokemon */

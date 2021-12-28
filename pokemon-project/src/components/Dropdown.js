@@ -28,6 +28,7 @@ const Dropdown = (props) => {
         {typesArray.map((item) => {
           return (
             <button
+              className="dropbtn-inner"
               key={item}
               onClick={() => {
                 changeDisplay(item);
@@ -41,6 +42,7 @@ const Dropdown = (props) => {
 
         {/* Show only small pokemon (<10kg) */}
         <button
+          className="dropbtn-inner"
           onClick={() => {
             changeDisplay(null, "small");
           }}
@@ -50,6 +52,7 @@ const Dropdown = (props) => {
 
         {/* Show only big pokemon (>100kg) */}
         <button
+          className="dropbtn-inner"
           onClick={() => {
             changeDisplay(null, "big");
           }}
@@ -58,6 +61,7 @@ const Dropdown = (props) => {
         </button>
 
         <button
+          className="dropbtn-inner"
           onClick={() => {
             changeDisplay(null, null, "short");
           }}
@@ -66,6 +70,7 @@ const Dropdown = (props) => {
         </button>
 
         <button
+          className="dropbtn-inner"
           onClick={() => {
             changeDisplay(null, null, "tall");
           }}
