@@ -11,11 +11,6 @@ body {
   text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 header {
   background-color: rgb(46, 37, 37);
   color: rgb(221, 203, 203);
@@ -51,16 +46,6 @@ header h1 {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
-/* .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  margin: 1%;
-} */
-
 /* Making pokemon display options show when I hover */
 .dropdown:hover .dropdown-content {
   display: flex;
@@ -95,20 +80,16 @@ header h1 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  /* margin: 0 2rem; */
   padding: 2%;
 }
 
 /* Each individual pokemon is contained within a pokemon-card */
 .pokemon-card {
-  /* width: auto;
-  margin: 0 3%; */
   border: 1px solid black;
   box-sizing: border-box;
   width: 12rem;
   margin: 2%;
   background-color: #a5ebeb;
-  /* padding: 1%; */
 
   /* Transitions to the bigger width on hover were kind of jerky so I added in some slight delays */
   transition: 0.1s 0.1s;

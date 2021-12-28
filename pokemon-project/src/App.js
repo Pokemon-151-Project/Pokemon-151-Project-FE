@@ -7,9 +7,6 @@ import AllPokemon from "./components/AllPokemon";
 //This is the original data of the 151 pokemon I'm displaying. It gets updated and passed to state based on what display options the user clicks.
 import data from "./data";
 
-//This isn't necessary right now but may be later
-// import { useEffect } from "react/cjs/react.development";
-
 function App() {
   //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
   const [pokemon, setPokemon] = useState(data);
