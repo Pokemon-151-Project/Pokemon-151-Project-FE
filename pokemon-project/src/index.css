@@ -52,18 +52,41 @@ header h1 {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+/* .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
-}
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+} */
 
 /* Making pokemon display options show when I hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #90dcd8;
 }
 
+.dropbtn-inner {
+  margin: 1%;
+  border: none;
+  background-color: rgb(153, 181, 197);
+  color: rgb(35, 40, 15);
+  padding: 0.25rem;
+}
+
+.dropdown:hover .dropbtn-inner:hover {
+  text-decoration: underline;
+  color: white;
+  transition: 0.3s;
+}
+
+.dropdown-display-title {
+  color: black;
+  margin: 1%;
+}
 /* END HEADER DROPDOWN SECTION */
 
 /* the section that contains all 151 pokemon */
