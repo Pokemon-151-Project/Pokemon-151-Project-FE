@@ -11,6 +11,7 @@ test("renders title", () => {
   const docHeader = document.querySelector("header");
   expect(docHeader).toBeInTheDocument();
 
-  const dropdown = document.getElementsByClassName("dropdown");
-  userEvent.click(dropdown);
+  const h1 = screen.getByText(/pokemon display/i);
+  console.debug("h1:", h1);
+  expect(h1).toBeInTheDocument();
 });
