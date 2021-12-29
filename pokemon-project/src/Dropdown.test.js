@@ -8,3 +8,8 @@ import userEvent from "@testing-library/user-event";
 test("component renders without errors", () => {
   render(<Dropdown />);
 });
+
+test("All 19 buttons render properly", () => {
+  const btns = document.getElementsByClassName("dropbtn-inner");
+  expect(btns).toBeInTheDocument();
+});
