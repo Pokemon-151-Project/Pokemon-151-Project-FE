@@ -33,6 +33,8 @@ const Dropdown = (props) => {
             return (
               <button
                 className="dropbtn-inner"
+                data-testid="dropbtn-inner"
+                id={`${item.toLowerCase()}-btn`}
                 key={item}
                 onClick={() => {
                   changeDisplay(item);
@@ -53,6 +55,8 @@ const Dropdown = (props) => {
           <h5 className="dropdown-display-title">Pick a weight:</h5>
           <button
             className="dropbtn-inner"
+            data-testid="dropbtn-inner"
+            id="small-btn"
             onClick={() => {
               changeDisplay(null, "small");
             }}
@@ -63,6 +67,8 @@ const Dropdown = (props) => {
           {/* Show only big pokemon (>100kg) */}
           <button
             className="dropbtn-inner"
+            data-testid="dropbtn-inner"
+            id="big-btn"
             onClick={() => {
               changeDisplay(null, "big");
             }}
@@ -79,6 +85,8 @@ const Dropdown = (props) => {
           {/* Show only short pokemon */}
           <button
             className="dropbtn-inner"
+            data-testid="dropbtn-inner"
+            id="short-btn"
             onClick={() => {
               changeDisplay(null, null, "short");
             }}
@@ -89,6 +97,8 @@ const Dropdown = (props) => {
           {/* Show only tall pokemon */}
           <button
             className="dropbtn-inner"
+            data-testid="dropbtn-inner"
+            id="tall-btn"
             onClick={() => {
               changeDisplay(null, null, "tall");
             }}
