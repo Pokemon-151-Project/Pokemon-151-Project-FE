@@ -10,6 +10,7 @@ test("Renders without errors", () => {
 });
 
 test("Renders the expect segments of the header", () => {
-  const h1 = screen.getByText(/pokemon display/i);
+  render(<Header />);
+  const h1 = screen.queryByText(/pokemon display/i);
   expect(h1).toBeInTheDocument();
 });
