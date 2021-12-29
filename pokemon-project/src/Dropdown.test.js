@@ -14,3 +14,5 @@ test("All dropdown buttons render", () => {
   expect(buttons).toBeTruthy();
   console.log("Buttons:", buttons);
 });
+
+test("Button removes pokemon it's supposed to", () => {});

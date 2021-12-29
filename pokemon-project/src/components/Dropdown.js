@@ -34,6 +34,7 @@ const Dropdown = (props) => {
               <button
                 className="dropbtn-inner"
                 data-testid="dropbtn-inner"
+                id={`${item.toLowerCase()}-btn`}
                 key={item}
                 onClick={() => {
                   changeDisplay(item);
@@ -55,6 +56,7 @@ const Dropdown = (props) => {
           <button
             className="dropbtn-inner"
             data-testid="dropbtn-inner"
+            id="small-btn"
             onClick={() => {
               changeDisplay(null, "small");
             }}
@@ -66,6 +68,7 @@ const Dropdown = (props) => {
           <button
             className="dropbtn-inner"
             data-testid="dropbtn-inner"
+            id="big-btn"
             onClick={() => {
               changeDisplay(null, "big");
             }}
@@ -83,6 +86,7 @@ const Dropdown = (props) => {
           <button
             className="dropbtn-inner"
             data-testid="dropbtn-inner"
+            id="short-btn"
             onClick={() => {
               changeDisplay(null, null, "short");
             }}
@@ -94,6 +98,7 @@ const Dropdown = (props) => {
           <button
             className="dropbtn-inner"
             data-testid="dropbtn-inner"
+            id="tall-btn"
             onClick={() => {
               changeDisplay(null, null, "tall");
             }}
