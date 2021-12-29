@@ -35,6 +35,8 @@ Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive d
 []Style buttons in dropdown
 
 Testing: Test for basic functionality
+[X]All header elements show up
+[x] test line: delete this later
 []All cards show up on screen
 []All buttons appear in header
 []Buttons do what they're supposed to
