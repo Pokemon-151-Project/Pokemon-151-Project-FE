@@ -12,5 +12,12 @@ test("Renders without errors", () => {
 test("Renders the expect segments of the header", () => {
   render(<Header />);
   const h1 = screen.queryByText(/pokemon display/i);
+  const author = screen.queryByText(/author: adam hinton/i);
+  const source = screen.queryByText(/author/i);
+  const dropbtn = screen.queryByText(/display options/i);
+
+  expect(author).toBeInTheDocument();
   expect(h1).toBeInTheDocument();
+  expect(source).toBeInTheDocument();
+  expect(dropbtn).toBeVisible();
 });
