@@ -13,6 +13,9 @@ body {
 header {
   background-color: rgb(46, 37, 37);
   color: rgb(221, 203, 203);
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
