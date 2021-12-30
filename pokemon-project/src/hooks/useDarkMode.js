@@ -14,27 +14,30 @@ const useDarkMode = () => {
   useEffect(() => {
     const className = "dark";
 
+    //This will be useful in a minute when we want to
     const pokeCards = window.document.querySelectorAll(".pokemon-card");
-    // console.log(pokeCards);
 
     if (isDark) {
+      //This adds .dark class to both body and each individual pokemon card
       window.document.body.classList.add(className);
       pokeCards.forEach((item) => {
         item.classList.add(className);
-        // console.log(item.classList);
       });
     } else {
+      //this removes .dark class from both body and individual pokemon card
       window.document.body.classList.remove(className);
       pokeCards.forEach((item) => {
         item.classList.remove(className);
-        // console.log(item.classList);
       });
     }
     try {
+      //This stores user darkmode preference in local storage
       window.localStorage.setItem(key, isDark);
     } catch (e) {
+      //returns an error if setting preference is unsuccessful
       console.error("Error in setting preference");
     }
+    //makes this function call every time someone hits the darkmode button
   }, [isDark]);
 
   return [isDark, setIsDark];
