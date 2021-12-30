@@ -16,25 +16,27 @@ const Header = (props) => {
       <div className="adam-info">
         <h2>Author: Adam Hinton</h2>
 
-        <a
-          href="https://github.com/adamhinton/pokemon-project"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Source
-        </a>
+        <div className="header-links">
+          <a
+            href="https://github.com/adamhinton/pokemon-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Source
+          </a>
 
-        <a
-          href="https://bulbapedia.bulbagarden.net"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Bulbapedia
-        </a>
+          <a
+            href="https://bulbapedia.bulbagarden.net"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Bulbapedia
+          </a>
 
-        <a href="https://pokeapi.co" target="_blank" rel="noreferrer">
-          PokeAPI
-        </a>
+          <a href="https://pokeapi.co" target="_blank" rel="noreferrer">
+            PokeAPI
+          </a>
+        </div>
       </div>
     </header>
   );
