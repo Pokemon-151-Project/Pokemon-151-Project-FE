@@ -1,9 +1,7 @@
 import Header from "../components/Header";
-/* eslint-disable testing-library/no-node-access */
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
-//test line: blah blah blah (delete this later)
 
 test("Component renders without errors", () => {
   render(<Header />);

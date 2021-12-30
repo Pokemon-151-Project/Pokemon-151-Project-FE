@@ -27,7 +27,6 @@ Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive d
 
 Testing: Test for basic functionality
 [X]All header elements show up
-[x] test line: delete this later
 [X]All cards show up on screen
 [X]All buttons appear in header
 [X]Buttons do what they're supposed to
