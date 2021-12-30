@@ -8,6 +8,26 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   text-align: center;
+  --button-text: #000;
+  --button-bg: #fff;
+}
+
+body.dark {
+  background-color: #000;
+  color: #fff;
+  --button-text: #fff;
+  --button-bg: #000;
+}
+
+.toggle_btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 header {
