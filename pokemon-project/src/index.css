@@ -13,14 +13,66 @@ body {
 header {
   background-color: rgb(46, 37, 37);
   color: rgb(221, 203, 203);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
   margin-top: 0;
+  font-size: 2.25rem;
 }
 
-/* BEGIN HEADER DROPDOWN SECTION */
-/* Dropdown Button */
+.header-item {
+  width: 30%;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: rgb(221, 203, 203);
+  text-decoration: underline;
+}
+
+/* This is the point at which the header started looking weird. I couldn't find anything in particular to change for lower screen widths. */
+@media screen and (max-width: 860px) {
+  header {
+    flex-direction: column;
+  }
+
+  /* So the header doesn't take up the whole screen */
+  .header-item {
+    margin: 0;
+  }
+
+  .header-item {
+    width: 100%;
+  }
+
+  /* I want the dropdown at the bottom of the header column */
+  .dropdown {
+    order: 1;
+    margin-top: 1%;
+  }
+
+  /* Making my links horizontal instead of vertical to take up less space */
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* giving links a little breathing */
+  .header-nav a {
+    margin: 0 1%;
+  }
+}
+
+/* BEGIN HEADER DROPDOWN SECTION */ /* Dropdown Button */
 .dropbtn {
   font-family: "Arima Madurai", cursive;
   background-color: #5ccbc5;
