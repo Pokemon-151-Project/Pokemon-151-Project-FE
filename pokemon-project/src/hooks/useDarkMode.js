@@ -12,7 +12,6 @@ const useDarkMode = () => {
   });
 
   useEffect(() => {
-    console.log("rendering");
     const className = "dark";
 
     //This will be useful in a minute when we want to
@@ -38,7 +37,6 @@ const useDarkMode = () => {
       //returns an error if setting preference is unsuccessful
       console.error("Error in setting preference");
     }
-    //makes this function call every time someone hits the darkmode button
   });
 
   return [isDark, setIsDark];
