@@ -16,7 +16,7 @@ const Header = (props) => {
       <div className="adam-info">
         <h2 className="header-item">Author: Adam Hinton</h2>
 
-        <section className="header-links header-item">
+        <nav className="header-nav header-item">
           <a
             href="https://github.com/adamhinton/pokemon-project"
             target="_blank"
@@ -36,7 +36,7 @@ const Header = (props) => {
           <a href="https://pokeapi.co" target="_blank" rel="noreferrer">
             PokeAPI
           </a>
-        </section>
+        </nav>
       </div>
     </header>
   );
