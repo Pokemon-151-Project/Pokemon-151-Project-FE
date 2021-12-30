@@ -28,6 +28,4 @@ test("AllPokemon renders correctly with certain props, then rerenders when those
   rerender(<AllPokemon pokemon={fakePokemon} />);
 
   expect(fakeName).toBeTruthy();
-
-  console.log("Fake Name:", fakeName);
 });
