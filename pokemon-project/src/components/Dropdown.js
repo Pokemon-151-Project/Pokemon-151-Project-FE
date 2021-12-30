@@ -21,7 +21,7 @@ const Dropdown = (props) => {
     "Dragon",
   ];
   return (
-    <section className="dropdown header-item">
+    <section className="dropdown">
       {/* Hovering here shows the dropdown menu with display options */}
       <button className="dropbtn">Display Options (check this out!)</button>
 
