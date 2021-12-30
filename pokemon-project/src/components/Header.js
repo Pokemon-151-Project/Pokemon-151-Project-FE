@@ -7,7 +7,7 @@ const Header = (props) => {
   const { changeDisplay } = props;
   return (
     <header>
-      <h1>Pokemon Display</h1>
+      <h1 className="header-item">Pokemon Display</h1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <Dropdown changeDisplay={changeDisplay} />
@@ -16,7 +16,7 @@ const Header = (props) => {
       <div className="adam-info">
         <h2 className="header-item">Author: Adam Hinton</h2>
 
-        <div className="header-links header-item">
+        <section className="header-links header-item">
           <a
             href="https://github.com/adamhinton/pokemon-project"
             target="_blank"
@@ -36,7 +36,7 @@ const Header = (props) => {
           <a href="https://pokeapi.co" target="_blank" rel="noreferrer">
             PokeAPI
           </a>
-        </div>
+        </section>
       </div>
     </header>
   );
