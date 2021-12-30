@@ -22,13 +22,10 @@ header {
 header h1 {
   margin-top: 0;
   font-size: 2.25rem;
-  /* position: fixed; */
 }
 
 .header-item {
-  /* border: 1px solid red; */
   width: 30%;
-  /* border: 1px solid blue; */
 }
 
 .dropbtn {
@@ -48,8 +45,36 @@ header h1 {
   text-decoration: underline;
 }
 
-/* BEGIN HEADER DROPDOWN SECTION */
-/* Dropdown Button */
+@media screen and (max-width: 860px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-item {
+    margin: 0;
+  }
+
+  .header-item {
+    width: 60%;
+  }
+
+  .dropdown {
+    order: 1;
+    margin-top: 1%;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header-nav a {
+    margin: 0 1%;
+  }
+}
+
+/* BEGIN HEADER DROPDOWN SECTION */ /* Dropdown Button */
 .dropbtn {
   font-family: "Arima Madurai", cursive;
   background-color: #5ccbc5;
