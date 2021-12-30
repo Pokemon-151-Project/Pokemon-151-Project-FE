@@ -40,6 +40,7 @@ header h1 {
 
 /* This is the point at which the header started looking weird. I couldn't find anything in particular to change for lower screen widths. */
 @media screen and (max-width: 860px) {
+  /* Making the header a column to avoid crowding */
   header {
     flex-direction: column;
   }
@@ -66,11 +67,12 @@ header h1 {
     justify-content: center;
   }
 
-  /* giving links a little breathing */
+  /* giving links a little breathing room*/
   .header-nav a {
     margin: 0 1%;
   }
 }
+/* End media query section */
 
 /* BEGIN HEADER DROPDOWN SECTION */ /* Dropdown Button */
 .dropbtn {
