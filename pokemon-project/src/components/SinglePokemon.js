@@ -13,7 +13,7 @@ const SinglePokemon = (props) => {
       <h2 className="poke-name card-item">{name}</h2>
 
       {/* This returns basic type information. Singular if only one type, plural if two types. */}
-      {poke.type[1] ? (
+      {type[1] ? (
         <h3>
           Types: {type[0]} / {type[1]}{" "}
         </h3>
