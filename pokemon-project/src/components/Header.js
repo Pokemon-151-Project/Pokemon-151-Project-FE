@@ -9,6 +9,9 @@ const Header = (props) => {
     <header>
       <h1>Pokemon Display</h1>
 
+      {/* Begin display options dropdown. See Dropdown.js */}
+      <Dropdown changeDisplay={changeDisplay} />
+
       {/* section for info about me */}
       <div className="adam-info">
         <h2>Author: Adam Hinton</h2>
@@ -21,9 +24,6 @@ const Header = (props) => {
           Source
         </a>
       </div>
-
-      {/* Begin display options dropdown. See Dropdown.js */}
-      <Dropdown changeDisplay={changeDisplay} />
     </header>
   );
 };
