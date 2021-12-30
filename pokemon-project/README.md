@@ -1,46 +1,37 @@
 MVP:
 [X] AllPokemon: DIsplays 151 instances of SinglePokemon
 
--[] Display options:
+-[X] Display options:
 [X}Clickable options to display different pokemon based on type, weaknesses, size, whatever.
 [X]Make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
 
 Dex Entries:
 [X] Find an API with dex entries
 [X]-Edit data.js (use a mapping function to copy the dex entries in)
-[]-Only show first few words of dex entry. Show full entry on hover.
--Maybe this actually doesn't work well
 
 Header:
 -Basic info
-[X]link to my github
+[X]link to my github, Bulbapedia, PokeAPI
 [X] separate component for Dropdown content, nested in Header
 [X] - sub-fields for type, size, height
 
 Footer: Same as Header
 -Maybe not same as header. Link to source code.
 
-Routing: Use React Router to navigate between display options.
--Based in Header dropdown
--Actually, seems like routing isn't even necessary
-
 Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive design, shrinks with screen.
-[X]-Little card areas for each pokemon -Stretch: Make it look like a pokemon card?
--Eh probably not
--[] Add in an emoji or something based on the Pokemon's type
--[] breakpoints for different screen sizes
--Change header layout
--Not sure how much there is to do with the body
--The cards seem to look fine on mobile. Maybe make them larger so each card takes up full screen?
-[]Style buttons in dropdown
+[X]-Little card areas for each pokemon
+[] Add in an emoji or something based on the Pokemon's type
+[X] breakpoints for different screen sizes
+[X]Especially responsive header layout
+[X]Style buttons in dropdown
 
 Testing: Test for basic functionality
 [X]All header elements show up
 [x] test line: delete this later
-[]All cards show up on screen
-[]All buttons appear in header
-[]Buttons do what they're supposed to
-[] Portions of card (type, name, dex etc) render
+[X]All cards show up on screen
+[X]All buttons appear in header
+[X]Buttons do what they're supposed to
+[X] Portions of card (type, name, dex etc) render
 []DarkMode does what it's supposed to (if I implement DarkMode)
 
 Stretch:
