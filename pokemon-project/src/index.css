@@ -23,6 +23,7 @@ body.dark {
   background-color: var(--button-bg);
   color: var(--button-text);
   cursor: pointer;
+  border: none;
 }
 
 .logo {
