@@ -12,5 +12,4 @@ test("All dropdown buttons render", () => {
   render(<Dropdown />);
   const buttons = screen.queryAllByTestId("dropbtn-inner");
   expect(buttons).toBeTruthy();
-  console.log("Buttons:", buttons);
 });
