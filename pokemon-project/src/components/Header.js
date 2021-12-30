@@ -13,10 +13,10 @@ const Header = (props) => {
       <Dropdown changeDisplay={changeDisplay} />
 
       {/* section for info about me */}
-      <div className="adam-info">
-        <h2 className="header-item">Author: Adam Hinton</h2>
+      <section className="adam-info header-item">
+        <h2>Author: Adam Hinton</h2>
 
-        <nav className="header-nav header-item">
+        <nav className="header-nav">
           <a
             href="https://github.com/adamhinton/pokemon-project"
             target="_blank"
@@ -37,7 +37,7 @@ const Header = (props) => {
             PokeAPI
           </a>
         </nav>
-      </div>
+      </section>
     </header>
   );
 };
