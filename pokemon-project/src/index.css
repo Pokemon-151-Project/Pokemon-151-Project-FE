@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #5ec5c0;
+  background-color: #3c9893;
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   text-align: center;
@@ -22,11 +22,13 @@ header h1 {
 /* BEGIN HEADER DROPDOWN SECTION */
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px;
+  font-family: "Arima Madurai", cursive;
+  background-color: #5ccbc5;
+  color: black;
   font-size: 1rem;
   border: none;
+  padding: 0.65rem;
+  border-radius: 30px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -89,13 +91,14 @@ header h1 {
   box-sizing: border-box;
   width: 12rem;
   margin: 2%;
-  background-color: #a5ebeb;
+  background-color: #bef8f8;
 }
 
 /* This is every individual item (name, height, weight, image, etc) in the pokemon card */
 .card-item {
   margin-left: 1.2%;
   margin-right: 1.2%;
+  margin: 3%;
 }
 
 /* making sure each image is wide enough within its card */
