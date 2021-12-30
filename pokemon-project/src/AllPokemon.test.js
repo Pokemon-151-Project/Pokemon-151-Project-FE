@@ -4,7 +4,7 @@ import "@testing-library/jest-dom";
 
 const fakePokemon = [
   {
-    name: "Pokeman",
+    name: "Fake Pokemon Name",
     type: "Death Type",
     img: "https://google.com",
     dexEntry: "blah blah blah",
@@ -14,10 +14,19 @@ const fakePokemon = [
 ];
 
 //NEED TO UN-COMMENT RENDER AND SCREEN AND ALLpOKEMON IMPORTS
-test("AllPokemon renders without errors with no props, then rerenfers with correct props", () => {
+test("AllPokemon renders without errors", () => {
+  render(<AllPokemon pokemon={fakePokemon} />);
+});
+
+test("AllPokemon renders correctly with certain props, then rerenders when those props change", () => {
   const { rerender } = render(<AllPokemon pokemon={[]} />);
+  const fakeName = screen.queryAllByText(/fake pokemon name/i);
+
+  expect(fakeName).toStrictEqual([]);
 
   rerender(<AllPokemon pokemon={fakePokemon} />);
-  //returning undefined for now until I figure out how to define pokemon
-  return undefined;
+
+  expect(fakeName).toBeTruthy();
+
+  console.log("Fake Name:", fakeName);
 });
