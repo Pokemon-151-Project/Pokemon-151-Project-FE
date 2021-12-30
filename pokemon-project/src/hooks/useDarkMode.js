@@ -13,12 +13,22 @@ const useDarkMode = () => {
 
   useEffect(() => {
     const className = "dark";
+
+    const pokeCards = window.document.querySelectorAll(".pokemon-card");
+    // console.log(pokeCards);
+
     if (isDark) {
       window.document.body.classList.add(className);
-      //   document.querySelectorAll(".pokemon-card").className.add(className);
+      pokeCards.forEach((item) => {
+        item.classList.add(className);
+        // console.log(item.classList);
+      });
     } else {
       window.document.body.classList.remove(className);
-      //   document.querySelectorAll(".pokemon-card").classList.remove(className);
+      pokeCards.forEach((item) => {
+        item.classList.remove(className);
+        // console.log(item.classList);
+      });
     }
     try {
       window.localStorage.setItem(key, isDark);
