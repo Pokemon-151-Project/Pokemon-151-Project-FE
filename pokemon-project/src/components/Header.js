@@ -10,21 +10,23 @@ const Header = (props) => {
   const { changeDisplay } = props;
   return (
     <header>
-      <section className="h1-darkmode">
-        <h1 className="header-item">Pokemon Display</h1>
-        <div className="logo">Dark Mode</div>
-        <button
-          className="toggle_btn"
-          onClick={() => {
-            setDarkMode(!isDarkMode);
-          }}
-        >
-          {isDarkMode ? (
-            <BsSun color="#ff0" size="24" title="Switch to light mode" />
-          ) : (
-            <BsMoon size="24" title="Switch to dark mode" />
-          )}
-        </button>
+      <section className="h1-and-darkmodebtn header-item">
+        <h1>Pokemon Display</h1>
+        <div className="darkmode-section">
+          <div className="logo">Dark Mode</div>
+          <button
+            className="toggle_btn"
+            onClick={() => {
+              setDarkMode(!isDarkMode);
+            }}
+          >
+            {isDarkMode ? (
+              <BsSun color="#ff0" size="24" title="Switch to light mode" />
+            ) : (
+              <BsMoon size="24" title="Switch to dark mode" />
+            )}
+          </button>
+        </div>
       </section>
 
       {/* Begin display options dropdown. See Dropdown.js */}
