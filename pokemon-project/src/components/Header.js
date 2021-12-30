@@ -3,6 +3,7 @@ import React from "react";
 import Dropdown from "./Dropdown";
 
 import useDarkMode from "../hooks/useDarkMode";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
@@ -18,7 +19,11 @@ const Header = (props) => {
             setDarkMode(!isDarkMode);
           }}
         >
-          Toggle
+          {isDarkMode ? (
+            <BsSun color="#ff0" size="24" title="Switch to light mode" />
+          ) : (
+            <BsMoon size="24" title="Switch to dark mode" />
+          )}
         </button>
       </section>
 
