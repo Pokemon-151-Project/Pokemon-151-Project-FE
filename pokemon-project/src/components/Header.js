@@ -23,6 +23,18 @@ const Header = (props) => {
         >
           Source
         </a>
+
+        <a
+          href="https://bulbapedia.bulbagarden.net"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Bulbapedia
+        </a>
+
+        <a href="https://pokeapi.co" target="_blank" rel="noreferrer">
+          PokeAPI
+        </a>
       </div>
     </header>
   );
