@@ -96,7 +96,7 @@ header h1 {
 .card-item {
   margin-left: 1.2%;
   margin-right: 1.2%;
-  border: 1px solid red;
+  margin: 3%;
 }
 
 /* making sure each image is wide enough within its card */
