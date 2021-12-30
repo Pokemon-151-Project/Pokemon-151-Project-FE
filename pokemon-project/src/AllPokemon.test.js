@@ -2,6 +2,7 @@ import AllPokemon from "./components/AllPokemon";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
+//fake array with one pokemon for testing purposes
 const fakePokemon = [
   {
     name: "Fake Pokemon Name",
@@ -13,12 +14,12 @@ const fakePokemon = [
   },
 ];
 
-//NEED TO UN-COMMENT RENDER AND SCREEN AND ALLpOKEMON IMPORTS
 test("AllPokemon renders without errors", () => {
   render(<AllPokemon pokemon={fakePokemon} />);
 });
 
 test("AllPokemon renders correctly with certain props, then rerenders when those props change", () => {
+  //renders first with empty props array, then renders with fakePokemon (defined above) to make sure it correctly renders with changed props.
   const { rerender } = render(<AllPokemon pokemon={[]} />);
   const fakeName = screen.queryAllByText(/fake pokemon name/i);
 
