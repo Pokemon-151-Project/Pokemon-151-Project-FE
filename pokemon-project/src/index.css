@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #5ec5c0;
+  background-color: #3c9893;
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   text-align: center;
@@ -89,7 +89,7 @@ header h1 {
   box-sizing: border-box;
   width: 12rem;
   margin: 2%;
-  background-color: #a5ebeb;
+  background-color: #bef8f8;
 }
 
 /* This is every individual item (name, height, weight, image, etc) in the pokemon card */
