@@ -7,7 +7,7 @@ const useDarkMode = () => {
     const className = "dark";
     if (isDark) {
       window.document.body.classList.add(className);
-      //   document.querySelectorAll(".pokemon-card").classList.add(className);
+      //   document.querySelectorAll(".pokemon-card").className.add(className);
     } else {
       window.document.body.classList.remove(className);
       //   document.querySelectorAll(".pokemon-card").classList.remove(className);

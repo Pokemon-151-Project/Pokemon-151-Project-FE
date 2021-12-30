@@ -2,12 +2,25 @@ import React from "react";
 
 import Dropdown from "./Dropdown";
 
-//I'd like to style this better. Maybe put h1 on the left, display options in middle, then my info and links on the right.
+import useDarkMode from "../hooks/useDarkMode";
+
 const Header = (props) => {
+  const [isDarkMode, setDarkMode] = useDarkMode();
   const { changeDisplay } = props;
   return (
     <header>
-      <h1 className="header-item">Pokemon Display</h1>
+      <section className="h1-darkmode">
+        <h1 className="header-item">Pokemon Display</h1>
+        <div className="logo">Dark Mode</div>
+        <button
+          className="toggle_btn"
+          onClick={() => {
+            setDarkMode(!isDarkMode);
+          }}
+        >
+          Toggle
+        </button>
+      </section>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <Dropdown changeDisplay={changeDisplay} />
@@ -15,7 +28,6 @@ const Header = (props) => {
       {/* section for info about me */}
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
-
         <nav className="header-nav">
           <a
             href="https://github.com/adamhinton/pokemon-project"
