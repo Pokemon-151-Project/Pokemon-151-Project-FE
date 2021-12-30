@@ -10,7 +10,9 @@ const useDarkMode = () => {
     } else {
       window.document.body.classList.remove(className);
     }
-  });
+  }, [isDark]);
+
+  return [isDark, setIsDark];
 };
 
 export default useDarkMode;
