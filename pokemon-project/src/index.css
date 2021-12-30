@@ -16,17 +16,22 @@ header {
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
   margin-top: 0;
   font-size: 2.25rem;
-  align-self: center;
+  /* position: fixed; */
 }
 
 .header-item {
   /* border: 1px solid red; */
-  margin: 3.5%;
+  width: 30%;
+  /* border: 1px solid blue; */
+}
+
+.dropbtn {
 }
 
 .adam-info {
