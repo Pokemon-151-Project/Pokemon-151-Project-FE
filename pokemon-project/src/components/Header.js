@@ -14,9 +14,9 @@ const Header = (props) => {
 
       {/* section for info about me */}
       <div className="adam-info">
-        <h2>Author: Adam Hinton</h2>
+        <h2 className="header-item">Author: Adam Hinton</h2>
 
-        <div className="header-links">
+        <div className="header-links header-item">
           <a
             href="https://github.com/adamhinton/pokemon-project"
             target="_blank"

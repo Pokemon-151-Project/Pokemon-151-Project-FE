@@ -21,7 +21,7 @@ const Dropdown = (props) => {
     "Dragon",
   ];
   return (
-    <div className="dropdown">
+    <section className="dropdown header-item">
       {/* Hovering here shows the dropdown menu with display options */}
       <button className="dropbtn">Display Options (check this out!)</button>
 
@@ -108,7 +108,7 @@ const Dropdown = (props) => {
         </div>
         {/* End sorting pokemon by height */}
       </div>
-    </div>
+    </section>
   );
 };
 
