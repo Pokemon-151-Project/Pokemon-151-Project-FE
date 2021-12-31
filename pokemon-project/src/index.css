@@ -52,16 +52,9 @@ h1 {
   font-size: 2.25rem;
 }
 
-.h1-and-darkmodebtn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .header-item {
   width: 30%;
   padding: 3%;
-  text-align: center;
 }
 
 .header-nav {
@@ -70,7 +63,6 @@ h1 {
 }
 
 .header-nav a {
-  text-decoration: none;
   color: rgb(221, 203, 203);
   text-decoration: underline;
 }
@@ -87,15 +79,9 @@ h1 {
     margin: 0.75%;
   }
 
-  .darkmode-section {
-    width: 100%;
-  }
-
   /* So the header doesn't take up the whole screen */
   .header-item {
-    margin: 0;
     width: 100%;
-    padding: 1.5%;
   }
 
   .adam-info {
@@ -113,7 +99,7 @@ h1 {
   /* I want the dropdown at the bottom of the header column */
   .dropdown {
     order: 1;
-    margin-top: 0%;
+    margin-top: 0;
   }
 
   /* Making my links horizontal instead of vertical to take up less space */
