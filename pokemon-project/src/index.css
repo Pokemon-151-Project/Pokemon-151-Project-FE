@@ -8,23 +8,53 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   text-align: center;
+  --button-text: #000;
+  --button-bg: #fff;
 }
+
+/* BEGIN DARK MODE STYLING SECTION */
+body.dark {
+  background-color: rgb(45, 60, 66);
+  color: #fff;
+  --button-text: #fff;
+  --button-bg: #000;
+}
+
+.toggle_btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  border: none;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.pokemon-card.dark {
+  /* The styling for just .pokemon-card (without dark mode) is further down the document */
+  background-color: rgb(17, 16, 16);
+  color: rgba(255, 255, 255, 0.721);
+}
+/* END DARK MODE STYLING SECTION */
 
 header {
   background-color: rgb(46, 37, 37);
   color: rgb(221, 203, 203);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
-header h1 {
+h1 {
   margin-top: 0;
   font-size: 2.25rem;
 }
 
 .header-item {
   width: 30%;
+  padding: 3%;
 }
 
 .header-nav {
@@ -33,7 +63,6 @@ header h1 {
 }
 
 .header-nav a {
-  text-decoration: none;
   color: rgb(221, 203, 203);
   text-decoration: underline;
 }
@@ -45,19 +74,32 @@ header h1 {
     flex-direction: column;
   }
 
-  /* So the header doesn't take up the whole screen */
-  .header-item {
-    margin: 0;
+  h1,
+  .darkmode-section {
+    margin: 0.75%;
   }
 
+  /* So the header doesn't take up the whole screen */
   .header-item {
     width: 100%;
+  }
+
+  .adam-info {
+    padding-top: 0;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  .h1-and-darkmodebtn {
+    padding-bottom: 0;
   }
 
   /* I want the dropdown at the bottom of the header column */
   .dropdown {
     order: 1;
-    margin-top: 1%;
+    margin-top: 0;
   }
 
   /* Making my links horizontal instead of vertical to take up less space */
@@ -83,6 +125,7 @@ header h1 {
   border: none;
   padding: 0.65rem;
   border-radius: 30px;
+  margin-bottom: 0.25%;
 }
 
 /* The container <div> - needed to position the dropdown content */
