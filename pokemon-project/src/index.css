@@ -45,6 +45,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 h1 {
