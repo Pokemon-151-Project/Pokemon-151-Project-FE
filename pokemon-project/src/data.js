@@ -801,6 +801,8 @@ const pokemonData = [
         name: "Nidoqueen",
       },
     ],
+    dexEntry:
+      "Although small, its venomous barbs render this Pokemon dangerous.",
   },
   {
     id: 30,
@@ -887,6 +889,8 @@ const pokemonData = [
         name: "Nidoking",
       },
     ],
+    dexEntry:
+      "Nidoran freely moves its ears in any direction. Even the slightest sound does not escape this Pokémon's notice.",
   },
   {
     id: 33,
@@ -2086,7 +2090,7 @@ const pokemonData = [
       },
     ],
     dexEntry:
-      "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes. Not to be confused with the 20% cooler PonyTA.",
+      "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
   },
   {
     id: 78,
