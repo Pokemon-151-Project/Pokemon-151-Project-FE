@@ -25,7 +25,6 @@ body.dark {
   color: var(--button-text);
   cursor: pointer;
   border: none;
-  /* width: 20%; */
 }
 
 .logo {
@@ -51,8 +50,6 @@ header {
 h1 {
   margin-top: 0;
   font-size: 2.25rem;
-  /* width: 100%; */
-  /* border: 1px solid blue; */
 }
 
 .h1-and-darkmodebtn {
@@ -63,7 +60,6 @@ h1 {
 
 .header-item {
   width: 30%;
-  /* border: 1px solid blue; */
   padding: 3%;
   text-align: center;
 }
