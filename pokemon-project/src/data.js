@@ -2752,7 +2752,8 @@ const pokemonData = [
         name: "Marowak",
       },
     ],
-    dexEntry: "Cubone's both cute and completely hardcore.",
+    dexEntry:
+      "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody.",
   },
   {
     id: 105,
