@@ -102,12 +102,16 @@ h1 {
     padding: 1.5%;
   }
 
-  .adam.info {
-    /* padding: 0; */
+  .adam-info {
+    padding-top: 0;
   }
 
   header {
     align-items: center;
+  }
+
+  .h1-and-darkmodebtn {
+    padding-bottom: 0;
   }
 
   /* I want the dropdown at the bottom of the header column */
