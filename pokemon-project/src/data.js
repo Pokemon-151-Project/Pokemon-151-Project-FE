@@ -778,7 +778,7 @@ const pokemonData = [
   {
     id: 29,
     num: "029",
-    name: "Nidoran ♀ (Female)",
+    name: "Nidoran ♀",
     img: "https://www.serebii.net/pokemongo/pokemon/029.png",
     type: ["Poison"],
     height: "0.41 m",
@@ -866,7 +866,7 @@ const pokemonData = [
   {
     id: 32,
     num: "032",
-    name: "Nidoran ♂ (Male)",
+    name: "Nidoran ♂",
     img: "https://www.serebii.net/pokemongo/pokemon/032.png",
     type: ["Poison"],
     height: "0.51 m",
