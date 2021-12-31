@@ -10,9 +10,7 @@ const Header = (props) => {
   const { changeDisplay } = props;
   return (
     <header>
-      <section className="h1-and-darkmodebtn header-item">
-        <h1>Pokemon Display</h1>
-      </section>
+      <h1 className="header-item header-h1">Pokemon Display</h1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section>
