@@ -79,6 +79,7 @@ h1 {
   /* Making the header a column to avoid crowding */
   header {
     flex-direction: column;
+    align-items: center;
   }
 
   h1,
@@ -94,11 +95,6 @@ h1 {
   /* Making the header shorter to take up less screen space */
   .adam-info {
     padding-top: 0;
-  }
-
-  /* Centering the items in the header */
-  header {
-    align-items: center;
   }
 
   /* Making header take up less vertical space */
