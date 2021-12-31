@@ -125,7 +125,7 @@ h1 {
     /* max-width: 1600px; */
     display: flex;
     flex-direction: column;
-    margin: 10%;
+    margin: 0 10%;
   }
 }
 
