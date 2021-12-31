@@ -142,6 +142,10 @@ h1 {
   padding: 2%;
 }
 
+.dex-id {
+  font-size: 75%;
+}
+
 /* Each individual pokemon is contained within a .pokemon-card */
 .pokemon-card {
   border: 1px solid black;

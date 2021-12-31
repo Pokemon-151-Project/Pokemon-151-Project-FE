@@ -5,12 +5,14 @@ const SinglePokemon = (props) => {
   const { poke } = props;
 
   //destructuring the keys in poke to make my JSX a little more concise
-  const { name, type, img, dexEntry, height, weight } = poke;
+  const { name, type, img, dexEntry, height, weight, id } = poke;
 
   return (
     <div className="pokemon-card">
       {/* Pokemon's name */}
-      <h2 className="poke-name card-item">{name}</h2>
+      <h2 className="poke-name card-item">
+        {name} <span className="dex-id">#{id}</span>
+      </h2>
 
       {/* This returns basic type information. Singular if only one type, plural if two types. */}
       {type[1] ? (
