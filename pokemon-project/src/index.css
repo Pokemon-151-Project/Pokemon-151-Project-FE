@@ -121,8 +121,6 @@ h1 {
 /* Begin media query max-length section */
 @media screen and (min-width: 1600px) {
   .App {
-    border: 5px solid blue;
-    /* max-width: 1600px; */
     display: flex;
     flex-direction: column;
     margin: 0 10%;
