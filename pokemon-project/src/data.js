@@ -778,7 +778,7 @@ const pokemonData = [
   {
     id: 29,
     num: "029",
-    name: "Nidoran ♀ (Female)",
+    name: "Nidoran ♀",
     img: "https://www.serebii.net/pokemongo/pokemon/029.png",
     type: ["Poison"],
     height: "0.41 m",
@@ -801,6 +801,8 @@ const pokemonData = [
         name: "Nidoqueen",
       },
     ],
+    dexEntry:
+      "Although small, its venomous barbs render this Pokemon dangerous.",
   },
   {
     id: 30,
@@ -864,7 +866,7 @@ const pokemonData = [
   {
     id: 32,
     num: "032",
-    name: "Nidoran ♂ (Male)",
+    name: "Nidoran ♂",
     img: "https://www.serebii.net/pokemongo/pokemon/032.png",
     type: ["Poison"],
     height: "0.51 m",
@@ -887,6 +889,8 @@ const pokemonData = [
         name: "Nidoking",
       },
     ],
+    dexEntry:
+      "Nidoran freely moves its ears in any direction. Even the slightest sound does not escape this Pokémon's notice.",
   },
   {
     id: 33,
@@ -2086,7 +2090,7 @@ const pokemonData = [
       },
     ],
     dexEntry:
-      "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes. Not to be confused with the 20% cooler PonyTA.",
+      "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
   },
   {
     id: 78,
@@ -2748,7 +2752,8 @@ const pokemonData = [
         name: "Marowak",
       },
     ],
-    dexEntry: "Cubone's both cute and completely hardcore.",
+    dexEntry:
+      "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody.",
   },
   {
     id: 105,
