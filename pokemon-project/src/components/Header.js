@@ -12,6 +12,10 @@ const Header = (props) => {
     <header>
       <section className="h1-and-darkmodebtn header-item">
         <h1>Pokemon Display</h1>
+      </section>
+
+      {/* Begin display options dropdown. See Dropdown.js */}
+      <section>
         <div className="darkmode-section">
           <div className="logo">Dark Mode</div>
           <button
@@ -27,10 +31,8 @@ const Header = (props) => {
             )}
           </button>
         </div>
+        <Dropdown changeDisplay={changeDisplay} />
       </section>
-
-      {/* Begin display options dropdown. See Dropdown.js */}
-      <Dropdown changeDisplay={changeDisplay} />
 
       {/* section for info about me */}
       <section className="adam-info header-item">
