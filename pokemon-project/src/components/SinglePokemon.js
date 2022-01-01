@@ -9,7 +9,7 @@ const SinglePokemon = (props) => {
 
   return (
     <div className="pokemon-card">
-      {/* Pokemon's name */}
+      {/* Pokemon's name and pokedx id#*/}
       <h2 className="poke-name card-item">
         {name} <span className="dex-id">#{id}</span>
       </h2>

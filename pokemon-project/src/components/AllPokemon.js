@@ -2,7 +2,7 @@ import React from "react";
 import SinglePokemon from "./SinglePokemon";
 
 const AllPokemon = (props) => {
-  //This is the data object containing all the pokemon's info
+  //props.pokemon is the data object containing all the pokemon's info
   const { pokemon } = props;
   return (
     <section className="all-pokemon">
