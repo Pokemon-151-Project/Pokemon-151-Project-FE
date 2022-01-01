@@ -22,6 +22,7 @@ const Header = (props) => {
           <div className="logo">Dark Mode</div>
           <button
             className="toggle_btn"
+            data-testid="toggle_btn"
             onClick={() => {
               setDarkMode(!isDarkMode);
             }}
