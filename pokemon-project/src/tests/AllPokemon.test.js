@@ -2,6 +2,8 @@ import AllPokemon from "../components/AllPokemon";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
+//I've ensured these tests are falsifiable by altering variables and expects
+
 //fake array with one pokemon for testing purposes
 const fakePokemon = [
   {
