@@ -13,6 +13,7 @@ function App() {
   // const [darkMode, setDarkMode] = useState(false)
 
   //This function is the heart of the entire project. It allows you to press a button in the header dropdown to show only pokemon of a certain type, height, or size.
+  //If a type is passed in, it sorts by that type. If a size is passed in, it sorts by that size. If a height is passed in, it osrts by that size. Nothing else will ever be passed in unless the code is written with more button options.
   const changeDisplay = (type = null, size = null, height = null) => {
     const newData = data.filter((item) => {
       if (type) {
@@ -24,6 +25,7 @@ function App() {
         const heightInt = item.height.split(" ")[0];
         return height === "short" ? heightInt < 0.4 : heightInt > 2;
       }
+      //I don't think returning null is necsesary here but VSCode gave me a warning until I did it.
       return null;
     });
     setPokemon(newData);
