@@ -62,6 +62,8 @@ test("AllPokemon renders correctly with certain props, then rerenders when those
 });
 
 test("Can render multiple pokemon", () => {
+  //Passing in an array with multiple pokemon to make sure it renders all of them
+
   render(<AllPokemon pokemon={multFakePokemon} />);
 
   const name1 = screen.queryByText(/fake pokemon name/i);
