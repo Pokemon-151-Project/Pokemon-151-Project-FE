@@ -1,7 +1,9 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from "@testing-library/react";
-// import userEvent from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 import App from "../App";
+
+//I've ensured these tests are falsifiable by altering variables and expects
 
 test("renders without errors", () => {
   render(<App />);
@@ -18,4 +20,17 @@ test("renders child components", () => {
 
   const bulba = screen.getByText(/bulbasaur/i);
   expect(bulba).toBeInTheDocument();
+});
+
+test("Toggles Dark Mode", () => {
+  //Verifies that hitting darkmode toggle will add "dark" class to each pokemon card
+
+  render(<App />);
+  let cardOne = document.querySelector(".pokemon-card");
+  expect(cardOne).not.toHaveClass("dark");
+
+  const darkBtn = screen.getByTestId("toggle_btn");
+  userEvent.click(darkBtn);
+
+  expect(cardOne).toHaveClass("dark");
 });
