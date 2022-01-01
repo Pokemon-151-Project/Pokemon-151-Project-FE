@@ -59,7 +59,6 @@ h1 {
 }
 
 .header-item {
-  /* Each item is about 30% of the width of the document */
   width: 30%;
   padding: 3%;
 }
