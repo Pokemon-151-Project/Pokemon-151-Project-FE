@@ -39,6 +39,7 @@ body.dark {
   /* The styling for just .pokemon-card (without dark mode) is further down the document */
   background-color: rgb(17, 16, 16);
   color: rgba(255, 255, 255, 0.721);
+  border: 1px solid white;
 }
 /* END DARK MODE STYLING SECTION */
 
