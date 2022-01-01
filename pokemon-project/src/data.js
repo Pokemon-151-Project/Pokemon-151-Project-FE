@@ -10,13 +10,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.71 m",
     weight: "6.9 kg",
-    candy: "Bulbasaur Candy",
-    candy_count: 25,
-    egg: "2 km",
-    spawn_chance: 0.69,
-    avg_spawns: 69,
-    spawn_time: "20:00",
-    multipliers: [1.58],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     next_evolution: [
       {
@@ -39,13 +32,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.99 m",
     weight: "13.0 kg",
-    candy: "Bulbasaur Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.042,
-    avg_spawns: 4.2,
-    spawn_time: "07:00",
-    multipliers: [1.2, 1.6],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     prev_evolution: [
       {
@@ -70,13 +56,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "2.01 m",
     weight: "100.0 kg",
-    candy: "Bulbasaur Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.017,
-    avg_spawns: 1.7,
-    spawn_time: "11:30",
-    multipliers: null,
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     prev_evolution: [
       {
         num: "001",
@@ -98,13 +77,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.61 m",
     weight: "8.5 kg",
-    candy: "Charmander Candy",
-    candy_count: 25,
-    egg: "2 km",
-    spawn_chance: 0.253,
-    avg_spawns: 25.3,
-    spawn_time: "08:45",
-    multipliers: [1.65],
     weaknesses: ["Water", "Ground", "Rock"],
     next_evolution: [
       {
@@ -127,13 +99,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.09 m",
     weight: "19.0 kg",
-    candy: "Charmander Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.012,
-    avg_spawns: 1.2,
-    spawn_time: "19:00",
-    multipliers: [1.79],
     weaknesses: ["Water", "Ground", "Rock"],
     prev_evolution: [
       {
@@ -158,13 +123,6 @@ const pokemonData = [
     type: ["Fire", "Flying"],
     height: "1.70 m",
     weight: "90.5 kg",
-    candy: "Charmander Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0031,
-    avg_spawns: 0.31,
-    spawn_time: "13:34",
-    multipliers: null,
-    weaknesses: ["Water", "Electric", "Rock"],
     prev_evolution: [
       {
         num: "004",
@@ -186,13 +144,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.51 m",
     weight: "9.0 kg",
-    candy: "Squirtle Candy",
-    candy_count: 25,
-    egg: "2 km",
-    spawn_chance: 0.58,
-    avg_spawns: 58,
-    spawn_time: "04:25",
-    multipliers: [2.1],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -215,13 +166,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.99 m",
     weight: "22.5 kg",
-    candy: "Squirtle Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.034,
-    avg_spawns: 3.4,
-    spawn_time: "07:02",
-    multipliers: [1.4],
     weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
@@ -246,13 +190,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.60 m",
     weight: "85.5 kg",
-    candy: "Squirtle Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0067,
-    avg_spawns: 0.67,
-    spawn_time: "00:06",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
         num: "007",
@@ -274,13 +211,6 @@ const pokemonData = [
     type: ["Bug"],
     height: "0.30 m",
     weight: "2.9 kg",
-    candy: "Caterpie Candy",
-    candy_count: 12,
-    egg: "2 km",
-    spawn_chance: 3.032,
-    avg_spawns: 303.2,
-    spawn_time: "16:35",
-    multipliers: [1.05],
     weaknesses: ["Fire", "Flying", "Rock"],
     next_evolution: [
       {
@@ -303,13 +233,6 @@ const pokemonData = [
     type: ["Bug"],
     height: "0.71 m",
     weight: "9.9 kg",
-    candy: "Caterpie Candy",
-    candy_count: 50,
-    egg: "Not in Eggs",
-    spawn_chance: 0.187,
-    avg_spawns: 18.7,
-    spawn_time: "02:11",
-    multipliers: [3.55, 3.79],
     weaknesses: ["Fire", "Flying", "Rock"],
     prev_evolution: [
       {
@@ -334,13 +257,6 @@ const pokemonData = [
     type: ["Bug", "Flying"],
     height: "1.09 m",
     weight: "32.0 kg",
-    candy: "Caterpie Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.022,
-    avg_spawns: 2.2,
-    spawn_time: "05:23",
-    multipliers: null,
-    weaknesses: ["Fire", "Electric", "Ice", "Flying", "Rock"],
     prev_evolution: [
       {
         num: "010",
@@ -362,13 +278,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.30 m",
     weight: "3.2 kg",
-    candy: "Weedle Candy",
-    candy_count: 12,
-    egg: "2 km",
-    spawn_chance: 7.12,
-    avg_spawns: 712,
-    spawn_time: "02:21",
-    multipliers: [1.01, 1.09],
     weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
     next_evolution: [
       {
@@ -391,13 +300,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.61 m",
     weight: "10.0 kg",
-    candy: "Weedle Candy",
-    candy_count: 50,
-    egg: "Not in Eggs",
-    spawn_chance: 0.44,
-    avg_spawns: 44,
-    spawn_time: "02:30",
-    multipliers: [3.01, 3.41],
     weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
     prev_evolution: [
       {
@@ -422,13 +324,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.99 m",
     weight: "29.5 kg",
-    candy: "Weedle Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.051,
-    avg_spawns: 5.1,
-    spawn_time: "04:50",
-    multipliers: null,
-    weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
     prev_evolution: [
       {
         num: "013",
@@ -450,13 +345,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "0.30 m",
     weight: "1.8 kg",
-    candy: "Pidgey Candy",
-    candy_count: 12,
-    egg: "2 km",
-    spawn_chance: 15.98,
-    avg_spawns: 1.598,
-    spawn_time: "01:34",
-    multipliers: [1.71, 1.92],
     weaknesses: ["Electric", "Rock"],
     next_evolution: [
       {
@@ -479,13 +367,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.09 m",
     weight: "30.0 kg",
-    candy: "Pidgey Candy",
-    candy_count: 50,
-    egg: "Not in Eggs",
-    spawn_chance: 1.02,
-    avg_spawns: 102,
-    spawn_time: "01:30",
-    multipliers: [1.79],
     weaknesses: ["Electric", "Rock"],
     prev_evolution: [
       {
@@ -510,13 +391,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.50 m",
     weight: "39.5 kg",
-    candy: "Pidgey Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.13,
-    avg_spawns: 13,
-    spawn_time: "01:50",
-    multipliers: null,
-    weaknesses: ["Electric", "Rock"],
     prev_evolution: [
       {
         num: "016",
@@ -538,13 +412,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.30 m",
     weight: "3.5 kg",
-    candy: "Rattata Candy",
-    candy_count: 25,
-    egg: "2 km",
-    spawn_chance: 13.05,
-    avg_spawns: 1.305,
-    spawn_time: "01:55",
-    multipliers: [2.55, 2.73],
     weaknesses: ["Fighting"],
     next_evolution: [
       {
@@ -563,13 +430,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.71 m",
     weight: "18.5 kg",
-    candy: "Rattata Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.41,
-    avg_spawns: 41,
-    spawn_time: "01:56",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     prev_evolution: [
       {
         num: "019",
@@ -587,13 +447,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "0.30 m",
     weight: "2.0 kg",
-    candy: "Spearow Candy",
-    candy_count: 50,
-    egg: "2 km",
-    spawn_chance: 4.73,
-    avg_spawns: 473,
-    spawn_time: "12:25",
-    multipliers: [2.66, 2.68],
     weaknesses: ["Electric", "Rock"],
     next_evolution: [
       {
@@ -612,13 +465,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.19 m",
     weight: "38.0 kg",
-    candy: "Spearow Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.15,
-    avg_spawns: 15,
-    spawn_time: "01:11",
-    multipliers: null,
-    weaknesses: ["Electric", "Rock"],
     prev_evolution: [
       {
         num: "021",
@@ -636,13 +482,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "2.01 m",
     weight: "6.9 kg",
-    candy: "Ekans Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 2.27,
-    avg_spawns: 227,
-    spawn_time: "12:20",
-    multipliers: [2.21, 2.27],
     weaknesses: ["Ground", "Psychic"],
     next_evolution: [
       {
@@ -661,13 +500,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "3.51 m",
     weight: "65.0 kg",
-    candy: "Ekans Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.072,
-    avg_spawns: 7.2,
-    spawn_time: "01:50",
-    multipliers: null,
-    weaknesses: ["Ground", "Psychic"],
     prev_evolution: [
       {
         num: "023",
@@ -685,13 +517,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.41 m",
     weight: "6.0 kg",
-    candy: "Pikachu Candy",
-    candy_count: 50,
-    egg: "2 km",
-    spawn_chance: 0.21,
-    avg_spawns: 21,
-    spawn_time: "04:00",
-    multipliers: [2.34],
     weaknesses: ["Ground"],
     next_evolution: [
       {
@@ -710,13 +535,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.79 m",
     weight: "30.0 kg",
-    candy: "Pikachu Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0076,
-    avg_spawns: 0.76,
-    spawn_time: "23:58",
-    multipliers: null,
-    weaknesses: ["Ground"],
     prev_evolution: [
       {
         num: "025",
@@ -734,13 +552,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.61 m",
     weight: "12.0 kg",
-    candy: "Sandshrew Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 1.11,
-    avg_spawns: 111,
-    spawn_time: "01:58",
-    multipliers: [2.45],
     weaknesses: ["Water", "Grass", "Ice"],
     next_evolution: [
       {
@@ -759,13 +570,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.99 m",
     weight: "29.5 kg",
-    candy: "Sandshrew Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.037,
-    avg_spawns: 3.7,
-    spawn_time: "12:34",
-    multipliers: null,
-    weaknesses: ["Water", "Grass", "Ice"],
     prev_evolution: [
       {
         num: "027",
@@ -783,13 +587,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.41 m",
     weight: "7.0 kg",
-    candy: "Nidoran ♀ (Female) Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 1.38,
-    avg_spawns: 138,
-    spawn_time: "01:51",
-    multipliers: [1.63, 2.48],
     weaknesses: ["Ground", "Psychic"],
     next_evolution: [
       {
@@ -812,13 +609,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.79 m",
     weight: "20.0 kg",
-    candy: "Nidoran ♀ (Female) Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.088,
-    avg_spawns: 8.8,
-    spawn_time: "07:22",
-    multipliers: [1.83, 2.48],
     weaknesses: ["Ground", "Psychic"],
     prev_evolution: [
       {
@@ -843,13 +633,6 @@ const pokemonData = [
     type: ["Poison", "Ground"],
     height: "1.30 m",
     weight: "60.0 kg",
-    candy: "Nidoran ♀ (Female) Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.012,
-    avg_spawns: 1.2,
-    spawn_time: "12:35",
-    multipliers: null,
-    weaknesses: ["Water", "Ice", "Ground", "Psychic"],
     prev_evolution: [
       {
         num: "029",
@@ -871,13 +654,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.51 m",
     weight: "9.0 kg",
-    candy: "Nidoran ♂ (Male) Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 1.31,
-    avg_spawns: 131,
-    spawn_time: "01:12",
-    multipliers: [1.64, 1.7],
     weaknesses: ["Ground", "Psychic"],
     next_evolution: [
       {
@@ -900,13 +676,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.89 m",
     weight: "19.5 kg",
-    candy: "Nidoran ♂ (Male) Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.083,
-    avg_spawns: 8.3,
-    spawn_time: "09:02",
-    multipliers: [1.83],
     weaknesses: ["Ground", "Psychic"],
     prev_evolution: [
       {
@@ -931,13 +700,6 @@ const pokemonData = [
     type: ["Poison", "Ground"],
     height: "1.40 m",
     weight: "62.0 kg",
-    candy: "Nidoran ♂ (Male) Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.017,
-    avg_spawns: 1.7,
-    spawn_time: "12:16",
-    multipliers: null,
-    weaknesses: ["Water", "Ice", "Ground", "Psychic"],
     prev_evolution: [
       {
         num: "032",
@@ -959,13 +721,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.61 m",
     weight: "7.5 kg",
-    candy: "Clefairy Candy",
-    candy_count: 50,
-    egg: "2 km",
-    spawn_chance: 0.92,
-    avg_spawns: 92,
-    spawn_time: "03:30",
-    multipliers: [2.03, 2.14],
     weaknesses: ["Fighting"],
     next_evolution: [
       {
@@ -984,13 +739,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "1.30 m",
     weight: "40.0 kg",
-    candy: "Clefairy Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.012,
-    avg_spawns: 1.2,
-    spawn_time: "03:29",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     prev_evolution: [
       {
         num: "035",
@@ -1008,13 +756,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.61 m",
     weight: "9.9 kg",
-    candy: "Vulpix Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.22,
-    avg_spawns: 22,
-    spawn_time: "13:43",
-    multipliers: [2.74, 2.81],
     weaknesses: ["Water", "Ground", "Rock"],
     next_evolution: [
       {
@@ -1033,13 +774,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.09 m",
     weight: "19.9 kg",
-    candy: "Vulpix Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0077,
-    avg_spawns: 0.77,
-    spawn_time: "01:32",
-    multipliers: null,
-    weaknesses: ["Water", "Ground", "Rock"],
     prev_evolution: [
       {
         num: "037",
@@ -1057,13 +791,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.51 m",
     weight: "5.5 kg",
-    candy: "Jigglypuff Candy",
-    candy_count: 50,
-    egg: "2 km",
-    spawn_chance: 0.39,
-    avg_spawns: 39,
-    spawn_time: "08:46",
-    multipliers: [1.85],
     weaknesses: ["Fighting"],
     next_evolution: [
       {
@@ -1082,13 +809,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.99 m",
     weight: "12.0 kg",
-    candy: "Jigglypuff Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.018,
-    avg_spawns: 1.8,
-    spawn_time: "12:28",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     prev_evolution: [
       {
         num: "039",
@@ -1106,13 +826,6 @@ const pokemonData = [
     type: ["Poison", "Flying"],
     height: "0.79 m",
     weight: "7.5 kg",
-    candy: "Zubat Candy",
-    candy_count: 50,
-    egg: "2 km",
-    spawn_chance: 6.52,
-    avg_spawns: 652,
-    spawn_time: "12:28",
-    multipliers: [2.6, 3.67],
     weaknesses: ["Electric", "Ice", "Psychic", "Rock"],
     next_evolution: [
       {
@@ -1131,13 +844,6 @@ const pokemonData = [
     type: ["Poison", "Flying"],
     height: "1.60 m",
     weight: "55.0 kg",
-    candy: "Zubat Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.42,
-    avg_spawns: 42,
-    spawn_time: "02:15",
-    multipliers: null,
-    weaknesses: ["Electric", "Ice", "Psychic", "Rock"],
     prev_evolution: [
       {
         num: "041",
@@ -1155,13 +861,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.51 m",
     weight: "5.4 kg",
-    candy: "Oddish Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 1.02,
-    avg_spawns: 102,
-    spawn_time: "03:58",
-    multipliers: [1.5],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     next_evolution: [
       {
@@ -1184,13 +883,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.79 m",
     weight: "8.6 kg",
-    candy: "Oddish Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.064,
-    avg_spawns: 6.4,
-    spawn_time: "11:33",
-    multipliers: [1.49],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     prev_evolution: [
       {
@@ -1215,13 +907,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "1.19 m",
     weight: "18.6 kg",
-    candy: "Oddish Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0097,
-    avg_spawns: 0.97,
-    spawn_time: "23:58",
-    multipliers: null,
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     prev_evolution: [
       {
         num: "043",
@@ -1243,13 +928,6 @@ const pokemonData = [
     type: ["Bug", "Grass"],
     height: "0.30 m",
     weight: "5.4 kg",
-    candy: "Paras Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 2.36,
-    avg_spawns: 236,
-    spawn_time: "01:42",
-    multipliers: [2.02],
     weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug", "Rock"],
     next_evolution: [
       {
@@ -1268,13 +946,6 @@ const pokemonData = [
     type: ["Bug", "Grass"],
     height: "0.99 m",
     weight: "29.5 kg",
-    candy: "Paras Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.074,
-    avg_spawns: 7.4,
-    spawn_time: "01:22",
-    multipliers: null,
-    weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug", "Rock"],
     prev_evolution: [
       {
         num: "046",
@@ -1292,13 +963,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.99 m",
     weight: "30.0 kg",
-    candy: "Venonat Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 2.28,
-    avg_spawns: 228,
-    spawn_time: "02:31",
-    multipliers: [1.86, 1.9],
     weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
     next_evolution: [
       {
@@ -1317,13 +981,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "1.50 m",
     weight: "12.5 kg",
-    candy: "Venonat Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.072,
-    avg_spawns: 7.2,
-    spawn_time: "23:40",
-    multipliers: null,
-    weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
     prev_evolution: [
       {
         num: "048",
@@ -1341,13 +998,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.20 m",
     weight: "0.8 kg",
-    candy: "Diglett Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.4,
-    avg_spawns: 40,
-    spawn_time: "02:22",
-    multipliers: [2.69],
     weaknesses: ["Water", "Grass", "Ice"],
     next_evolution: [
       {
@@ -1366,13 +1016,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.71 m",
     weight: "33.3 kg",
-    candy: "Dugtrio",
-    egg: "Not in Eggs",
-    spawn_chance: 0.014,
-    avg_spawns: 1.4,
-    spawn_time: "12:37",
-    multipliers: null,
-    weaknesses: ["Water", "Grass", "Ice"],
     prev_evolution: [
       {
         num: "050",
@@ -1390,13 +1033,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.41 m",
     weight: "4.2 kg",
-    candy: "Meowth Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.86,
-    avg_spawns: 86,
-    spawn_time: "02:54",
-    multipliers: [1.98],
     weaknesses: ["Fighting"],
     next_evolution: [
       {
@@ -1415,13 +1051,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.99 m",
     weight: "32.0 kg",
-    candy: "Meowth Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.022,
-    avg_spawns: 2.2,
-    spawn_time: "02:44",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     prev_evolution: [
       {
         num: "052",
@@ -1439,13 +1068,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.79 m",
     weight: "19.6 kg",
-    candy: "Psyduck Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 2.54,
-    avg_spawns: 254,
-    spawn_time: "03:41",
-    multipliers: [2.27],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -1464,13 +1086,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.70 m",
     weight: "76.6 kg",
-    candy: "Psyduck Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.087,
-    avg_spawns: 8.7,
-    spawn_time: "23:06",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
         num: "054",
@@ -1488,13 +1103,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "0.51 m",
     weight: "28.0 kg",
-    candy: "Mankey Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.92,
-    avg_spawns: 92,
-    spawn_time: "12:52",
-    multipliers: [2.17, 2.28],
     weaknesses: ["Flying", "Psychic", "Fairy"],
     next_evolution: [
       {
@@ -1513,13 +1121,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "0.99 m",
     weight: "32.0 kg",
-    candy: "Mankey Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.031,
-    avg_spawns: 3.1,
-    spawn_time: "12:33",
-    multipliers: null,
-    weaknesses: ["Flying", "Psychic", "Fairy"],
     prev_evolution: [
       {
         num: "056",
@@ -1537,13 +1138,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.71 m",
     weight: "19.0 kg",
-    candy: "Growlithe Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.92,
-    avg_spawns: 92,
-    spawn_time: "03:57",
-    multipliers: [2.31, 2.36],
     weaknesses: ["Water", "Ground", "Rock"],
     next_evolution: [
       {
@@ -1562,13 +1156,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.91 m",
     weight: "155.0 kg",
-    candy: "Growlithe Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.017,
-    avg_spawns: 1.7,
-    spawn_time: "03:11",
-    multipliers: null,
-    weaknesses: ["Water", "Ground", "Rock"],
     prev_evolution: [
       {
         num: "058",
@@ -1586,13 +1173,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.61 m",
     weight: "12.4 kg",
-    candy: "Poliwag Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 2.19,
-    avg_spawns: 219,
-    spawn_time: "03:40",
-    multipliers: [1.72, 1.73],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -1615,13 +1195,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.99 m",
     weight: "20.0 kg",
-    candy: "Poliwag Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.13,
-    avg_spawns: 13,
-    spawn_time: "09:14",
-    multipliers: [1.95],
     weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
@@ -1646,13 +1219,6 @@ const pokemonData = [
     type: ["Water", "Fighting"],
     height: "1.30 m",
     weight: "54.0 kg",
-    candy: "Poliwag Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.011,
-    avg_spawns: 1.1,
-    spawn_time: "01:32",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Flying", "Psychic", "Fairy"],
     prev_evolution: [
       {
         num: "060",
@@ -1674,13 +1240,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "0.89 m",
     weight: "19.5 kg",
-    candy: "Abra Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 0.42,
-    avg_spawns: 42,
-    spawn_time: "04:30",
-    multipliers: [1.36, 1.95],
     weaknesses: ["Bug", "Ghost", "Dark"],
     next_evolution: [
       {
@@ -1703,13 +1262,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.30 m",
     weight: "56.5 kg",
-    candy: "Abra Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.027,
-    avg_spawns: 2.7,
-    spawn_time: "11:25",
-    multipliers: [1.4],
     weaknesses: ["Bug", "Ghost", "Dark"],
     prev_evolution: [
       {
@@ -1734,13 +1286,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.50 m",
     weight: "48.0 kg",
-    candy: "Abra Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0073,
-    avg_spawns: 0.73,
-    spawn_time: "12:33",
-    multipliers: null,
-    weaknesses: ["Bug", "Ghost", "Dark"],
     prev_evolution: [
       {
         num: "063",
@@ -1762,13 +1307,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "0.79 m",
     weight: "19.5 kg",
-    candy: "Machop Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 0.49,
-    avg_spawns: 49,
-    spawn_time: "01:55",
-    multipliers: [1.64, 1.65],
     weaknesses: ["Flying", "Psychic", "Fairy"],
     next_evolution: [
       {
@@ -1791,13 +1329,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "1.50 m",
     weight: "70.5 kg",
-    candy: "Machop Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.034,
-    avg_spawns: 3.4,
-    spawn_time: "10:32",
-    multipliers: [1.7],
     weaknesses: ["Flying", "Psychic", "Fairy"],
     prev_evolution: [
       {
@@ -1822,13 +1353,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "1.60 m",
     weight: "130.0 kg",
-    candy: "Machop Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0068,
-    avg_spawns: 0.68,
-    spawn_time: "02:55",
-    multipliers: null,
-    weaknesses: ["Flying", "Psychic", "Fairy"],
     prev_evolution: [
       {
         num: "066",
@@ -1850,13 +1374,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.71 m",
     weight: "4.0 kg",
-    candy: "Bellsprout Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 1.15,
-    avg_spawns: 115,
-    spawn_time: "04:10",
-    multipliers: [1.57],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     next_evolution: [
       {
@@ -1879,13 +1396,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.99 m",
     weight: "6.4 kg",
-    candy: "Bellsprout Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.072,
-    avg_spawns: 7.2,
-    spawn_time: "09:45",
-    multipliers: [1.59],
     weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     prev_evolution: [
       {
@@ -1910,13 +1420,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "1.70 m",
     weight: "15.5 kg",
-    candy: "Bellsprout Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0059,
-    avg_spawns: 0.59,
-    spawn_time: "12:19",
-    multipliers: null,
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
     prev_evolution: [
       {
         num: "069",
@@ -1938,13 +1441,6 @@ const pokemonData = [
     type: ["Water", "Poison"],
     height: "0.89 m",
     weight: "45.5 kg",
-    candy: "Tentacool Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.81,
-    avg_spawns: 81,
-    spawn_time: "03:20",
-    multipliers: [2.52],
     weaknesses: ["Electric", "Ground", "Psychic"],
     next_evolution: [
       {
@@ -1963,13 +1459,6 @@ const pokemonData = [
     type: ["Water", "Poison"],
     height: "1.60 m",
     weight: "55.0 kg",
-    candy: "Tentacool Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.082,
-    avg_spawns: 8.2,
-    spawn_time: "23:36",
-    multipliers: null,
-    weaknesses: ["Electric", "Ground", "Psychic"],
     prev_evolution: [
       {
         num: "072",
@@ -1987,13 +1476,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "0.41 m",
     weight: "20.0 kg",
-    candy: "Geodude Candy",
-    candy_count: 25,
-    egg: "2 km",
-    spawn_chance: 1.19,
-    avg_spawns: 119,
-    spawn_time: "12:40",
-    multipliers: [1.75, 1.76],
     weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
     next_evolution: [
       {
@@ -2016,13 +1498,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "0.99 m",
     weight: "105.0 kg",
-    candy: "Geodude Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.071,
-    avg_spawns: 7.1,
-    spawn_time: "04:53",
-    multipliers: [1.64, 1.72],
     weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
     prev_evolution: [
       {
@@ -2047,13 +1522,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "1.40 m",
     weight: "300.0 kg",
-    candy: "Geodude Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0047,
-    avg_spawns: 0.47,
-    spawn_time: "12:16",
-    multipliers: null,
-    weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
     prev_evolution: [
       {
         num: "074",
@@ -2075,13 +1543,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.99 m",
     weight: "30.0 kg",
-    candy: "Ponyta Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.51,
-    avg_spawns: 51,
-    spawn_time: "02:50",
-    multipliers: [1.48, 1.5],
     weaknesses: ["Water", "Ground", "Rock"],
     next_evolution: [
       {
@@ -2100,13 +1561,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.70 m",
     weight: "95.0 kg",
-    candy: "Ponyta Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.011,
-    avg_spawns: 1.1,
-    spawn_time: "04:00",
-    multipliers: null,
-    weaknesses: ["Water", "Ground", "Rock"],
     prev_evolution: [
       {
         num: "077",
@@ -2124,13 +1578,6 @@ const pokemonData = [
     type: ["Water", "Psychic"],
     height: "1.19 m",
     weight: "36.0 kg",
-    candy: "Slowpoke Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 1.05,
-    avg_spawns: 105,
-    spawn_time: "07:12",
-    multipliers: [2.21],
     weaknesses: ["Electric", "Grass", "Bug", "Ghost", "Dark"],
     next_evolution: [
       {
@@ -2149,13 +1596,6 @@ const pokemonData = [
     type: ["Water", "Psychic"],
     height: "1.60 m",
     weight: "78.5 kg",
-    candy: "Slowpoke Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.036,
-    avg_spawns: 3.6,
-    spawn_time: "02:56",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Bug", "Ghost", "Dark"],
     prev_evolution: [
       {
         num: "079",
@@ -2173,13 +1613,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.30 m",
     weight: "6.0 kg",
-    candy: "Magnemite Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.71,
-    avg_spawns: 71,
-    spawn_time: "04:04",
-    multipliers: [2.16, 2.17],
     weaknesses: ["Fire", "Water", "Ground"],
     next_evolution: [
       {
@@ -2198,13 +1631,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.99 m",
     weight: "60.0 kg",
-    candy: "Magnemite Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.023,
-    avg_spawns: 2.3,
-    spawn_time: "15:25",
-    multipliers: null,
-    weaknesses: ["Fire", "Water", "Ground"],
     prev_evolution: [
       {
         num: "081",
@@ -2222,13 +1648,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "0.79 m",
     weight: "15.0 kg",
-    candy: "None",
-    egg: "5 km",
-    spawn_chance: 0.0212,
-    avg_spawns: 2.12,
-    spawn_time: "01:09",
-    multipliers: null,
-    weaknesses: ["Electric", "Rock"],
     dexEntry:
       "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
   },
@@ -2240,13 +1659,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.40 m",
     weight: "39.2 kg",
-    candy: "Doduo Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.52,
-    avg_spawns: 52,
-    spawn_time: "05:10",
-    multipliers: [2.19, 2.24],
     weaknesses: ["Electric", "Rock"],
     next_evolution: [
       {
@@ -2265,13 +1677,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.80 m",
     weight: "85.2 kg",
-    candy: "Doduo Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.22,
-    avg_spawns: 22,
-    spawn_time: "02:12",
-    multipliers: null,
-    weaknesses: ["Electric", "Rock"],
     prev_evolution: [
       {
         num: "084",
@@ -2289,13 +1694,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.09 m",
     weight: "90.0 kg",
-    candy: "Seel Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.28,
-    avg_spawns: 28,
-    spawn_time: "06:46",
-    multipliers: [1.04, 1.96],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -2314,13 +1712,6 @@ const pokemonData = [
     type: ["Water", "Ice"],
     height: "1.70 m",
     weight: "120.0 kg",
-    candy: "Seel Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.013,
-    avg_spawns: 1.3,
-    spawn_time: "06:04",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Fighting", "Rock"],
     prev_evolution: [
       {
         num: "086",
@@ -2338,13 +1729,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.89 m",
     weight: "30.0 kg",
-    candy: "Grimer Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.052,
-    avg_spawns: 5.2,
-    spawn_time: "15:11",
-    multipliers: [2.44],
     weaknesses: ["Ground", "Psychic"],
     next_evolution: [
       {
@@ -2363,13 +1747,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "1.19 m",
     weight: "30.0 kg",
-    candy: "Grimer Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0031,
-    avg_spawns: 0.31,
-    spawn_time: "01:28",
-    multipliers: null,
-    weaknesses: ["Ground", "Psychic"],
     prev_evolution: [
       {
         num: "088",
@@ -2387,13 +1764,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.30 m",
     weight: "4.0 kg",
-    candy: "Shellder Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.52,
-    avg_spawns: 52,
-    spawn_time: "07:39",
-    multipliers: [2.65],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -2412,13 +1782,6 @@ const pokemonData = [
     type: ["Water", "Ice"],
     height: "1.50 m",
     weight: "132.5 kg",
-    candy: "Shellder Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.015,
-    avg_spawns: 1.5,
-    spawn_time: "02:33",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Fighting", "Rock"],
     prev_evolution: [
       {
         num: "090",
@@ -2436,13 +1799,6 @@ const pokemonData = [
     type: ["Ghost", "Poison"],
     height: "1.30 m",
     weight: "0.1 kg",
-    candy: "Gastly Candy",
-    candy_count: 25,
-    egg: "5 km",
-    spawn_chance: 0.79,
-    avg_spawns: 79,
-    spawn_time: "04:21",
-    multipliers: [1.78],
     weaknesses: ["Ground", "Psychic", "Ghost", "Dark"],
     next_evolution: [
       {
@@ -2465,13 +1821,6 @@ const pokemonData = [
     type: ["Ghost", "Poison"],
     height: "1.60 m",
     weight: "0.1 kg",
-    candy: "Gastly Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.052,
-    avg_spawns: 5.2,
-    spawn_time: "00:10",
-    multipliers: [1.56, 1.8],
     weaknesses: ["Ground", "Psychic", "Ghost", "Dark"],
     prev_evolution: [
       {
@@ -2496,13 +1845,6 @@ const pokemonData = [
     type: ["Ghost", "Poison"],
     height: "1.50 m",
     weight: "40.5 kg",
-    candy: "Gastly Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0067,
-    avg_spawns: 0.67,
-    spawn_time: "03:55",
-    multipliers: null,
-    weaknesses: ["Ground", "Psychic", "Ghost", "Dark"],
     prev_evolution: [
       {
         num: "092",
@@ -2524,13 +1866,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "8.79 m",
     weight: "210.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.1,
-    avg_spawns: 10,
-    spawn_time: "01:18",
-    multipliers: null,
-    weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
     dexEntry:
       "It rapidly bores through the ground at 50 mph by squirming and twisting its massive, rugged body.",
   },
@@ -2542,13 +1877,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "0.99 m",
     weight: "32.4 kg",
-    candy: "Drowzee Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 3.21,
-    avg_spawns: 321,
-    spawn_time: "01:51",
-    multipliers: [2.08, 2.09],
     weaknesses: ["Bug", "Ghost", "Dark"],
     next_evolution: [
       {
@@ -2567,13 +1895,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.60 m",
     weight: "75.6 kg",
-    candy: "Drowzee Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.1,
-    avg_spawns: 10,
-    spawn_time: "02:17",
-    multipliers: null,
-    weaknesses: ["Bug", "Ghost", "Dark"],
     prev_evolution: [
       {
         num: "096",
@@ -2591,13 +1912,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.41 m",
     weight: "6.5 kg",
-    candy: "Krabby Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 2.12,
-    avg_spawns: 212,
-    spawn_time: "03:33",
-    multipliers: [2.36, 2.4],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -2616,13 +1930,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.30 m",
     weight: "60.0 kg",
-    candy: "Krabby Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.062,
-    avg_spawns: 6.2,
-    spawn_time: "03:44",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
         num: "098",
@@ -2640,13 +1947,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.51 m",
     weight: "10.4 kg",
-    candy: "Voltorb Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.65,
-    avg_spawns: 65,
-    spawn_time: "04:36",
-    multipliers: [2.01, 2.02],
     weaknesses: ["Ground"],
     next_evolution: [
       {
@@ -2665,13 +1965,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "1.19 m",
     weight: "66.6 kg",
-    candy: "Voltorb Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.02,
-    avg_spawns: 2,
-    spawn_time: "04:10",
-    multipliers: null,
-    weaknesses: ["Ground"],
     prev_evolution: [
       {
         num: "100",
@@ -2689,13 +1982,6 @@ const pokemonData = [
     type: ["Grass", "Psychic"],
     height: "0.41 m",
     weight: "2.5 kg",
-    candy: "Exeggcute Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.78,
-    avg_spawns: 78,
-    spawn_time: "09:09",
-    multipliers: [2.7, 3.18],
     weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug", "Ghost", "Dark"],
     next_evolution: [
       {
@@ -2714,13 +2000,6 @@ const pokemonData = [
     type: ["Grass", "Psychic"],
     height: "2.01 m",
     weight: "120.0 kg",
-    candy: "Exeggcute Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.014,
-    avg_spawns: 1.4,
-    spawn_time: "12:34",
-    multipliers: null,
-    weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug", "Ghost", "Dark"],
     prev_evolution: [
       {
         num: "102",
@@ -2738,13 +2017,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.41 m",
     weight: "6.5 kg",
-    candy: "Cubone Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.61,
-    avg_spawns: 61,
-    spawn_time: "01:51",
-    multipliers: [1.67],
     weaknesses: ["Water", "Grass", "Ice"],
     next_evolution: [
       {
@@ -2763,13 +2035,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.99 m",
     weight: "45.0 kg",
-    candy: "Cubone Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.02,
-    avg_spawns: 2,
-    spawn_time: "03:59",
-    multipliers: null,
-    weaknesses: ["Water", "Grass", "Ice"],
     prev_evolution: [
       {
         num: "104",
@@ -2787,13 +2052,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "1.50 m",
     weight: "49.8 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.02,
-    avg_spawns: 2,
-    spawn_time: "03:59",
-    multipliers: null,
-    weaknesses: ["Flying", "Psychic", "Fairy"],
     dexEntry:
       "If it starts kicking repeatedly, both legs will stretch even longer to strike a fleeing foe.",
   },
@@ -2805,13 +2063,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "1.40 m",
     weight: "50.2 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.022,
-    avg_spawns: 2.2,
-    spawn_time: "05:58",
-    multipliers: null,
-    weaknesses: ["Flying", "Psychic", "Fairy"],
     dexEntry:
       "Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.",
   },
@@ -2823,13 +2074,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "1.19 m",
     weight: "65.5 kg",
-    candy: "None",
-    egg: "5 km",
-    spawn_chance: 0.011,
-    avg_spawns: 1.1,
-    spawn_time: "02:46",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "Its tongue spans almost 7 feet and moves more freely than its forelegs. Its licks can cause paralysis.",
   },
@@ -2841,13 +2085,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.61 m",
     weight: "1.0 kg",
-    candy: "Koffing Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.2,
-    avg_spawns: 20,
-    spawn_time: "08:16",
-    multipliers: [1.11],
     weaknesses: ["Ground", "Psychic"],
     next_evolution: [
       {
@@ -2866,13 +2103,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "1.19 m",
     weight: "9.5 kg",
-    candy: "Koffing Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.016,
-    avg_spawns: 1.6,
-    spawn_time: "12:17",
-    multipliers: null,
-    weaknesses: ["Ground", "Psychic"],
     prev_evolution: [
       {
         num: "109",
@@ -2890,13 +2120,6 @@ const pokemonData = [
     type: ["Ground", "Rock"],
     height: "0.99 m",
     weight: "115.0 kg",
-    candy: "Rhyhorn Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 0.63,
-    avg_spawns: 63,
-    spawn_time: "03:21",
-    multipliers: [1.91],
     weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
     next_evolution: [
       {
@@ -2915,13 +2138,6 @@ const pokemonData = [
     type: ["Ground", "Rock"],
     height: "1.91 m",
     weight: "120.0 kg",
-    candy: "Rhyhorn Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.022,
-    avg_spawns: 2.2,
-    spawn_time: "05:50",
-    multipliers: null,
-    weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
     prev_evolution: [
       {
         num: "111",
@@ -2939,13 +2155,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "1.09 m",
     weight: "34.6 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.013,
-    avg_spawns: 1.3,
-    spawn_time: "04:46",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "Being few in number and difficult to capture, it is said to bring happiness to the Trainer who catches it.",
   },
@@ -2957,13 +2166,6 @@ const pokemonData = [
     type: ["Grass"],
     height: "0.99 m",
     weight: "35.0 kg",
-    candy: "None",
-    egg: "5 km",
-    spawn_chance: 0.228,
-    avg_spawns: 22.8,
-    spawn_time: "23:13",
-    multipliers: null,
-    weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug"],
     dexEntry:
       "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks.",
   },
@@ -2975,13 +2177,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "2.21 m",
     weight: "80.0 kg",
-    candy: "None",
-    egg: "5 km",
-    spawn_chance: 0.0086,
-    avg_spawns: 0.86,
-    spawn_time: "02:40",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "To protect its young, it will never give up during battle, no matter how badly wounded it is.",
   },
@@ -2993,13 +2188,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.41 m",
     weight: "8.0 kg",
-    candy: "Horsea Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 1.13,
-    avg_spawns: 113,
-    spawn_time: "02:53",
-    multipliers: [2.23],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -3018,13 +2206,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.19 m",
     weight: "25.0 kg",
-    candy: "Horsea Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.034,
-    avg_spawns: 3.4,
-    spawn_time: "03:18",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
         num: "116",
@@ -3042,13 +2223,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.61 m",
     weight: "15.0 kg",
-    candy: "Goldeen Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 2.18,
-    avg_spawns: 218,
-    spawn_time: "03:14",
-    multipliers: [2.15, 2.2],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -3067,13 +2241,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.30 m",
     weight: "39.0 kg",
-    candy: "Goldeen Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.08,
-    avg_spawns: 8,
-    spawn_time: "05:21",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
         num: "118",
@@ -3091,13 +2258,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.79 m",
     weight: "34.5 kg",
-    candy: "Staryu Candy",
-    candy_count: 50,
-    egg: "5 km",
-    spawn_chance: 1.95,
-    avg_spawns: 195,
-    spawn_time: "22:59",
-    multipliers: [2.38, 2.41],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -3116,13 +2276,6 @@ const pokemonData = [
     type: ["Water", "Psychic"],
     height: "1.09 m",
     weight: "80.0 kg",
-    candy: "Staryu Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.034,
-    avg_spawns: 3.4,
-    spawn_time: "06:57",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Bug", "Ghost", "Dark"],
     prev_evolution: [
       {
         num: "120",
@@ -3140,13 +2293,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.30 m",
     weight: "54.5 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.0031,
-    avg_spawns: 0.31,
-    spawn_time: "01:51",
-    multipliers: null,
-    weaknesses: ["Bug", "Ghost", "Dark"],
     dexEntry:
       "Always practices its pantomime act. It makes enemies believe something exists that really doesn't.",
   },
@@ -3158,13 +2304,6 @@ const pokemonData = [
     type: ["Bug", "Flying"],
     height: "1.50 m",
     weight: "56.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.14,
-    avg_spawns: 14,
-    spawn_time: "05:43",
-    multipliers: null,
-    weaknesses: ["Fire", "Electric", "Ice", "Flying", "Rock"],
     dexEntry:
       "Its blindingly fast speed adds to the sharpness of its twin forearm scythes which can slice through thick logs in one wicked stroke.",
   },
@@ -3176,13 +2315,6 @@ const pokemonData = [
     type: ["Ice", "Psychic"],
     height: "1.40 m",
     weight: "40.6 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.35,
-    avg_spawns: 35,
-    spawn_time: "05:41",
-    multipliers: null,
-    weaknesses: ["Fire", "Bug", "Rock", "Ghost", "Dark", "Steel"],
     dexEntry:
       "It has several different cry patterns, each of which seems to have its own meaning.",
   },
@@ -3194,13 +2326,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "1.09 m",
     weight: "30.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.074,
-    avg_spawns: 7.4,
-    spawn_time: "04:28",
-    multipliers: null,
-    weaknesses: ["Ground"],
     dexEntry:
       "Electricity runs across the surface of its body. In darkness, its entire body glows a whitish-blue.",
   },
@@ -3212,13 +2337,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.30 m",
     weight: "44.5 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.1,
-    avg_spawns: 10,
-    spawn_time: "20:36",
-    multipliers: null,
-    weaknesses: ["Water", "Ground", "Rock"],
     dexEntry:
       "The fiery surface of its body gives off a wavering, rippling glare that is similar to the sun.",
   },
@@ -3230,13 +2348,6 @@ const pokemonData = [
     type: ["Bug"],
     height: "1.50 m",
     weight: "55.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.99,
-    avg_spawns: 99,
-    spawn_time: "03:25",
-    multipliers: null,
-    weaknesses: ["Fire", "Flying", "Rock"],
     dexEntry:
       "When the temperature drops at night, it sleeps on treetops or among roots where it is well hidden.",
   },
@@ -3248,13 +2359,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "1.40 m",
     weight: "88.4 kg",
-    candy: "None",
-    egg: "5 km",
-    spawn_chance: 0.12,
-    avg_spawns: 12,
-    spawn_time: "00:37",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "They fight each other by locking horns. The herd's protector takes pride in its battle-scarred horns.",
   },
@@ -3266,13 +2370,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.89 m",
     weight: "10.0 kg",
-    candy: "Magikarp Candy",
-    candy_count: 400,
-    egg: "2 km",
-    spawn_chance: 4.78,
-    avg_spawns: 478,
-    spawn_time: "14:26",
-    multipliers: [10.1, 11.8],
     weaknesses: ["Electric", "Grass"],
     next_evolution: [
       {
@@ -3291,13 +2388,6 @@ const pokemonData = [
     type: ["Water", "Flying"],
     height: "6.50 m",
     weight: "235.0 kg",
-    candy: "Magikarp Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0032,
-    avg_spawns: 0.32,
-    spawn_time: "02:15",
-    multipliers: null,
-    weaknesses: ["Electric", "Rock"],
     prev_evolution: [
       {
         num: "129",
@@ -3315,13 +2405,6 @@ const pokemonData = [
     type: ["Water", "Ice"],
     height: "2.49 m",
     weight: "220.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.006,
-    avg_spawns: 0.6,
-    spawn_time: "08:59",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Fighting", "Rock"],
     dexEntry:
       "Its high intelligence enables it to understand human speech. It likes to ferry people on its back.",
   },
@@ -3333,13 +2416,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.30 m",
     weight: "4.0 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0,
-    avg_spawns: 0,
-    spawn_time: "N/A",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "It can transform into anything. When it sleeps, it changes into a stone to avoid being attacked.",
   },
@@ -3351,13 +2427,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.30 m",
     weight: "6.5 kg",
-    candy: "Eevee Candy",
-    candy_count: 25,
-    egg: "10 km",
-    spawn_chance: 2.75,
-    avg_spawns: 275,
-    spawn_time: "05:32",
-    multipliers: [2.02, 2.64],
     weaknesses: ["Fighting"],
     next_evolution: [
       {
@@ -3384,13 +2453,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.99 m",
     weight: "29.0 kg",
-    candy: "Eevee Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.014,
-    avg_spawns: 1.4,
-    spawn_time: "10:54",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass"],
     prev_evolution: [
       {
         num: "133",
@@ -3408,13 +2470,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.79 m",
     weight: "24.5 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0.012,
-    avg_spawns: 1.2,
-    spawn_time: "02:30",
-    multipliers: null,
-    weaknesses: ["Ground"],
     prev_evolution: [
       {
         num: "133",
@@ -3432,13 +2487,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.89 m",
     weight: "25.0 kg",
-    candy: "Eevee Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.017,
-    avg_spawns: 1.7,
-    spawn_time: "07:02",
-    multipliers: null,
-    weaknesses: ["Water", "Ground", "Rock"],
     prev_evolution: [
       {
         num: "133",
@@ -3456,13 +2504,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.79 m",
     weight: "36.5 kg",
-    candy: "None",
-    egg: "5 km",
-    spawn_chance: 0.012,
-    avg_spawns: 1.2,
-    spawn_time: "02:49",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "A manmade Pokemon that came about as a result of research. It is programmed with only basic motions.",
   },
@@ -3474,13 +2515,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "0.41 m",
     weight: "7.5 kg",
-    candy: "Omanyte Candy",
-    candy_count: 50,
-    egg: "10 km",
-    spawn_chance: 0.14,
-    avg_spawns: 14,
-    spawn_time: "10:23",
-    multipliers: [2.12],
     weaknesses: ["Electric", "Grass", "Fighting", "Ground"],
     next_evolution: [
       {
@@ -3499,13 +2533,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "0.99 m",
     weight: "35.0 kg",
-    candy: "None",
-    egg: "Omanyte Candy",
-    spawn_chance: 0.0061,
-    avg_spawns: 0.61,
-    spawn_time: "05:04",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Fighting", "Ground"],
     prev_evolution: [
       {
         num: "138",
@@ -3523,13 +2550,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "0.51 m",
     weight: "11.5 kg",
-    candy: "Kabuto Candy",
-    candy_count: 50,
-    egg: "10 km",
-    spawn_chance: 0.1,
-    avg_spawns: 10,
-    spawn_time: "00:05",
-    multipliers: [1.97, 2.37],
     weaknesses: ["Electric", "Grass", "Fighting", "Ground"],
     next_evolution: [
       {
@@ -3548,13 +2568,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "1.30 m",
     weight: "40.5 kg",
-    candy: "Kabuto Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0032,
-    avg_spawns: 0.32,
-    spawn_time: "23:40",
-    multipliers: null,
-    weaknesses: ["Electric", "Grass", "Fighting", "Ground"],
     prev_evolution: [
       {
         num: "140",
@@ -3572,13 +2585,6 @@ const pokemonData = [
     type: ["Rock", "Flying"],
     height: "1.80 m",
     weight: "59.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.018,
-    avg_spawns: 1.8,
-    spawn_time: "23:40",
-    multipliers: null,
-    weaknesses: ["Water", "Electric", "Ice", "Rock", "Steel"],
     dexEntry:
       "This vicious Pokemon is said to have flown in ancient skies while shrieking high-pitched cries.",
   },
@@ -3590,13 +2596,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "2.11 m",
     weight: "460.0 kg",
-    candy: "None",
-    egg: "10 km",
-    spawn_chance: 0.016,
-    avg_spawns: 1.6,
-    spawn_time: "23:40",
-    multipliers: null,
-    weaknesses: ["Fighting"],
     dexEntry:
       "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
   },
@@ -3608,13 +2607,6 @@ const pokemonData = [
     type: ["Ice", "Flying"],
     height: "1.70 m",
     weight: "55.4 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0,
-    avg_spawns: 0,
-    spawn_time: "N/A",
-    multipliers: null,
-    weaknesses: ["Fire", "Electric", "Rock", "Steel"],
     dexEntry:
       "A legendary bird Pokemon that is said to appear to doomed people who are lost in icy mountains.",
   },
@@ -3626,13 +2618,6 @@ const pokemonData = [
     type: ["Electric", "Flying"],
     height: "1.60 m",
     weight: "52.6 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0,
-    avg_spawns: 0,
-    spawn_time: "N/A",
-    multipliers: null,
-    weaknesses: ["Ice", "Rock"],
     dexEntry:
       "A legendary Pokémon that is said to live in thunderclouds. It freely controls lightning bolts.",
   },
@@ -3644,13 +2629,6 @@ const pokemonData = [
     type: ["Fire", "Flying"],
     height: "2.01 m",
     weight: "60.0 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0,
-    avg_spawns: 0,
-    spawn_time: "N/A",
-    multipliers: null,
-    weaknesses: ["Water", "Electric", "Rock"],
     dexEntry:
       "This legendary Pokemon scatters embers with every flap of its wings. It is a thrilling sight to behold.",
   },
@@ -3662,13 +2640,6 @@ const pokemonData = [
     type: ["Dragon"],
     height: "1.80 m",
     weight: "3.3 kg",
-    candy: "Dratini Candy",
-    candy_count: 25,
-    egg: "10 km",
-    spawn_chance: 0.3,
-    avg_spawns: 30,
-    spawn_time: "06:41",
-    multipliers: [1.83, 1.84],
     weaknesses: ["Ice", "Dragon", "Fairy"],
     next_evolution: [
       {
@@ -3691,13 +2662,6 @@ const pokemonData = [
     type: ["Dragon"],
     height: "3.99 m",
     weight: "16.5 kg",
-    candy: "Dratini Candy",
-    candy_count: 100,
-    egg: "Not in Eggs",
-    spawn_chance: 0.02,
-    avg_spawns: 2,
-    spawn_time: "11:57",
-    multipliers: [2.05],
     weaknesses: ["Ice", "Dragon", "Fairy"],
     prev_evolution: [
       {
@@ -3722,13 +2686,6 @@ const pokemonData = [
     type: ["Dragon", "Flying"],
     height: "2.21 m",
     weight: "210.0 kg",
-    candy: "Dratini Candy",
-    egg: "Not in Eggs",
-    spawn_chance: 0.0011,
-    avg_spawns: 0.11,
-    spawn_time: "23:38",
-    multipliers: null,
-    weaknesses: ["Ice", "Rock", "Dragon", "Fairy"],
     prev_evolution: [
       {
         num: "147",
@@ -3750,13 +2707,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "2.01 m",
     weight: "122.0 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0,
-    avg_spawns: 0,
-    spawn_time: "N/A",
-    multipliers: null,
-    weaknesses: ["Bug", "Ghost", "Dark"],
     dexEntry:
       "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
   },
@@ -3768,13 +2718,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "0.41 m",
     weight: "4.0 kg",
-    candy: "None",
-    egg: "Not in Eggs",
-    spawn_chance: 0,
-    avg_spawns: 0,
-    spawn_time: "N/A",
-    multipliers: null,
-    weaknesses: ["Bug", "Ghost", "Dark"],
     dexEntry: "Its DNA is said to contain the genetic codes of all Pokemon.",
   },
 ];
