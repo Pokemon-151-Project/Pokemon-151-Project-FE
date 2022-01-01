@@ -1,5 +1,6 @@
 import React from "react";
 
+//This is the dropdown menu contained within Header
 import Dropdown from "./Dropdown";
 
 import useDarkMode from "../hooks/useDarkMode";
@@ -8,6 +9,8 @@ import { BsMoon, BsSun } from "react-icons/bs";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
+
+  //ChangeDisplay() is the function that changes which pokemon are displayed based on the button the user pressses. It's the brain of the application.
   const { changeDisplay } = props;
   return (
     <header>
@@ -24,6 +27,7 @@ const Header = (props) => {
             }}
           >
             {isDarkMode ? (
+              // This shows a different icon based on whether the user has enabled dark mode
               <BsSun color="#ff0" size="24" title="Switch to light mode" />
             ) : (
               <BsMoon size="24" title="Switch to dark mode" />
@@ -33,7 +37,7 @@ const Header = (props) => {
         <Dropdown changeDisplay={changeDisplay} />
       </section>
 
-      {/* section for info about me */}
+      {/* section for info about me and relevant links*/}
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
         <nav className="header-nav">
