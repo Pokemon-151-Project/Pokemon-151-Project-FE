@@ -178,9 +178,8 @@ h1 {
   /* height: 171px; */
   max-width: 90%;
   max-height: 90%;
-
-  min-width: 60%;
-  min-height: 60%;
+  min-width: 70%;
+  min-height: 70%;
 }
 
 /* This is the point at which the header started looking weird. I couldn't find anything in particular to change for lower screen widths. */
