@@ -30,10 +30,12 @@ const SinglePokemon = (props) => {
       </h4>
 
       {/* image of each pokemon */}
+      {/* Problem pokemon: 
+      -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
       <img
         className="poke-img card-item"
         src={`https://serebii.net/art/th/${id}.png`}
-        alt="Pokemon"
+        alt={name}
       />
 
       {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
