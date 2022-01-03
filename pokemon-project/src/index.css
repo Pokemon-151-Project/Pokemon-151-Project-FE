@@ -163,11 +163,24 @@ h1 {
   margin: 3%;
 }
 
+/* Begin image experimentation. Originally all the styling here was in poke-img. img-container is something that I made up for this branch. */
+.img-container {
+  height: 171px;
+  /* width: 90%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* making sure each image is wide enough within its card */
 .poke-img {
-  width: 90%;
   /* Doing this height to standardize img sizes. Before I did this, they were often different sizes, lines were in different places relative to other cards, it looked messy. */
-  height: 171px;
+  /* height: 171px; */
+  max-width: 90%;
+  max-height: 90%;
+
+  min-width: 60%;
+  min-height: 60%;
 }
 
 /* This is the point at which the header started looking weird. I couldn't find anything in particular to change for lower screen widths. */
