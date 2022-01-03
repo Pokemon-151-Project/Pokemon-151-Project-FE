@@ -30,7 +30,11 @@ const SinglePokemon = (props) => {
       </h4>
 
       {/* image of each pokemon */}
-      <img className="poke-img card-item" src={img} alt="Pokemon" />
+      <img
+        className="poke-img card-item"
+        src={`https://serebii.net/art/th/${id}.png`}
+        alt="Pokemon"
+      />
 
       {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
       <p className="card-item">{dexEntry}</p>
