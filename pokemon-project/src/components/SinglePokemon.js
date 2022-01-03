@@ -5,7 +5,7 @@ const SinglePokemon = (props) => {
   const { poke } = props;
 
   //destructuring the keys in poke to make my JSX a little more concise
-  const { name, type, img, dexEntry, height, weight, id } = poke;
+  const { name, type, dexEntry, height, weight, id } = poke;
 
   return (
     <div className="pokemon-card" data-testid="pokemon-card">
@@ -30,7 +30,15 @@ const SinglePokemon = (props) => {
       </h4>
 
       {/* image of each pokemon */}
-      <img className="poke-img card-item" src={img} alt="Pokemon" />
+      {/* Problem pokemon: 
+      -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
+      <div className="img-container card-item">
+        <img
+          class="poke-img"
+          src={`https://serebii.net/art/th/${id}.png`}
+          alt={name}
+        />
+      </div>
 
       {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
       <p className="card-item">{dexEntry}</p>
