@@ -166,7 +166,6 @@ h1 {
 
 /* BEGIN POKEMON IMAGE SECTION*/
 
-/* Begin image experimentation. Originally all the styling here was in poke-img. img-container is something that I made up for this branch. */
 .img-container {
   height: 171px;
   display: flex;
@@ -174,7 +173,6 @@ h1 {
   justify-content: center;
 }
 
-/* making sure each image is wide enough within its card */
 .poke-img {
   /* Doing this height to standardize img sizes. Before I did this, they were often different sizes, lines were in different places relative to other cards, it looked messy. */
   /* height: 171px; */
