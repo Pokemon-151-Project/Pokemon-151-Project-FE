@@ -30,8 +30,6 @@ const SinglePokemon = (props) => {
       </h4>
 
       {/* image of each pokemon */}
-      {/* Problem pokemon: 
-      -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
       <div className="img-container card-item">
         <img
           class="poke-img"

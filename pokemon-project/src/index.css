@@ -174,8 +174,6 @@ h1 {
 }
 
 .poke-img {
-  /* Doing this height to standardize img sizes. Before I did this, they were often different sizes, lines were in different places relative to other cards, it looked messy. */
-  /* height: 171px; */
   max-width: 90%;
   max-height: 90%;
   min-width: 75%;
