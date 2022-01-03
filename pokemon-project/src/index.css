@@ -166,6 +166,7 @@ h1 {
 
 /* BEGIN POKEMON IMAGE SECTION*/
 
+/* The pokemon images live in this. This and the .poke-img styling are my attempt to standardize the dimensions of the images. */
 .img-container {
   height: 171px;
   display: flex;
@@ -173,6 +174,7 @@ h1 {
   justify-content: center;
 }
 
+/* All the iamges I'm pulling in are different dimensions, so they would look horrible iwthout this */
 .poke-img {
   max-width: 90%;
   max-height: 90%;
