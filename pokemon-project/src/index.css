@@ -147,7 +147,7 @@ h1 {
   font-size: 70%;
 }
 
-/* Each individual pokemon is contained within a .pokemon-card */
+/* Each individual pokemon is contained within a .pokemon-card. It has another style, .dark, when darkmode is enabled. */
 .pokemon-card {
   border: 1px solid black;
   box-sizing: border-box;
