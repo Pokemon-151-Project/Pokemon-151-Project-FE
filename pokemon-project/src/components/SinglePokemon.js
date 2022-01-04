@@ -32,7 +32,7 @@ const SinglePokemon = (props) => {
       {/* image of each pokemon */}
       <div className="img-container card-item">
         <img
-          class="poke-img"
+          className="poke-img"
           src={`https://serebii.net/art/th/${id}.png`}
           alt={name}
         />

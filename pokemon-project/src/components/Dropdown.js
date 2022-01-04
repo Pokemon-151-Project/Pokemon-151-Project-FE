@@ -26,7 +26,9 @@ const Dropdown = (props) => {
   return (
     <section className="dropdown">
       {/* Hovering here shows the dropdown menu with display options */}
-      <button className="dropbtn">Display Options (check this out!)</button>
+      <button className="dropbtn" data-testid="dropbtn">
+        Display Options (check this out!)
+      </button>
 
       <div className="dropdown-content">
         {/* Begin mapping over types. There are 15 pokemon types so I didn't want to code a button for every one of them. */}
