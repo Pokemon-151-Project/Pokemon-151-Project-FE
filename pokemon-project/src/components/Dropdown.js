@@ -33,7 +33,12 @@ const Dropdown = (props) => {
       <div className="dropdown-content">
         {/* Begin mapping over types. There are 15 pokemon types so I didn't want to code a button for every one of them. */}
         <div>
-          <h5 className="dropdown-display-title">Pick a type:</h5>
+          <h5
+            className="dropdown-display-title"
+            data-testid="dropdown-display-title"
+          >
+            Pick a type:
+          </h5>
           {typesArray.map((item) => {
             return (
               <button
