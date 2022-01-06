@@ -42,7 +42,7 @@ const Header = (props) => {
             setShiny(!shiny);
           }}
         >
-          Show Shiny Forms
+          {shiny ? "Show Non-Shiny Forms" : "Show Shiny forms"}
         </button>
         <Dropdown changeDisplay={changeDisplay} />
       </section>
