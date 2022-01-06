@@ -63,8 +63,26 @@ h1 {
   padding: 3%;
 }
 
+/* This contains the darkmode title/toggle and the shiny toggle */
 .darkmode-shiny-section {
   display: flex;
+  border: 1px solid red;
+}
+
+.shiny-button {
+  margin-left: 5%;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.721);
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
 }
 
 .header-nav {
