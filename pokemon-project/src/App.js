@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <Header changeDisplay={changeDisplay} setShiny={setShiny} shiny={shiny} />
-      <AllPokemon pokemon={pokemon} />
+      <AllPokemon pokemon={pokemon} shiny={shiny} />
     </div>
   );
 }
