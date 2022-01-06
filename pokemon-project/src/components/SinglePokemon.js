@@ -5,7 +5,7 @@ const SinglePokemon = (props) => {
   const { poke } = props;
 
   //destructuring the keys in poke to make my JSX a little more concise
-  const { name, type, dexEntry, height, weight, id } = poke;
+  const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
     <div className="pokemon-card" data-testid="pokemon-card">
@@ -35,7 +35,8 @@ const SinglePokemon = (props) => {
       <div className="img-container card-item">
         <img
           class="poke-img"
-          src={`https://serebii.net/art/th/${id}.png`}
+          src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
+          src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
           alt={name}
         />
       </div>
