@@ -34,6 +34,7 @@ const SinglePokemon = (props) => {
       {/* Problem pokemon: 
       -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
       <div className="img-container card-item">
+        {/* This is a work in progress. It displays a shiny or not-shiny img based on state, but doesn't re-mount the component. So need to figure out how to re-load the page or component when user clicks the shiny button. */}
         {shiny ? (
           <img
             className="poke-img"
