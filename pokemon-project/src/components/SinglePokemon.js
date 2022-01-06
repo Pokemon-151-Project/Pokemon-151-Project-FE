@@ -2,7 +2,8 @@ import React from "react";
 
 const SinglePokemon = (props) => {
   //Each poke is a single pokemon's data, being passed in as props.
-  const { poke } = props;
+  const { poke, shiny } = props;
+  console.log("SinglePokemon shiny:", shiny);
 
   //destructuring the keys in poke to make my JSX a little more concise
   const { name, type, dexEntry, height, weight, id, num } = poke;
@@ -33,12 +34,19 @@ const SinglePokemon = (props) => {
       {/* Problem pokemon: 
       -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
       <div className="img-container card-item">
-        <img
-          className="poke-img"
-          src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
-          // src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
-          alt={name}
-        />
+        {shiny ? (
+          <img
+            className="poke-img"
+            src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
+            alt={name}
+          />
+        ) : (
+          <img
+            className="poke-img"
+            src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
+            alt={name}
+          />
+        )}
       </div>
 
       {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
