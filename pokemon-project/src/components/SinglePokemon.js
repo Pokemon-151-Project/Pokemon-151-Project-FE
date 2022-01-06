@@ -34,7 +34,7 @@ const SinglePokemon = (props) => {
       -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
       <div className="img-container card-item">
         <img
-          class="poke-img"
+          className="poke-img"
           src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
           // src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
           alt={name}
