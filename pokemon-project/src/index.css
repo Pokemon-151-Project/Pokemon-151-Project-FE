@@ -67,6 +67,7 @@ h1 {
 .darkmode-shiny-section {
   display: flex;
   border: 1px solid red;
+  padding: 3%;
 }
 
 .shiny-button {
@@ -74,11 +75,12 @@ h1 {
   background: none;
   border: none;
   color: rgba(255, 255, 255, 0.721);
+  margin-right: 3%;
 }
 
 .vl {
   border-left: 6px solid green;
-  height: auto;
+  height: 100%;
   position: absolute;
   left: 50%;
   margin-left: -3px;

@@ -41,14 +41,16 @@ const Header = (props) => {
           <div class className="vl" />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
-          <button
-            className="shiny-button"
-            onClick={() => {
-              setShiny(!shiny);
-            }}
-          >
-            {shiny ? "Show Non-Shiny Forms" : "Show Shiny forms"}
-          </button>
+          <div className="shiny-button-div">
+            <button
+              className="shiny-button"
+              onClick={() => {
+                setShiny(!shiny);
+              }}
+            >
+              {shiny ? "Show Non-Shiny Forms" : "Show Shiny forms"}
+            </button>
+          </div>
         </div>
         <Dropdown changeDisplay={changeDisplay} />
       </section>
