@@ -36,6 +36,7 @@ const Header = (props) => {
           </button>
         </div>
 
+        {/* make this say Show Shiny forms when !shiny, and Show Non-Shiny Forms when shiny */}
         <button
           onClick={() => {
             setShiny(!shiny);
