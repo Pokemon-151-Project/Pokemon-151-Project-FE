@@ -18,32 +18,35 @@ const Header = (props) => {
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section>
-        <div className="darkmode-section">
-          <div className="logo">Dark Mode</div>
+        <div className="darkmode-shiny-section">
+          <div className="darkmode-section">
+            <div className="logo">Dark Mode</div>
+            <button
+              className="toggle_btn"
+              data-testid="toggle_btn"
+              onClick={() => {
+                setDarkMode(!isDarkMode);
+              }}
+            >
+              {isDarkMode ? (
+                // This shows a different icon based on whether the user has enabled dark mode
+                <BsSun color="#ff0" size="24" title="Switch to light mode" />
+              ) : (
+                <BsMoon size="24" title="Switch to dark mode" />
+              )}
+            </button>
+          </div>
+
+          {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
           <button
-            className="toggle_btn"
-            data-testid="toggle_btn"
+            className="shiny-button"
             onClick={() => {
-              setDarkMode(!isDarkMode);
+              setShiny(!shiny);
             }}
           >
-            {isDarkMode ? (
-              // This shows a different icon based on whether the user has enabled dark mode
-              <BsSun color="#ff0" size="24" title="Switch to light mode" />
-            ) : (
-              <BsMoon size="24" title="Switch to dark mode" />
-            )}
+            {shiny ? "Show Non-Shiny Forms" : "Show Shiny forms"}
           </button>
         </div>
-
-        {/* make this say Show Shiny forms when !shiny, and Show Non-Shiny Forms when shiny */}
-        <button
-          onClick={() => {
-            setShiny(!shiny);
-          }}
-        >
-          {shiny ? "Show Non-Shiny Forms" : "Show Shiny forms"}
-        </button>
         <Dropdown changeDisplay={changeDisplay} />
       </section>
 

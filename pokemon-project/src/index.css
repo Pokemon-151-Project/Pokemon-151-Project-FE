@@ -63,6 +63,10 @@ h1 {
   padding: 3%;
 }
 
+.darkmode-shiny-section {
+  display: flex;
+}
+
 .header-nav {
   /* Making the links vertical to take up less space */
   display: flex;
