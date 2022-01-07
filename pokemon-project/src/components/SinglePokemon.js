@@ -3,8 +3,6 @@ import React from "react";
 const SinglePokemon = (props) => {
   //Each poke is a single pokemon's data, being passed in as props.
   const { poke, isShiny } = props;
-  console.log("SinglePokemon isShiny:", isShiny);
-
   //destructuring the keys in poke to make my JSX a little more concise
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
@@ -15,7 +13,7 @@ const SinglePokemon = (props) => {
         {name} <span className="dex-id">#{id}</span>
       </h2>
 
-      {/* This returns basic type information. Singular if only one type, plural if two types. */}
+      {/* Basic type information. Singular if only one type, plural if two types. */}
       {type[1] ? (
         <h3 className="poke-type card-item">
           {type[0]} / {type[1]}{" "}
@@ -32,7 +30,7 @@ const SinglePokemon = (props) => {
 
       {/* image of each pokemon */}
       <div className="img-container card-item">
-        {/* This returns either the pokemon's normal sprite image if isShiny is false, or the shiny sprite image if isShiny is true. The user selected this option in the header */}
+        {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
           <img
             className="poke-img"
@@ -48,7 +46,7 @@ const SinglePokemon = (props) => {
         )}
       </div>
 
-      {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
+      {/* The pokemon's dex entry, which is basic tidbits about the pokemon */}
       <p className="card-item">{dexEntry}</p>
     </div>
   );

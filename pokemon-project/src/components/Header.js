@@ -1,16 +1,13 @@
 import React from "react";
-
 //This is the dropdown menu contained within Header
 import Dropdown from "./Dropdown";
-
 import useDarkMode from "../hooks/useDarkMode";
-
 import { BsMoon, BsSun } from "react-icons/bs";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
 
-  //ChangeDisplay() is the function that changes which pokemon are displayed based on the button the user pressses. It's the brain of the application.
+  //ChangeDisplay() changes which pokemon are displayed based on the button the user pressses.
   const { changeDisplay, setIsShiny, isShiny } = props;
   return (
     <header>

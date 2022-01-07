@@ -1,5 +1,3 @@
-//I mapped over this to add in dex entries from another API. This is the new data which is a result of that mapping. The old, original data is in olddata.js.
-
 //This is data of the original 151 pokemon. It is the starting point; the application maps over this to display all 151 with images and facts about them. THen the user can press buttons to sort them by type, size and height.
 const pokemonData = [
   {

@@ -1,8 +1,6 @@
 import Header from "../components/Header";
-import App from "../App";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import userEvent from "@testing-library/user-event";
 
 test("Component renders without errors", () => {
   render(<Header />);

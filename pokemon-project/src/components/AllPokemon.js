@@ -7,7 +7,7 @@ const AllPokemon = (props) => {
   return (
     <section className="all-pokemon">
       {pokemon.map((poke) => {
-        // This returns 151 cards, each containing a different pokemon. So AllPokemon is the parent container for all these cards.
+        // Returns 151 cards, each containing a different pokemon.
         return (
           <SinglePokemon
             poke={poke}
