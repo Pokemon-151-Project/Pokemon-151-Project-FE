@@ -10,7 +10,8 @@ import data from "./data";
 function App() {
   //sets the pokemon data to state. It starts as the original data but my hope is that I can update it based on filters.
   const [pokemon, setPokemon] = useState(data);
-  // const [darkMode, setDarkMode] = useState(false)
+  // This is a boolean that shows either the shiny or normal image of a pokemon based on user selection in header. Gets passed in to header and AllPokemon (through to SinglePokemon)
+  const [isShiny, setIsShiny] = useState(false);
 
   //This function is the heart of the entire project. It allows you to press a button in the header dropdown to show only pokemon of a certain type, height, or size.
   //If a type is passed in, it sorts by that type. If a size is passed in, it sorts by that size. If a height is passed in, it osrts by that size. Nothing else will ever be passed in unless the code is written with more button options.
@@ -33,8 +34,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header changeDisplay={changeDisplay} />
-      <AllPokemon pokemon={pokemon} />
+      <Header
+        changeDisplay={changeDisplay}
+        setIsShiny={setIsShiny}
+        isShiny={isShiny}
+      />
+      <AllPokemon pokemon={pokemon} isShiny={isShiny} />
     </div>
   );
 }

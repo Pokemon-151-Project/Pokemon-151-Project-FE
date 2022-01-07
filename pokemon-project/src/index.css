@@ -21,8 +21,8 @@ body.dark {
   --button-bg: #000;
 }
 
+/* The darkmode toggle button */
 .toggle_btn {
-  /* The darkmode toggle button */
   background-color: var(--button-bg);
   color: var(--button-text);
   cursor: pointer;
@@ -63,6 +63,39 @@ h1 {
   padding: 3%;
 }
 
+/* This section contains the darkmode toggle, shiny toggle, and display options dropdown */
+.darkmode-shiny-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+/* This contains the darkmode title/toggle and the shiny toggle */
+.darkmode-shiny-section {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  width: 90%;
+}
+
+/* The button where the user toggles shiny display*/
+.shiny-button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.721);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Vertical line between the dark mode and shiny buttons in the header */
+.vertical-line {
+  border-left: 6px solid green;
+  margin: 0% 2%;
+}
+
 .header-nav {
   /* Making the links vertical to take up less space */
   display: flex;
@@ -76,6 +109,7 @@ h1 {
 }
 
 /* BEGIN HEADER DROPDOWN SECTION */
+
 /* Dropdown Button */
 .dropbtn {
   font-family: "Arima Madurai", cursive;

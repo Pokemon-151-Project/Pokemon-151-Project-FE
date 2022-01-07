@@ -2,10 +2,11 @@ import React from "react";
 
 const SinglePokemon = (props) => {
   //Each poke is a single pokemon's data, being passed in as props.
-  const { poke } = props;
+  const { poke, isShiny } = props;
+  console.log("SinglePokemon isShiny:", isShiny);
 
   //destructuring the keys in poke to make my JSX a little more concise
-  const { name, type, dexEntry, height, weight, id } = poke;
+  const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
     <div className="pokemon-card" data-testid="pokemon-card">
@@ -31,11 +32,20 @@ const SinglePokemon = (props) => {
 
       {/* image of each pokemon */}
       <div className="img-container card-item">
-        <img
-          className="poke-img"
-          src={`https://serebii.net/art/th/${id}.png`}
-          alt={name}
-        />
+        {/* This returns either the pokemon's normal sprite image if isShiny is false, or the shiny sprite image if isShiny is true. The user selected this option in the header */}
+        {isShiny ? (
+          <img
+            className="poke-img"
+            src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
+            alt={name}
+          />
+        ) : (
+          <img
+            className="poke-img"
+            src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
+            alt={name}
+          />
+        )}
       </div>
 
       {/* Returns the pokemon's dex entry, which is basic tidbits about the pokemon */}
