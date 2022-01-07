@@ -78,6 +78,14 @@ const Header = (props) => {
           <a href="https://pokeapi.co" target="_blank" rel="noreferrer">
             PokeAPI
           </a>
+
+          <a
+            href="https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Shinies
+          </a>
         </nav>
       </section>
     </header>
