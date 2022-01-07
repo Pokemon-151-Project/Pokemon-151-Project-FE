@@ -33,6 +33,19 @@ const Dropdown = (props) => {
       <div className="dropdown-content">
         {/* Begin mapping over types. There are 15 pokemon types so I didn't want to code a button for every one of them. */}
         <div>
+          {/* Reset to original display options */}
+          <div>
+            <button
+              className="dropbtn-inner"
+              data-testid="dropbtn-inner"
+              id="reset-btn"
+              onClick={() => {
+                window.location.reload();
+              }}
+            >
+              Reset All
+            </button>
+          </div>
           <h5
             className="dropdown-display-title"
             data-testid="dropdown-display-title"
