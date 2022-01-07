@@ -38,7 +38,7 @@ const Header = (props) => {
           </div>
 
           {/* This is a vertical line to go between the darkMode toggle and the shiny toggle.*/}
-          <div class className="vl" />
+          <div class className="vertical-line" />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
           <div className="shiny-button-div">
