@@ -48,7 +48,7 @@ const Header = (props) => {
                 setShiny(!shiny);
               }}
             >
-              {shiny ? "Show Non-Shiny Forms" : "Show Shiny forms"}
+              {shiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
             </button>
           </div>
         </div>
