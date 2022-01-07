@@ -2,8 +2,8 @@ import React from "react";
 
 const SinglePokemon = (props) => {
   //Each poke is a single pokemon's data, being passed in as props.
-  const { poke, shiny } = props;
-  console.log("SinglePokemon shiny:", shiny);
+  const { poke, isShiny } = props;
+  console.log("SinglePokemon isShiny:", isShiny);
 
   //destructuring the keys in poke to make my JSX a little more concise
   const { name, type, dexEntry, height, weight, id, num } = poke;
@@ -35,7 +35,7 @@ const SinglePokemon = (props) => {
       -Geodude, Kakuna14, Ponyta77, Magnemite81, Muk89, Goldeen118 are really stretched */}
       <div className="img-container card-item">
         {/* This is a work in progress. It displays a shiny or not-shiny img based on state, but doesn't re-mount the component. So need to figure out how to re-load the page or component when user clicks the shiny button. */}
-        {shiny ? (
+        {isShiny ? (
           <img
             className="poke-img"
             src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
