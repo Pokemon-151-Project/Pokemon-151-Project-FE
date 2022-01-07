@@ -25,7 +25,7 @@ function App() {
         const heightInt = item.height.split(" ")[0];
         return height === "short" ? heightInt < 0.4 : heightInt > 2;
       }
-      //I don't think returning null is necsesary here but VSCode gave me a warning until I did it.
+      //I don't think returning null is necessary here but VSCode gave me a warning until I did it.
       return null;
     });
     setPokemon(newData);

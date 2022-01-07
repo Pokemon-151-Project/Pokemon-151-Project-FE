@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import App from "../App";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
@@ -20,15 +21,4 @@ test("Renders the expected segments of the header", () => {
   expect(dropbtn).toBeVisible();
 });
 
-test("dropdown only appears when you click dropdown button", () => {
-  render(<Header />);
-  //This test renders the dropdown content by clicking on the dropdown button, then make sure the appropriate content shows up.
-
-  const dropbtn = screen.queryByText(/display options/i);
-  expect(dropbtn).toBeInTheDocument();
-
-  userEvent.click(dropbtn);
-
-  const dropdownContent = screen.queryByText(/pick a type/i);
-  expect(dropdownContent).toBeInTheDocument();
-});
+//I tried to test that the dropdown only appears when you click on the Display Options button, but the testing said the dropdown was always visible no matter what. I tried document.queryselector, screen.getByTestID, and others. Not sure what I was doing wrong.
