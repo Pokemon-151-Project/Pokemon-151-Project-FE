@@ -3,9 +3,9 @@ const Dropdown = (props) => {
   const { changeDisplay } = props;
 
   //This component is the  Dropdown menu for display options.
-  //There are different buttons the user can click to only display pokemon of a certain category, such as type, height and weight.
+  //Different buttons the user can click to only display pokemon of a certain category(type, height etc)
 
-  //Will map over this to return one button for each type. Cleaner and dryer than hard-coding 15 different buttons.
+  //Will map over this to return one button for each type.
   const typesArray = [
     "Normal",
     "Fire",
