@@ -17,7 +17,7 @@ const Header = (props) => {
       <h1 className="header-item header-h1">Pokemon Display</h1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
-      <section>
+      <section className="darkmode-shiny-dropdown">
         <div className="darkmode-shiny-section">
           <div className="darkmode-section">
             <div className="logo">Dark Mode</div>

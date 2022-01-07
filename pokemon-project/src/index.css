@@ -63,27 +63,43 @@ h1 {
   padding: 3%;
 }
 
+.darkmode-shiny-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
 /* This contains the darkmode title/toggle and the shiny toggle */
 .darkmode-shiny-section {
   display: flex;
-  border: 1px solid red;
+  justify-content: center;
+  /* border: 1px solid red; */
   padding: 3%;
+  width: 90%;
+  /* height: 100px; */
 }
 
 .shiny-button {
-  margin-left: 5%;
+  /* margin-left: 5%; */
   background: none;
   border: none;
   color: rgba(255, 255, 255, 0.721);
-  margin-right: 3%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  /* margin-right: 3%; */
 }
 
-.vl {
+/* This is the vertical line between the dark mode and shiny buttons in the header */
+.vertical-line {
   border-left: 6px solid green;
+  margin: 0% 2%;
   /* position: absolute;
   left: 50%;
-  margin-left: -3px;
   top: 0; */
+  /* margin-left: -3px; */
 }
 
 .header-nav {
