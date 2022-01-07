@@ -211,7 +211,7 @@ h1 {
 
 /* END POKEMON IMAGE SECTION */
 
-/* This is the point at which the header started looking weird. I couldn't find anything in particular to change for lower screen widths. */
+/* I couldn't find anything in particular to change for lower screen widths below this */
 @media screen and (max-width: 860px) {
   /* Making the header a column to avoid crowding */
   header {
@@ -254,7 +254,7 @@ h1 {
     margin-top: 0;
   }
 
-  /* Making my links horizontal instead of vertical to take up less space */
+  /* Making links horizontal instead of vertical to take up less space */
   .header-nav {
     display: flex;
     flex-direction: row;
