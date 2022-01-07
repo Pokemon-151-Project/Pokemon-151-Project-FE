@@ -31,7 +31,7 @@ const Dropdown = (props) => {
       </button>
 
       <div className="dropdown-content">
-        {/* Begin mapping over types. There are 15 pokemon types so I didn't want to code a button for every one of them. */}
+        {/* Begin mapping over types. There are 15 types so this is much more dry. */}
         <div>
           <div>
             {/* Reset to original display options by refreshing the page*/}
@@ -70,7 +70,7 @@ const Dropdown = (props) => {
         </div>
         {/* End mapping over types */}
 
-        {/* Now there are four different buttons (sorting by tall, short, heavyweight and lightweight) that were easier to just hard code. */}
+        {/* Buttons to sort by tall, short, heavyweight and lightweight; these were more sensible to hard code */}
 
         {/* Begin sorting pokemon by weight */}
         {/* Show only small pokemon (<10kg) */}
