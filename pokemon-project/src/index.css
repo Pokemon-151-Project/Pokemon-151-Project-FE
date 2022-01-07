@@ -76,10 +76,8 @@ h1 {
 .darkmode-shiny-section {
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
   padding: 3%;
   width: 90%;
-  /* height: 100px; */
 }
 
 /* The button where the user selects Shiny or Not shiny display option */
@@ -91,17 +89,12 @@ h1 {
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: underline;
-  /* margin-right: 3%; */
 }
 
 /* This is the vertical line between the dark mode and shiny buttons in the header */
 .vertical-line {
   border-left: 6px solid green;
   margin: 0% 2%;
-  /* position: absolute;
-  left: 50%;
-  top: 0; */
-  /* margin-left: -3px; */
 }
 
 .header-nav {
@@ -117,6 +110,7 @@ h1 {
 }
 
 /* BEGIN HEADER DROPDOWN SECTION */
+
 /* Dropdown Button */
 .dropbtn {
   font-family: "Arima Madurai", cursive;
