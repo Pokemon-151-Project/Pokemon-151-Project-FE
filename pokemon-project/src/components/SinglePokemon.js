@@ -32,7 +32,7 @@ const SinglePokemon = (props) => {
 
       {/* image of each pokemon */}
       <div className="img-container card-item">
-        {/* This returns either the pokemon's normal sprite image if isShiny is false, or the shiny sprite image if isShiny is true */}
+        {/* This returns either the pokemon's normal sprite image if isShiny is false, or the shiny sprite image if isShiny is true. The user selected this option in the header */}
         {isShiny ? (
           <img
             className="poke-img"

@@ -63,6 +63,7 @@ h1 {
   padding: 3%;
 }
 
+/* This section contains the darkmode toggle, shiny toggle, and display options dropdown */
 .darkmode-shiny-dropdown {
   display: flex;
   flex-direction: column;
@@ -81,6 +82,7 @@ h1 {
   /* height: 100px; */
 }
 
+/* The button where the user selects Shiny or Not shiny display option */
 .shiny-button {
   /* margin-left: 5%; */
   background: none;
