@@ -63,7 +63,7 @@ h1 {
   padding: 3%;
 }
 
-/* This section contains the darkmode toggle, shiny toggle, and display options dropdown */
+/* Contains the darkmode toggle, shiny toggle, and display options dropdown */
 .darkmode-shiny-dropdown {
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ h1 {
   width: 80%;
 }
 
-/* This contains the darkmode title/toggle and the shiny toggle */
+/* Darkmode title/toggle and the shiny toggle */
 .darkmode-shiny-section {
   display: flex;
   justify-content: center;
@@ -190,14 +190,14 @@ h1 {
   background-color: #bef8f8;
 }
 
-/* This is every individual item (name, height, weight, image, etc) in the pokemon card */
+/* Every individual item (name, height, weight, image, etc) in the pokemon card */
 .card-item {
   margin: 3%;
 }
 
 /* BEGIN POKEMON IMAGE SECTION*/
 
-/* The pokemon images live in this. This and the .poke-img styling are my attempt to standardize the dimensions of the images. */
+/* The pokemon image. This and the .poke-img styling are my attempt to standardize the dimensions of the images. */
 .img-container {
   height: 171px;
   display: flex;
@@ -205,12 +205,8 @@ h1 {
   justify-content: center;
 }
 
-/* All the iamges I'm pulling in are different dimensions, so they would look horrible iwthout this */
 .poke-img {
-  max-width: 90%;
-  max-height: 90%;
-  min-width: 75%;
-  min-height: 75%;
+  width: 90%;
 }
 
 /* END POKEMON IMAGE SECTION */
