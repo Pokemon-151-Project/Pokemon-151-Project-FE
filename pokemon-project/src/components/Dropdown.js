@@ -70,11 +70,11 @@ const Dropdown = (props) => {
         </div>
         {/* End mapping over types */}
 
-        {/* Buttons to sort by tall, short, heavyweight and lightweight; these were more sensible to hard code */}
+        {/* Now, buttons to sort by tall, short, heavyweight and lightweight. */}
 
         {/* Begin sorting pokemon by weight */}
-        {/* Show only small pokemon (<10kg) */}
         <div>
+          {/* Show only small pokemon (<10kg) */}
           <h5 className="dropdown-display-title">Pick a weight:</h5>
           <button
             className="dropbtn-inner"
@@ -104,7 +104,6 @@ const Dropdown = (props) => {
         {/* Begin sorting pokemon by height */}
         <div>
           <h5 className="dropdown-display-title">Pick a height:</h5>
-
           {/* Show only short pokemon */}
           <button
             className="dropbtn-inner"
