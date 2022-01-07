@@ -11,7 +11,7 @@ const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
 
   //ChangeDisplay() is the function that changes which pokemon are displayed based on the button the user pressses. It's the brain of the application.
-  const { changeDisplay, setShiny, shiny } = props;
+  const { changeDisplay, setIsShiny, isShiny } = props;
   return (
     <header>
       <h1 className="header-item header-h1">Pokemon Display</h1>
@@ -45,10 +45,10 @@ const Header = (props) => {
             <button
               className="shiny-button"
               onClick={() => {
-                setShiny(!shiny);
+                setIsShiny(!isShiny);
               }}
             >
-              {shiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
+              {isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
             </button>
           </div>
         </div>

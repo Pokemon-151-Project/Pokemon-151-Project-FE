@@ -3,7 +3,7 @@ import SinglePokemon from "./SinglePokemon";
 
 const AllPokemon = (props) => {
   //props.pokemon is the data object containing all the pokemon's info
-  const { pokemon, shiny } = props;
+  const { pokemon, isShiny } = props;
   return (
     <section className="all-pokemon">
       {pokemon.map((poke) => {
@@ -13,7 +13,7 @@ const AllPokemon = (props) => {
             poke={poke}
             key={poke.name}
             data-testid="single-pokemon"
-            shiny={shiny}
+            isShiny={isShiny}
           />
         );
       })}
