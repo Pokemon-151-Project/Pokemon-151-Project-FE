@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-//This hook is fairly self-explanatory. Sets dark mode on/off based on the user clicking a header button. Stores user preference across browser visits.
+// This sets dark mode on/off based on the user clicking a header button. Stores user preference.
 
 const useDarkMode = () => {
   const key = "isDarkMode";
@@ -15,7 +15,6 @@ const useDarkMode = () => {
   useEffect(() => {
     const className = "dark";
 
-    //This will be useful in a minute when we want to
     const pokeCards = window.document.querySelectorAll(".pokemon-card");
 
     if (isDark) {
