@@ -148,7 +148,6 @@ h1 {
   background-color: #90dcd8;
 }
 
-/* This is every individual button within the dropdown */
 .dropbtn-inner {
   margin: 1%;
   border: none;
@@ -198,7 +197,7 @@ h1 {
 
 /* BEGIN POKEMON IMAGE SECTION*/
 
-/* The pokemon image. This and the .poke-img styling are my attempt to standardize the dimensions of the images. */
+/* The pokemon image */
 .img-container {
   height: 171px;
   display: flex;
@@ -220,7 +219,6 @@ h1 {
     align-items: center;
   }
 
-  /* So the header doesn't take up the whole screen */
   .header-item {
     width: 100%;
   }
@@ -234,24 +232,21 @@ h1 {
     margin: 2%;
   }
 
-  /* Making the header shorter to take up less screen space */
   .adam-info {
     padding-top: 0;
   }
 
-  /* Making header take up less vertical space */
   .h1-and-darkmodebtn {
     padding-bottom: 0;
   }
 
   .dropbtn {
-    margin-top: 8%;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   /* I want the dropdown at the bottom of the header column */
   .dropdown {
-    /* order: 1; */
     margin-top: 0;
   }
 
