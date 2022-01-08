@@ -32,3 +32,7 @@ test("Displays correct info on screen", () => {
   expect(height).toBeVisible();
   expect(weight).toBeVisible();
 });
+
+test("Toggles shiny image based on props", () => {
+  render(<SinglePokemon poke={fakePokemon[0]} isShiny={false} />);
+});
