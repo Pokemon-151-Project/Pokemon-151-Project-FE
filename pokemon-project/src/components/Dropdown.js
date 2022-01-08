@@ -49,7 +49,7 @@ const Dropdown = (props) => {
             className="dropdown-display-title"
             data-testid="dropdown-display-title"
           >
-            {/* Begin options  for mapping over types. There are 15 types so this is much more DRY. */}
+            {/* Begin mapping over types. There are 15 types so this is much more DRY. */}
             Pick a type:
           </h5>
           {typesArray.map((item) => {
@@ -137,10 +137,3 @@ const Dropdown = (props) => {
 };
 
 export default Dropdown;
-
-// This dropdown has 20 different buttons. I thought about making a buttonMaker function to streamline this, but decided it was hard to read and not DRY enough to be worth it. I've saved the prototype function here in case I decide to use it later.
-// const makeButton = (id, key = null, onClick, buttonName) => {
-//   return (
-//     <button className="dropbtn-inner" data-testid="dropbtn-inner">{buttonName}</button>
-//   );
-// };

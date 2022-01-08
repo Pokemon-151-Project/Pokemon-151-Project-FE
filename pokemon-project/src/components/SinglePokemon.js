@@ -3,7 +3,6 @@ import React from "react";
 const SinglePokemon = (props) => {
   //Each poke is a single pokemon's data, being passed in as props.
   const { poke, isShiny } = props;
-  //destructuring the keys in poke to make my JSX a little more concise
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (

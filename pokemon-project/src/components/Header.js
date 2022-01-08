@@ -4,7 +4,7 @@ import useDarkMode from "../hooks/useDarkMode";
 //importing darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
 
-// The header nav has four different links and this function helps generate them
+// The header nav has four different links and this function helps generate them more DRYly
 const linkMaker = (text, href) => {
   return (
     <a target="_blank" rel="noreferrer" href={href}>
