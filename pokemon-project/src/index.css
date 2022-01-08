@@ -197,7 +197,6 @@ h1 {
 
 /* BEGIN POKEMON IMAGE SECTION*/
 
-/* The pokemon image */
 .img-container {
   height: 171px;
   display: flex;
@@ -213,7 +212,6 @@ h1 {
 
 /* I couldn't find anything in particular to change for lower screen widths below this */
 @media screen and (max-width: 860px) {
-  /* Making the header a column to avoid crowding */
   header {
     flex-direction: column;
     align-items: center;
@@ -245,31 +243,26 @@ h1 {
     margin-bottom: 0;
   }
 
-  /* I want the dropdown at the bottom of the header column */
   .dropdown {
     margin-top: 0;
   }
 
-  /* Making links horizontal instead of vertical to take up less space */
   .header-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
-  /* giving links a little breathing room*/
   .header-nav a {
     margin: 0 1%;
   }
 }
 /* End media query min-length section */
 
-/* Begin media query max-length section */
 @media screen and (min-width: 1600px) {
   .App {
     display: flex;
     flex-direction: column;
-    /* Giving breathing room on either side of the document so that it's not super wide at large screen widths */
     margin: 0 10%;
   }
 }
