@@ -20,7 +20,6 @@ test("All dropdown buttons render", () => {
 
 test("Dropdown buttons change the displayed pokemon", () => {
   // I had to render App for this because it doesn't just test dropdown. Not sure what best practices is for this but it does the job.
-  //This test checks that the (non-fire-type) pokemon Bulbasaur is visible on screen, then verifies that Bulbasaur disappears when you hit the button to only show Fire types.
   render(<App />);
 
   const fireBtn = document.querySelector("#fire-btn");
@@ -31,4 +30,8 @@ test("Dropdown buttons change the displayed pokemon", () => {
   userEvent.click(fireBtn);
 
   expect(bulba).not.toBeVisible();
+});
+
+test("Reset buttons puts all pokemon back on screen", () => {
+  render(<App />);
 });

@@ -31,12 +31,14 @@ const SinglePokemon = (props) => {
         {isShiny ? (
           <img
             className="poke-img"
+            data-testid="shiny"
             src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
             alt={name}
           />
         ) : (
           <img
             className="poke-img"
+            data-testid="not-shiny"
             src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
             alt={name}
           />

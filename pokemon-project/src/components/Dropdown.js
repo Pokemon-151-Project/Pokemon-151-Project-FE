@@ -36,7 +36,7 @@ const Dropdown = (props) => {
             {/* Reset to original display options by refreshing the page*/}
             <button
               className="dropbtn-inner"
-              data-testid="dropbtn-inner"
+              data-testid="reset-btn"
               id="reset-btn"
               onClick={() => {
                 window.location.reload();
@@ -56,7 +56,7 @@ const Dropdown = (props) => {
             return (
               <button
                 className="dropbtn-inner"
-                data-testid="dropbtn-inner"
+                data-testid={`${item.toLowerCase()}-btn`}
                 id={`${item.toLowerCase()}-btn`}
                 key={item}
                 onClick={() => {
