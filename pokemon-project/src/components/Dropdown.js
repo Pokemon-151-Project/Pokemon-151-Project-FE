@@ -1,9 +1,7 @@
-const Dropdown = (props) => {
-  //ChangeDisplay is the function that changes which pokemon cards are displayed via user input.
-  const { changeDisplay } = props;
+// This component shows different options for the user to display Pokemon based on type, size and height, as well as to reset to default.
 
-  //This component is the  Dropdown menu for display options.
-  //Different buttons the user can click to only display pokemon of a certain category(type, height etc)
+const Dropdown = (props) => {
+  const { changeDisplay } = props;
 
   //Will map over this to return one button for each type.
   const typesArray = [
@@ -49,9 +47,9 @@ const Dropdown = (props) => {
             className="dropdown-display-title"
             data-testid="dropdown-display-title"
           >
-            {/* Begin mapping over types. There are 15 types so this is much more DRY. */}
             Pick a type:
           </h5>
+          {/* Returns 15 buttons, one for each Pokemon type*/}
           {typesArray.map((item) => {
             return (
               <button
@@ -68,9 +66,6 @@ const Dropdown = (props) => {
             );
           })}
         </div>
-        {/* End mapping over types */}
-
-        {/* Now, buttons to sort by tall, short, heavyweight and lightweight. */}
 
         {/* Begin buttons for sorting pokemon by weight */}
         <div>
@@ -99,7 +94,6 @@ const Dropdown = (props) => {
             Big
           </button>
         </div>
-        {/* End sorting pokemon by weight */}
 
         {/* Begin buttons for sorting pokemon by height */}
         <div>
@@ -128,10 +122,7 @@ const Dropdown = (props) => {
             Tall
           </button>
         </div>
-        {/* End sorting pokemon by height */}
       </div>
-
-      {/* End of pokemon sorting buttons */}
     </section>
   );
 };
