@@ -5,7 +5,7 @@ import useDarkMode from "../hooks/useDarkMode";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
 
-// Will map over this to produce header nav links
+// Will map over this to produce header nav links. Update this to add/change/remove links
 const linksArray = [
   {
     text: "Source",
