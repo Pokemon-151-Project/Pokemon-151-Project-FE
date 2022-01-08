@@ -28,6 +28,7 @@ body.dark {
   color: var(--button-text);
   cursor: pointer;
   border: none;
+  border-radius: 20%;
 }
 
 .logo {
@@ -187,7 +188,7 @@ h1 {
   box-sizing: border-box;
   width: 12rem;
   margin: 2%;
-  background-color: rgba(245, 245, 220, 0.774);
+  background-color: #bef8f8;
 }
 
 /* Every individual item (name, height, weight, image, etc) in the pokemon card */
