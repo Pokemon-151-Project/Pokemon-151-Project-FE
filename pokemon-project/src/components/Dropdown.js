@@ -31,7 +31,6 @@ const Dropdown = (props) => {
       </button>
 
       <div className="dropdown-content">
-        {/* Begin mapping over types. There are 15 types so this is much more dry. */}
         <div>
           <div>
             {/* Reset to original display options by refreshing the page*/}
@@ -50,6 +49,7 @@ const Dropdown = (props) => {
             className="dropdown-display-title"
             data-testid="dropdown-display-title"
           >
+            {/* Begin options  for mapping over types. There are 15 types so this is much more dry. */}
             Pick a type:
           </h5>
           {typesArray.map((item) => {
@@ -72,9 +72,9 @@ const Dropdown = (props) => {
 
         {/* Now, buttons to sort by tall, short, heavyweight and lightweight. */}
 
-        {/* Begin sorting pokemon by weight */}
+        {/* Begin buttons for sorting pokemon by weight */}
         <div>
-          {/* Show only small pokemon (<10kg) */}
+          {/* Button to show only small pokemon (<10kg) */}
           <h5 className="dropdown-display-title">Pick a weight:</h5>
           <button
             className="dropbtn-inner"
@@ -87,7 +87,7 @@ const Dropdown = (props) => {
             Small
           </button>
 
-          {/* Show only big pokemon (>100kg) */}
+          {/* Button to show only big pokemon (>100kg) */}
           <button
             className="dropbtn-inner"
             data-testid="dropbtn-inner"
@@ -101,7 +101,7 @@ const Dropdown = (props) => {
         </div>
         {/* End sorting pokemon by weight */}
 
-        {/* Begin sorting pokemon by height */}
+        {/* Begin buttons for sorting pokemon by height */}
         <div>
           <h5 className="dropdown-display-title">Pick a height:</h5>
           {/* Show only short pokemon */}
@@ -116,7 +116,7 @@ const Dropdown = (props) => {
             Short
           </button>
 
-          {/* Show only tall pokemon */}
+          {/* Button to show only tall pokemon */}
           <button
             className="dropbtn-inner"
             data-testid="dropbtn-inner"
