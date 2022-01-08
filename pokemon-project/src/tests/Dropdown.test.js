@@ -38,6 +38,10 @@ test("Reset buttons puts all pokemon back on screen", () => {
   const fireBtn = screen.getByTestId("fire-btn");
   const resetBtn = screen.getByTestId("reset-btn");
   const bulba = screen.getByText(/bulbasaur/i);
+  expect(bulba).toBeVisible();
+
+  userEvent.click(fireBtn);
+  expect(bulba).not.toBeVisible();
 });
 
 // find reset and fire buttons
