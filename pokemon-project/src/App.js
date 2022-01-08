@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 
-//This is the original data of the 151 pokemon I'm displaying.
+//This is the original data of the 151 pokemon being displayed.
 import data from "./data";
 
 function App() {
   //sets the pokemon data to state. Updates based on user preference
   const [pokemon, setPokemon] = useState(data);
-  // Boolean that user can update via button clickto display shiny forms of pokemon
   const [isShiny, setIsShiny] = useState(false);
 
   //Allows the user to press a button in the header dropdown to show only pokemon of a certain type, height, or size.

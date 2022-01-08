@@ -1,19 +1,17 @@
+// This component displays a single pokemon with images and basic data.
 import React from "react";
 
 const SinglePokemon = (props) => {
-  //Each poke is a single pokemon's data, being passed in as props.
   const { poke, isShiny } = props;
-  //destructuring the keys in poke to make my JSX a little more concise
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
     <div className="pokemon-card" data-testid="pokemon-card">
-      {/* Pokemon's name and pokedx id#*/}
       <h2 className="poke-name card-item">
         {name} <span className="dex-id">#{id}</span>
       </h2>
 
-      {/* Basic type information. Singular if only one type, plural if two types. */}
+      {/* Pokemon's type info */}
       {type[1] ? (
         <h3 className="poke-type card-item">
           {type[0]} / {type[1]}{" "}
@@ -22,7 +20,6 @@ const SinglePokemon = (props) => {
         <h3 className="poke-type card-item">{type}</h3>
       )}
 
-      {/* Returns info about weight and height */}
       <h4 className="height-weight card-item">
         Height: {height} <br />
         Weight: {weight}
@@ -46,7 +43,6 @@ const SinglePokemon = (props) => {
         )}
       </div>
 
-      {/* The pokemon's dex entry, which is basic tidbits about the pokemon */}
       <p className="card-item">{dexEntry}</p>
     </div>
   );
