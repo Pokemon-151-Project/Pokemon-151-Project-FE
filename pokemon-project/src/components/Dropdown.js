@@ -39,7 +39,7 @@ const Dropdown = (props) => {
               data-testid="reset-btn"
               id="reset-btn"
               onClick={() => {
-                window.location.reload();
+                changeDisplay(null, null, null, "reset");
               }}
             >
               Reset All
