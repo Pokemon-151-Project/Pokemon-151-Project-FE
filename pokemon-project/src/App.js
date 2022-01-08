@@ -12,7 +12,6 @@ function App() {
   const [isShiny, setIsShiny] = useState(false);
 
   //Allows the user to press a button in the header dropdown to show only pokemon of a certain type, height, or size.
-  //Sorts by type, height, or size based on what the user clicks
   const changeDisplay = (type = null, size = null, height = null) => {
     const newData = data.filter((item) => {
       if (type) {
