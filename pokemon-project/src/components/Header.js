@@ -62,6 +62,7 @@ const Header = (props) => {
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
         <nav className="header-nav">
+          {/* use the function defined above to generate links */}
           {linkMaker("Source", "https://github.com/adamhinton/pokemon-project")}
 
           {linkMaker("Bulbapedia", "https://bulbapedia.bulbagarden.net")}
