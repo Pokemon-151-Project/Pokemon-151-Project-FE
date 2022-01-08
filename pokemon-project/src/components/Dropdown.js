@@ -1,4 +1,6 @@
 // This component shows different options for the user to display Pokemon based on type, size and height, as well as to reset to default.
+// Thanks to w3 for the dropdown source code which I've heavily modified for my purposes here:
+// https://www.w3schools.com/howto/howto_css_dropdown.asp
 
 const Dropdown = (props) => {
   const { changeDisplay } = props;

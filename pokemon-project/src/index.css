@@ -14,6 +14,7 @@ body {
 }
 
 /* BEGIN DARK MODE STYLING SECTION */
+/* See useDarkMode.js for source*/
 body.dark {
   background-color: rgb(45, 60, 66);
   color: #fff;
@@ -97,7 +98,6 @@ h1 {
 }
 
 .header-nav {
-  /* Making the links vertical to take up less space */
   display: flex;
   flex-direction: column;
 }
@@ -109,6 +109,7 @@ h1 {
 }
 
 /* BEGIN HEADER DROPDOWN SECTION */
+/* Thanks to w3 for this code (which I've heavily modified), source in Dropdown.js */
 
 /* Dropdown Button */
 .dropbtn {
