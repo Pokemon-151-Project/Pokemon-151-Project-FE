@@ -1,5 +1,4 @@
 import React from "react";
-//This is the dropdown menu contained within Header
 import Dropdown from "./Dropdown";
 import useDarkMode from "../hooks/useDarkMode";
 //importing darkmode toggle icons
