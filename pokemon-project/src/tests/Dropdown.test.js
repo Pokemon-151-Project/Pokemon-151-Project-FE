@@ -32,22 +32,21 @@ test("Dropdown buttons change the displayed pokemon", () => {
   expect(bulba).not.toBeVisible();
 });
 
+// This test hits the button to only show water types, verifies that non-water types don't display, then hits the reset button, then verifies that all types now display again as expected.
 test("Reset buttons puts all pokemon back on screen", () => {
   render(<App />);
 
-  const fireBtn = screen.getByTestId("fire-btn");
+  const waterBtn = screen.getByTestId("water-btn");
   const resetBtn = screen.getByTestId("reset-btn");
   const bulba = screen.getByText(/bulbasaur/i);
   expect(bulba).toBeVisible();
 
-  userEvent.click(fireBtn);
+  userEvent.click(waterBtn);
   expect(bulba).not.toBeVisible();
-});
+  const starmie = screen.getByText(/starmie/i);
+  expect(starmie).toBeVisible();
 
-// find reset and fire buttons
-// define bulba
-// bulba in doc
-// click fire
-// bulba not in doc
-// click reset
-// bulba in doc
+  userEvent.click(resetBtn);
+  const chariz = screen.getByText(/charizard/i);
+  expect(chariz).toBeVisible();
+});
