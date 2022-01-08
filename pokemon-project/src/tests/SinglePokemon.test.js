@@ -34,5 +34,18 @@ test("Displays correct info on screen", () => {
 });
 
 test("Toggles shiny image based on props", () => {
-  render(<SinglePokemon poke={fakePokemon[0]} isShiny={false} />);
+  let isShiny = false;
+
+  const { rerender } = render(
+    <SinglePokemon poke={fakePokemon[0]} isShiny={isShiny} />
+  );
+
+  let normalImg = screen.getByTestId("not-shiny");
+  expect(normalImg).toBeVisible();
+  isShiny = true;
+
+  rerender(<SinglePokemon poke={fakePokemon[0]} isShiny={isShiny} />);
+
+  let shinyImg = screen.getByTestId("shiny");
+  expect(shinyImg).toBeVisible();
 });
