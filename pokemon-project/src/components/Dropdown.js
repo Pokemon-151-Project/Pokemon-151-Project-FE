@@ -49,7 +49,7 @@ const Dropdown = (props) => {
             className="dropdown-display-title"
             data-testid="dropdown-display-title"
           >
-            {/* Begin options  for mapping over types. There are 15 types so this is much more dry. */}
+            {/* Begin options  for mapping over types. There are 15 types so this is much more DRY. */}
             Pick a type:
           </h5>
           {typesArray.map((item) => {
