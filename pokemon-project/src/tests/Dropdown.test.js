@@ -34,6 +34,10 @@ test("Dropdown buttons change the displayed pokemon", () => {
 
 test("Reset buttons puts all pokemon back on screen", () => {
   render(<App />);
+
+  const fireBtn = screen.getByTestId("fire-btn");
+  const resetBtn = screen.getByTestId("reset-btn");
+  const bulba = screen.getByText(/bulbasaur/i);
 });
 
 // find reset and fire buttons
