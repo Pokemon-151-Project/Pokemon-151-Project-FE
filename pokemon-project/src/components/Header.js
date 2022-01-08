@@ -5,13 +5,35 @@ import useDarkMode from "../hooks/useDarkMode";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
 
+// Will map over this to produce header nav links
+const linksArray = [
+  {
+    text: "Source",
+    href: "https://github.com/adamhinton/pokemon-project",
+  },
+  {
+    text: "Bulbapedia",
+    href: "https://bulbapedia.bulbagarden.net",
+  },
+  {
+    text: "PokeAPI",
+    href: "https://pokeapi.co",
+  },
+  {
+    text: "Shinies",
+    href: "https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon",
+  },
+];
+
 // Generates links more DRYly
-const linkMaker = (text, href) => {
-  return (
-    <a target="_blank" rel="noreferrer" href={href}>
-      {text}
-    </a>
-  );
+const linkMaker = (linksArray) => {
+  return linksArray.map((item) => {
+    return (
+      <a target="_blank" rel="noreferrer" href={item.href}>
+        {item.text}
+      </a>
+    );
+  });
 };
 
 const Header = (props) => {
@@ -61,19 +83,9 @@ const Header = (props) => {
 
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
-        <nav className="header-nav">
-          {/* use the function defined above to generate links */}
-          {linkMaker("Source", "https://github.com/adamhinton/pokemon-project")}
 
-          {linkMaker("Bulbapedia", "https://bulbapedia.bulbagarden.net")}
-
-          {linkMaker("PokeAPI", "https://pokeapi.co")}
-
-          {linkMaker(
-            "Shinies",
-            "https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon"
-          )}
-        </nav>
+        {/* This produces header links, update linksArray to add/change/remove links*/}
+        <nav className="header-nav">{linkMaker(linksArray)}</nav>
       </section>
     </header>
   );
