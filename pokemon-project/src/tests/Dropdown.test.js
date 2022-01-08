@@ -35,3 +35,11 @@ test("Dropdown buttons change the displayed pokemon", () => {
 test("Reset buttons puts all pokemon back on screen", () => {
   render(<App />);
 });
+
+// find reset and fire buttons
+// define bulba
+// bulba in doc
+// click fire
+// bulba not in doc
+// click reset
+// bulba in doc
