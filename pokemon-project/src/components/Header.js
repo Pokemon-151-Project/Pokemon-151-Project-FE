@@ -42,7 +42,7 @@ const Header = (props) => {
             </button>
           </div>
 
-          <div class className="vertical-line" />
+          <div className="vertical-line" />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
           <div className="shiny-button-div">
