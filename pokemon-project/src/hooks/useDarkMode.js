@@ -1,5 +1,5 @@
+// This hook allows the user to set Dark Mode preference, and the browser remembers preference across browser visits
 import { useEffect, useState } from "react";
-// This sets dark mode on/off based on the user clicking a header button. Stores user preference.
 
 const useDarkMode = () => {
   const key = "isDarkMode";
@@ -17,24 +17,21 @@ const useDarkMode = () => {
 
     const pokeCards = window.document.querySelectorAll(".pokemon-card");
 
+    //This adds or removes .dark class to both body and each individual pokemon cards
     if (isDark) {
-      //This adds .dark class to both body and each individual pokemon cards
       window.document.body.classList.add(className);
       pokeCards.forEach((item) => {
         item.classList.add(className);
       });
     } else {
-      //this removes .dark class from both body and individual pokemon cards
       window.document.body.classList.remove(className);
       pokeCards.forEach((item) => {
         item.classList.remove(className);
       });
     }
     try {
-      //This stores user darkmode preference in local storage
       window.localStorage.setItem(key, isDark);
     } catch (e) {
-      //returns an error if setting preference is unsuccessful
       console.error("Error in setting preference");
     }
   });
