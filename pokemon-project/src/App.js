@@ -7,7 +7,7 @@ import data from "./data";
 
 function App() {
   //sets the pokemon data to state. Updates based on user preference
-  const [pokemon, setPokemon] = useState(data);
+  const [pokemonData, setPokemonData] = useState(data);
   const [isShiny, setIsShiny] = useState(false);
 
   //Allows the user to press a button in the header dropdown to show only pokemon of a certain type, height, or size = or reset the app to default if the user selects that.
@@ -31,7 +31,7 @@ function App() {
       }
       return null;
     });
-    setPokemon(newData);
+    setPokemonData(newData);
   };
 
   return (
@@ -41,7 +41,7 @@ function App() {
         setIsShiny={setIsShiny}
         isShiny={isShiny}
       />
-      <AllPokemon pokemon={pokemon} isShiny={isShiny} />
+      <AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
     </div>
   );
 }
