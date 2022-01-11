@@ -24,11 +24,9 @@ test("Dropdown buttons change the displayed pokemon", () => {
 
   const fireBtn = document.querySelector("#fire-btn");
   let bulba = screen.queryByText(/bulbasaur/i);
-
   expect(bulba).toBeVisible();
 
   userEvent.click(fireBtn);
-
   expect(bulba).not.toBeVisible();
 });
 
@@ -43,6 +41,7 @@ test("Reset buttons puts all pokemon back on screen", () => {
 
   userEvent.click(waterBtn);
   expect(bulba).not.toBeVisible();
+
   const starmie = screen.getByText(/starmie/i);
   expect(starmie).toBeVisible();
 

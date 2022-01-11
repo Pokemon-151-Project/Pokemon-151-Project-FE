@@ -37,6 +37,5 @@ test("Toggles Dark Mode", () => {
 
   const darkBtn = screen.getByTestId("toggle_btn");
   userEvent.click(darkBtn);
-
   expect(cardOne).toHaveClass("dark");
 });

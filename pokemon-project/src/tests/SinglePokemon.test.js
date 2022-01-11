@@ -25,7 +25,6 @@ test("Displays correct info on screen", () => {
   const dexEntry = screen.queryByText(/blah blah blah/i);
   const height = screen.queryByText(/4m/i);
   const weight = screen.queryByText(/50kg/i);
-
   expect(name).toBeVisible();
   expect(type).toBeVisible();
   expect(dexEntry).toBeVisible();
@@ -42,10 +41,10 @@ test("Toggles shiny image based on props", () => {
 
   let normalImg = screen.getByTestId("not-shiny");
   expect(normalImg).toBeVisible();
+
   isShiny = true;
 
   rerender(<SinglePokemon poke={fakePokemon[0]} isShiny={isShiny} />);
-
   let shinyImg = screen.getByTestId("shiny");
   expect(shinyImg).toBeVisible();
 });
