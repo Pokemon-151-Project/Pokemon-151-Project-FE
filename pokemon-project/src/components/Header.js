@@ -84,7 +84,7 @@ const Header = (props) => {
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
 
-        {/* This produces header links, update linksArray to add/change/remove links*/}
+        {/* This produces header links. Update linksArray (defined above) to add/change/remove links*/}
         <nav className="header-nav">{linkMaker(linksArray)}</nav>
       </section>
     </header>
