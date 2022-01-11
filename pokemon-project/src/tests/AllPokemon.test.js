@@ -57,7 +57,6 @@ test("AllPokemon renders correctly with certain props, then rerenders when those
 
   rerender(<AllPokemon pokemon={fakePokemon} />);
   const newFakeName = screen.queryByText(/fake pokemon name/i);
-
   expect(newFakeName).toBeInTheDocument();
 });
 
@@ -69,8 +68,9 @@ test("Can render multiple pokemon", () => {
   const name1 = screen.queryByText(/fake pokemon name/i);
   const name2 = screen.queryByText(/fake2/i);
   const name3 = screen.queryByText(/fake3/i);
-
+  const name4 = screen.queryByText(/fake4/i);
   expect(name1).toBeVisible();
   expect(name2).toBeVisible();
   expect(name3).toBeVisible();
+  expect(name4).toBeFalsy();
 });
