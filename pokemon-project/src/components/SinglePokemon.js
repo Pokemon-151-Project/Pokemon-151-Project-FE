@@ -45,7 +45,7 @@ const SinglePokemon = (props) => {
         )}
       </figure>
 
-      <p className="card-item">{dexEntry}</p>
+      <blockquote className="card-item">{dexEntry}</blockquote>
     </article>
   );
 };
