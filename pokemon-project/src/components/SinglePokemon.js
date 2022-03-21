@@ -6,7 +6,7 @@ const SinglePokemon = (props) => {
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
-    <div className="pokemon-card" data-testid="pokemon-card">
+    <article className="pokemon-card" data-testid="pokemon-card">
       <h2 className="poke-name card-item">
         {name} <span className="dex-id">#{id}</span>
       </h2>
@@ -46,7 +46,7 @@ const SinglePokemon = (props) => {
       </figure>
 
       <p className="card-item">{dexEntry}</p>
-    </div>
+    </article>
   );
 };
 
