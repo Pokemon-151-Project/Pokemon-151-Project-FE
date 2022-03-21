@@ -5,7 +5,7 @@ import SinglePokemon from "./SinglePokemon";
 const AllPokemon = (props) => {
   const { pokemonData, isShiny } = props;
   return (
-    <section className="all-pokemon">
+    <main className="all-pokemon">
       {pokemonData.map((poke) => {
         return (
           <SinglePokemon
@@ -16,7 +16,7 @@ const AllPokemon = (props) => {
           />
         );
       })}
-    </section>
+    </main>
   );
 };
 export default AllPokemon;
