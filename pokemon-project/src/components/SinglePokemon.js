@@ -26,7 +26,7 @@ const SinglePokemon = (props) => {
       </h4>
 
       {/* image of each pokemon */}
-      <div className="img-container card-item">
+      <figure className="img-container card-item">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
           <img
@@ -43,7 +43,7 @@ const SinglePokemon = (props) => {
             alt={name}
           />
         )}
-      </div>
+      </figure>
 
       <p className="card-item">{dexEntry}</p>
     </div>
