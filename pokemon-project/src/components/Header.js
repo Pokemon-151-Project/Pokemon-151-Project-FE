@@ -79,6 +79,8 @@ const Header = (props) => {
             </button>
           </div>
         </div>
+
+        {/* The dropdown section lives here */}
         <Dropdown changeDisplay={changeDisplay} />
       </section>
 
