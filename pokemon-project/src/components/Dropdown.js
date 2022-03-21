@@ -30,7 +30,7 @@ const Dropdown = (props) => {
         Display Options (check this out!)
       </button>
 
-      <div className="dropdown-content">
+      <menu className="dropdown-content">
         <div>
           <div>
             {/* Reset to original display options by refreshing the page*/}
@@ -124,7 +124,7 @@ const Dropdown = (props) => {
             Tall
           </button>
         </div>
-      </div>
+      </menu>
     </section>
   );
 };

@@ -6,7 +6,7 @@ const SinglePokemon = (props) => {
   const { name, type, dexEntry, height, weight, id, num } = poke;
 
   return (
-    <div className="pokemon-card" data-testid="pokemon-card">
+    <article className="pokemon-card" data-testid="pokemon-card">
       <h2 className="poke-name card-item">
         {name} <span className="dex-id">#{id}</span>
       </h2>
@@ -26,7 +26,7 @@ const SinglePokemon = (props) => {
       </h4>
 
       {/* image of each pokemon */}
-      <div className="img-container card-item">
+      <figure className="img-container card-item">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
           <img
@@ -43,10 +43,10 @@ const SinglePokemon = (props) => {
             alt={name}
           />
         )}
-      </div>
+      </figure>
 
-      <p className="card-item">{dexEntry}</p>
-    </div>
+      <blockquote className="card-item">{dexEntry}</blockquote>
+    </article>
   );
 };
 

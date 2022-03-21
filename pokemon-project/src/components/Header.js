@@ -47,7 +47,7 @@ const Header = (props) => {
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section className="darkmode-shiny-dropdown">
-        <div className="darkmode-shiny-section">
+        <menu className="darkmode-shiny-section">
           <div className="darkmode-section">
             <div className="logo">Dark Mode</div>
             <button
@@ -78,7 +78,9 @@ const Header = (props) => {
               {isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
             </button>
           </div>
-        </div>
+        </menu>
+
+        {/* The dropdown section lives here */}
         <Dropdown changeDisplay={changeDisplay} />
       </section>
 
