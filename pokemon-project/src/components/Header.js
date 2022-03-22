@@ -4,26 +4,8 @@ import Dropdown from "./Dropdown";
 import useDarkMode from "../hooks/useDarkMode";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
-
-// Will map over this to produce header nav links. Update this to add/change/remove links
-const linksArray = [
-  {
-    text: "Source",
-    href: "https://github.com/adamhinton/pokemon-project",
-  },
-  {
-    text: "Bulbapedia",
-    href: "https://bulbapedia.bulbagarden.net",
-  },
-  {
-    text: "PokeAPI",
-    href: "https://pokeapi.co",
-  },
-  {
-    text: "Shinies",
-    href: "https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon",
-  },
-];
+//linksArray is the list of hrefs and display test to put in the nav. Stored in utils folder
+import linksArray from "../utils/Headerutils/linksArray";
 
 // Generates links more DRYly
 const linkMaker = (linksArray) => {
