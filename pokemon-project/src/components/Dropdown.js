@@ -2,27 +2,12 @@
 // Thanks to w3 for the dropdown source code which I've heavily modified for my purposes here:
 // https://www.w3schools.com/howto/howto_css_dropdown.asp
 
+//this is all the different pokemon types to make buttons for
+import typesArray from "../utils/Dropdownutils/typesArray";
+
 const Dropdown = (props) => {
   const { changeDisplay } = props;
 
-  //Will map over this to return one button for each type.
-  const typesArray = [
-    "Normal",
-    "Fire",
-    "Water",
-    "Electric",
-    "Grass",
-    "Ice",
-    "Fighting",
-    "Poison",
-    "Ground",
-    "Flying",
-    "Psychic",
-    "Bug",
-    "Rock",
-    "Ghost",
-    "Dragon",
-  ];
   return (
     <section className="dropdown">
       {/* Hovering here shows the dropdown menu with display options */}
