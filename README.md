@@ -2,17 +2,17 @@ POKEMON 151 PROJECT
 
 Introduction:
 
--A scalable, maintainable application that maps over and displays data in digestible cards.
+-A scalable, maintainable application that maps over and displays data in digestible cards
 
--Right now, it's Pokemon. One could easily scale this up to more than the original 151 Pokemon, or tweak it to any other data.
+-HTML/CSS is highly semantic, accessible and responsive for readers of all screen sizes and abilities
 
--Persistent Dark/Light Mode preference is stored in localStorage and remembered across sessions.
+-Right now, this displays Pokemon. One could easily scale this up to more than the original 151 Pokemon, or tweak it to any other data
 
--Options for alternate(shiny) sprites.
+-Persistent Dark/Light Mode preference is stored in localStorage and remembered across sessions
 
--Dynamically updates based on user-clicked display options.
+-Options for alternate(shiny) sprites
 
-    -In this case it's different pokemon types and sizes. Could easily scale to other options.
+-Code is highly modular, with components and utils files for different functions and sections
 
 Requirements:
 For development, you will only need Node.js installed on your environement. And please use the appropriate Editorconfig plugin for your Editor (not mandatory).
@@ -36,7 +36,6 @@ HTML
 CSS
 JavaScript
 ReactJS for UI
-cssnext is used to write futureproof CSS for CSS vendor prefix under the hood).
 
 Static server with Livereload
 The app embed for development a static connect server with livereload plugged. So each time you start the app, you get automatic refresh in the browser whenever you update a file.
