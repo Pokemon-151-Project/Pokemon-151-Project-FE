@@ -6,18 +6,8 @@ import useDarkMode from "../hooks/useDarkMode";
 import { BsMoon, BsSun } from "react-icons/bs";
 //linksArray is the list of hrefs and display test to put in the nav. Stored in utils folder
 import linksArray from "../utils/Headerutils/linksArray";
-
-// Generates links more DRYly
-const linkMaker = (linksArray) => {
-  return linksArray.map((item) => {
-    const { href, text } = item;
-    return (
-      <a target="_blank" rel="noreferrer" href={href} key={text}>
-        {text}
-      </a>
-    );
-  });
-};
+//generates links for the mav using the info in linksArray
+import linkMaker from "../utils/Headerutils/linkMaker";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
@@ -47,6 +37,7 @@ const Header = (props) => {
             </button>
           </div>
 
+          {/* This is the styled big green line running through the header */}
           <div className="vertical-line" />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
@@ -69,7 +60,7 @@ const Header = (props) => {
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
 
-        {/* This produces header links. Update linksArray (defined above) to add/change/remove links*/}
+        {/* the linkMaker function produces header links. Update linksArray (imported above) to add/change/remove links*/}
         <nav className="header-nav">{linkMaker(linksArray)}</nav>
       </section>
     </header>
