@@ -1,4 +1,4 @@
-//This is all the different Pokemon types to make buttons for
+//This is all the different Pokemon types to make buttons for, will be used in Dropdown component
 const typesArray = [
   "Normal",
   "Fire",
