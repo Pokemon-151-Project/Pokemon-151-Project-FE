@@ -1,3 +1,4 @@
+//This is all the different Pokemon types to make buttons for
 const typesArray = [
   "Normal",
   "Fire",
