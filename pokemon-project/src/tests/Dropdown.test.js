@@ -6,8 +6,6 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 
-//I've ensured these tests are falsifiable by altering variables and expects
-
 test("component renders without errors", () => {
   render(<Dropdown />);
 });

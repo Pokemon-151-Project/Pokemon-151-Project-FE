@@ -2,9 +2,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
-
-//I've ensured these tests are falsifiable by altering variables and expects
-
 test("Sanity Check", () => {
   const twoPlusTwo = 2 + 2;
   expect(twoPlusTwo).toStrictEqual(4);
