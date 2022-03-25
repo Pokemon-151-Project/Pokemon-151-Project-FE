@@ -8,7 +8,7 @@ test("Component renders without errors", () => {
 
 test("Renders the expected segments of the header", () => {
   render(<Header />);
-  const h1 = screen.queryByText(/pokemon display/i);
+  const h1 = screen.queryByText(/pokemon 151 project/i);
   const author = screen.queryByText(/author: adam hinton/i);
   const source = screen.queryByText(/author/i);
   const dropbtn = screen.queryByText(/display options/i);

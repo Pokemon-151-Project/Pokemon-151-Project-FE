@@ -29,12 +29,7 @@ const SinglePokemon = (props) => {
       <figure className="img-container card-item">
         {/* Displays either the shiny or normal form of the pokemon based on user preference */}
         {isShiny ? (
-          <img
-            className="poke-img"
-            data-testid="shiny"
-            src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
-            alt={name}
-          />
+          <img className="poke-img" data-testid="shiny" alt={name} />
         ) : (
           <img
             className="poke-img"

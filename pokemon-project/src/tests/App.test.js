@@ -2,9 +2,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
-
-//I've ensured these tests are falsifiable by altering variables and expects
-
 test("Sanity Check", () => {
   const twoPlusTwo = 2 + 2;
   expect(twoPlusTwo).toStrictEqual(4);
@@ -20,8 +17,7 @@ test("renders child components", () => {
   const docHeader = document.querySelector("header");
   expect(docHeader).toBeInTheDocument();
 
-  const h1 = screen.getByText(/pokemon display/i);
-  console.debug("h1:", h1);
+  const h1 = screen.getByText(/pokemon 151 project/i);
   expect(h1).toBeInTheDocument();
 
   const bulba = screen.getByText(/bulbasaur/i);

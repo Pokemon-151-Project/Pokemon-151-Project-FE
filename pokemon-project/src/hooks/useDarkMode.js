@@ -16,7 +16,6 @@ const useDarkMode = () => {
 
   useEffect(() => {
     const className = "dark";
-
     const pokeCards = window.document.querySelectorAll(".pokemon-card");
 
     //This adds or removes .dark class to both body and each individual pokemon cards
@@ -37,7 +36,6 @@ const useDarkMode = () => {
       console.error("Error in setting preference");
     }
   });
-
   return [isDark, setIsDark];
 };
 

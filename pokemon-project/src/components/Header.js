@@ -4,38 +4,10 @@ import Dropdown from "./Dropdown";
 import useDarkMode from "../hooks/useDarkMode";
 //darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
-
-// Will map over this to produce header nav links. Update this to add/change/remove links
-const linksArray = [
-  {
-    text: "Source",
-    href: "https://github.com/adamhinton/pokemon-project",
-  },
-  {
-    text: "Bulbapedia",
-    href: "https://bulbapedia.bulbagarden.net",
-  },
-  {
-    text: "PokeAPI",
-    href: "https://pokeapi.co",
-  },
-  {
-    text: "Shinies",
-    href: "https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon",
-  },
-];
-
-// Generates links more DRYly
-const linkMaker = (linksArray) => {
-  return linksArray.map((item) => {
-    const { href, text } = item;
-    return (
-      <a target="_blank" rel="noreferrer" href={href} key={text}>
-        {text}
-      </a>
-    );
-  });
-};
+//linksArray is the list of hrefs and display test to put in the nav. Stored in utils folder
+import linksArray from "../utils/Headerutils/linksArray";
+//generates links for the mav using the info in linksArray
+import linkMaker from "../utils/Headerutils/linkMaker";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
@@ -43,7 +15,7 @@ const Header = (props) => {
   const { changeDisplay, isShiny, setIsShiny } = props;
   return (
     <header>
-      <h1 className="header-item header-h1">Pokemon Display</h1>
+      <h1 className="header-item header-h1">Pokemon 151 Project</h1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section className="darkmode-shiny-dropdown">
@@ -65,6 +37,7 @@ const Header = (props) => {
             </button>
           </div>
 
+          {/* This is the styled big green line running through the header */}
           <div className="vertical-line" />
 
           {/* This button toggles whether the app shows the Shiny forms of the pokemon */}
@@ -87,7 +60,7 @@ const Header = (props) => {
       <section className="adam-info header-item">
         <h2>Author: Adam Hinton</h2>
 
-        {/* This produces header links. Update linksArray (defined above) to add/change/remove links*/}
+        {/* the linkMaker function produces header links. Update linksArray (imported above) to add/change/remove links*/}
         <nav className="header-nav">{linkMaker(linksArray)}</nav>
       </section>
     </header>
