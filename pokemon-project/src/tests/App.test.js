@@ -20,7 +20,7 @@ test("renders child components", () => {
   const docHeader = document.querySelector("header");
   expect(docHeader).toBeInTheDocument();
 
-  const h1 = screen.getByText(/pokemon display/i);
+  const h1 = screen.getByText(/pokemon 151 project/i);
   console.debug("h1:", h1);
   expect(h1).toBeInTheDocument();
 
