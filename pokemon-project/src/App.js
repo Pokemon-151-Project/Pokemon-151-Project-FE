@@ -11,7 +11,9 @@ function App() {
   //isShiny allows users to press a header button to show alternate ("shiny") sprites for each pokemon
   const [isShiny, setIsShiny] = useState(false);
 
-  //Allows the user to press a button in the header dropdown to show only pokemon of a certain type, height, or size = or reset the app to default if the user selects that.
+  //Allows the user to press a button in the header dropdown to show only
+  //pokemon of a certain type, height, or size -
+  //or reset the app to default if the user selects that.
   const changeDisplay = (
     type = null,
     size = null,
