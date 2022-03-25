@@ -32,7 +32,7 @@ const SinglePokemon = (props) => {
           <img
             className="poke-img"
             data-testid="shiny"
-            src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
+            src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
             alt={name}
           />
         ) : (
