@@ -15,7 +15,7 @@ const Header = (props) => {
   const { changeDisplay, isShiny, setIsShiny } = props;
   return (
     <header>
-      <h1 className="header-item header-h1">Pokemon Display</h1>
+      <h1 className="header-item header-h1">Pokemon 151 Project</h1>
 
       {/* Begin display options dropdown. See Dropdown.js */}
       <section className="darkmode-shiny-dropdown">
