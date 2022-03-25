@@ -21,7 +21,6 @@ test("renders child components", () => {
   expect(docHeader).toBeInTheDocument();
 
   const h1 = screen.getByText(/pokemon 151 project/i);
-  console.debug("h1:", h1);
   expect(h1).toBeInTheDocument();
 
   const bulba = screen.getByText(/bulbasaur/i);
