@@ -1,4 +1,5 @@
 //This is data of the original 151 pokemon. It is the starting point; the application maps over this to display all 151 with images and facts about them. THen the user can press buttons to sort them by type, size and height.
+
 const pokemonData = [
   {
     id: 1,
@@ -7,17 +8,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.71 m",
     weight: "6.9 kg",
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-    next_evolution: [
-      {
-        num: "002",
-        name: "Ivysaur",
-      },
-      {
-        num: "003",
-        name: "Venusaur",
-      },
-    ],
     dexEntry:
       "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokemon.",
   },
@@ -28,19 +18,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.99 m",
     weight: "13.0 kg",
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-    prev_evolution: [
-      {
-        num: "001",
-        name: "Bulbasaur",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "003",
-        name: "Venusaur",
-      },
-    ],
     dexEntry:
       "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
   },
@@ -51,16 +28,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "2.01 m",
     weight: "100.0 kg",
-    prev_evolution: [
-      {
-        num: "001",
-        name: "Bulbasaur",
-      },
-      {
-        num: "002",
-        name: "Ivysaur",
-      },
-    ],
     dexEntry:
       "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
   },
@@ -71,17 +38,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.61 m",
     weight: "8.5 kg",
-    weaknesses: ["Water", "Ground", "Rock"],
-    next_evolution: [
-      {
-        num: "005",
-        name: "Charmeleon",
-      },
-      {
-        num: "006",
-        name: "Charizard",
-      },
-    ],
     dexEntry:
       "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
   },
@@ -92,19 +48,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.09 m",
     weight: "19.0 kg",
-    weaknesses: ["Water", "Ground", "Rock"],
-    prev_evolution: [
-      {
-        num: "004",
-        name: "Charmander",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "006",
-        name: "Charizard",
-      },
-    ],
     dexEntry:
       "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
   },
@@ -115,16 +58,6 @@ const pokemonData = [
     type: ["Fire", "Flying"],
     height: "1.70 m",
     weight: "90.5 kg",
-    prev_evolution: [
-      {
-        num: "004",
-        name: "Charmander",
-      },
-      {
-        num: "005",
-        name: "Charmeleon",
-      },
-    ],
     dexEntry:
       "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
   },
@@ -135,17 +68,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.51 m",
     weight: "9.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "008",
-        name: "Wartortle",
-      },
-      {
-        num: "009",
-        name: "Blastoise",
-      },
-    ],
     dexEntry:
       "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
   },
@@ -156,19 +78,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.99 m",
     weight: "22.5 kg",
-    weaknesses: ["Electric", "Grass"],
-    prev_evolution: [
-      {
-        num: "007",
-        name: "Squirtle",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "009",
-        name: "Blastoise",
-      },
-    ],
     dexEntry:
       "It cleverly controls its furry ears and tail to maintain its balance while swimming.",
   },
@@ -179,16 +88,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.60 m",
     weight: "85.5 kg",
-    prev_evolution: [
-      {
-        num: "007",
-        name: "Squirtle",
-      },
-      {
-        num: "008",
-        name: "Wartortle",
-      },
-    ],
     dexEntry:
       "The rocket cannons on its shell fire jets of water capable of punching holes through thick steel.",
   },
@@ -199,17 +98,6 @@ const pokemonData = [
     type: ["Bug"],
     height: "0.30 m",
     weight: "2.9 kg",
-    weaknesses: ["Fire", "Flying", "Rock"],
-    next_evolution: [
-      {
-        num: "011",
-        name: "Metapod",
-      },
-      {
-        num: "012",
-        name: "Butterfree",
-      },
-    ],
     dexEntry:
       "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
   },
@@ -220,19 +108,6 @@ const pokemonData = [
     type: ["Bug"],
     height: "0.71 m",
     weight: "9.9 kg",
-    weaknesses: ["Fire", "Flying", "Rock"],
-    prev_evolution: [
-      {
-        num: "010",
-        name: "Caterpie",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "012",
-        name: "Butterfree",
-      },
-    ],
     dexEntry:
       "A steel-hard shell protects its tender body. It quietly endures hardships while awaiting evolution.",
   },
@@ -243,16 +118,6 @@ const pokemonData = [
     type: ["Bug", "Flying"],
     height: "1.09 m",
     weight: "32.0 kg",
-    prev_evolution: [
-      {
-        num: "010",
-        name: "Caterpie",
-      },
-      {
-        num: "011",
-        name: "Metapod",
-      },
-    ],
     dexEntry:
       "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
   },
@@ -263,17 +128,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.30 m",
     weight: "3.2 kg",
-    weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
-    next_evolution: [
-      {
-        num: "014",
-        name: "Kakuna",
-      },
-      {
-        num: "015",
-        name: "Beedrill",
-      },
-    ],
     dexEntry:
       "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
   },
@@ -284,19 +138,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.61 m",
     weight: "10.0 kg",
-    weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
-    prev_evolution: [
-      {
-        num: "013",
-        name: "Weedle",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "015",
-        name: "Beedrill",
-      },
-    ],
     dexEntry:
       "While awaiting evolution, it hides from predators under leaves and in nooks of branches.",
   },
@@ -307,16 +148,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.99 m",
     weight: "29.5 kg",
-    prev_evolution: [
-      {
-        num: "013",
-        name: "Weedle",
-      },
-      {
-        num: "014",
-        name: "Kakuna",
-      },
-    ],
     dexEntry:
       "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail.",
   },
@@ -327,17 +158,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "0.30 m",
     weight: "1.8 kg",
-    weaknesses: ["Electric", "Rock"],
-    next_evolution: [
-      {
-        num: "017",
-        name: "Pidgeotto",
-      },
-      {
-        num: "018",
-        name: "Pidgeot",
-      },
-    ],
     dexEntry:
       "Because it dislikes fighting, it protects itself by kicking up sand.",
   },
@@ -348,19 +168,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.09 m",
     weight: "30.0 kg",
-    weaknesses: ["Electric", "Rock"],
-    prev_evolution: [
-      {
-        num: "016",
-        name: "Pidgey",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "018",
-        name: "Pidgeot",
-      },
-    ],
     dexEntry:
       "It has outstanding vision. However high it flies, it is able to distinguish the movements of its prey.",
   },
@@ -371,16 +178,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.50 m",
     weight: "39.5 kg",
-    prev_evolution: [
-      {
-        num: "016",
-        name: "Pidgey",
-      },
-      {
-        num: "017",
-        name: "Pidgeotto",
-      },
-    ],
     dexEntry:
       "It spreads its gorgeous wings widely to intimidate enemies. It races through the skies at Mach-2 speed.",
   },
@@ -391,13 +188,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.30 m",
     weight: "3.5 kg",
-    weaknesses: ["Fighting"],
-    next_evolution: [
-      {
-        num: "020",
-        name: "Raticate",
-      },
-    ],
     dexEntry:
       "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
   },
@@ -408,12 +198,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.71 m",
     weight: "18.5 kg",
-    prev_evolution: [
-      {
-        num: "019",
-        name: "Rattata",
-      },
-    ],
     dexEntry:
       "Its whiskers help it to maintain balance. Its fangs never stop growing, so it gnaws to pare them down.",
   },
@@ -424,13 +208,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "0.30 m",
     weight: "2.0 kg",
-    weaknesses: ["Electric", "Rock"],
-    next_evolution: [
-      {
-        num: "022",
-        name: "Fearow",
-      },
-    ],
     dexEntry:
       "Inept at flying high. However, it can fly around very fast to protect its territory.",
   },
@@ -441,12 +218,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.19 m",
     weight: "38.0 kg",
-    prev_evolution: [
-      {
-        num: "021",
-        name: "Spearow",
-      },
-    ],
     dexEntry:
       "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
   },
@@ -457,13 +228,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "2.01 m",
     weight: "6.9 kg",
-    weaknesses: ["Ground", "Psychic"],
-    next_evolution: [
-      {
-        num: "024",
-        name: "Arbok",
-      },
-    ],
     dexEntry:
       "It always hides in grass. When first born, it has no poison, so its bite is painful, but harmless.",
   },
@@ -474,12 +238,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "3.51 m",
     weight: "65.0 kg",
-    prev_evolution: [
-      {
-        num: "023",
-        name: "Ekans",
-      },
-    ],
     dexEntry:
       "It is rumored that the ferocious warning markings on its belly differ from area to area.",
   },
@@ -490,13 +248,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.41 m",
     weight: "6.0 kg",
-    weaknesses: ["Ground"],
-    next_evolution: [
-      {
-        num: "026",
-        name: "Raichu",
-      },
-    ],
     dexEntry:
       "When several Pikachu gather, their electricity could build and cause lightning storms.",
   },
@@ -507,12 +258,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.79 m",
     weight: "30.0 kg",
-    prev_evolution: [
-      {
-        num: "025",
-        name: "Pikachu",
-      },
-    ],
     dexEntry:
       "Its long tail serves as a ground to protect itself from its own high voltage power.",
   },
@@ -523,13 +268,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.61 m",
     weight: "12.0 kg",
-    weaknesses: ["Water", "Grass", "Ice"],
-    next_evolution: [
-      {
-        num: "028",
-        name: "Sandslash",
-      },
-    ],
     dexEntry:
       "Its body is dry. When it gets cold at night, its hide is said to become coated with a fine dew.",
   },
@@ -540,12 +278,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.99 m",
     weight: "29.5 kg",
-    prev_evolution: [
-      {
-        num: "027",
-        name: "Sandshrew",
-      },
-    ],
     dexEntry:
       "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
   },
@@ -556,17 +288,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.41 m",
     weight: "7.0 kg",
-    weaknesses: ["Ground", "Psychic"],
-    next_evolution: [
-      {
-        num: "030",
-        name: "Nidorina",
-      },
-      {
-        num: "031",
-        name: "Nidoqueen",
-      },
-    ],
     dexEntry:
       "Although small, its venomous barbs render this Pokemon dangerous.",
   },
@@ -577,19 +298,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.79 m",
     weight: "20.0 kg",
-    weaknesses: ["Ground", "Psychic"],
-    prev_evolution: [
-      {
-        num: "029",
-        name: "Nidoran(Female)",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "031",
-        name: "Nidoqueen",
-      },
-    ],
     dexEntry:
       "When resting deep in its burrow, its thorns always retract. This is proof that it is relaxed.",
   },
@@ -600,16 +308,6 @@ const pokemonData = [
     type: ["Poison", "Ground"],
     height: "1.30 m",
     weight: "60.0 kg",
-    prev_evolution: [
-      {
-        num: "029",
-        name: "Nidoran(Female)",
-      },
-      {
-        num: "030",
-        name: "Nidorina",
-      },
-    ],
     dexEntry:
       "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
   },
@@ -620,17 +318,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.51 m",
     weight: "9.0 kg",
-    weaknesses: ["Ground", "Psychic"],
-    next_evolution: [
-      {
-        num: "033",
-        name: "Nidorino",
-      },
-      {
-        num: "034",
-        name: "Nidoking",
-      },
-    ],
     dexEntry:
       "Nidoran freely moves its ears in any direction. Even the slightest sound does not escape this Pokémon's notice.",
   },
@@ -641,19 +328,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.89 m",
     weight: "19.5 kg",
-    weaknesses: ["Ground", "Psychic"],
-    prev_evolution: [
-      {
-        num: "032",
-        name: "Nidoran(Male)",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "034",
-        name: "Nidoking",
-      },
-    ],
     dexEntry:
       "It raises its big ears to check its surroundings. If it senses anything, it attacks immediately.",
   },
@@ -664,16 +338,6 @@ const pokemonData = [
     type: ["Poison", "Ground"],
     height: "1.40 m",
     weight: "62.0 kg",
-    prev_evolution: [
-      {
-        num: "032",
-        name: "Nidoran(Male)",
-      },
-      {
-        num: "033",
-        name: "Nidorino",
-      },
-    ],
     dexEntry:
       "One swing of its mighty tail can snap a telephone pole as if it were a matchstick.",
   },
@@ -684,13 +348,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.61 m",
     weight: "7.5 kg",
-    weaknesses: ["Fighting"],
-    next_evolution: [
-      {
-        num: "036",
-        name: "Clefable",
-      },
-    ],
     dexEntry:
       "The moonlight that it stores in the wings on its back apparently gives it the ability to float in midair.",
   },
@@ -701,12 +358,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "1.30 m",
     weight: "40.0 kg",
-    prev_evolution: [
-      {
-        num: "035",
-        name: "Clefairy",
-      },
-    ],
     dexEntry:
       "With its acute hearing, it can pick up sounds from far away. It usually hides in quiet places.",
   },
@@ -717,13 +368,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.61 m",
     weight: "9.9 kg",
-    weaknesses: ["Water", "Ground", "Rock"],
-    next_evolution: [
-      {
-        num: "038",
-        name: "Ninetales",
-      },
-    ],
     dexEntry:
       "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
   },
@@ -734,12 +378,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.09 m",
     weight: "19.9 kg",
-    prev_evolution: [
-      {
-        num: "037",
-        name: "Vulpix",
-      },
-    ],
     dexEntry:
       "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
   },
@@ -750,13 +388,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.51 m",
     weight: "5.5 kg",
-    weaknesses: ["Fighting"],
-    next_evolution: [
-      {
-        num: "040",
-        name: "Wigglytuff",
-      },
-    ],
     dexEntry:
       "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
   },
@@ -767,12 +398,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.99 m",
     weight: "12.0 kg",
-    prev_evolution: [
-      {
-        num: "039",
-        name: "Jigglypuff",
-      },
-    ],
     dexEntry:
       "Its body is full of elasticity. By inhaling deeply, it can continue to inflate itself without limit.",
   },
@@ -783,13 +408,6 @@ const pokemonData = [
     type: ["Poison", "Flying"],
     height: "0.79 m",
     weight: "7.5 kg",
-    weaknesses: ["Electric", "Ice", "Psychic", "Rock"],
-    next_evolution: [
-      {
-        num: "042",
-        name: "Golbat",
-      },
-    ],
     dexEntry:
       "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
   },
@@ -800,12 +418,6 @@ const pokemonData = [
     type: ["Poison", "Flying"],
     height: "1.60 m",
     weight: "55.0 kg",
-    prev_evolution: [
-      {
-        num: "041",
-        name: "Zubat",
-      },
-    ],
     dexEntry:
       "It attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and suck blood.",
   },
@@ -816,17 +428,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.51 m",
     weight: "5.4 kg",
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-    next_evolution: [
-      {
-        num: "044",
-        name: "Gloom",
-      },
-      {
-        num: "045",
-        name: "Vileplume",
-      },
-    ],
     dexEntry:
       "It may be mistaken for a clump of weeds. If you try to yank it out of the ground, it shrieks horribly.",
   },
@@ -837,19 +438,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.79 m",
     weight: "8.6 kg",
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-    prev_evolution: [
-      {
-        num: "043",
-        name: "Oddish",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "045",
-        name: "Vileplume",
-      },
-    ],
     dexEntry:
       "Smells incredibly foul! However, around 1 out of 1,000 people enjoy sniffing its nose-bending stink.",
   },
@@ -860,16 +448,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "1.19 m",
     weight: "18.6 kg",
-    prev_evolution: [
-      {
-        num: "043",
-        name: "Oddish",
-      },
-      {
-        num: "044",
-        name: "Gloom",
-      },
-    ],
     dexEntry:
       "It has the world's largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
   },
@@ -880,13 +458,6 @@ const pokemonData = [
     type: ["Bug", "Grass"],
     height: "0.30 m",
     weight: "5.4 kg",
-    weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug", "Rock"],
-    next_evolution: [
-      {
-        num: "047",
-        name: "Parasect",
-      },
-    ],
     dexEntry:
       "Mushrooms named tochukaso grow on its back. They grow along with the host Paras.",
   },
@@ -897,12 +468,6 @@ const pokemonData = [
     type: ["Bug", "Grass"],
     height: "0.99 m",
     weight: "29.5 kg",
-    prev_evolution: [
-      {
-        num: "046",
-        name: "Paras",
-      },
-    ],
     dexEntry:
       "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
   },
@@ -913,13 +478,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "0.99 m",
     weight: "30.0 kg",
-    weaknesses: ["Fire", "Flying", "Psychic", "Rock"],
-    next_evolution: [
-      {
-        num: "049",
-        name: "Venomoth",
-      },
-    ],
     dexEntry:
       "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
   },
@@ -930,12 +488,6 @@ const pokemonData = [
     type: ["Bug", "Poison"],
     height: "1.50 m",
     weight: "12.5 kg",
-    prev_evolution: [
-      {
-        num: "048",
-        name: "Venonat",
-      },
-    ],
     dexEntry:
       "The dust-like scales covering its wings are color-coded to indicate the kinds of poison it has.",
   },
@@ -946,13 +498,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.20 m",
     weight: "0.8 kg",
-    weaknesses: ["Water", "Grass", "Ice"],
-    next_evolution: [
-      {
-        num: "051",
-        name: "Dugtrio",
-      },
-    ],
     dexEntry:
       "It burrows through the ground at a shallow depth. It leaves raised earth in its wake, making it easy to spot.",
   },
@@ -963,12 +508,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.71 m",
     weight: "33.3 kg",
-    prev_evolution: [
-      {
-        num: "050",
-        name: "Diglett",
-      },
-    ],
     dexEntry:
       "A team of triplets that can burrow over 60 MPH. Due to this, some people think it's an earthquake.",
   },
@@ -979,13 +518,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.41 m",
     weight: "4.2 kg",
-    weaknesses: ["Fighting"],
-    next_evolution: [
-      {
-        num: "053",
-        name: "Persian",
-      },
-    ],
     dexEntry:
       "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change.",
   },
@@ -996,12 +528,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.99 m",
     weight: "32.0 kg",
-    prev_evolution: [
-      {
-        num: "052",
-        name: "Meowth",
-      },
-    ],
     dexEntry:
       "Many adore it for its sophisticated air. However, it will lash out and scratch for little reason.",
   },
@@ -1012,13 +538,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.79 m",
     weight: "19.6 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "055",
-        name: "Golduck",
-      },
-    ],
     dexEntry:
       "Always tormented by headaches. It uses psychic powers, but it is not known if it intends to do so.",
   },
@@ -1029,12 +548,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.70 m",
     weight: "76.6 kg",
-    prev_evolution: [
-      {
-        num: "054",
-        name: "Psyduck",
-      },
-    ],
     dexEntry:
       "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
   },
@@ -1045,13 +558,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "0.51 m",
     weight: "28.0 kg",
-    weaknesses: ["Flying", "Psychic", "Fairy"],
-    next_evolution: [
-      {
-        num: "057",
-        name: "Primeape",
-      },
-    ],
     dexEntry:
       "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
   },
@@ -1062,12 +568,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "0.99 m",
     weight: "32.0 kg",
-    prev_evolution: [
-      {
-        num: "056",
-        name: "Mankey",
-      },
-    ],
     dexEntry:
       "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
   },
@@ -1078,13 +578,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.71 m",
     weight: "19.0 kg",
-    weaknesses: ["Water", "Ground", "Rock"],
-    next_evolution: [
-      {
-        num: "059",
-        name: "Arcanine",
-      },
-    ],
     dexEntry:
       "It has a brave and trustworthy nature and fearlessly stands up to bigger and stronger foes.",
   },
@@ -1095,12 +588,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.91 m",
     weight: "155.0 kg",
-    prev_evolution: [
-      {
-        num: "058",
-        name: "Growlithe",
-      },
-    ],
     dexEntry:
       "This legendary Chinese Pokemon is considered magnificent. Many people are enchanted by its grand mane.",
   },
@@ -1111,17 +598,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.61 m",
     weight: "12.4 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "061",
-        name: "Poliwhirl",
-      },
-      {
-        num: "062",
-        name: "Poliwrath",
-      },
-    ],
     dexEntry:
       "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
   },
@@ -1132,19 +608,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.99 m",
     weight: "20.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    prev_evolution: [
-      {
-        num: "060",
-        name: "Poliwag",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "062",
-        name: "Poliwrath",
-      },
-    ],
     dexEntry:
       "Its two legs are well developed. Even though it can live on the ground, it prefers living in water.",
   },
@@ -1155,16 +618,6 @@ const pokemonData = [
     type: ["Water", "Fighting"],
     height: "1.30 m",
     weight: "54.0 kg",
-    prev_evolution: [
-      {
-        num: "060",
-        name: "Poliwag",
-      },
-      {
-        num: "061",
-        name: "Poliwhirl",
-      },
-    ],
     dexEntry:
       "Although an energetic, skilled swimmer that uses all of its muscles, it lives on dry land.",
   },
@@ -1175,17 +628,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "0.89 m",
     weight: "19.5 kg",
-    weaknesses: ["Bug", "Ghost", "Dark"],
-    next_evolution: [
-      {
-        num: "064",
-        name: "Kadabra",
-      },
-      {
-        num: "065",
-        name: "Alakazam",
-      },
-    ],
     dexEntry:
       "Sleeps 18 hours a day. If it senses danger, it will teleport itself to safety even as it sleeps.",
   },
@@ -1196,19 +638,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.30 m",
     weight: "56.5 kg",
-    weaknesses: ["Bug", "Ghost", "Dark"],
-    prev_evolution: [
-      {
-        num: "063",
-        name: "Abra",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "065",
-        name: "Alakazam",
-      },
-    ],
     dexEntry:
       "It emits special alpha waves from its body that induce headaches just by being close by.",
   },
@@ -1219,16 +648,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.50 m",
     weight: "48.0 kg",
-    prev_evolution: [
-      {
-        num: "063",
-        name: "Abra",
-      },
-      {
-        num: "064",
-        name: "Kadabra",
-      },
-    ],
     dexEntry:
       "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000.",
   },
@@ -1239,17 +658,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "0.79 m",
     weight: "19.5 kg",
-    weaknesses: ["Flying", "Psychic", "Fairy"],
-    next_evolution: [
-      {
-        num: "067",
-        name: "Machoke",
-      },
-      {
-        num: "068",
-        name: "Machamp",
-      },
-    ],
     dexEntry:
       "Always brimming with power, it passes time by lifting boulders. Doing so makes it even stronger.",
   },
@@ -1260,19 +668,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "1.50 m",
     weight: "70.5 kg",
-    weaknesses: ["Flying", "Psychic", "Fairy"],
-    prev_evolution: [
-      {
-        num: "066",
-        name: "Machop",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "068",
-        name: "Machamp",
-      },
-    ],
     dexEntry:
       "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
   },
@@ -1283,16 +678,6 @@ const pokemonData = [
     type: ["Fighting"],
     height: "1.60 m",
     weight: "130.0 kg",
-    prev_evolution: [
-      {
-        num: "066",
-        name: "Machop",
-      },
-      {
-        num: "067",
-        name: "Machoke",
-      },
-    ],
     dexEntry:
       "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
   },
@@ -1303,17 +688,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.71 m",
     weight: "4.0 kg",
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-    next_evolution: [
-      {
-        num: "070",
-        name: "Weepinbell",
-      },
-      {
-        num: "071",
-        name: "Victreebel",
-      },
-    ],
     dexEntry:
       "A carnivorous Pokemon that traps and eats bugs. It uses its root feet to soak up needed moisture.",
   },
@@ -1324,19 +698,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "0.99 m",
     weight: "6.4 kg",
-    weaknesses: ["Fire", "Ice", "Flying", "Psychic"],
-    prev_evolution: [
-      {
-        num: "069",
-        name: "Bellsprout",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "071",
-        name: "Victreebel",
-      },
-    ],
     dexEntry:
       "When hungry, it swallows anything that moves. Its hapless prey is melted inside by strong acids.",
   },
@@ -1347,16 +708,6 @@ const pokemonData = [
     type: ["Grass", "Poison"],
     height: "1.70 m",
     weight: "15.5 kg",
-    prev_evolution: [
-      {
-        num: "069",
-        name: "Bellsprout",
-      },
-      {
-        num: "070",
-        name: "Weepinbell",
-      },
-    ],
     dexEntry:
       "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
   },
@@ -1367,13 +718,6 @@ const pokemonData = [
     type: ["Water", "Poison"],
     height: "0.89 m",
     weight: "45.5 kg",
-    weaknesses: ["Electric", "Ground", "Psychic"],
-    next_evolution: [
-      {
-        num: "073",
-        name: "Tentacruel",
-      },
-    ],
     dexEntry:
       "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
   },
@@ -1384,12 +728,6 @@ const pokemonData = [
     type: ["Water", "Poison"],
     height: "1.60 m",
     weight: "55.0 kg",
-    prev_evolution: [
-      {
-        num: "072",
-        name: "Tentacool",
-      },
-    ],
     dexEntry:
       "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
   },
@@ -1400,17 +738,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "0.41 m",
     weight: "20.0 kg",
-    weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
-    next_evolution: [
-      {
-        num: "075",
-        name: "Graveler",
-      },
-      {
-        num: "076",
-        name: "Golem",
-      },
-    ],
     dexEntry:
       "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
   },
@@ -1421,19 +748,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "0.99 m",
     weight: "105.0 kg",
-    weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
-    prev_evolution: [
-      {
-        num: "074",
-        name: "Geodude",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "076",
-        name: "Golem",
-      },
-    ],
     dexEntry:
       "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
   },
@@ -1444,16 +758,6 @@ const pokemonData = [
     type: ["Rock", "Ground"],
     height: "1.40 m",
     weight: "300.0 kg",
-    prev_evolution: [
-      {
-        num: "074",
-        name: "Geodude",
-      },
-      {
-        num: "075",
-        name: "Graveler",
-      },
-    ],
     dexEntry:
       "It is enclosed in a hard shell that is as rugged as slabs of rock. It sheds skin once a year to grow larger.",
   },
@@ -1464,13 +768,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.99 m",
     weight: "30.0 kg",
-    weaknesses: ["Water", "Ground", "Rock"],
-    next_evolution: [
-      {
-        num: "078",
-        name: "Rapidash",
-      },
-    ],
     dexEntry:
       "It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.",
   },
@@ -1481,12 +778,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "1.70 m",
     weight: "95.0 kg",
-    prev_evolution: [
-      {
-        num: "077",
-        name: "Ponyta",
-      },
-    ],
     dexEntry:
       "Very competitive, this Pokemon will chase anything that moves fast in the hopes of racing it.",
   },
@@ -1497,13 +788,6 @@ const pokemonData = [
     type: ["Water", "Psychic"],
     height: "1.19 m",
     weight: "36.0 kg",
-    weaknesses: ["Electric", "Grass", "Bug", "Ghost", "Dark"],
-    next_evolution: [
-      {
-        num: "080",
-        name: "Slowbro",
-      },
-    ],
     dexEntry:
       "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
   },
@@ -1514,12 +798,6 @@ const pokemonData = [
     type: ["Water", "Psychic"],
     height: "1.60 m",
     weight: "78.5 kg",
-    prev_evolution: [
-      {
-        num: "079",
-        name: "Slowpoke",
-      },
-    ],
     dexEntry:
       "An attached Shellder won't let go because of the tasty flavor that oozes out of its tail.",
   },
@@ -1530,13 +808,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.30 m",
     weight: "6.0 kg",
-    weaknesses: ["Fire", "Water", "Ground"],
-    next_evolution: [
-      {
-        num: "082",
-        name: "Magneton",
-      },
-    ],
     dexEntry:
       "The electricity emitted by the units on each side of its body cause it to become a strong magnet.",
   },
@@ -1547,12 +818,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.99 m",
     weight: "60.0 kg",
-    prev_evolution: [
-      {
-        num: "081",
-        name: "Magnemite",
-      },
-    ],
     dexEntry:
       "Generates strange radio signals. It raises the temperature by 3.6F degrees within 3,300 feet.",
   },
@@ -1573,13 +838,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.40 m",
     weight: "39.2 kg",
-    weaknesses: ["Electric", "Rock"],
-    next_evolution: [
-      {
-        num: "085",
-        name: "Dodrio",
-      },
-    ],
     dexEntry:
       "It races through grassy plains with powerful strides, leaving footprints up to four inches deep.",
   },
@@ -1590,12 +848,6 @@ const pokemonData = [
     type: ["Normal", "Flying"],
     height: "1.80 m",
     weight: "85.2 kg",
-    prev_evolution: [
-      {
-        num: "084",
-        name: "Doduo",
-      },
-    ],
     dexEntry:
       "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
   },
@@ -1606,13 +858,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.09 m",
     weight: "90.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "087",
-        name: "Dewgong",
-      },
-    ],
     dexEntry:
       "The light blue fur that covers it keeps it protected against the cold. It loves iceberg-filled oceans.",
   },
@@ -1623,12 +868,6 @@ const pokemonData = [
     type: ["Water", "Ice"],
     height: "1.70 m",
     weight: "120.0 kg",
-    prev_evolution: [
-      {
-        num: "086",
-        name: "Seel",
-      },
-    ],
     dexEntry:
       "Its entire body is a snowy-white. Unharmed by even intense cold, it swims powerfully in icy waters.",
   },
@@ -1639,13 +878,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.89 m",
     weight: "30.0 kg",
-    weaknesses: ["Ground", "Psychic"],
-    next_evolution: [
-      {
-        num: "089",
-        name: "Muk",
-      },
-    ],
     dexEntry:
       "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
   },
@@ -1656,12 +888,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "1.19 m",
     weight: "30.0 kg",
-    prev_evolution: [
-      {
-        num: "088",
-        name: "Grimer",
-      },
-    ],
     dexEntry:
       "As it moves, a very strong poison leaks from it, making the ground there barren for three years.",
   },
@@ -1672,13 +898,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.30 m",
     weight: "4.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "091",
-        name: "Cloyster",
-      },
-    ],
     dexEntry:
       "It swims backward by opening and closing its two shells. Its large tongue is always kept hanging out.",
   },
@@ -1689,12 +908,6 @@ const pokemonData = [
     type: ["Water", "Ice"],
     height: "1.50 m",
     weight: "132.5 kg",
-    prev_evolution: [
-      {
-        num: "090",
-        name: "Shellder",
-      },
-    ],
     dexEntry:
       "Even a missile can't break the spikes it uses to stab opponents. They're even harder than its shell.",
   },
@@ -1705,17 +918,6 @@ const pokemonData = [
     type: ["Ghost", "Poison"],
     height: "1.30 m",
     weight: "0.1 kg",
-    weaknesses: ["Ground", "Psychic", "Ghost", "Dark"],
-    next_evolution: [
-      {
-        num: "093",
-        name: "Haunter",
-      },
-      {
-        num: "094",
-        name: "Gengar",
-      },
-    ],
     dexEntry:
       "With its gas-like body, it can sneak into any place it desires. However, it can be blown away by wind.",
   },
@@ -1726,19 +928,6 @@ const pokemonData = [
     type: ["Ghost", "Poison"],
     height: "1.60 m",
     weight: "0.1 kg",
-    weaknesses: ["Ground", "Psychic", "Ghost", "Dark"],
-    prev_evolution: [
-      {
-        num: "092",
-        name: "Gastly",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "094",
-        name: "Gengar",
-      },
-    ],
     dexEntry:
       "It hides in the dark, planning to take the life of the next living thing that wanders close by.",
   },
@@ -1749,16 +938,6 @@ const pokemonData = [
     type: ["Ghost", "Poison"],
     height: "1.50 m",
     weight: "40.5 kg",
-    prev_evolution: [
-      {
-        num: "092",
-        name: "Gastly",
-      },
-      {
-        num: "093",
-        name: "Haunter",
-      },
-    ],
     dexEntry:
       "It is said to emerge from darkness to steal the lives of those who become lost in mountains.",
   },
@@ -1779,13 +958,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "0.99 m",
     weight: "32.4 kg",
-    weaknesses: ["Bug", "Ghost", "Dark"],
-    next_evolution: [
-      {
-        num: "097",
-        name: "Hypno",
-      },
-    ],
     dexEntry:
       "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
   },
@@ -1796,12 +968,6 @@ const pokemonData = [
     type: ["Psychic"],
     height: "1.60 m",
     weight: "75.6 kg",
-    prev_evolution: [
-      {
-        num: "096",
-        name: "Drowzee",
-      },
-    ],
     dexEntry:
       "It carries a pendulum-like device. There once was an incident in which it took away a child it hypnotized.",
   },
@@ -1812,13 +978,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.41 m",
     weight: "6.5 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "099",
-        name: "Kingler",
-      },
-    ],
     dexEntry:
       "Its pincers are superb weapons. They sometimes break off during battle, but they grow back fast.",
   },
@@ -1829,12 +988,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.30 m",
     weight: "60.0 kg",
-    prev_evolution: [
-      {
-        num: "098",
-        name: "Krabby",
-      },
-    ],
     dexEntry:
       "It can hardly lift its massive, overgrown pincer. The pincer's size makes it difficult to aim properly.",
   },
@@ -1845,13 +998,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.51 m",
     weight: "10.4 kg",
-    weaknesses: ["Ground"],
-    next_evolution: [
-      {
-        num: "101",
-        name: "Electrode",
-      },
-    ],
     dexEntry:
       "It was discovered when Poke balls were introduced. It is said that there is some connection.",
   },
@@ -1862,12 +1008,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "1.19 m",
     weight: "66.6 kg",
-    prev_evolution: [
-      {
-        num: "100",
-        name: "Voltorb",
-      },
-    ],
     dexEntry:
       "It is dangerous. If it has too much electricity and has nothing to do, it amuses itself by exploding.",
   },
@@ -1878,13 +1018,6 @@ const pokemonData = [
     type: ["Grass", "Psychic"],
     height: "0.41 m",
     weight: "2.5 kg",
-    weaknesses: ["Fire", "Ice", "Poison", "Flying", "Bug", "Ghost", "Dark"],
-    next_evolution: [
-      {
-        num: "103",
-        name: "Exeggutor",
-      },
-    ],
     dexEntry:
       "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
   },
@@ -1895,12 +1028,6 @@ const pokemonData = [
     type: ["Grass", "Psychic"],
     height: "2.01 m",
     weight: "120.0 kg",
-    prev_evolution: [
-      {
-        num: "102",
-        name: "Exeggcute",
-      },
-    ],
     dexEntry:
       "Its cries are very noisy. This is because each of the 3 heads thinks about whatever it likes.",
   },
@@ -1911,13 +1038,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.41 m",
     weight: "6.5 kg",
-    weaknesses: ["Water", "Grass", "Ice"],
-    next_evolution: [
-      {
-        num: "105",
-        name: "Marowak",
-      },
-    ],
     dexEntry:
       "Wears the skull of its deceased mother. Its cries echo inside the skull and come out as a sad melody.",
   },
@@ -1928,12 +1048,6 @@ const pokemonData = [
     type: ["Ground"],
     height: "0.99 m",
     weight: "45.0 kg",
-    prev_evolution: [
-      {
-        num: "104",
-        name: "Cubone",
-      },
-    ],
     dexEntry:
       "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
   },
@@ -1974,13 +1088,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "0.61 m",
     weight: "1.0 kg",
-    weaknesses: ["Ground", "Psychic"],
-    next_evolution: [
-      {
-        num: "110",
-        name: "Weezing",
-      },
-    ],
     dexEntry:
       "If one gets close enough to it when it expels poisonous gas, the gas swirling inside it can be seen.",
   },
@@ -1991,12 +1098,6 @@ const pokemonData = [
     type: ["Poison"],
     height: "1.19 m",
     weight: "9.5 kg",
-    prev_evolution: [
-      {
-        num: "109",
-        name: "Koffing",
-      },
-    ],
     dexEntry:
       "Very rarely, a sudden mutation can result in two small Koffing twins becoming conjoined as a Weezing.",
   },
@@ -2007,13 +1108,6 @@ const pokemonData = [
     type: ["Ground", "Rock"],
     height: "0.99 m",
     weight: "115.0 kg",
-    weaknesses: ["Water", "Grass", "Ice", "Fighting", "Ground", "Steel"],
-    next_evolution: [
-      {
-        num: "112",
-        name: "Rhydon",
-      },
-    ],
     dexEntry:
       "It doesn't care if there is anything in its way. It just charges and destroys all obstacles.",
   },
@@ -2024,12 +1118,6 @@ const pokemonData = [
     type: ["Ground", "Rock"],
     height: "1.91 m",
     weight: "120.0 kg",
-    prev_evolution: [
-      {
-        num: "111",
-        name: "Rhyhorn",
-      },
-    ],
     dexEntry:
       "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees Fahrenheit.",
   },
@@ -2070,13 +1158,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.41 m",
     weight: "8.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "117",
-        name: "Seadra",
-      },
-    ],
     dexEntry:
       "It maintains balance using its tail, which is wound up like a coil. It may spray ink from its mouth.",
   },
@@ -2087,12 +1168,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.19 m",
     weight: "25.0 kg",
-    prev_evolution: [
-      {
-        num: "116",
-        name: "Horsea",
-      },
-    ],
     dexEntry:
       "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
   },
@@ -2103,13 +1178,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.61 m",
     weight: "15.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "119",
-        name: "Seaking",
-      },
-    ],
     dexEntry:
       "A strong swimmer, it is capable of swimming nonstop up fast streams at a steady speed of five knots.",
   },
@@ -2120,12 +1188,6 @@ const pokemonData = [
     type: ["Water"],
     height: "1.30 m",
     weight: "39.0 kg",
-    prev_evolution: [
-      {
-        num: "118",
-        name: "Goldeen",
-      },
-    ],
     dexEntry:
       "The horn on its head is sharp like a drill. It bores a hole in a boulder to make its nest.",
   },
@@ -2136,13 +1198,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.79 m",
     weight: "34.5 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "121",
-        name: "Starmie",
-      },
-    ],
     dexEntry:
       "An enigmatic Pokemon that can effortlessly regenerate any appendage it loses in battle.",
   },
@@ -2153,12 +1208,6 @@ const pokemonData = [
     type: ["Water", "Psychic"],
     height: "1.09 m",
     weight: "80.0 kg",
-    prev_evolution: [
-      {
-        num: "120",
-        name: "Staryu",
-      },
-    ],
     dexEntry:
       "The center section is named the core. People think it is communicating when it glows in 7 colors.",
   },
@@ -2239,13 +1288,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.89 m",
     weight: "10.0 kg",
-    weaknesses: ["Electric", "Grass"],
-    next_evolution: [
-      {
-        num: "130",
-        name: "Gyarados",
-      },
-    ],
     dexEntry:
       "A pathetic excuse for a Pokemon that is only capable of flopping and splashing. This behavior prompted scientists to undertake research into it.",
   },
@@ -2256,12 +1298,6 @@ const pokemonData = [
     type: ["Water", "Flying"],
     height: "6.50 m",
     weight: "235.0 kg",
-    prev_evolution: [
-      {
-        num: "129",
-        name: "Magikarp",
-      },
-    ],
     dexEntry:
       "It appears whenever there is world conflict, burning down any place it travels through.",
   },
@@ -2292,21 +1328,6 @@ const pokemonData = [
     type: ["Normal"],
     height: "0.30 m",
     weight: "6.5 kg",
-    weaknesses: ["Fighting"],
-    next_evolution: [
-      {
-        num: "134",
-        name: "Vaporeon",
-      },
-      {
-        num: "135",
-        name: "Jolteon",
-      },
-      {
-        num: "136",
-        name: "Flareon",
-      },
-    ],
     dexEntry:
       "Due to its unstable genetic makeup, this special Pokemon conceals many different possible evolutions.",
   },
@@ -2317,12 +1338,6 @@ const pokemonData = [
     type: ["Water"],
     height: "0.99 m",
     weight: "29.0 kg",
-    prev_evolution: [
-      {
-        num: "133",
-        name: "Eevee",
-      },
-    ],
     dexEntry:
       "As it uses the fins on the tip of its tail to swim, it blends with the water perfectly.",
   },
@@ -2333,12 +1348,6 @@ const pokemonData = [
     type: ["Electric"],
     height: "0.79 m",
     weight: "24.5 kg",
-    prev_evolution: [
-      {
-        num: "133",
-        name: "Eevee",
-      },
-    ],
     dexEntry:
       "It concentrates the weak electric charges emitted by its cells and launches wicked lightning bolts.",
   },
@@ -2349,12 +1358,6 @@ const pokemonData = [
     type: ["Fire"],
     height: "0.89 m",
     weight: "25.0 kg",
-    prev_evolution: [
-      {
-        num: "133",
-        name: "Eevee",
-      },
-    ],
     dexEntry:
       "It fluffs out its fur collar to cool down its body temperature, which can reach 1,650 degrees Fahrenheit.",
   },
@@ -2375,13 +1378,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "0.41 m",
     weight: "7.5 kg",
-    weaknesses: ["Electric", "Grass", "Fighting", "Ground"],
-    next_evolution: [
-      {
-        num: "139",
-        name: "Omastar",
-      },
-    ],
     dexEntry:
       "Revived from an ancient fossil, this Pokemon uses air stored in its shell to sink and rise in water.",
   },
@@ -2392,12 +1388,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "0.99 m",
     weight: "35.0 kg",
-    prev_evolution: [
-      {
-        num: "138",
-        name: "Omanyte",
-      },
-    ],
     dexEntry:
       "Apparently, it cracked Shellder's shell with its sharp fangs and sucked out the insides.",
   },
@@ -2408,13 +1398,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "0.51 m",
     weight: "11.5 kg",
-    weaknesses: ["Electric", "Grass", "Fighting", "Ground"],
-    next_evolution: [
-      {
-        num: "141",
-        name: "Kabutops",
-      },
-    ],
     dexEntry:
       "It is thought to have inhabited beaches 300 million years ago. It is protected by a stiff shell.",
   },
@@ -2425,12 +1408,6 @@ const pokemonData = [
     type: ["Rock", "Water"],
     height: "1.30 m",
     weight: "40.5 kg",
-    prev_evolution: [
-      {
-        num: "140",
-        name: "Kabuto",
-      },
-    ],
     dexEntry:
       "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids.",
   },
@@ -2491,17 +1468,6 @@ const pokemonData = [
     type: ["Dragon"],
     height: "1.80 m",
     weight: "3.3 kg",
-    weaknesses: ["Ice", "Dragon", "Fairy"],
-    next_evolution: [
-      {
-        num: "148",
-        name: "Dragonair",
-      },
-      {
-        num: "149",
-        name: "Dragonite",
-      },
-    ],
     dexEntry:
       "Long considered a mythical Pokemon until recently when a small colony was found living underwater.",
   },
@@ -2512,19 +1478,6 @@ const pokemonData = [
     type: ["Dragon"],
     height: "3.99 m",
     weight: "16.5 kg",
-    weaknesses: ["Ice", "Dragon", "Fairy"],
-    prev_evolution: [
-      {
-        num: "147",
-        name: "Dratini",
-      },
-    ],
-    next_evolution: [
-      {
-        num: "149",
-        name: "Dragonite",
-      },
-    ],
     dexEntry:
       "They say that if it emits an aura from its whole body, the weather will begin to change instantly.",
   },
@@ -2535,16 +1488,6 @@ const pokemonData = [
     type: ["Dragon", "Flying"],
     height: "2.21 m",
     weight: "210.0 kg",
-    prev_evolution: [
-      {
-        num: "147",
-        name: "Dratini",
-      },
-      {
-        num: "148",
-        name: "Dragonair",
-      },
-    ],
     dexEntry:
       "It is said to make its home somewhere in the sea. It guides crews of shipwrecks to shore.",
   },
@@ -2568,5 +1511,4 @@ const pokemonData = [
     dexEntry: "Its DNA is said to contain the genetic codes of all Pokemon.",
   },
 ];
-
 export default pokemonData;
