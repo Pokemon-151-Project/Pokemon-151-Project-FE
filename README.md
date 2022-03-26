@@ -35,7 +35,5 @@ Languages & tools
 HTML
 CSS
 JavaScript
-ReactJS for UI
+ReactJS for UI with useState
 
-Static server with Livereload
-The app embed for development a static connect server with livereload plugged. So each time you start the app, you get automatic refresh in the browser whenever you update a file.
