@@ -22,7 +22,7 @@ function App() {
   ) => {
     const newData = data.filter((item) => {
       if (type) {
-        return item.type[0] === type || item.type[1] === type;
+        return item.type.includes(type);
       } else if (size) {
         const weightInt = item.weight.split(" ")[0];
         return size === "small" ? weightInt < 5 : weightInt > 100;
