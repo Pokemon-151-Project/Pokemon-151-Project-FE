@@ -21,7 +21,7 @@ const Header = (props) => {
       <section className="darkmode-shiny-dropdown">
         <menu className="darkmode-shiny-section">
           <div className="darkmode-section">
-            <div className="logo">
+            <div className="logo" data-testid="logo">
               {isDarkMode ? "Dark Mode" : "Light Mode"}
             </div>
             <button
