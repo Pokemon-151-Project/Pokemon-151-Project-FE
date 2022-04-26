@@ -11,7 +11,6 @@ import linkMaker from "../utils/Headerutils/linkMaker";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
-  console.log("isDarkMode:", isDarkMode);
 
   const { changeDisplay, isShiny, setIsShiny } = props;
   return (
