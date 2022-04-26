@@ -22,20 +22,15 @@ test("Renders the expected segments of the header", () => {
 
 //I tried to test that the dropdown only appears when you click on the Display Options button, but the testing said the dropdown was always visible no matter what. I tried document.queryselector, screen.getByTestID, and others. Not sure what I was doing wrong.
 
-test("'Dark Mode' text changes to 'Light Mode' and vice versa when you click dark mode toggle logo", () => {
+test("'Dark Mode' text changes to 'Light Mode' and vice versa when you click dark mode toggle logo", async () => {
   render(<Header />);
   const darkModeToggleLogo = screen.getByTestId("toggle_btn");
-  const darkModeText = screen.queryByText(/dark mode/i);
-  const lightModeText = screen.queryByText(/light mode/i);
 
-  expect(darkModeText).not.toBeVisible();
-  expect(lightModeText).toBeVisible();
+  expect(screen.queryByText(/dark mode/i)).not.toBeVisible();
+  expect(screen.queryByText(/light mode/i)).toBeVisible();
 
   userEvent.click(darkModeToggleLogo);
 
-  const newDarkModeText = screen.queryByText(/dark mode/i);
-  const newLightModeText = screen.queryByText(/light mode/i);
-
-  expect(newDarkModeText).toBeVisible();
-  expect(newLightModeText).not.toBeVisible();
+  expect(screen.queryByText(/dark mode/i)).toBeVisible();
+  expect(screen.queryByText(/light mode/i)).not.toBeVisible();
 });
