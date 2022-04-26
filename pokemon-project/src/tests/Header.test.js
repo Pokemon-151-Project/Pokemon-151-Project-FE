@@ -20,3 +20,5 @@ test("Renders the expected segments of the header", () => {
 });
 
 //I tried to test that the dropdown only appears when you click on the Display Options button, but the testing said the dropdown was always visible no matter what. I tried document.queryselector, screen.getByTestID, and others. Not sure what I was doing wrong.
+
+test("'Dark Mode' text changes to 'Light Mode' and vice versa when you click dark mode toggle logo", () => {});
