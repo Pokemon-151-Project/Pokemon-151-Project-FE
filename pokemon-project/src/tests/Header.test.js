@@ -24,4 +24,10 @@ test("Renders the expected segments of the header", () => {
 
 test("'Dark Mode' text changes to 'Light Mode' and vice versa when you click dark mode toggle logo", () => {
   render(<Header />);
+  const darkModeToggleLogo = screen.getByTestId("logo");
+  const darkModeText = screen.queryByText(/dark mode/i);
+  const lightModeText = screen.queryByText(/light mode/i);
+
+  expect(darkModeText).not.toBeVisible();
+  expect(lightModeText).toBeVisible();
 });
