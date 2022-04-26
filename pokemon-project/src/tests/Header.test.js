@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import userEvent from "@testing-library/user-event";
 
 test("Component renders without errors", () => {
   render(<Header />);
@@ -20,3 +21,16 @@ test("Renders the expected segments of the header", () => {
 });
 
 //I tried to test that the dropdown only appears when you click on the Display Options button, but the testing said the dropdown was always visible no matter what. I tried document.queryselector, screen.getByTestID, and others. Not sure what I was doing wrong.
+
+test("'Dark Mode' text changes to 'Light Mode' and vice versa when you click dark mode toggle logo", async () => {
+  render(<Header />);
+  const darkModeToggleLogo = screen.getByTestId("toggle_btn");
+
+  expect(screen.queryByText(/dark mode/i)).not.toBeVisible();
+  expect(screen.queryByText(/light mode/i)).toBeVisible();
+
+  userEvent.click(darkModeToggleLogo);
+
+  expect(screen.queryByText(/dark mode/i)).toBeVisible();
+  expect(screen.queryByText(/light mode/i)).not.toBeVisible();
+});
