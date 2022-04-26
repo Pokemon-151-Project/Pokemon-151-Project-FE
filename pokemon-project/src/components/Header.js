@@ -11,6 +11,7 @@ import linkMaker from "../utils/Headerutils/linkMaker";
 
 const Header = (props) => {
   const [isDarkMode, setDarkMode] = useDarkMode();
+  console.log("isDarkMode:", isDarkMode);
 
   const { changeDisplay, isShiny, setIsShiny } = props;
   return (
@@ -21,7 +22,9 @@ const Header = (props) => {
       <section className="darkmode-shiny-dropdown">
         <menu className="darkmode-shiny-section">
           <div className="darkmode-section">
-            <div className="logo">Dark Mode</div>
+            <div className="logo">
+              {isDarkMode ? "Dark Mode" : "Light Mode"}
+            </div>
             <button
               className="toggle_btn"
               data-testid="toggle_btn"
