@@ -8,11 +8,11 @@ test("Sanity Check", () => {
   expect(twoPlusTwo).not.toStrictEqual(5);
 });
 
-test("renders without errors", () => {
+test("[1] renders without errors", () => {
   render(<App />);
 });
 
-test("renders child components", () => {
+test("[2] renders child components", () => {
   render(<App />);
   const docHeader = document.querySelector("header");
   expect(docHeader).toBeInTheDocument();
@@ -24,7 +24,7 @@ test("renders child components", () => {
   expect(bulba).toBeInTheDocument();
 });
 
-test("Toggles Dark Mode", () => {
+test("[3] Toggles Dark Mode", () => {
   //Verifies that hitting darkmode toggle will add "dark" class to each pokemon card
 
   render(<App />);
