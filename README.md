@@ -43,10 +43,10 @@ ReactJS for UI with useState
 ```
 <App>
 - <Header>
-- - <Dropdown/>
+-   <Dropdown/>
 - <Header/>
 - <AllPokemon>
-- - <SinglePokemon/>  --- as many of these as needed
+-   <SinglePokemon/>  --- as many of these as needed
 - <AllPokemon/>
 <App/>
 ```
