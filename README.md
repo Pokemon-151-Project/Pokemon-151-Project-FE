@@ -1,18 +1,18 @@
 POKEMON 151 PROJECT
 
-Introduction:
+# `Introduction`
 
--A scalable, maintainable application that maps over and displays data in digestible cards
+## A scalable, maintainable application that maps over and displays data in digestible cards
 
--HTML/CSS is highly semantic, accessible and responsive for readers of all screen sizes and abilities
+`HTML/CSS is highly semantic, accessible and responsive for readers of all screen sizes and abilities`
 
--Right now, this displays Pokemon. One could easily scale this up to more than the original 151 Pokemon, or tweak it to any other data
+`Right now, this displays Pokemon. One could easily scale this up to more than the original 151 Pokemon, or tweak it to any other data`
 
--Persistent Dark/Light Mode preference is stored in localStorage and remembered across sessions
+`Persistent Dark/Light Mode preference is stored in localStorage and remembered across sessions`
 
--Options for alternate(shiny) sprites
+`Options for alternate(shiny) sprites`
 
--Code is highly modular, with components and utils files for different functions and sections
+`Code is highly modular, with components and utils files for different functions and sections`
 
 Requirements:
 For development, you will only need Node.js installed on your environement. And please use the appropriate Editorconfig plugin for your Editor (not mandatory).
