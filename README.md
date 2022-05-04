@@ -114,6 +114,6 @@ Standard React App page. Houses all other components
   -  resets app back to original 151 pokemon
 - Pick a type:
   - User selects a type from 15 different types
-  - These type buttons are mapped over (linksArray.js) to generate a button for each, because hard-coding 15 nearly-identical buttons wouldn't be very DRY
--Pick a height/Pick a weight:
-- These do basically the same thing. Sort pokemon by short/tall or heavy/lightweight
+  - These type buttons are mapped over (linksArray.js) to generate a button for each, because hard-coding 15 nearly-identical buttons wouldn't be very DRY\
+- Pick a height/Pick a weight:
+  - These do basically the same thing. Sort pokemon by short/tall or heavy/lightweight
