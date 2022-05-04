@@ -29,7 +29,7 @@ test("[3] 'Dark Mode' text changes to 'Light Mode' and vice versa when you click
   expect(screen.queryByText(/dark mode/i)).not.toBeVisible();
   expect(screen.queryByText(/light mode/i)).toBeVisible();
 
-  userEvent.click(darkModeToggleLogo);
+  await userEvent.click(darkModeToggleLogo);
 
   expect(screen.queryByText(/dark mode/i)).toBeVisible();
   expect(screen.queryByText(/light mode/i)).not.toBeVisible();
