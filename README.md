@@ -117,3 +117,14 @@ Standard React App page. Houses all other components
   - These type buttons are mapped over (linksArray.js) to generate a button for each, because hard-coding 15 nearly-identical buttons wouldn't be very DRY\
 - Pick a height/Pick a weight:
   - These do basically the same thing. Sort pokemon by short/tall or heavy/lightweight
+
+
+### `AllPokemon.js <AllPokemon/>`
+Container for all pokemon cards\
+
+Maps over array of Pokemon info objects, displaying a <SinglePokmon/> for each\
+
+Passes in the following to SinglePokemon as props:
+- poke (this is the object containing the individual pokemon's information)
+- key (for efficient mapping)
+- isShiny boolean (whether to show the shiny picture or normal picture)
