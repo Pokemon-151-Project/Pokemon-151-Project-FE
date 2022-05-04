@@ -120,9 +120,9 @@ Standard React App page. Houses all other components
 
 
 ### `AllPokemon.js <AllPokemon/>`
-Container for all pokemon cards\
+Container for all pokemon cards
 
-Maps over array of Pokemon info objects, displaying a <SinglePokmon/> for each\
+Maps over array of Pokemon info objects, displaying a <SinglePokmon/> for each
 
 Passes in the following to SinglePokemon as props:
 - poke (this is the object containing the individual pokemon's information)
