@@ -37,5 +37,37 @@ CSS
 JavaScript
 ReactJS for UI with useState
 
-# `DOCUMENTATION`
+# `Technical Information:`
 
+## `Component Structure`
+```
+<App>
+- <Header>
+- - <Dropdown/>
+- <Header/>
+- <AllPokemon>
+- - <SinglePokemon/>  --- as many of these as needed
+- <AllPokemon/>
+<App/>
+```
+
+## `File Overviews`
+
+### `App.js`
+Standard React App page. Houses all other components
+#### `State:`
+  -Passes state in to other components: \
+  -[pokemonData, setPpkemonData] : The list of pokemon that the application maps over. Can read or adjust this list\
+  -[isShiny, setIsShiny]: Sets whether the app displays shiny Pokemon sprites or normal sprites\
+    ---This is a small difference in coloring that a pokemon can have
+    
+#### `Data`:
+-imports data from "./data"\
+-This is the list of Pokemon to map over\
+-Eventually I want to create an API for this rather than host it locally in the repo\
+
+#### `Functions:`
+-changeDisplay: 
+- Shows only certain categories of pokemon based on user preferences
+- These options are selected by user in Dropdown component
+- Options include "Short, Tall, Big, Small, fifteen different types, and a reset to display all Pokemon
