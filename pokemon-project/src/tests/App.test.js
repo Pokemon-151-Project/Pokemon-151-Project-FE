@@ -24,7 +24,7 @@ test("[2] renders child components", () => {
   expect(bulba).toBeInTheDocument();
 });
 
-test("[3] Toggles Dark Mode", () => {
+test("[3] Toggles Dark Mode", async () => {
   //Verifies that hitting darkmode toggle will add "dark" class to each pokemon card
 
   render(<App />);
@@ -32,6 +32,6 @@ test("[3] Toggles Dark Mode", () => {
   expect(cardOne).not.toHaveClass("dark");
 
   const darkBtn = screen.getByTestId("toggle_btn");
-  userEvent.click(darkBtn);
+  await userEvent.click(darkBtn);
   expect(cardOne).toHaveClass("dark");
 });
