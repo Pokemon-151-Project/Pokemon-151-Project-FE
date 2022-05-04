@@ -71,3 +71,5 @@ Standard React App page. Houses all other components
 - Shows only certain categories of pokemon based on user preferences
 - These options are selected by user in Dropdown component
 - Options include "Short, Tall, Big, Small, fifteen different types, and a reset to display all Pokemon
+
+
