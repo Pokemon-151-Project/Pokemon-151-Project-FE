@@ -122,9 +122,35 @@ Standard React App page. Houses all other components
 ### `AllPokemon.js <AllPokemon/>`
 Container for all pokemon cards
 
-Maps over array of Pokemon info objects, displaying a <SinglePokmon/> for each
+Maps over array of Pokemon info objects, displaying a `<SinglePokmon/>` for each
 
 Passes in the following to SinglePokemon as props:
 - poke (this is the object containing the individual pokemon's information)
 - key (for efficient mapping)
 - isShiny boolean (whether to show the shiny picture or normal picture)
+
+
+### `SinglePokemon.js <SinglePokemon/>`
+
+Displays a card for a single Pokemon
+
+There are 151 in the current version of this application, could be any number
+
+Takes pokemon info and isShiny boolean from props
+
+
+#### `Features`
+
+h2: Pokemon's name and Pokedex id
+
+h3: Pokemon's type
+
+h4: Pokemon's height and weight
+
+figure: Pokemon's image
+- dynamically inserts id number in to image link
+- displays shiny image if isShiny, regular image if !isShiny
+- Alt text is poekmon's name
+
+blockquote: Pokemon data
+- Little tidbits about each individual pokemon
