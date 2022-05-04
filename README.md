@@ -76,7 +76,8 @@ Standard React App page. Houses all other components
 ### `Header.js <Header/>`
 
 #### `State:`
-
+-isDarkMode, setIsDarkMode
+- More info on this in Features
 
 #### `Features`
 -h1: Project name\
