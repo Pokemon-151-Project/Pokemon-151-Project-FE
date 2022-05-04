@@ -53,7 +53,7 @@ ReactJS for UI with useState
 
 ## `File Overviews`
 
-### `App.js`
+### `App.js <App/>`
 Standard React App page. Houses all other components
 #### `State:`
   -Passes state in to other components: \
@@ -73,3 +73,27 @@ Standard React App page. Houses all other components
 - Options include "Short, Tall, Big, Small, fifteen different types, and a reset to display all Pokemon
 
 
+### `Header.js <Header/>`
+
+#### `State:`
+
+
+#### `Features`
+-h1: Project name\
+-h2: Author name\
+-Nav:
+- takes in linksArray from linksArray.js
+- maps over linksArray using linksMaker.js to generates links DRYly
+
+-[isDarkMode, setIsDarkMode]
+- User presses Dark Mode button to toggle app dark mode
+- Uses dark mode hook based in /hooks/useDarkMode.js  
+- Imported pre-made components {BsMoon, BsSun} to use for Dark Mode/Light Mode logos
+
+-[isShiny, setIsShiny]
+- user toggles Shiny Mode by clicking shiny button 
+- Causes pokemon images to switch to their shiny forms (an image with different colors for the same Pokemon)
+
+-Dropdown:
+- User clicks Display Options button to show display options dropdown (<Dropdown/>)
+- More info on this in Readme Dropdown section
