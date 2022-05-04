@@ -6,17 +6,17 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 
-test("component renders without errors", () => {
+test("[1] component renders without errors", () => {
   render(<Dropdown />);
 });
 
-test("All dropdown buttons render", () => {
+test("[2] All dropdown buttons render", () => {
   render(<Dropdown />);
   const buttons = screen.queryAllByTestId("dropbtn-inner");
   expect(buttons).toBeTruthy();
 });
 
-test("Dropdown buttons change the displayed pokemon", () => {
+test("[3] Dropdown buttons change the displayed pokemon", () => {
   // I had to render App for this because it doesn't just test dropdown. Not sure what best practices is for this but it does the job.
   render(<App />);
 
@@ -29,7 +29,7 @@ test("Dropdown buttons change the displayed pokemon", () => {
 });
 
 // This test hits the button to only show water types, verifies that non-water types don't display, then hits the reset button, then verifies that all types now display again as expected.
-test("Reset buttons puts all pokemon back on screen", () => {
+test("[4] Reset buttons puts all pokemon back on screen", () => {
   render(<App />);
 
   const waterBtn = screen.getByTestId("water-btn");
