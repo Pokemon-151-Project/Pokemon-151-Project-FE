@@ -98,3 +98,22 @@ Standard React App page. Houses all other components
 -Dropdown:
 - User clicks Display Options button to show display options dropdown (<Dropdown/>)
 - More info on this in Readme Dropdown section
+
+### `Dropdown.js <Dropdown/>`
+
+#### `State`
+-changeDisplay()
+- passed in from App.js
+- allows user to update display options state (AKA change which pokemon appear on screen)
+- User makes these selections by clicking dropdown options
+
+#### `Features`
+-This dropdown displays buttons that user selects to filter the Pokemon displayed\
+-Only one type is displayed on screen at a time, hitting another button switches to that button's display option
+- Reset All:
+  -  resets app back to original 151 pokemon
+- Pick a type:
+  - User selects a type from 15 different types
+  - These type buttons are mapped over (linksArray.js) to generate a button for each, because hard-coding 15 nearly-identical buttons wouldn't be very DRY
+-Pick a height/Pick a weight:
+- These do basically the same thing. Sort pokemon by short/tall or heavy/lightweight
