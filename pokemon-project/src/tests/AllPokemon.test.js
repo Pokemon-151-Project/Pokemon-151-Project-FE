@@ -42,11 +42,11 @@ const multFakePokemon = [
   },
 ];
 
-test("AllPokemon renders without errors", () => {
+test("[1] AllPokemon renders without errors", () => {
   render(<AllPokemon pokemonData={fakePokemon} />);
 });
 
-test("AllPokemon renders correctly with certain props, then rerenders when those props change", () => {
+test("[2] AllPokemon renders correctly with certain props, then rerenders when those props change", () => {
   //renders first with empty props array, then renders with fakePokemon (defined above) to make sure it correctly renders with changed props.
   const { rerender } = render(<AllPokemon pokemonData={[]} />);
 
@@ -58,7 +58,7 @@ test("AllPokemon renders correctly with certain props, then rerenders when those
   expect(newFakeName).toBeInTheDocument();
 });
 
-test("Can render multiple pokemon", () => {
+test("[3] Can render multiple pokemon", () => {
   //Passing in an array with multiple pokemon to make sure it renders all of them
 
   render(<AllPokemon pokemonData={multFakePokemon} />);
