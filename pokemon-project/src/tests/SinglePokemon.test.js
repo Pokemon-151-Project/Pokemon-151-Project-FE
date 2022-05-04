@@ -13,11 +13,11 @@ const fakePokemon = [
   },
 ];
 
-test("renders without errors", () => {
+test("[1] renders without errors", () => {
   render(<SinglePokemon poke={fakePokemon[0]} />);
 });
 
-test("Displays correct info on screen", () => {
+test("[2] Displays correct info on screen", () => {
   render(<SinglePokemon poke={fakePokemon[0]} />);
 
   const name = screen.queryByText(/fake pokemon name/i);
@@ -32,7 +32,7 @@ test("Displays correct info on screen", () => {
   expect(weight).toBeVisible();
 });
 
-test("Toggles shiny image based on props", () => {
+test("[3] Toggles shiny image based on props", () => {
   let isShiny = false;
 
   const { rerender } = render(
