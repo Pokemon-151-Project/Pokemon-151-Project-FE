@@ -182,3 +182,14 @@ An array of objects, each containing a test and href for an `<a>` tag
 linkMaker() maps over this in Header.js to produce a tags for nav
 
 I stored this separately to keep things more modular and easy to read
+
+
+## `Hooks`
+
+### `useDarkMode.js`
+
+Lets user toggle Dark Mode/Light mode by clicking toggle button in Header.js
+
+Adds/removes dark class name from relevant elements
+
+Stores user preference in localStorage for persistent Dark Mode
