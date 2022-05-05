@@ -51,7 +51,7 @@ ReactJS for UI with useState
 <App/>
 ```
 
-## `File Overviews`
+## `Components`
 
 ### `App.js <App/>`
 Standard React App page. Houses all other components
@@ -154,3 +154,31 @@ figure: Pokemon's image
 
 blockquote: Pokemon data
 - Little tidbits about each individual pokemon
+
+## `Utils`
+
+
+### `Dropdownutils/typesArray.js`
+
+Array of 15 pokemon types
+
+Imported in to Dropdown.js. Dropdown maps over it to produce a display option button for each time
+
+This isn't strictly necessary, just more modular to keep this in another file
+
+### `Headerutils/linkMaker.js`
+
+Maps over an array of link info to produce an `<a>` tag for each
+
+Imported in to Header.js to produce links
+
+Maps over the linksArray from linksArray.js
+
+
+### `Headerutils/linksArray.js`
+
+An array of objects, each containing a test and href for an `<a>` tag
+
+linkMaker() maps over this in Header.js to produce a tags for nav
+
+I stored this separately to keep things more modular and easy to read
