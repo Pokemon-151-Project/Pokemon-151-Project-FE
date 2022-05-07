@@ -1,99 +1,195 @@
-MVP:
-[X] AllPokemon: DIsplays 151 instances of SinglePokemon
+POKEMON 151 PROJECT
 
--[X] Display options:
-[X}Clickable options to display different pokemon based on type, weaknesses, size, whatever.
-[X]Make a single component that covers all of this, and props (set by state in App.js) determines which pokemon to display
+# `Introduction`
 
-Dex Entries:
-[X] Find an API with dex entries
-[X]-Edit data.js (use a mapping function to copy the dex entries in)
+## A scalable, maintainable application that maps over and displays data in digestible cards
 
-Header:
--Basic info
-[X]link to my github, Bulbapedia, PokeAPI
-[X] separate component for Dropdown content, nested in Header
-[X] - sub-fields for type, size, height
+`HTML/CSS is highly semantic, accessible and responsive for readers of all screen sizes and abilities`
 
-Footer: Same as Header
--Maybe not same as header. Link to source code.
+`Right now, this displays Pokemon. One could easily scale this up to more than the original 151 Pokemon, or tweak it to any other data`
 
-Styling: -[X]Make cards look nice. Background colors and fonts. -[X]Responsive design, shrinks with screen.
-[X]-Little card areas for each pokemon
-[] Add in an emoji or something based on the Pokemon's type
-[X] breakpoints for different screen sizes
-[X]Especially responsive header layout
-[X]Style buttons in dropdown
+`Persistent Dark/Light Mode preference is stored in localStorage and remembered across sessions`
 
-Testing: Test for basic functionality
-[X]All header elements show up
-[X]All cards show up on screen
-[X]All buttons appear in header
-[X]Buttons do what they're supposed to
-[X] Portions of card (type, name, dex etc) render
-[]DarkMode does what it's supposed to (if I implement DarkMode)
+`Options for alternate(shiny) sprites`
 
-Stretch:
-[]Dark Mode
--slider button
--Styling should be simple hopefully: Change bg-c of cards and body, make font sizes lighter. I don't think anything else?
--Will the background color look good with the pokemon images? If not maybe the cards will still be a lighter color
--None so far
+`Code is highly modular, with components and utils files for different functions and sections`
 
-Getting Started with Create React App
-This project was bootstrapped with Create React App.
+Requirements:
+For development, you will only need Node.js installed on your environement. And please use the appropriate Editorconfig plugin for your Editor (not mandatory).
 
-Available Scripts
-In the project directory, you can run:
+Install
+$ git clone https://github.com/ORG/pokemon-project.git
+$ cd PROJECT
+$ npm install
 
-npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+$ git pull
+$ npm prune
+$ npm install
+To run those 3 commands you can just do
 
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+$ npm run pull
+Note: Unix user can just link the git-hooks/post-merge:
 
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Languages & tools
+HTML
+CSS
+JavaScript
+ReactJS for UI with useState
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+# `Technical Information:`
 
-See the section about deployment for more information.
+## `Component Structure`
+```
+<App>
+- <Header>
+-   <Dropdown/>
+- <Header/>
+- <AllPokemon>
+-   <SinglePokemon/>  --- as many of these as needed
+- <AllPokemon/>
+<App/>
+```
 
-npm run eject
-Note: this is a one-way operation. Once you eject, you can't go back!
+## `Components`
 
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+### `App.js <App/>`
+Standard React App page. Houses all other components
+#### `State:`
+  -Passes state in to other components: \
+  -[pokemonData, setPpkemonData] : The list of pokemon that the application maps over. Can read or adjust this list\
+  -[isShiny, setIsShiny]: Sets whether the app displays shiny Pokemon sprites or normal sprites\
+    ---This is a small difference in coloring that a pokemon can have
+    
+#### `Data`:
+-imports data from "./data"\
+-This is the list of Pokemon to map over\
+-Eventually I want to create an API for this rather than host it locally in the repo\
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### `Functions:`
+-changeDisplay: 
+- Shows only certain categories of pokemon based on user preferences
+- These options are selected by user in Dropdown component
+- Options include "Short, Tall, Big, Small, fifteen different types, and a reset to display all Pokemon
 
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Learn More
-You can learn more in the Create React App documentation.
+### `Header.js <Header/>`
 
-To learn React, check out the React documentation.
+#### `State:`
+-isDarkMode, setIsDarkMode
+- More info on this in Features
 
-Code Splitting
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### `Features`
+-h1: Project name\
+-h2: Author name\
+-Nav:
+- takes in linksArray from linksArray.js
+- maps over linksArray using linksMaker.js to generates links DRYly
 
-Analyzing the Bundle Size
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+-[isDarkMode, setIsDarkMode]
+- User presses Dark Mode button to toggle app dark mode
+- Uses dark mode hook based in /hooks/useDarkMode.js  
+- Imported pre-made components {BsMoon, BsSun} to use for Dark Mode/Light Mode logos
 
-Making a Progressive Web App
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-[isShiny, setIsShiny]
+- user toggles Shiny Mode by clicking shiny button 
+- Causes pokemon images to switch to their shiny forms (an image with different colors for the same Pokemon)
 
-Advanced Configuration
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+-Dropdown:
+- User clicks Display Options button to show display options dropdown (<Dropdown/>)
+- More info on this in Readme Dropdown section
 
-Deployment
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### `Dropdown.js <Dropdown/>`
 
-npm run build fails to minify
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### `State`
+-changeDisplay()
+- passed in from App.js
+- allows user to update display options state (AKA change which pokemon appear on screen)
+- User makes these selections by clicking dropdown options
+
+#### `Features`
+-This dropdown displays buttons that user selects to filter the Pokemon displayed\
+-Only one type is displayed on screen at a time, hitting another button switches to that button's display option
+- Reset All:
+  -  resets app back to original 151 pokemon
+- Pick a type:
+  - User selects a type from 15 different types
+  - These type buttons are mapped over (linksArray.js) to generate a button for each, because hard-coding 15 nearly-identical buttons wouldn't be very DRY\
+- Pick a height/Pick a weight:
+  - These do basically the same thing. Sort pokemon by short/tall or heavy/lightweight
+
+
+### `AllPokemon.js <AllPokemon/>`
+Container for all pokemon cards
+
+Maps over array of Pokemon info objects, displaying a `<SinglePokmon/>` for each
+
+Passes in the following to SinglePokemon as props:
+- poke (this is the object containing the individual pokemon's information)
+- key (for efficient mapping)
+- isShiny boolean (whether to show the shiny picture or normal picture)
+
+
+### `SinglePokemon.js <SinglePokemon/>`
+
+Displays a card for a single Pokemon
+
+There are 151 in the current version of this application, could be any number
+
+Takes pokemon info and isShiny boolean from props
+
+
+#### `Features`
+
+h2: Pokemon's name and Pokedex id
+
+h3: Pokemon's type
+
+h4: Pokemon's height and weight
+
+figure: Pokemon's image
+- dynamically inserts id number in to image link
+- displays shiny image if isShiny, regular image if !isShiny
+- Alt text is poekmon's name
+
+blockquote: Pokemon data
+- Little tidbits about each individual pokemon
+
+## `Utils`
+
+
+### `Dropdownutils/typesArray.js`
+
+Array of 15 pokemon types
+
+Imported in to Dropdown.js. Dropdown maps over it to produce a display option button for each time
+
+This isn't strictly necessary, just more modular to keep this in another file
+
+### `Headerutils/linkMaker.js`
+
+Maps over an array of link info to produce an `<a>` tag for each
+
+Imported in to Header.js to produce links
+
+Maps over the linksArray from linksArray.js
+
+
+### `Headerutils/linksArray.js`
+
+An array of objects, each containing a test and href for an `<a>` tag
+
+linkMaker() maps over this in Header.js to produce a tags for nav
+
+I stored this separately to keep things more modular and easy to read
+
+
+## `Hooks`
+
+### `useDarkMode.js`
+
+Lets user toggle Dark Mode/Light mode by clicking toggle button in Header.js
+
+Adds/removes dark class name from relevant elements
+
+Stores user preference in localStorage for persistent Dark Mode
