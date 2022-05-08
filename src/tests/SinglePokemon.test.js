@@ -50,4 +50,10 @@ test("[3] Toggles shiny image based on props", () => {
   expect(shinyImg).toBeVisible();
 });
 
-test("[4] Matches snapshot from 5.8.22", () => {});
+test("[4] Matches snapshot from 5.8.22", () => {
+  const component = renderer.create(
+    <SinglePokemon poke={fakePokemon[0]} isShiny={true} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
