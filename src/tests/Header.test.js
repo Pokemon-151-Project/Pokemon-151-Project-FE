@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
+import renderer from "react-test-renderer";
 
 test("[1] Component renders without errors", () => {
   render(<Header />);
@@ -33,4 +34,11 @@ test("[3] 'Dark Mode' text changes to 'Light Mode' and vice versa when you click
 
   expect(screen.queryByText(/dark mode/i)).toBeVisible();
   expect(screen.queryByText(/light mode/i)).not.toBeVisible();
+});
+
+test("[4] Matches snapshot so nothing changes inadvertently", () => {
+  const component = renderer.create(<Header />);
+
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
