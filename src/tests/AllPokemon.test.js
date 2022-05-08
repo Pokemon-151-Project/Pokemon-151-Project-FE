@@ -1,6 +1,7 @@
 import AllPokemon from "../components/AllPokemon";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import renderer from "react-test-renderer";
 
 //fake array with one pokemon for testing purposes
 const fakePokemon = [
@@ -71,4 +72,12 @@ test("[3] Can render multiple pokemon", () => {
   expect(name2).toBeVisible();
   expect(name3).toBeVisible();
   expect(name4).toBeFalsy();
+});
+
+test("[4] Matches snapshot from 5.8.22", () => {
+  const component = renderer.create(
+    <AllPokemon pokemonData={multFakePokemon} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

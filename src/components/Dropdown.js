@@ -41,7 +41,7 @@ const Dropdown = (props) => {
             return (
               <button
                 className="dropbtn-inner"
-                data-testid={`${item.toLowerCase()}-btn`}
+                data-testid="dropbtn-inner"
                 id={`${item.toLowerCase()}-btn`}
                 key={item}
                 onClick={() => {
