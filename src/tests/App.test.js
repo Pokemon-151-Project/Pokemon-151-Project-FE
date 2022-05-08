@@ -38,6 +38,9 @@ test("[3] Toggles Dark Mode", async () => {
   expect(cardOne).toHaveClass("dark");
 });
 
+// This has saved a snapshot of App.js from 5.8.2022. If anything in App changes this test will fail
+//Then I will either need to update the screenshot with the new changes, or fix what error made the test fail.
+//If the change is intended, run jest -u in terminal to update snapshot.
 test("[4] Matches snapshot so nothing changes inadvertently", () => {
   const component = renderer.create(<App />);
 
