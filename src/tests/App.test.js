@@ -39,5 +39,8 @@ test("[3] Toggles Dark Mode", async () => {
 });
 
 test("[4] Matches snapshot so nothing changes inadvertently", () => {
-  render(<App />);
+  const component = renderer.create(<App />);
+
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
