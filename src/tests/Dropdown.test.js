@@ -14,5 +14,5 @@ test("[2] All dropdown buttons render", () => {
   render(<Dropdown />);
   const buttons = screen.queryAllByTestId("dropbtn-inner");
   expect(buttons).toBeTruthy();
-  expect(buttons).toHaveLength(20);
+  expect(buttons).toHaveLength(19);
 });
