@@ -57,7 +57,7 @@ ReactJS for UI with useState
 Standard React App page. Houses all other components
 #### `State:`
   -Passes state in to other components: \
-  -[pokemonData, setPpkemonData] : The list of pokemon that the application maps over. Can read or adjust this list\
+  -[pokemonData, setPokemonData] : The list of pokemon that the application maps over. Can read or adjust this list\
   -[isShiny, setIsShiny]: Sets whether the app displays shiny Pokemon sprites or normal sprites\
     ---This is a small difference in coloring that a pokemon can have
     
