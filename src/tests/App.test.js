@@ -2,6 +2,8 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
+import renderer from "react-test-renderer";
+
 test("Sanity Check", () => {
   const twoPlusTwo = 2 + 2;
   expect(twoPlusTwo).toStrictEqual(4);
@@ -34,4 +36,8 @@ test("[3] Toggles Dark Mode", async () => {
   const darkBtn = screen.getByTestId("toggle_btn");
   await userEvent.click(darkBtn);
   expect(cardOne).toHaveClass("dark");
+});
+
+test("[4] Matches snapshot so nothing changes inadvertently", () => {
+  render(<App />);
 });
