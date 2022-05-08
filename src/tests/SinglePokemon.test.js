@@ -1,6 +1,7 @@
 import SinglePokemon from "../components/SinglePokemon";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import renderer from "react-test-renderer";
 
 //fake array with one pokemon for testing purposes
 const fakePokemon = [
@@ -48,3 +49,5 @@ test("[3] Toggles shiny image based on props", () => {
   let shinyImg = screen.getByTestId("shiny");
   expect(shinyImg).toBeVisible();
 });
+
+test("[4] Matches snapshot from 5.8.22", () => {});
