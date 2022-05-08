@@ -36,6 +36,9 @@ test("[3] 'Dark Mode' text changes to 'Light Mode' and vice versa when you click
   expect(screen.queryByText(/light mode/i)).not.toBeVisible();
 });
 
+// This has saved a snapshot of Header.js from 5.8.2022. If anything in App changes this test will fail
+//Then I will either need to update the screenshot with the new changes, or fix what error made the test fail.
+//If the change is intended, run jest -u in terminal to update snapshot.
 test("[4] Matches snapshot so nothing changes inadvertently", () => {
   const component = renderer.create(<Header />);
 
