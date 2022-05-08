@@ -74,4 +74,10 @@ test("[3] Can render multiple pokemon", () => {
   expect(name4).toBeFalsy();
 });
 
-test("[4] Matches snapshot from 5.8.22", () => {});
+test("[4] Matches snapshot from 5.8.22", () => {
+  const component = renderer.create(
+    <AllPokemon pokemonData={multFakePokemon} />
+  );
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
