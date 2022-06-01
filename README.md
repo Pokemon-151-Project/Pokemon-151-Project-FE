@@ -2,7 +2,9 @@ POKEMON 151 PROJECT
 
 # `Introduction`
 
-## A scalable, maintainable application that maps over and displays data in digestible cards
+A scalable, maintainable application that maps over and displays data in digestible cards \
+Right now it displays Pokemon, but with small adjustments, these reusable components can display anything you want. \
+I invested in my codebase with thorough documentation, strong unit testing suites and good git practices with small, clean commits and descriptive, small PRs. 
 
 `HTML/CSS is highly semantic, accessible and responsive for readers of all screen sizes and abilities`
 
