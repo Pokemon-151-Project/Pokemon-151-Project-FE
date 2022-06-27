@@ -1,4 +1,4 @@
-import SinglePokemon from "../components/SinglePokemon";
+import SinglePokemon from "../../components/SinglePokemon";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import renderer from "react-test-renderer";

@@ -1,4 +1,4 @@
-import Dropdown from "../components/Dropdown";
+import Dropdown from "../../components/Dropdown";
 import renderer from "react-test-renderer";
 
 /* eslint-disable testing-library/no-node-access */
