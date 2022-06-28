@@ -1,4 +1,4 @@
-import AllPokemon from "../../components/AllPokemon";
+import AllPokemon from "../components/AllPokemon";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import renderer from "react-test-renderer";
