@@ -5,7 +5,7 @@ test.describe("Dark Mode Tests", () => {
     await page.goto("http://localhost:3000/");
   });
 
-  test.skip("[1] Elements have lightmode CSS by default", async ({ page }) => {
+  test("[1] Elements have lightmode CSS by default", async ({ page }) => {
     const body = page.locator("body");
 
     await expect(body)
