@@ -1,3 +1,6 @@
+// not sure I did this right
+const PASSWORD = process.env.PASSWORD
+
 module.exports = {
   development: {
     client: "pg",
@@ -5,8 +8,9 @@ module.exports = {
       database: process.env.DATABASE_NAME || "knex-pg-db",
       user: process.env.POSTGRES_USER || "postgres",
       password:
+      // not sure I did this password right
         process.env.POSTGRES_USER_PW ||
-        "<INSERT PASSWORD FOR postgres USER HERE>",
+        PASSWORD,
       port: process.env.POSTGRES_PORT || 5432,
       host: process.env.POSTGRES_HOST || "localhost",
     },
