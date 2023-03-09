@@ -1,4 +1,5 @@
 "use strict";
+// TODO: Update this, don't want any type
 const pokemonSchema = (table) => {
     table.increments("id").primary().unique();
     table.string("street").notNullable().unique();

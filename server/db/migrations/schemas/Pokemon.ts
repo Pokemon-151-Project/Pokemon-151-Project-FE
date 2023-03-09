@@ -1,4 +1,5 @@
-const pokemonSchema = (table) => {
+// TODO: Update this, don't want any type
+const pokemonSchema = (table: any) => {
   table.increments("id").primary().unique();
   table.string("street").notNullable().unique();
   table.string("suburb").notNullable();
