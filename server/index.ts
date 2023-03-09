@@ -1,3 +1,5 @@
+//TODO: Uninstall bcryptjs and maybe JWT
+
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 
