@@ -1,4 +1,5 @@
 //TODO: Uninstall bcryptjs and maybe JWT
+// TODO: Install types for knex, pg, helmet, cors, bryptjs
 
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";

@@ -1,5 +1,6 @@
 "use strict";
 //TODO: Uninstall bcryptjs and maybe JWT
+// TODO: Install types for knex, pg, helmet, cors, bryptjs
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
