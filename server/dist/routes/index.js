@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
-// router.use("/pokemon", require("./pokemon/index"));
+router.use("/pokemon", require("./pokemon/index"));
 router.get("/", (req, res) => {
     res.send("Welcome to new API");
 });
