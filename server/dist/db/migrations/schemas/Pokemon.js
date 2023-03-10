@@ -3,6 +3,7 @@
 const pokemonSchema = (table) => {
     table.increments("id").primary().unique();
     table.string("dexID").notNullable();
+    table.string("name").notNullable();
     table.string("num").notNullable();
     table.string("primaryType").notNullable();
     table.string("secondaryType").notNullable();
