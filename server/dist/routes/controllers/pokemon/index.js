@@ -18,7 +18,8 @@ const getAllPokemon = (req, res) => __awaiter(void 0, void 0, void 0, function* 
             .from("pokemon")
             // TODO: CHange this to Pokemon type
             .then((pokemon) => {
-            return pokemon;
+            console.log("pokemon:", pokemon);
+            return res.status(200).json(pokemon);
         });
     }
     catch (err) {

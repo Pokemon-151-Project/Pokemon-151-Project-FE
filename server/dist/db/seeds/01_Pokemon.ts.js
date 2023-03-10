@@ -13,9 +13,9 @@ exports.seed = void 0;
 function seed(knex) {
     return __awaiter(this, void 0, void 0, function* () {
         // Deletes ALL existing entries
-        yield knex("Pokemon").del();
+        yield knex("pokemon").del();
         // Inserts seed entries
-        yield knex("Pokemon").insert([
+        yield knex("pokemon").insert([
             {
                 dexID: 1,
                 num: "001",

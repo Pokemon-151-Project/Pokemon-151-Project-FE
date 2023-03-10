@@ -12,13 +12,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.down = exports.up = void 0;
 function up(knex) {
     return __awaiter(this, void 0, void 0, function* () {
-        return knex.schema.createTable("Pokemon", require("./schemas/Pokemon"));
+        return knex.schema.createTable("pokemon", require("./schemas/pokemon"));
     });
 }
 exports.up = up;
 function down(knex) {
     return __awaiter(this, void 0, void 0, function* () {
-        return knex.schema.dropTableIfExists("Pokemon");
+        return knex.schema.dropTableIfExists("pokemon");
     });
 }
 exports.down = down;
