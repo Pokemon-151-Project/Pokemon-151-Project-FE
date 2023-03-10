@@ -9,7 +9,6 @@ export const getAllPokemon = async (req: Request, res: Response) => {
       .from("pokemon")
       // TODO: CHange this to Pokemon type
       .then((pokemon: any) => {
-        console.log("pokemon:", pokemon);
         return res.status(200).json(pokemon);
       });
   } catch (err: any) {
