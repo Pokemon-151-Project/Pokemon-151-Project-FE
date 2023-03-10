@@ -7,6 +7,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
+const routes = require("./routes");
 const cors = require("express");
 const helmet = require("helmet");
 dotenv_1.default.config();
@@ -17,9 +18,10 @@ app.use(helmet());
 app.get("/", (req, res) => {
     res.send("Express + TypeScript Server");
 });
-app.get("/pokemon", (req, res) => {
-    res.send("Pika pika");
-});
+// app.get("/pokemon", (req: Request, res: Response) => {
+//   res.send("Pika pika");
+// });
+app.use("/api", routes);
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });

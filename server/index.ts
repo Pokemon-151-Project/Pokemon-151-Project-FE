@@ -3,6 +3,7 @@
 
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
+const routes = require("./routes");
 
 const cors = require("express");
 const helmet = require("helmet");
@@ -19,9 +20,11 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
 
-app.get("/pokemon", (req: Request, res: Response) => {
-  res.send("Pika pika");
-});
+// app.get("/pokemon", (req: Request, res: Response) => {
+//   res.send("Pika pika");
+// });
+
+app.use("/api", routes);
 
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
