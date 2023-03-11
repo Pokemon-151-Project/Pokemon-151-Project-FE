@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllPokemon = void 0;
 const knex = require("../../../db/knex");
-const getAllPokemon = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const pokemonList = yield knex
             .select()
@@ -20,6 +20,7 @@ const getAllPokemon = (req, res) => __awaiter(void 0, void 0, void 0, function* 
             .then((pokemon) => {
             return res.status(200).json(pokemon);
         });
+        next();
     }
     catch (err) {
         console.error(err.message);
