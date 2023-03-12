@@ -52,5 +52,14 @@ export const deleteSinglePokemon = async (
   next: NextFunction
 ) => {
   console.log("deleting");
-  res.status(200).send("Deleting!");
+  console.log("req.params.dexID:", req.params.dexID);
+  await knex("pokemon")
+    .where("dexID", req.params.dexID)
+    .del()
+    .then((val) => {
+      res.status(200).send("Deleting!");
+    })
+    .catch((err) => {
+      res.status(404).send(`Error deleting pokemon: ${err}`);
+    });
 };

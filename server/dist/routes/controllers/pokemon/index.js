@@ -51,6 +51,15 @@ exports.getPokemonByID = getPokemonByID;
 // TODO: Flesh this out
 const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("deleting");
-    res.status(200).send("Deleting!");
+    console.log("req.params.dexID:", req.params.dexID);
+    yield knex("pokemon")
+        .where("dexID", req.params.dexID)
+        .del()
+        .then((val) => {
+        res.status(200).send("Deleting!");
+    })
+        .catch((err) => {
+        res.status(404).send(`Error deleting pokemon: ${err}`);
+    });
 });
 exports.deleteSinglePokemon = deleteSinglePokemon;
