@@ -2,7 +2,7 @@
 
 import { z } from "zod";
 
-const pokemonSchema = z.object({
+export const pokemonSchema = z.object({
   dexID: z.number({ required_error: "Need dexID integer" }).max(151),
   name: z.string({ required_error: "Pokemon name is required" }),
   num: z.string({ required_error: "need num, format 001 | 015 | 151 etc" }),

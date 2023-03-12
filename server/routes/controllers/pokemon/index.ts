@@ -1,5 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 import { Knex } from "knex";
+import { SinglePokemon } from "../../../utils/Types";
+import { z } from "zod";
+import { pokemonSchema } from "../../../utils/Types";
 const knex: Knex = require("../../../db/knex");
 
 export const getAllPokemon = async (
@@ -66,6 +69,14 @@ export const deleteSinglePokemon = async (
     });
 };
 
-const postNewPokemon = (req: Request, res: Response, next: NextFunction) => {
+export const postNewPokemon = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   console.log("posting");
+  const pokemon = req.body;
+  // console.log("pokemon:", pokemon);
+  console.log("req.body:", req.body);
+  // console.log("pokemonSchema.parse(pokemon):", pokemonSchema.parse(pokemon));
 };

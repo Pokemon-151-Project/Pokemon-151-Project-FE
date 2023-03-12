@@ -7,6 +7,7 @@ import {
   deleteSinglePokemon,
   getAllPokemon,
   getPokemonByID,
+  postNewPokemon,
 } from "../controllers/pokemon";
 
 router.get("/", getAllPokemon);
@@ -15,6 +16,6 @@ router.get("/:dexID", getPokemonByID);
 
 router.delete("/:dexID", deleteSinglePokemon);
 
-router.post("/");
+router.post("/", postNewPokemon);
 
 module.exports = router;

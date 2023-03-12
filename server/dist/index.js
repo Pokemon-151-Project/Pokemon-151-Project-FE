@@ -15,6 +15,9 @@ const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.use(cors());
 app.use(helmet());
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
     res.send("Express + TypeScript Server");
 });
