@@ -69,16 +69,14 @@ export const deleteSinglePokemon = async (
     });
 };
 
-export const postNewPokemon = (
+export const postNewPokemon = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   console.log("posting");
-  const pokemon = req.body;
+  const pokemon: SinglePokemon = req.body;
   // console.log("pokemon:", pokemon);
-  // console.log("req.body:", req.body);
-  // console.log("pokemonSchema.parse(pokemon):", pokemonSchema.parse(pokemon));
-
-  // console.log("pokemonSchema.parse(req.body);:", pokemonSchema.parse(req.body));
+  await knex("pokemon").insert(pokemon);
+  res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
 };

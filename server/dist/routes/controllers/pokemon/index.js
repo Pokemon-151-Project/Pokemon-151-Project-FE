@@ -65,12 +65,11 @@ const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0
     });
 });
 exports.deleteSinglePokemon = deleteSinglePokemon;
-const postNewPokemon = (req, res, next) => {
+const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("posting");
     const pokemon = req.body;
     // console.log("pokemon:", pokemon);
-    // console.log("req.body:", req.body);
-    // console.log("pokemonSchema.parse(pokemon):", pokemonSchema.parse(pokemon));
-    // console.log("pokemonSchema.parse(req.body);:", pokemonSchema.parse(req.body));
-};
+    yield knex("pokemon").insert(pokemon);
+    res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+});
 exports.postNewPokemon = postNewPokemon;

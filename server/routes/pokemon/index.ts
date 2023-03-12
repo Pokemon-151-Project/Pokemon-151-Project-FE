@@ -2,8 +2,6 @@ const express = require("express");
 import { Router } from "express";
 import { validateSinglePokemon } from "../../middleware/Pokemon/pokemonMiddleware";
 const router: Router = express.Router();
-import { SinglePokemon } from "../../utils/Types";
-
 import {
   deleteSinglePokemon,
   getAllPokemon,
@@ -17,6 +15,6 @@ router.get("/:dexID", getPokemonByID);
 
 router.delete("/:dexID", deleteSinglePokemon);
 
-router.post("/", validateSinglePokemon);
+router.post("/", validateSinglePokemon, postNewPokemon);
 
 module.exports = router;

@@ -17,9 +17,10 @@ const validateSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void
     console.log("validating");
     try {
         yield Types_1.pokemonSchema.parseAsync(req.body);
-        return res
-            .status(200)
-            .send("Hey you dummy, put a next call in validateSinglePokemon!");
+        // return res
+        //   .status(200)
+        //   .send("Hey you dummy, put a next call in validateSinglePokemon!");
+        next();
     }
     catch (error) {
         if (error instanceof zod_1.ZodError) {

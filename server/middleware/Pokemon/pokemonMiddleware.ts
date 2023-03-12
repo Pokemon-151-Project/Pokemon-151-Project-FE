@@ -12,9 +12,10 @@ export const validateSinglePokemon = async (
 
   try {
     await pokemonSchema.parseAsync(req.body);
-    return res
-      .status(200)
-      .send("Hey you dummy, put a next call in validateSinglePokemon!");
+    // return res
+    //   .status(200)
+    //   .send("Hey you dummy, put a next call in validateSinglePokemon!");
+    next();
   } catch (error) {
     if (error instanceof ZodError) {
       return res.status(400).json(error.issues[0].message);
