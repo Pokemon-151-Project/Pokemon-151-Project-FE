@@ -46,6 +46,7 @@ export const getPokemonByID = async (
   }
 };
 
+// TODO: Flesh this out
 export const deleteSinglePokemon = async (
   req: Request,
   res: Response,

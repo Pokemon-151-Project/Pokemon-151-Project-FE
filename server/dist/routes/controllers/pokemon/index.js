@@ -48,6 +48,7 @@ const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
     }
 });
 exports.getPokemonByID = getPokemonByID;
+// TODO: Flesh this out
 const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("deleting");
     res.status(200).send("Deleting!");
