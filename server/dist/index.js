@@ -8,6 +8,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const routes = require("./routes");
+const bodyParser = require("body-parser");
 const cors = require("express");
 const helmet = require("helmet");
 dotenv_1.default.config();
@@ -15,15 +16,11 @@ const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.use(cors());
 app.use(helmet());
-const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
     res.send("Express + TypeScript Server");
 });
-// app.get("/pokemon", (req: Request, res: Response) => {
-//   res.send("Pika pika");
-// });
 app.use("/api", routes);
 app.listen(port, () => {
     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);

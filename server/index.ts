@@ -4,6 +4,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 const routes = require("./routes");
+const bodyParser = require("body-parser");
 
 const cors = require("express");
 const helmet = require("helmet");
@@ -15,18 +16,12 @@ const port = process.env.PORT;
 
 app.use(cors());
 app.use(helmet());
-
-const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
-
-// app.get("/pokemon", (req: Request, res: Response) => {
-//   res.send("Pika pika");
-// });
 
 app.use("/api", routes);
 
