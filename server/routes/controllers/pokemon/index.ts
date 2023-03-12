@@ -37,6 +37,9 @@ export const getPokemonByID = async (
       .from("pokemon")
       .where("dexID", req.params.dexID)
       .then((pokemon: any) => {
+        if (pokemon.length === 0) {
+          return res.status(404).send("No pokemon with that id");
+        }
         return res.status(200).json(pokemon);
       });
     next();

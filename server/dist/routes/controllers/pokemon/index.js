@@ -37,6 +37,9 @@ const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
             .from("pokemon")
             .where("dexID", req.params.dexID)
             .then((pokemon) => {
+            if (pokemon.length === 0) {
+                return res.status(404).send("No pokemon with that id");
+            }
             return res.status(200).json(pokemon);
         });
         next();
