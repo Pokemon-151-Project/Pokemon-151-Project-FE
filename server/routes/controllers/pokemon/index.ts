@@ -1,6 +1,5 @@
-import express, { Express, NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
 import { Knex } from "knex";
-import { json } from "stream/consumers";
 const knex: Knex = require("../../../db/knex");
 
 export const getAllPokemon = async (
