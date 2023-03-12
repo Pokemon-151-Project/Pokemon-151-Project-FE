@@ -29,8 +29,6 @@ const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, func
 });
 exports.getAllPokemon = getAllPokemon;
 const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("getting by id");
-    // res.status(200).send("Getting pokemon!");
     try {
         const singlePokemon = yield knex
             .select()

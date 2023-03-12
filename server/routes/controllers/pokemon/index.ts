@@ -28,9 +28,6 @@ export const getPokemonByID = async (
   res: Response,
   next: NextFunction
 ) => {
-  console.log("getting by id");
-  // res.status(200).send("Getting pokemon!");
-
   try {
     const singlePokemon = await knex
       .select()
