@@ -21,3 +21,12 @@ export const getAllPokemon = async (
     res.status(500).send("Server Error");
   }
 };
+
+export const getPokemonByID = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  console.log("getting by id");
+  res.status(200).send("Getting pokemon!");
+};
