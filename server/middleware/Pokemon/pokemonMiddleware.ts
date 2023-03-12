@@ -1,16 +1,25 @@
 import { NextFunction, Request, Response } from "express";
-import { pokemonSchema } from "../../../utils/Types";
+import { ZodError } from "zod";
+import { pokemonSchema } from "../../utils/Types";
 
-export const validateSinglePokemon = (
+export const validateSinglePokemon = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  console.log("posting");
   const pokemon = req.body;
-  // console.log("pokemon:", pokemon);
-  // console.log("req.body:", req.body);
-  // console.log("pokemonSchema.parse(pokemon):", pokemonSchema.parse(pokemon));
+  console.log("validating");
 
-  // console.log("pokemonSchema.parse(req.body);:", pokemonSchema.parse(req.body));
+  try {
+    await pokemonSchema.parseAsync(req.body);
+    return res
+      .status(200)
+      .send("Hey you dummy, put a next call in validateSinglePokemon!");
+  } catch (error) {
+    if (error instanceof ZodError) {
+      return res.status(400).json(error.issues[0].message);
+    } else {
+      return res.status(400).send("Non-Zod error posting new Pokemon");
+    }
+  }
 };
