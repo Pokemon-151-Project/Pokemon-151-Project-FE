@@ -5,6 +5,7 @@ import { z } from "zod";
 import { pokemonSchema } from "../../../utils/Types";
 const knex: Knex = require("../../../db/knex");
 
+// GET ALL
 export const getAllPokemon = async (
   req: Request,
   res: Response,
@@ -25,6 +26,7 @@ export const getAllPokemon = async (
   }
 };
 
+// GET POKEMON BY ID
 export const getPokemonByID = async (
   req: Request,
   res: Response,
@@ -48,7 +50,7 @@ export const getPokemonByID = async (
   }
 };
 
-// TODO: Flesh this out
+// DELETE POKEMON BY ID
 export const deleteSinglePokemon = async (
   req: Request,
   res: Response,
@@ -68,6 +70,7 @@ export const deleteSinglePokemon = async (
     });
 };
 
+// POST NEW POKEMON
 export const postNewPokemon = async (
   req: Request,
   res: Response,

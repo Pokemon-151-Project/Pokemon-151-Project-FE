@@ -11,6 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.postNewPokemon = exports.deleteSinglePokemon = exports.getPokemonByID = exports.getAllPokemon = void 0;
 const knex = require("../../../db/knex");
+// GET ALL
 const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const pokemonList = yield knex
@@ -28,6 +29,7 @@ const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, func
     }
 });
 exports.getAllPokemon = getAllPokemon;
+// GET POKEMON BY ID
 const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const singlePokemon = yield knex
@@ -48,7 +50,7 @@ const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
     }
 });
 exports.getPokemonByID = getPokemonByID;
-// TODO: Flesh this out
+// DELETE POKEMON BY ID
 const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("req.params.dexID:", req.params.dexID);
     yield knex("pokemon")
@@ -64,6 +66,7 @@ const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0
     });
 });
 exports.deleteSinglePokemon = deleteSinglePokemon;
+// POST NEW POKEMON
 const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("posting");
     const pokemon = req.body;
