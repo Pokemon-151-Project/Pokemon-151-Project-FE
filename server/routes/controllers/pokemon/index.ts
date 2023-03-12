@@ -54,7 +54,6 @@ export const deleteSinglePokemon = async (
   res: Response,
   next: NextFunction
 ) => {
-  console.log("deleting");
   console.log("req.params.dexID:", req.params.dexID);
   await knex("pokemon")
     .where("dexID", req.params.dexID)
@@ -77,6 +76,12 @@ export const postNewPokemon = async (
   console.log("posting");
   const pokemon: SinglePokemon = req.body;
   // console.log("pokemon:", pokemon);
-  await knex("pokemon").insert(pokemon);
-  res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+  await knex("pokemon")
+    .insert(pokemon)
+    .then(() => {
+      res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+    })
+    .catch((err) => {
+      res.status(409).json(`Error posting Pokemon: ${err}`);
+    });
 };

@@ -2,7 +2,7 @@
 // TODO: Update this, don't want any type
 const pokemonSchema = (table) => {
     table.increments("id").primary().unique();
-    table.integer("dexID").notNullable();
+    table.integer("dexID").unique().notNullable();
     table.string("name").notNullable();
     table.string("num").notNullable();
     table.string("primaryType").notNullable();

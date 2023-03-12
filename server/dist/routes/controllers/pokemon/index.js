@@ -50,7 +50,6 @@ const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
 exports.getPokemonByID = getPokemonByID;
 // TODO: Flesh this out
 const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("deleting");
     console.log("req.params.dexID:", req.params.dexID);
     yield knex("pokemon")
         .where("dexID", req.params.dexID)
@@ -69,7 +68,13 @@ const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
     console.log("posting");
     const pokemon = req.body;
     // console.log("pokemon:", pokemon);
-    yield knex("pokemon").insert(pokemon);
-    res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+    yield knex("pokemon")
+        .insert(pokemon)
+        .then(() => {
+        res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+    })
+        .catch((err) => {
+        res.status(409).json(`Error posting Pokemon: ${err}`);
+    });
 });
 exports.postNewPokemon = postNewPokemon;
