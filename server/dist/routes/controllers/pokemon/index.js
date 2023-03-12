@@ -24,12 +24,26 @@ const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, func
     }
     catch (err) {
         console.error(err.message);
-        res.status(500).send("Server Error");
+        res.status(500).send("Error getting all pokemon");
     }
 });
 exports.getAllPokemon = getAllPokemon;
 const getPokemonByID = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("getting by id");
-    res.status(200).send("Getting pokemon!");
+    // res.status(200).send("Getting pokemon!");
+    try {
+        const singlePokemon = yield knex
+            .select()
+            .from("pokemon")
+            .where("dexID", req.params.dexID)
+            .then((pokemon) => {
+            return res.status(200).json(pokemon);
+        });
+        next();
+    }
+    catch (err) {
+        console.error(err.message);
+        res.status(500).send("Error getting pokemon");
+    }
 });
 exports.getPokemonByID = getPokemonByID;

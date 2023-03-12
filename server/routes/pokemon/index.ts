@@ -5,6 +5,6 @@ import { getAllPokemon, getPokemonByID } from "../controllers/pokemon";
 
 router.get("/", getAllPokemon);
 
-router.get("/:id", getPokemonByID);
+router.get("/:dexID", getPokemonByID);
 
 module.exports = router;
