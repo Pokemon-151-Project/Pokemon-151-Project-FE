@@ -1,10 +1,17 @@
 const express = require("express");
-const router = express.Router();
+import { Router } from "express";
+const router: Router = express.Router();
 
-import { getAllPokemon, getPokemonByID } from "../controllers/pokemon";
+import {
+  deleteSinglePokemon,
+  getAllPokemon,
+  getPokemonByID,
+} from "../controllers/pokemon";
 
 router.get("/", getAllPokemon);
 
 router.get("/:dexID", getPokemonByID);
+
+router.delete("/:dexID", deleteSinglePokemon);
 
 module.exports = router;

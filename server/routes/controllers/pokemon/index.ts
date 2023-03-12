@@ -48,3 +48,12 @@ export const getPokemonByID = async (
     res.status(500).send("Error getting pokemon");
   }
 };
+
+export const deleteSinglePokemon = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  console.log("deleting");
+  res.status(200).send("Deleting!");
+};
