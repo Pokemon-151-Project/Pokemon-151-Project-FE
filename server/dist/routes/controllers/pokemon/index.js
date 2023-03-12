@@ -57,9 +57,14 @@ const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0
         .del()
         .then((val) => {
         res.status(200).send("Deleting!");
+        next();
     })
         .catch((err) => {
         res.status(404).send(`Error deleting pokemon: ${err}`);
+        next();
     });
 });
 exports.deleteSinglePokemon = deleteSinglePokemon;
+const postNewPokemon = (req, res, next) => {
+    console.log("posting");
+};

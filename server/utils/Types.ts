@@ -12,3 +12,5 @@ const pokemonSchema = z.object({
   weight: z.string({ required_error: "Weight required" }),
   dexEntry: z.string({ required_error: "dexEntry required" }),
 });
+
+export type SinglePokemon = z.infer<typeof pokemonSchema>;

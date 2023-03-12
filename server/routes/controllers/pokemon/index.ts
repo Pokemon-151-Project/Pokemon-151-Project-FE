@@ -58,8 +58,14 @@ export const deleteSinglePokemon = async (
     .del()
     .then((val) => {
       res.status(200).send("Deleting!");
+      next();
     })
     .catch((err) => {
       res.status(404).send(`Error deleting pokemon: ${err}`);
+      next();
     });
+};
+
+const postNewPokemon = (req: Request, res: Response, next: NextFunction) => {
+  console.log("posting");
 };
