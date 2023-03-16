@@ -11,13 +11,9 @@ export const validatePokemon = async (
 	console.log("validating");
 
 	try {
-		console.log("blah blah blah 1");
-		console.log("pokemonList:", pokemonList);
-
 		for (const poke of pokemonList) {
 			await pokemonSchema.parseAsync(poke);
 		}
-
 		next();
 	} catch (error) {
 		if (error instanceof ZodError) {

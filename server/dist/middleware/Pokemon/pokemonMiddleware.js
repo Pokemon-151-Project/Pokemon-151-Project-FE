@@ -16,8 +16,6 @@ const validatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, fu
     const pokemonList = req.body.pokemonList;
     console.log("validating");
     try {
-        console.log("blah blah blah 1");
-        console.log("pokemonList:", pokemonList);
         for (const poke of pokemonList) {
             yield Types_1.pokemonSchema.parseAsync(poke);
         }
