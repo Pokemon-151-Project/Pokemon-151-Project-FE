@@ -26,6 +26,7 @@ router.delete("/", deleteAllPokemon);
 // POST array of pokemon (one or multiple)
 router.post("/", validatePokemon, postNewPokemon);
 
+//TODO: Flesh this out
 router.put("/:dexID", updatePokemon);
 
 module.exports = router;
