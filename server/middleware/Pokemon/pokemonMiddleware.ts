@@ -14,12 +14,17 @@ export const validatePokemon = async (
 		for (const poke of pokemonList) {
 			await pokemonSchema.parseAsync(poke);
 		}
+		if (pokemonList.length === 0) {
+			throw "Empty pokemon list";
+		}
 		next();
 	} catch (error) {
 		if (error instanceof ZodError) {
+			console.log("error");
 			return res.status(400).json(error.issues[0].message);
 		} else {
 			return res.status(400).send(error);
+			console.log("blah blah blah");
 		}
 	}
 };
