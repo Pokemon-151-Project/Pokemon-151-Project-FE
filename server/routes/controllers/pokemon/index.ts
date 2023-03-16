@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from "express";
 import { Knex } from "knex";
-import { SinglePokemon } from "../../../utils/Types";
 const knex: Knex = require("../../../db/knex");
 
 // GET ALL
