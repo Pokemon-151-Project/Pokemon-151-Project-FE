@@ -44,7 +44,7 @@ test("[2] Accepts valid pokemon list", async () => {
 	expect(next).toHaveBeenCalled();
 });
 
-test.only("[3] Denies empty pokemon list", async () => {
+test("[3] Denies empty pokemon list", async () => {
 	const emptyPokemonList: SinglePokemon[] = [];
 
 	const req: Request = httpMocks.createRequest({
@@ -65,30 +65,33 @@ test.only("[3] Denies empty pokemon list", async () => {
 	expect(res.statusCode).toBe(400);
 });
 
-// test("Throws ZodError if invalid pokemon", async () => {
-// 	const invalidPokemonList = [
-// 		{
-// 			dexID: 8,
-// 			name: 123,
-// 			num: "003",
-// 			primaryType: "Pikatype",
-// 			secondaryType: "Bulbatype",
-// 			height: "0.5m",
-// 			weight: "66kg",
-// 			dexEntry: "Pika pika!",
-// 		},
-// 	];
-// 	const req: Request = httpMocks.createRequest({
-// 		body: {
-// 			pokemonList: invalidPokemonList,
-// 		},
-// 	});
+test.only("[4] Throws ZodError if invalid pokemon", async () => {
+	const invalidPokemonList = [
+		{
+			dexID: 8,
+			name: 123,
+			num: "003",
+			primaryType: "Pikatype",
+			secondaryType: "Bulbatype",
+			height: "0.5m",
+			weight: "66kg",
+			dexEntry: "Pika pika!",
+		},
+	];
+	const req: Request = httpMocks.createRequest({
+		body: {
+			pokemonList: invalidPokemonList,
+		},
+	});
 
-// 	const res: Response = httpMocks.createResponse();
+	const res: Response = httpMocks.createResponse();
 
-// 	const next: NextFunction = jest.fn();
+	const next: NextFunction = jest.fn();
+	// Couldn't get TS to accept this as a Request but it works for our needs in this test.
+	// @ts-ignore
+	await validatePokemon(req, res, next);
 
-// 	await validatePokemon(req, res, next);
-
-// 	expect(res.status).toHaveBeenCalledWith(400);
-// });
+	// @ts-ignore - not sure why this doesn't recognize statusCode
+	expect(res.statusCode).toBe(400);
+	console.log("res:", res);
+});

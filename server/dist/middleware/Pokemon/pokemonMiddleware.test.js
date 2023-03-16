@@ -49,7 +49,7 @@ test("[2] Accepts valid pokemon list", () => __awaiter(void 0, void 0, void 0, f
     yield (0, pokemonMiddleware_1.validatePokemon)(req, res, next);
     expect(next).toHaveBeenCalled();
 }));
-test.only("[3] Denies empty pokemon list", () => __awaiter(void 0, void 0, void 0, function* () {
+test("[3] Denies empty pokemon list", () => __awaiter(void 0, void 0, void 0, function* () {
     const emptyPokemonList = [];
     const req = httpMocks.createRequest({
         body: {
@@ -65,26 +65,30 @@ test.only("[3] Denies empty pokemon list", () => __awaiter(void 0, void 0, void 
     // @ts-ignore - not sure why this doesn't recognize statusCode
     expect(res.statusCode).toBe(400);
 }));
-// test("Throws ZodError if invalid pokemon", async () => {
-// 	const invalidPokemonList = [
-// 		{
-// 			dexID: 8,
-// 			name: 123,
-// 			num: "003",
-// 			primaryType: "Pikatype",
-// 			secondaryType: "Bulbatype",
-// 			height: "0.5m",
-// 			weight: "66kg",
-// 			dexEntry: "Pika pika!",
-// 		},
-// 	];
-// 	const req: Request = httpMocks.createRequest({
-// 		body: {
-// 			pokemonList: invalidPokemonList,
-// 		},
-// 	});
-// 	const res: Response = httpMocks.createResponse();
-// 	const next: NextFunction = jest.fn();
-// 	await validatePokemon(req, res, next);
-// 	expect(res.status).toHaveBeenCalledWith(400);
-// });
+test.only("[4] Throws ZodError if invalid pokemon", () => __awaiter(void 0, void 0, void 0, function* () {
+    const invalidPokemonList = [
+        {
+            dexID: 8,
+            name: 123,
+            num: "003",
+            primaryType: "Pikatype",
+            secondaryType: "Bulbatype",
+            height: "0.5m",
+            weight: "66kg",
+            dexEntry: "Pika pika!",
+        },
+    ];
+    const req = httpMocks.createRequest({
+        body: {
+            pokemonList: invalidPokemonList,
+        },
+    });
+    const res = httpMocks.createResponse();
+    const next = jest.fn();
+    // Couldn't get TS to accept this as a Request but it works for our needs in this test.
+    // @ts-ignore
+    yield (0, pokemonMiddleware_1.validatePokemon)(req, res, next);
+    // @ts-ignore - not sure why this doesn't recognize statusCode
+    expect(res.statusCode).toBe(400);
+    console.log("res:", res);
+}));
