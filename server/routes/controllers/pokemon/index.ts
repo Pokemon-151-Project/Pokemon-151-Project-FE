@@ -59,11 +59,27 @@ export const deleteSinglePokemon = async (
 		.where("dexID", req.params.dexID)
 		.del()
 		.then((val) => {
-			res.status(200).send("Deleting!");
+			res.status(202).send("Deleting!");
 			next();
 		})
 		.catch((err) => {
 			res.status(404).send(`Error deleting pokemon: ${err}`);
+			next();
+		});
+};
+
+export const deleteAllPokemon = async (
+	req: Request,
+	res: Response,
+	next: NextFunction
+) => {
+	await knex("pokemon")
+		.del()
+		.then(() => {
+			res.status(202).send("Deleted all pokemon");
+		})
+		.catch((err) => {
+			res.status(404).send(`Error deleting all pokemon: ${err}`);
 			next();
 		});
 };
@@ -75,14 +91,22 @@ export const postNewPokemon = async (
 	next: NextFunction
 ) => {
 	console.log("posting");
-	const pokemon: SinglePokemon = req.body;
-	// console.log("pokemon:", pokemon);
+	const { pokemonList } = req.body;
+	console.log("req:", req);
 	await knex("pokemon")
-		.insert(pokemon)
+		.insert(pokemonList)
 		.then(() => {
-			res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+			res.status(201).send(`Pokemon successfully created!`);
 		})
 		.catch((err) => {
 			res.status(409).json(`Error posting Pokemon: ${err}`);
 		});
+};
+
+export const updatePokemon = async (
+	req: Request,
+	res: Response,
+	next: NextFunction
+) => {
+	console.log("updating");
 };

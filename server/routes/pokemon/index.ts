@@ -1,20 +1,32 @@
 const express = require("express");
 import { Router } from "express";
-import { validateSinglePokemon } from "../../middleware/Pokemon/pokemonMiddleware";
+import { validatePokemon } from "../../middleware/Pokemon/pokemonMiddleware";
 const router: Router = express.Router();
 import {
-  deleteSinglePokemon,
-  getAllPokemon,
-  getPokemonByID,
-  postNewPokemon,
+	deleteAllPokemon,
+	deleteSinglePokemon,
+	getAllPokemon,
+	getPokemonByID,
+	postNewPokemon,
+	updatePokemon,
 } from "../controllers/pokemon";
 
+// GET all pokemon
 router.get("/", getAllPokemon);
 
+// GET single pokemon
 router.get("/:dexID", getPokemonByID);
 
+// DELETE single pokemon
 router.delete("/:dexID", deleteSinglePokemon);
 
-router.post("/", validateSinglePokemon, postNewPokemon);
+// DELETE all pokemon
+router.delete("/", deleteAllPokemon);
+
+// POST array of pokemon (one or multiple)
+router.post("/", validatePokemon, postNewPokemon);
+
+//TODO: Flesh this out
+router.put("/:dexID", updatePokemon);
 
 module.exports = router;
