@@ -62,5 +62,29 @@ test.only("[3] Denies empty pokemon list", () => __awaiter(void 0, void 0, void 
     // @ts-ignore
     yield (0, pokemonMiddleware_1.validatePokemon)(req, res, next);
     expect(next).not.toHaveBeenCalled();
-    // expect(res.status).toHaveBeenCalledWith(400);
+    // @ts-ignore - not sure why this doesn't recognize statusCode
+    expect(res.statusCode).toBe(400);
 }));
+// test("Throws ZodError if invalid pokemon", async () => {
+// 	const invalidPokemonList = [
+// 		{
+// 			dexID: 8,
+// 			name: 123,
+// 			num: "003",
+// 			primaryType: "Pikatype",
+// 			secondaryType: "Bulbatype",
+// 			height: "0.5m",
+// 			weight: "66kg",
+// 			dexEntry: "Pika pika!",
+// 		},
+// 	];
+// 	const req: Request = httpMocks.createRequest({
+// 		body: {
+// 			pokemonList: invalidPokemonList,
+// 		},
+// 	});
+// 	const res: Response = httpMocks.createResponse();
+// 	const next: NextFunction = jest.fn();
+// 	await validatePokemon(req, res, next);
+// 	expect(res.status).toHaveBeenCalledWith(400);
+// });
