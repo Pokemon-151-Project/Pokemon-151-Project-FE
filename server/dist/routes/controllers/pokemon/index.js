@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postNewPokemon = exports.deleteSinglePokemon = exports.getPokemonByID = exports.getAllPokemon = void 0;
+exports.postNewPokemon = exports.deleteAllPokemon = exports.deleteSinglePokemon = exports.getPokemonByID = exports.getAllPokemon = void 0;
 const knex = require("../../../db/knex");
 // GET ALL
 const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
@@ -57,7 +57,7 @@ const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0
         .where("dexID", req.params.dexID)
         .del()
         .then((val) => {
-        res.status(200).send("Deleting!");
+        res.status(202).send("Deleting!");
         next();
     })
         .catch((err) => {
@@ -66,6 +66,19 @@ const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0
     });
 });
 exports.deleteSinglePokemon = deleteSinglePokemon;
+const deleteAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("deleting all");
+    yield knex("pokemon")
+        .del()
+        .then(() => {
+        res.status(202).send("Deleted all pokemon");
+    })
+        .catch((err) => {
+        res.status(404).send(`Error deleting all pokemon: ${err}`);
+        next();
+    });
+});
+exports.deleteAllPokemon = deleteAllPokemon;
 // POST NEW POKEMON
 const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("posting");

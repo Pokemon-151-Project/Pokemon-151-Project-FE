@@ -59,11 +59,28 @@ export const deleteSinglePokemon = async (
 		.where("dexID", req.params.dexID)
 		.del()
 		.then((val) => {
-			res.status(200).send("Deleting!");
+			res.status(202).send("Deleting!");
 			next();
 		})
 		.catch((err) => {
 			res.status(404).send(`Error deleting pokemon: ${err}`);
+			next();
+		});
+};
+
+export const deleteAllPokemon = async (
+	req: Request,
+	res: Response,
+	next: NextFunction
+) => {
+	console.log("deleting all");
+	await knex("pokemon")
+		.del()
+		.then(() => {
+			res.status(202).send("Deleted all pokemon");
+		})
+		.catch((err) => {
+			res.status(404).send(`Error deleting all pokemon: ${err}`);
 			next();
 		});
 };
