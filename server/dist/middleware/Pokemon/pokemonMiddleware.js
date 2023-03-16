@@ -12,9 +12,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.validatePokemon = void 0;
 const zod_1 = require("zod");
 const Types_1 = require("../../utils/Types");
+// validates an array of Pokemon objects. Obviously can be one or multiple pokemon
 const validatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const pokemonList = req.body.pokemonList;
-    console.log("validating");
     try {
         for (const poke of pokemonList) {
             yield Types_1.pokemonSchema.parseAsync(poke);
@@ -26,7 +26,7 @@ const validatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, fu
             return res.status(400).json(error.issues[0].message);
         }
         else {
-            return res.status(400).send("Non-Zod error posting new Pokemon");
+            return res.status(400).send(error);
         }
     }
 });
