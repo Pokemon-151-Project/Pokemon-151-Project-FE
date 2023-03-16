@@ -26,12 +26,10 @@ const validatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, fu
     }
     catch (error) {
         if (error instanceof zod_1.ZodError) {
-            console.log("error");
             return res.status(400).json(error.issues[0].message);
         }
         else {
             return res.status(400).send(error);
-            console.log("blah blah blah");
         }
     }
 });

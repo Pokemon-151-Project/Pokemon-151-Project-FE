@@ -93,5 +93,4 @@ test.only("[4] Throws ZodError if invalid pokemon", async () => {
 
 	// @ts-ignore - not sure why this doesn't recognize statusCode
 	expect(res.statusCode).toBe(400);
-	console.log("res:", res);
 });

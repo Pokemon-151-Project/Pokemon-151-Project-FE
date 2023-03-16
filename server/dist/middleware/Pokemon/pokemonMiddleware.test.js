@@ -90,5 +90,4 @@ test.only("[4] Throws ZodError if invalid pokemon", () => __awaiter(void 0, void
     yield (0, pokemonMiddleware_1.validatePokemon)(req, res, next);
     // @ts-ignore - not sure why this doesn't recognize statusCode
     expect(res.statusCode).toBe(400);
-    console.log("res:", res);
 }));
