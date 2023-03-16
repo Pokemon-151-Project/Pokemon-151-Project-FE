@@ -91,7 +91,6 @@ export const postNewPokemon = async (
 ) => {
 	console.log("posting");
 	const { pokemonList } = req.body;
-	console.log("req:", req);
 	await knex("pokemon")
 		.insert(pokemonList)
 		.then(() => {
