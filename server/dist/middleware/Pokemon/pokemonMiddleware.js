@@ -9,17 +9,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.validateSinglePokemon = void 0;
+exports.validatePokemon = void 0;
 const zod_1 = require("zod");
 const Types_1 = require("../../utils/Types");
-const validateSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const pokemon = req.body;
+const validatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    const pokemonList = req.body.pokemonList;
     console.log("validating");
     try {
-        yield Types_1.pokemonSchema.parseAsync(req.body);
-        // return res
-        //   .status(200)
-        //   .send("Hey you dummy, put a next call in validateSinglePokemon!");
+        console.log("blah blah blah 1");
+        console.log("pokemonList:", pokemonList);
+        for (const poke of pokemonList) {
+            yield Types_1.pokemonSchema.parseAsync(poke);
+        }
         next();
     }
     catch (error) {
@@ -31,4 +32,4 @@ const validateSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void
         }
     }
 });
-exports.validateSinglePokemon = validateSinglePokemon;
+exports.validatePokemon = validatePokemon;

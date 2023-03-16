@@ -81,12 +81,12 @@ exports.deleteAllPokemon = deleteAllPokemon;
 // POST NEW POKEMON
 const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("posting");
-    const pokemon = req.body;
-    // console.log("pokemon:", pokemon);
+    const { pokemonList } = req.body;
+    console.log("req:", req);
     yield knex("pokemon")
-        .insert(pokemon)
+        .insert(pokemonList)
         .then(() => {
-        res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+        res.status(201).send(`Pokemon successfully created!`);
     })
         .catch((err) => {
         res.status(409).json(`Error posting Pokemon: ${err}`);

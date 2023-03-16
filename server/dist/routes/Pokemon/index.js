@@ -8,5 +8,5 @@ router.get("/", pokemon_1.getAllPokemon);
 router.get("/:dexID", pokemon_1.getPokemonByID);
 router.delete("/:dexID", pokemon_1.deleteSinglePokemon);
 router.delete("/", pokemon_1.deleteAllPokemon);
-router.post("/", pokemonMiddleware_1.validateSinglePokemon, pokemon_1.postNewPokemon);
+router.post("/", pokemonMiddleware_1.validatePokemon, pokemon_1.postNewPokemon);
 module.exports = router;

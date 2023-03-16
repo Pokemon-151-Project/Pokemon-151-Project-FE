@@ -91,12 +91,12 @@ export const postNewPokemon = async (
 	next: NextFunction
 ) => {
 	console.log("posting");
-	const pokemon: SinglePokemon = req.body;
-	// console.log("pokemon:", pokemon);
+	const { pokemonList } = req.body;
+	console.log("req:", req);
 	await knex("pokemon")
-		.insert(pokemon)
+		.insert(pokemonList)
 		.then(() => {
-			res.status(201).send(`Pokemon ${pokemon.name} successfully created!`);
+			res.status(201).send(`Pokemon successfully created!`);
 		})
 		.catch((err) => {
 			res.status(409).json(`Error posting Pokemon: ${err}`);
