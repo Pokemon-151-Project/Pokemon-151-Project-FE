@@ -8,6 +8,7 @@ import {
 	getAllPokemon,
 	getPokemonByID,
 	postNewPokemon,
+	updatePokemon,
 } from "../controllers/pokemon";
 
 // GET all pokemon
@@ -24,5 +25,7 @@ router.delete("/", deleteAllPokemon);
 
 // POST array of pokemon (one or multiple)
 router.post("/", validatePokemon, postNewPokemon);
+
+router.put("/:dexID", updatePokemon);
 
 module.exports = router;

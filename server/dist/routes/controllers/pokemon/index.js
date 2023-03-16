@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.postNewPokemon = exports.deleteAllPokemon = exports.deleteSinglePokemon = exports.getPokemonByID = exports.getAllPokemon = void 0;
+exports.updatePokemon = exports.postNewPokemon = exports.deleteAllPokemon = exports.deleteSinglePokemon = exports.getPokemonByID = exports.getAllPokemon = void 0;
 const knex = require("../../../db/knex");
 // GET ALL
 const getAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
@@ -93,3 +93,7 @@ const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
     });
 });
 exports.postNewPokemon = postNewPokemon;
+const updatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("updating");
+});
+exports.updatePokemon = updatePokemon;

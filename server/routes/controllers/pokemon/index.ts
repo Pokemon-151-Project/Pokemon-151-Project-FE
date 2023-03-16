@@ -102,3 +102,11 @@ export const postNewPokemon = async (
 			res.status(409).json(`Error posting Pokemon: ${err}`);
 		});
 };
+
+export const updatePokemon = async (
+	req: Request,
+	res: Response,
+	next: NextFunction
+) => {
+	console.log("updating");
+};
