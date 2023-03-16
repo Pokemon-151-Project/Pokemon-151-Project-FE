@@ -73,7 +73,6 @@ export const deleteAllPokemon = async (
 	res: Response,
 	next: NextFunction
 ) => {
-	console.log("deleting all");
 	await knex("pokemon")
 		.del()
 		.then(() => {

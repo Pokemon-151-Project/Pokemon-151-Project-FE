@@ -67,7 +67,6 @@ const deleteSinglePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0
 });
 exports.deleteSinglePokemon = deleteSinglePokemon;
 const deleteAllPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("deleting all");
     yield knex("pokemon")
         .del()
         .then(() => {
