@@ -65,7 +65,7 @@ test("[3] Denies empty pokemon list", async () => {
 	expect(res.statusCode).toBe(400);
 });
 
-test.only("[4] Throws ZodError if invalid pokemon", async () => {
+test("[4] Throws ZodError if invalid pokemon", async () => {
 	const invalidPokemonList = [
 		{
 			dexID: 8,

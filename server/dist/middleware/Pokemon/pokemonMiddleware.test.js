@@ -65,7 +65,7 @@ test("[3] Denies empty pokemon list", () => __awaiter(void 0, void 0, void 0, fu
     // @ts-ignore - not sure why this doesn't recognize statusCode
     expect(res.statusCode).toBe(400);
 }));
-test.only("[4] Throws ZodError if invalid pokemon", () => __awaiter(void 0, void 0, void 0, function* () {
+test("[4] Throws ZodError if invalid pokemon", () => __awaiter(void 0, void 0, void 0, function* () {
     const invalidPokemonList = [
         {
             dexID: 8,
