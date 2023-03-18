@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response } from "express";
 import { Knex } from "knex";
-import { SinglePokemon } from "../../../utils/Types";
 const knex: Knex = require("../../../db/knex");
 
 // GET ALL
@@ -92,7 +91,6 @@ export const postNewPokemon = async (
 ) => {
 	console.log("posting");
 	const { pokemonList } = req.body;
-	console.log("req:", req);
 	await knex("pokemon")
 		.insert(pokemonList)
 		.then(() => {

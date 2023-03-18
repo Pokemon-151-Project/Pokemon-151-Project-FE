@@ -19,6 +19,9 @@ const validatePokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, fu
         for (const poke of pokemonList) {
             yield Types_1.pokemonSchema.parseAsync(poke);
         }
+        if (pokemonList.length === 0) {
+            throw "Empty pokemon list";
+        }
         next();
     }
     catch (error) {

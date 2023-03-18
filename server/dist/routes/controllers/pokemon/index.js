@@ -82,7 +82,6 @@ exports.deleteAllPokemon = deleteAllPokemon;
 const postNewPokemon = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     console.log("posting");
     const { pokemonList } = req.body;
-    console.log("req:", req);
     yield knex("pokemon")
         .insert(pokemonList)
         .then(() => {

@@ -14,6 +14,9 @@ export const validatePokemon = async (
 		for (const poke of pokemonList) {
 			await pokemonSchema.parseAsync(poke);
 		}
+		if (pokemonList.length === 0) {
+			throw "Empty pokemon list";
+		}
 		next();
 	} catch (error) {
 		if (error instanceof ZodError) {
