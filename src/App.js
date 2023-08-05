@@ -5,6 +5,12 @@ import AllPokemon from "./components/AllPokemon";
 import data from "./data";
 import { Amplify, API, graphqlOperation } from "aws-amplify";
 import awsconfig from "./aws-exports";
+import {
+	createPokemon,
+	updatePokemon,
+	deletePokemon,
+} from "./graphql/mutations";
+
 Amplify.configure(awsconfig);
 
 function App() {
