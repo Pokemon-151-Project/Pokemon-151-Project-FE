@@ -10,6 +10,11 @@
       "StackName": "amplify-server-dev-113616",
       "StackId": "arn:aws:cloudformation:us-east-1:145667575106:stack/amplify-server-dev-113616/d0f101a0-33a5-11ee-9253-0e23539179a1",
       "AmplifyAppId": "d1kr1uu4hzx322"
+    },
+    "categories": {
+      "api": {
+        "server": {}
+      }
     }
   }
 }
