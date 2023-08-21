@@ -2,6 +2,8 @@ POKEMON 151 PROJECT
 
 # `Introduction`
 
+Update 8.20.23: I'm working on a GraphQL backend for this. Next up will be converting this to TypeScript and styled-components. 
+
 A scalable, maintainable application that maps over and displays data in digestible cards \
 Right now it displays Pokemon, but with small adjustments, these reusable components can display anything you want. \
 I invested in my codebase with thorough documentation, strong unit testing suites and good git practices with small, clean commits and descriptive, small PRs. 
