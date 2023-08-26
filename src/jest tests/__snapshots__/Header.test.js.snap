@@ -72,7 +72,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
         className="dropbtn"
         data-testid="dropbtn"
       >
-        Display Options (check this out!)
+        Display Options
       </button>
       <menu
         className="dropdown-content"

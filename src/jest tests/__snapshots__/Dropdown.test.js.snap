@@ -8,7 +8,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
     className="dropbtn"
     data-testid="dropbtn"
   >
-    Display Options (check this out!)
+    Display Options
   </button>
   <menu
     className="dropdown-content"
