@@ -1,14 +1,41 @@
-// Contains page title, author's name, helpful links, and dropdown for user display options
 import React from "react";
+import styled from "styled-components";
 import Dropdown from "./Dropdown";
 import useDarkMode from "../hooks/useDarkMode";
-//darkmode toggle icons
 import { BsMoon, BsSun } from "react-icons/bs";
-//linksArray is the list of hrefs and display test to put in the nav. Stored in utils folder
 import linksArray from "../utils/Headerutils/linksArray";
-//generates links for the mav using the info in linksArray
 import linkMaker from "../utils/Headerutils/linkMaker";
 import { PokemonTypes } from "../data";
+
+const HeaderContainer = styled.header`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f2f2f2;
+`;
+
+const DarkModeSection = styled.div`
+	display: flex;
+	align-items: center;
+`;
+
+const ShinyButtonDiv = styled.div`
+	margin-left: 20px;
+`;
+
+const ShinyButton = styled.button`
+	background-color: #4caf50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+`;
+
+const AdamInfo = styled.section`
+	text-align: center;
+`;
 
 interface Props {
 	changeDisplay: (
@@ -19,26 +46,27 @@ interface Props {
 	) => void;
 	setIsShiny: React.Dispatch<React.SetStateAction<boolean>>;
 	isShiny: boolean;
-	toggleTheme: () => void; // Add this line
+	toggleTheme: () => void;
 }
 
-const Header: React.FC<Props> = (props) => {
+const Header: React.FC<Props> = ({
+	changeDisplay,
+	setIsShiny,
+	isShiny,
+	toggleTheme,
+}) => {
 	const [isDarkMode, setDarkMode] = useDarkMode();
 
-	const { changeDisplay, isShiny, setIsShiny } = props;
 	return (
-		<header>
-			<h1 className="header-item header-h1">Pokemon 151 Project</h1>
-
-			{/* Begin display options dropdown. See Dropdown.js */}
-			<section className="darkmode-shiny-dropdown">
-				<menu className="darkmode-shiny-section">
-					<div className="darkmode-section">
-						<div className="logo" data-testid="logo">
+		<HeaderContainer>
+			<h1>Pokemon 151 Project</h1>
+			<section>
+				<menu>
+					<DarkModeSection>
+						<div data-testid="logo">
 							{isDarkMode ? "Dark Mode" : "Light Mode"}
 						</div>
 						<button
-							className="toggle_btn"
 							data-testid="toggle_btn"
 							onClick={() => {
 								setDarkMode(!isDarkMode);
@@ -50,35 +78,24 @@ const Header: React.FC<Props> = (props) => {
 								<BsMoon size="24" title="Switch to dark mode" />
 							)}
 						</button>
-					</div>
-
-					{/* This is the styled big green line running through the header */}
-					<div className="vertical-line" />
-
-					{/* This button toggles whether the app shows the Shiny forms of the pokemon */}
-					<div className="shiny-button-div">
-						<button
-							className="shiny-button"
+					</DarkModeSection>
+					<ShinyButtonDiv>
+						<ShinyButton
 							onClick={() => {
 								setIsShiny(!isShiny);
 							}}
 						>
 							{isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
-						</button>
-					</div>
+						</ShinyButton>
+					</ShinyButtonDiv>
 				</menu>
-
-				{/* The dropdown section lives here */}
 				<Dropdown changeDisplay={changeDisplay} />
 			</section>
-
-			<section className="adam-info header-item">
+			<AdamInfo>
 				<h2>Author: Adam Hinton</h2>
-
-				{/* the linkMaker function produces header links. Update linksArray (imported above) to add/change/remove links*/}
-				<nav className="header-nav">{linkMaker(linksArray)}</nav>
-			</section>
-		</header>
+				<nav>{linkMaker(linksArray)}</nav>
+			</AdamInfo>
+		</HeaderContainer>
 	);
 };
 
