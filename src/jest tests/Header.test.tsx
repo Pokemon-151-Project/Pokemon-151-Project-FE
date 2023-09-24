@@ -7,6 +7,7 @@ import React from "react";
 
 const mockChangeDisplay = jest.fn();
 const mockSetIsShiny = jest.fn();
+const mockToggleTheme = jest.fn(); // Add this line
 
 test("[1] Component renders without errors", () => {
 	render(
@@ -24,6 +25,7 @@ test("[2] Renders the expected segments of the header", () => {
 			changeDisplay={mockChangeDisplay}
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
+			toggleTheme={mockToggleTheme}
 		/>
 	);
 	const h1 = screen.queryByText(/pokemon 151 project/i);
@@ -43,6 +45,7 @@ test("[3] 'Dark Mode' text changes to 'Light Mode' and vice versa when you click
 			changeDisplay={mockChangeDisplay}
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
+			toggleTheme={mockToggleTheme}
 		/>
 	);
 	const darkModeToggleLogo = screen.getByTestId("toggle_btn");
@@ -62,6 +65,7 @@ test("[4] Matches snapshot so nothing changes inadvertently", () => {
 			changeDisplay={mockChangeDisplay}
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
+			toggleTheme={mockToggleTheme}
 		/>
 	);
 

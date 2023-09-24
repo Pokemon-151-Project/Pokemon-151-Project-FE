@@ -8,14 +8,19 @@ import { BsMoon, BsSun } from "react-icons/bs";
 import linksArray from "../utils/Headerutils/linksArray";
 //generates links for the mav using the info in linksArray
 import linkMaker from "../utils/Headerutils/linkMaker";
+import { PokemonTypes } from "../data";
 
-// this type definition feels clunky; refactor this
-type SetBooleanState = React.Dispatch<React.SetStateAction<boolean>>;
-type Props = {
-	changeDisplay: () => void;
+interface Props {
+	changeDisplay: (
+		type?: PokemonTypes | null,
+		size?: string | null,
+		height?: string | null,
+		reset?: string | null
+	) => void;
+	setIsShiny: React.Dispatch<React.SetStateAction<boolean>>;
 	isShiny: boolean;
-	setIsShiny: SetBooleanState;
-};
+	toggleTheme: () => void; // Add this line
+}
 
 const Header: React.FC<Props> = (props) => {
 	const [isDarkMode, setDarkMode] = useDarkMode();
