@@ -51,7 +51,7 @@ test("[1] AllPokemon renders without errors", () => {
 
 test("[2] AllPokemon renders correctly with certain props, then rerenders when those props change", () => {
 	//renders first with empty props array, then renders with fakePokemon (defined above) to make sure it correctly renders with changed props.
-	const { rerender } = render(<AllPokemon pokemonData={[]} />);
+	const { rerender } = render(<AllPokemon pokemonData={[]} isShiny={false} />);
 
 	const oldFakeName = screen.queryByText(/fake pokemon name/i);
 	expect(oldFakeName).not.toBeInTheDocument();
