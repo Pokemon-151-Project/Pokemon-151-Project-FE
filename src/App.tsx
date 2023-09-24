@@ -23,10 +23,10 @@ function App() {
 			if (type) {
 				return item.type.includes(type);
 			} else if (size) {
-				const weightInt = item.weight.split(" ")[0];
+				const weightInt = parseFloat(item.weight.split(" ")[0]);
 				return size === "small" ? weightInt < 5 : weightInt > 100;
 			} else if (height) {
-				const heightInt = item.height.split(" ")[0];
+				const heightInt = parseFloat(item.height.split(" ")[0]);
 				return height === "short" ? heightInt < 0.4 : heightInt > 2;
 			} else if (reset) {
 				return item;
