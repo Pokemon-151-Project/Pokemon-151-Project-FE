@@ -9,7 +9,15 @@ import linksArray from "../utils/Headerutils/linksArray";
 //generates links for the mav using the info in linksArray
 import linkMaker from "../utils/Headerutils/linkMaker";
 
-const Header = (props) => {
+// this type definition feels clunky; refactor this
+type SetBooleanState = React.Dispatch<React.SetStateAction<boolean>>;
+type Props = {
+	changeDisplay: () => void;
+	isShiny: boolean;
+	setIsShiny: SetBooleanState;
+};
+
+const Header: React.FC<Props> = (props) => {
 	const [isDarkMode, setDarkMode] = useDarkMode();
 
 	const { changeDisplay, isShiny, setIsShiny } = props;
