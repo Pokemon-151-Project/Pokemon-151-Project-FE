@@ -10,7 +10,7 @@ export type Pokemon = {
 	dexEntry: string;
 };
 
-type PokemonTypes =
+export type PokemonTypes =
 	| "Normal"
 	| "Fire"
 	| "Water"
