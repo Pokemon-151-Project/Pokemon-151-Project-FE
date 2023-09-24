@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 //This is the original data of the 151 pokemon being displayed.
-import data from "./data.js";
+import data from "./data";
 
 function App() {
 	//sets the pokemon data to state. Updates based on user preference
