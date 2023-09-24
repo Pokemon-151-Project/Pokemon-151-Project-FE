@@ -15,6 +15,7 @@ test("[1] Component renders without errors", () => {
 			changeDisplay={mockChangeDisplay}
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
+			toggleTheme={mockToggleTheme}
 		/>
 	);
 });
