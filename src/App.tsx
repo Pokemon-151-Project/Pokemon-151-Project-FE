@@ -3,12 +3,13 @@ import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 //This is the original data of the 151 pokemon being displayed.
 import data from "./data";
+import { Pokemon } from "./data";
 
 function App() {
 	//sets the pokemon data to state. Updates based on user preference
-	const [pokemonData, setPokemonData] = useState(data);
+	const [pokemonData, setPokemonData] = useState<Pokemon[]>(data);
 	//isShiny allows users to press a header button to show alternate ("shiny") sprites for each pokemon
-	const [isShiny, setIsShiny] = useState(false);
+	const [isShiny, setIsShiny] = useState<boolean>(false);
 
 	//Allows the user to press a button in the header dropdown to show only
 	//pokemon of a certain type, height, or size -
