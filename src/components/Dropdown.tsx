@@ -3,12 +3,13 @@
 // https://www.w3schools.com/howto/howto_css_dropdown.asp
 
 //this is all the different pokemon types to make buttons for
+import { PokemonTypes } from "../data";
 import typesArray from "../utils/Dropdownutils/typesArray";
 // it gave me errors until I imported react, not sure why
 import React from "react";
 
 export type ChangeDisplayFn = (
-	type?: string | null,
+	type?: PokemonTypes | null,
 	weight?: string | null,
 	height?: string | null,
 	reset?: string
