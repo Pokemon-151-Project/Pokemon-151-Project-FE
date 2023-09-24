@@ -7,7 +7,7 @@ import typesArray from "../utils/Dropdownutils/typesArray";
 // it gave me errors until I imported react, not sure why
 import React from "react";
 
-type ChangeDisplayFn = (
+export type ChangeDisplayFn = (
 	type?: string | null,
 	weight?: string | null,
 	height?: string | null,
