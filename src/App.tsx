@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "./components/Header.js";
-import AllPokemon from "./components/AllPokemon.js";
+import Header from "./components/Header";
+import AllPokemon from "./components/AllPokemon";
 //This is the original data of the 151 pokemon being displayed.
 import data from "./data.js";
 
