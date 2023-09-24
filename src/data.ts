@@ -1,6 +1,6 @@
 //This is data of the original 151 pokemon. It is the starting point; the application maps over this to display all 151 with images and facts about them. THen the user can press buttons to sort them by type, size and height.
 
-type Pokemon = {
+export type Pokemon = {
 	id: number;
 	num: string;
 	name: string;
