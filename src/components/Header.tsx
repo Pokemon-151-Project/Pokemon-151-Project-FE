@@ -8,33 +8,86 @@ import linkMaker from "../utils/Headerutils/linkMaker";
 import { PokemonTypes } from "../data";
 
 const HeaderContainer = styled.header`
+	background-color: rgb(46, 37, 37);
+	color: rgb(221, 203, 203);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	@media screen and (max-width: 860px) {
+		flex-direction: column;
+		align-items: center;
+	}
+`;
+
+const Title = styled.h1`
+	margin-top: 0;
+	font-size: 2.25rem;
+`;
+
+const DarkModeShinyDropdown = styled.section`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #f2f2f2;
+	justify-content: center;
+	width: 80%;
 `;
 
-const DarkModeSection = styled.div`
+const DarkModeShinySection = styled.menu`
 	display: flex;
-	align-items: center;
+	justify-content: center;
+	padding: 3%;
+	margin: 0;
+	width: 90%;
 `;
 
-const ShinyButtonDiv = styled.div`
-	margin-left: 20px;
+const ToggleButton = styled.button`
+	background-color: var(--button-bg);
+	color: var(--button-text);
+	cursor: pointer;
+	border: none;
+	border-radius: 20%;
 `;
 
 const ShinyButton = styled.button`
-	background-color: #4caf50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
+	background: none;
 	border: none;
-	cursor: pointer;
-	width: 100%;
+	color: rgba(255, 255, 255, 0.721);
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-decoration: underline;
+	margin-left: 20px;
+`;
+
+const VerticalLine = styled.div`
+	border-left: 6px solid green;
+	margin: 0% 2%;
 `;
 
 const AdamInfo = styled.section`
 	text-align: center;
+`;
+
+const HeaderNav = styled.nav`
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (max-width: 860px) {
+		flex-direction: row;
+		justify-content: center;
+	}
+`;
+
+const HeaderLink = styled.a`
+	color: rgb(221, 203, 203);
+	text-decoration: underline;
+	margin: 1% 0;
+
+	@media screen and (max-width: 860px) {
+		margin: 0 1%;
+	}
 `;
 
 interface Props {
@@ -59,41 +112,44 @@ const Header: React.FC<Props> = ({
 
 	return (
 		<HeaderContainer>
-			<h1>Pokemon 151 Project</h1>
-			<section>
-				<menu>
-					<DarkModeSection>
-						<div data-testid="logo">
-							{isDarkMode ? "Dark Mode" : "Light Mode"}
-						</div>
-						<button
-							data-testid="toggle_btn"
-							onClick={() => {
-								setDarkMode(!isDarkMode);
-							}}
-						>
-							{isDarkMode ? (
-								<BsSun color="#ff0" size="24" title="Switch to light mode" />
-							) : (
-								<BsMoon size="24" title="Switch to dark mode" />
-							)}
-						</button>
-					</DarkModeSection>
-					<ShinyButtonDiv>
-						<ShinyButton
-							onClick={() => {
-								setIsShiny(!isShiny);
-							}}
-						>
-							{isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
-						</ShinyButton>
-					</ShinyButtonDiv>
-				</menu>
+			<Title>Pokemon 151 Project</Title>
+			<DarkModeShinyDropdown>
+				<DarkModeShinySection>
+					<div data-testid="logo">
+						{isDarkMode ? "Dark Mode" : "Light Mode"}
+					</div>
+					<ToggleButton
+						data-testid="toggle_btn"
+						onClick={() => {
+							setDarkMode(!isDarkMode);
+						}}
+					>
+						{isDarkMode ? (
+							<BsSun color="#ff0" size="24" title="Switch to light mode" />
+						) : (
+							<BsMoon size="24" title="Switch to dark mode" />
+						)}
+					</ToggleButton>
+					<VerticalLine />
+					<ShinyButton
+						onClick={() => {
+							setIsShiny(!isShiny);
+						}}
+					>
+						{isShiny ? "Show Non-Shiny Forms" : "Show Shiny Forms"}
+					</ShinyButton>
+				</DarkModeShinySection>
 				<Dropdown changeDisplay={changeDisplay} />
-			</section>
+			</DarkModeShinyDropdown>
 			<AdamInfo>
 				<h2>Author: Adam Hinton</h2>
-				<nav>{linkMaker(linksArray)}</nav>
+				<HeaderNav>
+					{linksArray.map((link, index) => (
+						<HeaderLink key={index} href={link.href}>
+							{link.text}
+						</HeaderLink>
+					))}
+				</HeaderNav>
 			</AdamInfo>
 		</HeaderContainer>
 	);
