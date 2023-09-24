@@ -4,8 +4,21 @@
 
 //this is all the different pokemon types to make buttons for
 import typesArray from "../utils/Dropdownutils/typesArray";
+// it gave me errors until I imported react, not sure why
+import React from "react";
 
-const Dropdown = (props) => {
+export type ChangeDisplayFn = (
+	type?: string | null,
+	weight?: string | null,
+	height?: string | null,
+	reset?: string
+) => void;
+
+type Props = {
+	changeDisplay: ChangeDisplayFn;
+};
+
+const Dropdown: React.FC<Props> = (props) => {
 	const { changeDisplay } = props;
 
 	return (

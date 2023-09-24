@@ -3,21 +3,13 @@ import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 //This is the original data of the 151 pokemon being displayed.
 import data from "./data";
-import { Amplify, API, graphqlOperation } from "aws-amplify";
-import awsconfig from "./aws-exports";
-import {
-	createPokemon,
-	updatePokemon,
-	deletePokemon,
-} from "./graphql/mutations";
-
-Amplify.configure(awsconfig);
+import { Pokemon } from "./data";
 
 function App() {
 	//sets the pokemon data to state. Updates based on user preference
-	const [pokemonData, setPokemonData] = useState(data);
+	const [pokemonData, setPokemonData] = useState<Pokemon[]>(data);
 	//isShiny allows users to press a header button to show alternate ("shiny") sprites for each pokemon
-	const [isShiny, setIsShiny] = useState(false);
+	const [isShiny, setIsShiny] = useState<boolean>(false);
 
 	//Allows the user to press a button in the header dropdown to show only
 	//pokemon of a certain type, height, or size -
@@ -32,10 +24,10 @@ function App() {
 			if (type) {
 				return item.type.includes(type);
 			} else if (size) {
-				const weightInt = item.weight.split(" ")[0];
+				const weightInt = parseFloat(item.weight.split(" ")[0]);
 				return size === "small" ? weightInt < 5 : weightInt > 100;
 			} else if (height) {
-				const heightInt = item.height.split(" ")[0];
+				const heightInt = parseFloat(item.height.split(" ")[0]);
 				return height === "short" ? heightInt < 0.4 : heightInt > 2;
 			} else if (reset) {
 				return item;

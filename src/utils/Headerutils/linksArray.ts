@@ -1,5 +1,7 @@
+import { LinkItem } from "./linkMaker";
+
 // Will map over this to produce header nav links. Update this to add/change/remove links
-const linksArray = [
+const linksArray: LinkItem[] = [
 	{
 		text: "Source",
 		href: "https://github.com/adamhinton/pokemon-project",

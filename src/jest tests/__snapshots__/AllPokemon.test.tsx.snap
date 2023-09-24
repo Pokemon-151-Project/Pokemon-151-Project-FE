@@ -17,15 +17,13 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
         className="dex-id"
       >
         #
+        1
       </span>
     </h2>
     <h3
       className="poke-type card-item"
     >
-      D
-       / 
-      e
-       
+      Bug
     </h3>
     <h4
       className="height-weight card-item"
@@ -44,7 +42,7 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
         alt="Fake Pokemon Name"
         className="poke-img"
         data-testid="not-shiny"
-        src="https://www.serebii.net/swordshield/pokemon/undefined.png"
+        src="https://www.serebii.net/swordshield/pokemon/001.png"
       />
     </figure>
     <blockquote
@@ -66,15 +64,13 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
         className="dex-id"
       >
         #
+        2
       </span>
     </h2>
     <h3
       className="poke-type card-item"
     >
-      D
-       / 
-      e
-       
+      Fire
     </h3>
     <h4
       className="height-weight card-item"
@@ -93,7 +89,7 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
         alt="Fake2"
         className="poke-img"
         data-testid="not-shiny"
-        src="https://www.serebii.net/swordshield/pokemon/undefined.png"
+        src="https://www.serebii.net/swordshield/pokemon/002.png"
       />
     </figure>
     <blockquote
@@ -115,14 +111,15 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
         className="dex-id"
       >
         #
+        3
       </span>
     </h2>
     <h3
       className="poke-type card-item"
     >
-      G
+      Ghost
        / 
-      r
+      Ice
        
     </h3>
     <h4
@@ -142,7 +139,7 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
         alt="Fake3"
         className="poke-img"
         data-testid="not-shiny"
-        src="https://www.serebii.net/swordshield/pokemon/undefined.png"
+        src="https://www.serebii.net/swordshield/pokemon/003.png"
       />
     </figure>
     <blockquote
