@@ -4,7 +4,6 @@ import Dropdown from "./Dropdown";
 import useDarkMode from "../hooks/useDarkMode";
 import { BsMoon, BsSun } from "react-icons/bs";
 import linksArray from "../utils/Headerutils/linksArray";
-import linkMaker from "../utils/Headerutils/linkMaker";
 import { PokemonTypes } from "../data";
 
 const HeaderContainer = styled.header`
