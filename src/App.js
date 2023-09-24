@@ -3,15 +3,6 @@ import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 //This is the original data of the 151 pokemon being displayed.
 import data from "./data";
-import { Amplify, API, graphqlOperation } from "aws-amplify";
-import awsconfig from "./aws-exports";
-import {
-	createPokemon,
-	updatePokemon,
-	deletePokemon,
-} from "./graphql/mutations";
-
-Amplify.configure(awsconfig);
 
 function App() {
 	//sets the pokemon data to state. Updates based on user preference
