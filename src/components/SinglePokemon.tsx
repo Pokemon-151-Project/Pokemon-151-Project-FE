@@ -1,6 +1,7 @@
 // This component displays a single pokemon with images and basic data.
 import React from "react";
 import { Pokemon } from "../data";
+import styled from "styled-components";
 
 type Props = {
 	poke: Pokemon;
@@ -12,48 +13,70 @@ const SinglePokemon: React.FC<Props> = (props) => {
 	const { name, type, dexEntry, height, weight, id, num } = poke;
 
 	return (
-		<article className="pokemon-card" data-testid="pokemon-card">
-			<h2 className="poke-name card-item">
-				{name} <span className="dex-id">#{id}</span>
-			</h2>
-
-			{/* Pokemon's type info */}
-			{type[1] ? (
-				<h3 className="poke-type card-item">
-					{type[0]} / {type[1]}{" "}
-				</h3>
-			) : (
-				<h3 className="poke-type card-item">{type}</h3>
-			)}
-
-			<h4 className="height-weight card-item">
+		<PokemonCard data-testid="pokemon-card">
+			<PokeName>
+				{name} <DexId>#{id}</DexId>
+			</PokeName>
+			<PokeType>{type.join(" / ")}</PokeType>
+			<HeightWeight>
 				Height: {height} <br />
 				Weight: {weight}
-			</h4>
-
-			{/* image of each pokemon */}
-			<figure className="img-container card-item">
-				{/* Displays either the shiny or normal form of the pokemon based on user preference */}
-				{isShiny ? (
-					<img
-						className="poke-img"
-						data-testid="shiny"
-						src={`https://www.serebii.net/Shiny/SWSH/${num}.png`}
-						alt={name}
-					/>
-				) : (
-					<img
-						className="poke-img"
-						data-testid="not-shiny"
-						src={`https://www.serebii.net/swordshield/pokemon/${num}.png`}
-						alt={name}
-					/>
-				)}
-			</figure>
-
-			<blockquote className="card-item">{dexEntry}</blockquote>
-		</article>
+			</HeightWeight>
+			<ImgContainer>
+				<PokeImg
+					data-testid={isShiny ? "shiny" : "not-shiny"}
+					src={`https://www.serebii.net/${
+						isShiny ? "Shiny/SWSH" : "swordshield/pokemon"
+					}/${num}.png`}
+					alt={name}
+				/>
+			</ImgContainer>
+			<DexEntry>{dexEntry}</DexEntry>
+		</PokemonCard>
 	);
 };
 
 export default SinglePokemon;
+
+const PokemonCard = styled.article`
+	border: ${(props) => props.theme.singlePokemonBorder};
+	box-sizing: border-box;
+	width: 12rem;
+	margin: 2%;
+	background-color: ${(props) => props.theme.singlePokemonBGC};
+`;
+
+const PokeName = styled.h2`
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	margin: 3%;
+`;
+
+const DexId = styled.span`
+	font-size: 70%;
+`;
+
+const PokeType = styled.h3`
+	margin: 3%;
+`;
+
+const HeightWeight = styled.h4`
+	margin: 3%;
+`;
+
+const ImgContainer = styled.figure`
+	height: 171px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3%;
+`;
+
+const PokeImg = styled.img`
+	width: 90%;
+`;
+
+const DexEntry = styled.blockquote`
+	margin: 3%;
+`;
