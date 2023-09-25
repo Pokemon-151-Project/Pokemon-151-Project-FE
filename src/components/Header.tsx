@@ -120,6 +120,7 @@ interface Props {
 	setIsShiny: React.Dispatch<React.SetStateAction<boolean>>;
 	isShiny: boolean;
 	toggleTheme: () => void;
+	isDarkMode: boolean;
 }
 
 const Header: React.FC<Props> = ({
@@ -127,9 +128,8 @@ const Header: React.FC<Props> = ({
 	setIsShiny,
 	isShiny,
 	toggleTheme,
+	isDarkMode,
 }) => {
-	const [isDarkMode, setDarkMode] = useDarkMode();
-
 	return (
 		<HeaderContainer>
 			<Title>Pokemon 151 Project</Title>
@@ -139,12 +139,7 @@ const Header: React.FC<Props> = ({
 						{" "}
 						{isDarkMode ? "Dark Mode" : "Light Mode"}
 					</ModeText>
-					<ToggleButton
-						data-testid="toggle_btn"
-						onClick={() => {
-							setDarkMode(!isDarkMode);
-						}}
-					>
+					<ToggleButton data-testid="toggle_btn" onClick={() => toggleTheme()}>
 						{isDarkMode ? (
 							<BsSun color="#ff0" size="24" title="Switch to light mode" />
 						) : (
