@@ -1,24 +1,36 @@
 import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from "./styles/GlobalStyles";
+import { lightTheme, darkTheme } from "./styles/theme";
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
-//This is the original data of the 151 pokemon being displayed.
-import data from "./data";
+import data, { PokemonTypes } from "./data";
 import { Pokemon } from "./data";
+import useDarkMode from "./hooks/useDarkMode";
 
-function App() {
-	//sets the pokemon data to state. Updates based on user preference
+const App: React.FC = () => {
+	// Theme state
+	const [isDarkMode, setDarkMode] = useDarkMode();
+	const theme = isDarkMode ? darkTheme : lightTheme;
+
+	// Toggle theme function
+	// const toggleTheme = () => {
+	// 	setTheme(theme === lightTheme ? darkTheme : lightTheme);
+	// };
+
+	const toggleTheme = () => {
+		setDarkMode(!isDarkMode);
+	};
+
+	// Existing App logic
 	const [pokemonData, setPokemonData] = useState<Pokemon[]>(data);
-	//isShiny allows users to press a header button to show alternate ("shiny") sprites for each pokemon
 	const [isShiny, setIsShiny] = useState<boolean>(false);
 
-	//Allows the user to press a button in the header dropdown to show only
-	//pokemon of a certain type, height, or size -
-	//or reset the app to default if the user selects that.
 	const changeDisplay = (
-		type = null,
-		size = null,
-		height = null,
-		reset = null
+		type: PokemonTypes | null = null,
+		size: string | null = null,
+		height: string | null = null,
+		reset: string | null = null
 	) => {
 		const newData = data.filter((item) => {
 			if (type) {
@@ -38,15 +50,20 @@ function App() {
 	};
 
 	return (
-		<div className="App">
-			<Header
-				changeDisplay={changeDisplay}
-				setIsShiny={setIsShiny}
-				isShiny={isShiny}
-			/>
-			<AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
-		</div>
+		<ThemeProvider theme={theme}>
+			<GlobalStyles />
+			<div className="App">
+				<Header
+					changeDisplay={changeDisplay}
+					setIsShiny={setIsShiny}
+					isShiny={isShiny}
+					toggleTheme={toggleTheme}
+					isDarkMode={isDarkMode}
+				/>
+				<AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
+			</div>
+		</ThemeProvider>
 	);
-}
+};
 
 export default App;

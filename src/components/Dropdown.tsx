@@ -1,14 +1,10 @@
-// This component shows different options for the user to display Pokemon based on type, size and height, as well as to reset to default.
-// Thanks to w3 for the dropdown source code which I've heavily modified for my purposes here:
-// https://www.w3schools.com/howto/howto_css_dropdown.asp
-
-//this is all the different pokemon types to make buttons for
-import typesArray from "../utils/Dropdownutils/typesArray";
-// it gave me errors until I imported react, not sure why
 import React from "react";
+import styled from "styled-components";
+import { PokemonTypes } from "../data";
+import typesArray from "../utils/Dropdownutils/typesArray";
 
 export type ChangeDisplayFn = (
-	type?: string | null,
+	type?: PokemonTypes | null,
 	weight?: string | null,
 	height?: string | null,
 	reset?: string
@@ -18,42 +14,82 @@ type Props = {
 	changeDisplay: ChangeDisplayFn;
 };
 
-const Dropdown: React.FC<Props> = (props) => {
-	const { changeDisplay } = props;
+const DropdownMenu = styled.menu`
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+`;
 
+const DropdownSection = styled.section`
+	position: relative;
+	display: inline-block;
+
+	&:hover ${DropdownMenu} {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		background-color: #90dcd8;
+	}
+`;
+
+const DropdownButton = styled.button`
+	width: 270px;
+	font-family: "Arima Madurai", cursive;
+	background-color: #5ccbc5;
+	color: black;
+	font-size: 1rem;
+	border: none;
+	padding: 0.65rem;
+	border-radius: 30px;
+	margin-top: 15%;
+	margin-bottom: 4%;
+
+	@media screen and (max-width: 860px) {
+		margin-top: 4%;
+	}
+`;
+
+const DropdownInnerButton = styled.button`
+	margin: 1%;
+	border: none;
+	background-color: rgb(153, 181, 197);
+	color: rgb(35, 40, 15);
+	padding: 0.25rem;
+	flex: 1 1 calc(20% - 2%);
+`;
+
+const DropdownTitle = styled.h5`
+	color: black;
+	margin: 1%;
+	flex-basis: 100%;
+`;
+
+const Dropdown: React.FC<Props> = ({ changeDisplay }) => {
 	return (
-		<section className="dropdown">
-			{/* Hovering here shows the dropdown menu with display options */}
-			<button className="dropbtn" data-testid="dropbtn">
-				Display Options
-			</button>
-
-			<menu className="dropdown-content">
+		<DropdownSection>
+			<DropdownButton data-testid="dropbtn">Display Options</DropdownButton>
+			<DropdownMenu className="dropdown-content">
 				<div>
-					<div>
-						{/* Reset to original display options by refreshing the page*/}
-						<button
-							className="dropbtn-inner"
-							data-testid="reset-btn"
-							id="reset-btn"
-							onClick={() => {
-								changeDisplay(null, null, null, "reset");
-							}}
-						>
-							Reset All
-						</button>
-					</div>
-					<h5
-						className="dropdown-display-title"
-						data-testid="dropdown-display-title"
+					<DropdownInnerButton
+						data-testid="reset-btn"
+						id="reset-btn"
+						onClick={() => {
+							changeDisplay(null, null, null, "reset");
+						}}
 					>
+						Reset All
+					</DropdownInnerButton>
+					<DropdownTitle data-testid="dropdown-display-title">
 						Pick a type:
-					</h5>
-					{/* Returns 15 buttons, one for each Pokemon type*/}
+					</DropdownTitle>
 					{typesArray.map((item) => {
 						return (
-							<button
-								className="dropbtn-inner"
+							<DropdownInnerButton
 								data-testid="dropbtn-inner"
 								id={`${item.toLowerCase()}-btn`}
 								key={item}
@@ -62,17 +98,13 @@ const Dropdown: React.FC<Props> = (props) => {
 								}}
 							>
 								{item}
-							</button>
+							</DropdownInnerButton>
 						);
 					})}
 				</div>
-
-				{/* Begin buttons for sorting pokemon by weight */}
 				<div>
-					{/* Button to show only small pokemon (<10kg) */}
-					<h5 className="dropdown-display-title">Pick a weight:</h5>
-					<button
-						className="dropbtn-inner"
+					<DropdownTitle>Pick a weight:</DropdownTitle>
+					<DropdownInnerButton
 						data-testid="dropbtn-inner"
 						id="small-btn"
 						onClick={() => {
@@ -80,11 +112,8 @@ const Dropdown: React.FC<Props> = (props) => {
 						}}
 					>
 						Small
-					</button>
-
-					{/* Button to show only big pokemon (>100kg) */}
-					<button
-						className="dropbtn-inner"
+					</DropdownInnerButton>
+					<DropdownInnerButton
 						data-testid="dropbtn-inner"
 						id="big-btn"
 						onClick={() => {
@@ -92,15 +121,11 @@ const Dropdown: React.FC<Props> = (props) => {
 						}}
 					>
 						Big
-					</button>
+					</DropdownInnerButton>
 				</div>
-
-				{/* Begin buttons for sorting pokemon by height */}
 				<div>
-					<h5 className="dropdown-display-title">Pick a height:</h5>
-					{/* Show only short pokemon */}
-					<button
-						className="dropbtn-inner"
+					<DropdownTitle>Pick a height:</DropdownTitle>
+					<DropdownInnerButton
 						data-testid="dropbtn-inner"
 						id="short-btn"
 						onClick={() => {
@@ -108,11 +133,8 @@ const Dropdown: React.FC<Props> = (props) => {
 						}}
 					>
 						Short
-					</button>
-
-					{/* Button to show only tall pokemon */}
-					<button
-						className="dropbtn-inner"
+					</DropdownInnerButton>
+					<DropdownInnerButton
 						data-testid="dropbtn-inner"
 						id="tall-btn"
 						onClick={() => {
@@ -120,10 +142,10 @@ const Dropdown: React.FC<Props> = (props) => {
 						}}
 					>
 						Tall
-					</button>
+					</DropdownInnerButton>
 				</div>
-			</menu>
-		</section>
+			</DropdownMenu>
+		</DropdownSection>
 	);
 };
 

@@ -1,101 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
-<header>
+<header
+  className="sc-jTQDJr eaKBoq"
+>
   <h1
-    className="header-item header-h1"
+    className="sc-gLLuHO kwZjLc"
   >
     Pokemon 151 Project
   </h1>
   <section
-    className="darkmode-shiny-dropdown"
+    className="sc-iBdoyZ bLAImq"
   >
     <menu
-      className="darkmode-shiny-section"
+      className="sc-fsYfxw kxxrzu"
     >
       <div
-        className="darkmode-section"
+        className="sc-qZruQ eYmnhz"
+        data-testid="logo"
       >
-        <div
-          className="logo"
-          data-testid="logo"
-        >
-          Dark Mode
-        </div>
-        <button
-          className="toggle_btn"
-          data-testid="toggle_btn"
-          onClick={[Function]}
-        >
-          <svg
-            color="#ff0"
-            fill="currentColor"
-            height="24"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": "#ff0",
-              }
+         
+        Dark Mode
+      </div>
+      <button
+        className="sc-jsEeA-d lmpeGT"
+        data-testid="toggle_btn"
+        onClick={[Function]}
+      >
+        <svg
+          color="#ff0"
+          fill="currentColor"
+          height="24"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "#ff0",
             }
-            viewBox="0 0 16 16"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>
-              Switch to light mode
-            </title>
-            <path
-              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-            />
-          </svg>
-        </button>
-      </div>
-      <div
-        className="vertical-line"
-      />
-      <div
-        className="shiny-button-div"
-      >
-        <button
-          className="shiny-button"
-          onClick={[Function]}
+          }
+          viewBox="0 0 16 16"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Show Shiny Forms
-        </button>
-      </div>
+          <title>
+            Switch to light mode
+          </title>
+          <path
+            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+          />
+        </svg>
+      </button>
+      <div
+        className="sc-irLvoH Vvvli"
+      />
+      <button
+        className="sc-kFCrIq kIpQeD"
+        onClick={[Function]}
+      >
+        Show Shiny Forms
+      </button>
     </menu>
     <section
-      className="dropdown"
+      className="sc-guDMob kkcneg"
     >
       <button
-        className="dropbtn"
+        className="sc-dmyDmy bbdhUi"
         data-testid="dropbtn"
       >
         Display Options
       </button>
       <menu
-        className="dropdown-content"
+        className="sc-beyTiQ cvkhIn dropdown-content"
       >
         <div>
-          <div>
-            <button
-              className="dropbtn-inner"
-              data-testid="reset-btn"
-              id="reset-btn"
-              onClick={[Function]}
-            >
-              Reset All
-            </button>
-          </div>
+          <button
+            className="sc-hLQTFJ piuou"
+            data-testid="reset-btn"
+            id="reset-btn"
+            onClick={[Function]}
+          >
+            Reset All
+          </button>
           <h5
-            className="dropdown-display-title"
+            className="sc-eDLKEg cQxIQw"
             data-testid="dropdown-display-title"
           >
             Pick a type:
           </h5>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="normal-btn"
             onClick={[Function]}
@@ -103,7 +96,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Normal
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="fire-btn"
             onClick={[Function]}
@@ -111,7 +104,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Fire
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="water-btn"
             onClick={[Function]}
@@ -119,7 +112,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Water
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="electric-btn"
             onClick={[Function]}
@@ -127,7 +120,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Electric
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="grass-btn"
             onClick={[Function]}
@@ -135,7 +128,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Grass
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="ice-btn"
             onClick={[Function]}
@@ -143,7 +136,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Ice
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="fighting-btn"
             onClick={[Function]}
@@ -151,7 +144,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Fighting
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="poison-btn"
             onClick={[Function]}
@@ -159,7 +152,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Poison
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="ground-btn"
             onClick={[Function]}
@@ -167,7 +160,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Ground
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="flying-btn"
             onClick={[Function]}
@@ -175,7 +168,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Flying
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="psychic-btn"
             onClick={[Function]}
@@ -183,7 +176,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Psychic
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="bug-btn"
             onClick={[Function]}
@@ -191,7 +184,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Bug
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="rock-btn"
             onClick={[Function]}
@@ -199,7 +192,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Rock
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="ghost-btn"
             onClick={[Function]}
@@ -207,7 +200,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Ghost
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="dragon-btn"
             onClick={[Function]}
@@ -217,12 +210,12 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
         </div>
         <div>
           <h5
-            className="dropdown-display-title"
+            className="sc-eDLKEg cQxIQw"
           >
             Pick a weight:
           </h5>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="small-btn"
             onClick={[Function]}
@@ -230,7 +223,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Small
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="big-btn"
             onClick={[Function]}
@@ -240,12 +233,12 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
         </div>
         <div>
           <h5
-            className="dropdown-display-title"
+            className="sc-eDLKEg cQxIQw"
           >
             Pick a height:
           </h5>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="short-btn"
             onClick={[Function]}
@@ -253,7 +246,7 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
             Short
           </button>
           <button
-            className="dropbtn-inner"
+            className="sc-hLQTFJ piuou"
             data-testid="dropbtn-inner"
             id="tall-btn"
             onClick={[Function]}
@@ -265,39 +258,35 @@ exports[`[4] Matches snapshot so nothing changes inadvertently 1`] = `
     </section>
   </section>
   <section
-    className="adam-info header-item"
+    className="sc-csKJRI fDtcLf"
   >
     <h2>
       Author: Adam Hinton
     </h2>
     <nav
-      className="header-nav"
+      className="sc-eTNxZ hHxGhQ"
     >
       <a
+        className="sc-brSaGm fJNlLG"
         href="https://github.com/adamhinton/pokemon-project"
-        rel="noreferrer"
-        target="_blank"
       >
         Source
       </a>
       <a
+        className="sc-brSaGm fJNlLG"
         href="https://www.linkedin.com/in/adam-hinton/"
-        rel="noreferrer"
-        target="_blank"
       >
         LinkedIn
       </a>
       <a
+        className="sc-brSaGm fJNlLG"
         href="https://pokeapi.co"
-        rel="noreferrer"
-        target="_blank"
       >
         PokeAPI
       </a>
       <a
+        className="sc-brSaGm fJNlLG"
         href="https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon"
-        rel="noreferrer"
-        target="_blank"
       >
         Shinies
       </a>
