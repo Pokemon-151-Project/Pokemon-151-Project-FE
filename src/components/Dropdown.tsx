@@ -48,6 +48,10 @@ const DropdownButton = styled.button`
 	border-radius: 30px;
 	margin-top: 15%;
 	margin-bottom: 4%;
+
+	@media screen and (max-width: 860px) {
+		margin-top: 4%;
+	}
 `;
 
 const DropdownInnerButton = styled.button`

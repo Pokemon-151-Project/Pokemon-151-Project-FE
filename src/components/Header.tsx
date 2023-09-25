@@ -24,6 +24,10 @@ const HeaderContainer = styled.header`
 const Title = styled.h1`
 	margin-top: 0;
 	font-size: 2.25rem;
+	@media screen and (max-width: 860px) {
+		margin-bottom: 2%;
+		padding: 0;
+	}
 `;
 
 const DarkModeShinyDropdown = styled.section`
@@ -32,6 +36,9 @@ const DarkModeShinyDropdown = styled.section`
 	align-items: center;
 	justify-content: center;
 	width: 80%;
+	@media screen and (max-width: 860px) {
+		width: 100%;
+	}
 `;
 
 const DarkModeShinySection = styled.menu`
@@ -40,6 +47,15 @@ const DarkModeShinySection = styled.menu`
 	padding: 3%;
 	margin: 0;
 	width: 90%;
+	@media screen and (max-width: 860px) {
+		padding: 1%;
+		margin: 0;
+	}
+`;
+
+const ModeText = styled.div`
+	font-size: 1.2rem;
+	font-weight: 600;
 `;
 
 const ToggleButton = styled.button`
@@ -58,6 +74,9 @@ const ShinyButton = styled.button`
 	font-weight: 600;
 	text-decoration: underline;
 	margin-left: 20px;
+	@media screen and (max-width: 860px) {
+		margin-left: 5px;
+	}
 `;
 
 const VerticalLine = styled.div`
@@ -67,15 +86,18 @@ const VerticalLine = styled.div`
 
 const AdamInfo = styled.section`
 	text-align: center;
+	@media screen and (max-width: 860px) {
+		padding-top: 0;
+	}
 `;
 
 const HeaderNav = styled.nav`
 	display: flex;
 	flex-direction: column;
-
 	@media screen and (max-width: 860px) {
 		flex-direction: row;
 		justify-content: center;
+		margin-bottom: 2%;
 	}
 `;
 
@@ -83,7 +105,6 @@ const HeaderLink = styled.a`
 	color: rgb(221, 203, 203);
 	text-decoration: underline;
 	margin: 1% 0;
-
 	@media screen and (max-width: 860px) {
 		margin: 0 1%;
 	}
@@ -114,9 +135,10 @@ const Header: React.FC<Props> = ({
 			<Title>Pokemon 151 Project</Title>
 			<DarkModeShinyDropdown>
 				<DarkModeShinySection>
-					<div data-testid="logo">
+					<ModeText data-testid="logo">
+						{" "}
 						{isDarkMode ? "Dark Mode" : "Light Mode"}
-					</div>
+					</ModeText>
 					<ToggleButton
 						data-testid="toggle_btn"
 						onClick={() => {
