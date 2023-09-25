@@ -2,36 +2,34 @@
 
 exports[`[3] Matches snapshot from 5.8.22 1`] = `
 <section
-  className="dropdown"
+  className="sc-guDMob kkcneg"
 >
   <button
-    className="dropbtn"
+    className="sc-dmyDmy bbdhUi"
     data-testid="dropbtn"
   >
     Display Options
   </button>
   <menu
-    className="dropdown-content"
+    className="sc-beyTiQ cvkhIn dropdown-content"
   >
     <div>
-      <div>
-        <button
-          className="dropbtn-inner"
-          data-testid="reset-btn"
-          id="reset-btn"
-          onClick={[Function]}
-        >
-          Reset All
-        </button>
-      </div>
+      <button
+        className="sc-hLQTFJ piuou"
+        data-testid="reset-btn"
+        id="reset-btn"
+        onClick={[Function]}
+      >
+        Reset All
+      </button>
       <h5
-        className="dropdown-display-title"
+        className="sc-eDLKEg cQxIQw"
         data-testid="dropdown-display-title"
       >
         Pick a type:
       </h5>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="normal-btn"
         onClick={[Function]}
@@ -39,7 +37,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Normal
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="fire-btn"
         onClick={[Function]}
@@ -47,7 +45,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Fire
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="water-btn"
         onClick={[Function]}
@@ -55,7 +53,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Water
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="electric-btn"
         onClick={[Function]}
@@ -63,7 +61,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Electric
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="grass-btn"
         onClick={[Function]}
@@ -71,7 +69,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Grass
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="ice-btn"
         onClick={[Function]}
@@ -79,7 +77,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Ice
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="fighting-btn"
         onClick={[Function]}
@@ -87,7 +85,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Fighting
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="poison-btn"
         onClick={[Function]}
@@ -95,7 +93,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Poison
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="ground-btn"
         onClick={[Function]}
@@ -103,7 +101,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Ground
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="flying-btn"
         onClick={[Function]}
@@ -111,7 +109,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Flying
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="psychic-btn"
         onClick={[Function]}
@@ -119,7 +117,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Psychic
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="bug-btn"
         onClick={[Function]}
@@ -127,7 +125,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Bug
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="rock-btn"
         onClick={[Function]}
@@ -135,7 +133,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Rock
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="ghost-btn"
         onClick={[Function]}
@@ -143,7 +141,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Ghost
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="dragon-btn"
         onClick={[Function]}
@@ -153,12 +151,12 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
     </div>
     <div>
       <h5
-        className="dropdown-display-title"
+        className="sc-eDLKEg cQxIQw"
       >
         Pick a weight:
       </h5>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="small-btn"
         onClick={[Function]}
@@ -166,7 +164,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Small
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="big-btn"
         onClick={[Function]}
@@ -176,12 +174,12 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
     </div>
     <div>
       <h5
-        className="dropdown-display-title"
+        className="sc-eDLKEg cQxIQw"
       >
         Pick a height:
       </h5>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="short-btn"
         onClick={[Function]}
@@ -189,7 +187,7 @@ exports[`[3] Matches snapshot from 5.8.22 1`] = `
         Short
       </button>
       <button
-        className="dropbtn-inner"
+        className="sc-hLQTFJ piuou"
         data-testid="dropbtn-inner"
         id="tall-btn"
         onClick={[Function]}

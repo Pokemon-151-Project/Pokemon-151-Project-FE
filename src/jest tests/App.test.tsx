@@ -4,11 +4,6 @@ import App from "../App";
 import renderer from "react-test-renderer";
 import React from "react";
 
-jest.mock("../useDarkMode", () => ({
-	__esModule: true,
-	default: jest.fn(),
-}));
-
 test("Sanity Check", () => {
 	const twoPlusTwo = 2 + 2;
 	expect(twoPlusTwo).toStrictEqual(4);
