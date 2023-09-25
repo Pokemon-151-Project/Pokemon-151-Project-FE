@@ -44,6 +44,7 @@ const PokemonCard = styled.article`
 	width: 12rem;
 	margin: 2%;
 	background-color: ${(props) => props.theme.singlePokemonBGC};
+	color: ${(props) => props.theme.singlePokemonColor};
 `;
 
 const PokeName = styled.h2`

@@ -5,7 +5,7 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
   className="sc-fsYfxw fzpIUR"
 >
   <article
-    className="sc-beyTiQ eLajlk"
+    className="sc-beyTiQ kIncUK"
     data-testid="pokemon-card"
   >
     <h2
@@ -52,7 +52,7 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
     </blockquote>
   </article>
   <article
-    className="sc-beyTiQ eLajlk"
+    className="sc-beyTiQ kIncUK"
     data-testid="pokemon-card"
   >
     <h2
@@ -99,7 +99,7 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
     </blockquote>
   </article>
   <article
-    className="sc-beyTiQ eLajlk"
+    className="sc-beyTiQ kIncUK"
     data-testid="pokemon-card"
   >
     <h2
