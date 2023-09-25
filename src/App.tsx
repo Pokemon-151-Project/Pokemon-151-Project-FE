@@ -6,14 +6,20 @@ import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
 import data, { PokemonTypes } from "./data";
 import { Pokemon } from "./data";
+import useDarkMode from "./hooks/useDarkMode";
 
 const App: React.FC = () => {
 	// Theme state
-	const [theme, setTheme] = useState(lightTheme); // default to light theme
+	const [isDarkMode, setDarkMode] = useDarkMode();
+	const theme = isDarkMode ? darkTheme : lightTheme;
 
 	// Toggle theme function
+	// const toggleTheme = () => {
+	// 	setTheme(theme === lightTheme ? darkTheme : lightTheme);
+	// };
+
 	const toggleTheme = () => {
-		setTheme(theme === lightTheme ? darkTheme : lightTheme);
+		setDarkMode(!isDarkMode);
 	};
 
 	// Existing App logic
@@ -51,7 +57,8 @@ const App: React.FC = () => {
 					changeDisplay={changeDisplay}
 					setIsShiny={setIsShiny}
 					isShiny={isShiny}
-					toggleTheme={toggleTheme} // Pass the toggle function to Header
+					toggleTheme={toggleTheme}
+					isDarkMode={isDarkMode}
 				/>
 				<AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
 			</div>
