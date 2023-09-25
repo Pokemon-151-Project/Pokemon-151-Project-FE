@@ -16,6 +16,7 @@ test("[1] Component renders without errors", () => {
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
 			toggleTheme={mockToggleTheme}
+			isDarkMode={true}
 		/>
 	);
 });
@@ -27,6 +28,7 @@ test("[2] Renders the expected segments of the header", () => {
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
 			toggleTheme={mockToggleTheme}
+			isDarkMode={true}
 		/>
 	);
 	const h1 = screen.queryByText(/pokemon 151 project/i);
@@ -47,6 +49,7 @@ test("[3] 'Dark Mode' text changes to 'Light Mode' and vice versa when you click
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
 			toggleTheme={mockToggleTheme}
+			isDarkMode={true}
 		/>
 	);
 	const darkModeToggleLogo = screen.getByTestId("toggle_btn");
@@ -67,6 +70,7 @@ test("[4] Matches snapshot so nothing changes inadvertently", () => {
 			isShiny={false}
 			setIsShiny={mockSetIsShiny}
 			toggleTheme={mockToggleTheme}
+			isDarkMode={true}
 		/>
 	);
 

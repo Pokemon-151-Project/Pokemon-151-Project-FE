@@ -2,30 +2,27 @@
 
 exports[`[4] Matches snapshot from 5.8.22 1`] = `
 <article
-  className="pokemon-card"
+  className="sc-beyTiQ eLajlk"
   data-testid="pokemon-card"
 >
   <h2
-    className="poke-name card-item"
+    className="sc-guDMob iTmCCz"
   >
     Fake Pokemon Name
      
     <span
-      className="dex-id"
+      className="sc-dmyDmy hoHUsp"
     >
       #
     </span>
   </h2>
   <h3
-    className="poke-type card-item"
+    className="sc-hLQTFJ gkRoEt"
   >
-    Grass
-     / 
-    Poison
-     
+    Grass / Poison
   </h3>
   <h4
-    className="height-weight card-item"
+    className="sc-eDLKEg igxwic"
   >
     Height: 
     4m
@@ -35,17 +32,17 @@ exports[`[4] Matches snapshot from 5.8.22 1`] = `
     50kg
   </h4>
   <figure
-    className="img-container card-item"
+    className="sc-jTQDJr gXLfqK"
   >
     <img
       alt="Fake Pokemon Name"
-      className="poke-img"
+      className="sc-gLLuHO dfPMAj"
       data-testid="shiny"
       src="https://www.serebii.net/Shiny/SWSH/undefined.png"
     />
   </figure>
   <blockquote
-    className="card-item"
+    className="sc-iBdoyZ dTKkRP"
   >
     blah blah blah
   </blockquote>
