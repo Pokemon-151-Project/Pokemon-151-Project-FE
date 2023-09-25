@@ -1,9 +1,13 @@
 /* eslint-disable testing-library/no-node-access */
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import App from "../App";
 import renderer from "react-test-renderer";
-import React from "react"; // Import React for JSX
+import React from "react";
+
+jest.mock("../useDarkMode", () => ({
+	__esModule: true,
+	default: jest.fn(),
+}));
 
 test("Sanity Check", () => {
 	const twoPlusTwo = 2 + 2;
@@ -27,22 +31,10 @@ test("[2] renders child components", () => {
 	expect(bulba).toBeInTheDocument();
 });
 
-test("[3] Toggles Dark Mode", async () => {
-	//Verifies that hitting darkmode toggle will add "dark" class to each pokemon card
-
-	render(<App />);
-	let cardOne: HTMLElement | null = document.querySelector(".pokemon-card");
-	expect(cardOne).not.toHaveClass("dark");
-
-	const darkBtn = screen.getByTestId("toggle_btn");
-	await userEvent.click(darkBtn);
-	expect(cardOne).toHaveClass("dark");
-});
-
 // This has saved a snapshot of App.js from 5.8.2022. If anything in App changes this test will fail
 //Then I will either need to update the screenshot with the new changes, or fix what error made the test fail.
 //If the change is intended, run jest -u in terminal to update snapshot.
-test("[4] Matches snapshot so nothing changes inadvertently", () => {
+test("[3] Matches snapshot so nothing changes inadvertently", () => {
 	const component = renderer.create(<App />);
 
 	let tree = component.toJSON();

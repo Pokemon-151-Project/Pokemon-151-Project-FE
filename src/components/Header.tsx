@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Dropdown from "./Dropdown";
-import useDarkMode from "../hooks/useDarkMode";
 import { BsMoon, BsSun } from "react-icons/bs";
 import linksArray from "../utils/Headerutils/linksArray";
 import { PokemonTypes } from "../data";
