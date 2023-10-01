@@ -7,16 +7,12 @@ import AllPokemon from "./components/AllPokemon";
 import data, { PokemonTypes } from "./data";
 import { Pokemon } from "./data";
 import useDarkMode from "./hooks/useDarkMode";
+import { API, graphqlOperation } from "aws-amplify";
 
 const App: React.FC = () => {
 	// Theme state
 	const [isDarkMode, setDarkMode] = useDarkMode();
 	const theme = isDarkMode ? darkTheme : lightTheme;
-
-	// Toggle theme function
-	// const toggleTheme = () => {
-	// 	setTheme(theme === lightTheme ? darkTheme : lightTheme);
-	// };
 
 	const toggleTheme = () => {
 		setDarkMode(!isDarkMode);
