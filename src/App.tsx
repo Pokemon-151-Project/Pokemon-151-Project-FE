@@ -8,6 +8,7 @@ import data, { PokemonTypes } from "./data";
 import { Pokemon } from "./data";
 import useDarkMode from "./hooks/useDarkMode";
 import { API, graphqlOperation } from "aws-amplify";
+import { listPokemon } from "./graphql/queries";
 
 const App: React.FC = () => {
 	// Theme state
