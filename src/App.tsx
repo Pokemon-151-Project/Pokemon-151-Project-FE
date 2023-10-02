@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import { lightTheme, darkTheme } from "./styles/theme";
@@ -7,23 +7,58 @@ import AllPokemon from "./components/AllPokemon";
 import data, { PokemonTypes } from "./data";
 import { Pokemon } from "./data";
 import useDarkMode from "./hooks/useDarkMode";
+import { API, graphqlOperation } from "aws-amplify";
+import { listPokemon } from "./graphql/queries";
 
 const App: React.FC = () => {
+	const [pokemonData, setPokemonData] = useState<Pokemon[]>([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			let nextToken = null;
+			let allPokemon: Pokemon[] = [];
+
+			do {
+				try {
+					const response: any = await API.graphql(
+						graphqlOperation(listPokemon, {
+							limit: 100,
+							nextToken,
+						})
+					);
+
+					const items = response.data.listPokemon.items;
+					const newNextToken = response.data.listPokemon.nextToken;
+
+					allPokemon = [...allPokemon, ...items];
+					nextToken = newNextToken;
+				} catch (err) {
+					console.error("Error fetching data:", err);
+					break;
+				}
+			} while (nextToken);
+
+			// Sort the Pokemon by ID
+			const sortedPokemon = allPokemon.sort(
+				(a, b) => Number(a.id) - Number(b.id)
+			);
+
+			setPokemonData(sortedPokemon);
+			console.log("All Pokemon:", sortedPokemon);
+		};
+
+		fetchData();
+	}, []);
+
 	// Theme state
 	const [isDarkMode, setDarkMode] = useDarkMode();
 	const theme = isDarkMode ? darkTheme : lightTheme;
-
-	// Toggle theme function
-	// const toggleTheme = () => {
-	// 	setTheme(theme === lightTheme ? darkTheme : lightTheme);
-	// };
 
 	const toggleTheme = () => {
 		setDarkMode(!isDarkMode);
 	};
 
 	// Existing App logic
-	const [pokemonData, setPokemonData] = useState<Pokemon[]>(data);
 	const [isShiny, setIsShiny] = useState<boolean>(false);
 
 	const changeDisplay = (
