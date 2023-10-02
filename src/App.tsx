@@ -10,28 +10,27 @@ import useDarkMode from "./hooks/useDarkMode";
 import { API, graphqlOperation } from "aws-amplify";
 import { listPokemon } from "./graphql/queries";
 import { GraphQLResult } from "@aws-amplify/api-graphql";
+import { ListPokemonQuery } from "./API";
 
 const App: React.FC = () => {
 	const [pokemonData, setPokemonData] = useState<Pokemon[]>([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
-			let nextToken: string | null = null;
+			let nextToken = null;
 			let allPokemon: Pokemon[] = [];
 
 			do {
 				try {
-					const result = (await API.graphql(
+					const response: any = await API.graphql(
 						graphqlOperation(listPokemon, {
 							limit: 100,
 							nextToken,
 						})
-					)) as GraphQLResult<{
-						listPokemon: { items: Pokemon[]; nextToken: string | null };
-					}>;
+					);
 
-					const { items, nextToken: newNextToken } = result.data
-						?.listPokemon || { items: [], nextToken: null };
+					const items = response.data.listPokemon.items;
+					const newNextToken = response.data.listPokemon.nextToken;
 
 					allPokemon = [...allPokemon, ...items];
 					nextToken = newNextToken;
@@ -41,8 +40,13 @@ const App: React.FC = () => {
 				}
 			} while (nextToken);
 
-			setPokemonData(allPokemon);
-			console.log("All Pokemon:", allPokemon);
+			// Sort the Pokemon by ID
+			const sortedPokemon = allPokemon.sort(
+				(a, b) => Number(a.id) - Number(b.id)
+			);
+
+			setPokemonData(sortedPokemon);
+			console.log("All Pokemon:", sortedPokemon);
 		};
 
 		fetchData();
