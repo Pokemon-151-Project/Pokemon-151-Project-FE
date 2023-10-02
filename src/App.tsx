@@ -9,8 +9,6 @@ import { Pokemon } from "./data";
 import useDarkMode from "./hooks/useDarkMode";
 import { API, graphqlOperation } from "aws-amplify";
 import { listPokemon } from "./graphql/queries";
-import { GraphQLResult } from "@aws-amplify/api-graphql";
-import { ListPokemonQuery } from "./API";
 
 const App: React.FC = () => {
 	const [pokemonData, setPokemonData] = useState<Pokemon[]>([]);
