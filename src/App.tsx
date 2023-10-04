@@ -27,7 +27,7 @@ const App: React.FC = () => {
 						})
 					);
 
-					const items = response.data.listPokemon.items;
+					const items: Pokemon[] = response.data.listPokemon.items;
 					const newNextToken = response.data.listPokemon.nextToken;
 
 					allPokemon = [...allPokemon, ...items];
@@ -44,7 +44,6 @@ const App: React.FC = () => {
 			);
 
 			setPokemonData(sortedPokemon);
-			console.log("All Pokemon:", sortedPokemon);
 		};
 
 		fetchData();
