@@ -94,6 +94,11 @@ const App: React.FC = () => {
 					toggleTheme={toggleTheme}
 					isDarkMode={isDarkMode}
 				/>
+				<h1>Maintenance</h1>
+				<p>
+					Our API is temporarily down due to a glitch. We're working on it.
+					12.5.2023
+				</p>
 				<AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
 			</div>
 		</ThemeProvider>
