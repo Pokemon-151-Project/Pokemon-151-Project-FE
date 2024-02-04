@@ -97,10 +97,15 @@ const App: React.FC = () => {
 				<h1>Pokemon 151 Project is currently down.</h1>
 				<h3>This is being actively worked on (Feb 2024)</h3>
 				<p>Please visit one of my other projects:</p>
-				<a href="https://cmd-buddy.com">CMDBUddy (CLI Command Generator)</a>
-				<a href="https://master.dorqegfj1nrtm.amplifyapp.com/">
-					Risk BattleOdds Calculator
-				</a>
+				<p>
+					<a href="https://cmd-buddy.com">CMDBUddy (CLI Command Generator)</a>
+				</p>
+				<p>
+					<a href="https://master.dorqegfj1nrtm.amplifyapp.com/">
+						Risk BattleOdds Calculator
+					</a>
+				</p>
+
 				<AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
 			</div>
 		</ThemeProvider>
