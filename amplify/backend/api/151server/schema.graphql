@@ -1,0 +1,10 @@
+type Pokemon @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  num: String!
+  name: String!
+  type: [String]
+  height: String
+  weight: String
+  dexEntry: String
+}
+ 

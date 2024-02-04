@@ -10,11 +10,6 @@
       "StackName": "amplify-151server-dev-135014",
       "StackId": "arn:aws:cloudformation:us-east-1:145667575106:stack/amplify-151server-dev-135014/f3975420-6082-11ee-847f-0a3f413ce121",
       "AmplifyAppId": "d3iocn1cc9sald"
-    },
-    "categories": {
-      "api": {
-        "151server": {}
-      }
     }
   }
 }

@@ -4,10 +4,10 @@ import GlobalStyles from "./styles/GlobalStyles";
 import { lightTheme, darkTheme } from "./styles/theme";
 import Header from "./components/Header";
 import AllPokemon from "./components/AllPokemon";
-import data, { PokemonTypes } from "./data";
+import { PokemonTypes } from "./data";
 import { Pokemon } from "./data";
 import useDarkMode from "./hooks/useDarkMode";
-import { API, graphqlOperation } from "aws-amplify";
+import { API, Amplify, graphqlOperation } from "aws-amplify";
 import { listPokemon } from "./graphql/queries";
 
 const App: React.FC = () => {
@@ -20,13 +20,14 @@ const App: React.FC = () => {
 
 			do {
 				try {
+					console.log("trying");
 					const response: any = await API.graphql(
 						graphqlOperation(listPokemon, {
 							limit: 100,
 							nextToken,
 						})
 					);
-
+					console.log("response:", response);
 					const items: Pokemon[] = response.data.listPokemon.items;
 					const newNextToken = response.data.listPokemon.nextToken;
 
@@ -57,7 +58,6 @@ const App: React.FC = () => {
 		setDarkMode(!isDarkMode);
 	};
 
-	// Existing App logic
 	const [isShiny, setIsShiny] = useState<boolean>(false);
 
 	const changeDisplay = (
@@ -66,7 +66,7 @@ const App: React.FC = () => {
 		height: string | null = null,
 		reset: string | null = null
 	) => {
-		const newData = data.filter((item) => {
+		const newData = pokemonData.filter((item) => {
 			if (type) {
 				return item.type.includes(type);
 			} else if (size) {
@@ -94,6 +94,13 @@ const App: React.FC = () => {
 					toggleTheme={toggleTheme}
 					isDarkMode={isDarkMode}
 				/>
+				<h1>Pokemon 151 Project is currently down.</h1>
+				<h3>This is being actively worked on (Feb 2024)</h3>
+				<p>Please visit one of my other projects:</p>
+				<a href="https://cmd-buddy.com">CMDBUddy (CLI Command Generator)</a>
+				<a href="https://master.dorqegfj1nrtm.amplifyapp.com/">
+					Risk BattleOdds Calculator
+				</a>
 				<AllPokemon pokemonData={pokemonData} isShiny={isShiny} />
 			</div>
 		</ThemeProvider>
